@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -46,27 +46,27 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_0aa24c58683c4887b6c051988482ec96.html">macros_tracking</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_0c066ba2a6dfc02fafa72ec6aec021b3.html">macros_psa</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">drawPulse.C</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="drawPulse_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="ejungwooA_8h.html">ejungwooA.h</a>&quot;</span></div>
+<a href="drawPulse_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;LKPulse.cpp&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//#include &quot;LKPulse.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="drawPulse_8C.html#af17edcfbc866664da3083aef1ce6b64f">    5</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="drawPulse_8C.html#af17edcfbc866664da3083aef1ce6b64f">drawPulse</a>()</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">auto</span> pulse = <span class="keyword">new</span> <a class="code hl_class" href="classLKPulse.html">LKPulse</a>(<span class="stringliteral">&quot;data/pulseReference_MMCenter1.root&quot;</span>);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_define" href="ejungwooA_8h.html#a6f58057585cd464b504079250be10f79">e_cvs</a>(<span class="stringliteral">&quot;cvs&quot;</span>);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">auto</span> pulse = <span class="keyword">new</span> <a class="code hl_class" href="classLKPulse.html">LKPulse</a>(<span class="stringliteral">&quot;data100/pulseReference_MMCenterCenterA0.root&quot;</span>);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_define" href="macros__detectorplane_2ejungwooA_8h.html#a6f58057585cd464b504079250be10f79">e_cvs</a>(<span class="stringliteral">&quot;cvs&quot;</span>);</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    pulse -&gt; GetPulseGraph(0,100) -&gt; Draw(<span class="stringliteral">&quot;apl&quot;</span>);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
 <div class="ttc" id="aclassLKPulse_html"><div class="ttname"><a href="classLKPulse.html">LKPulse</a></div><div class="ttdoc">LKPulse is pulse data class that draw waveform in channel buffer. The class should be initialized wit...</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKPulse_8h_source.html#l00008">macros/dummy_class_writter/output/LKPulse.h:9</a></div></div>
 <div class="ttc" id="adrawPulse_8C_html_af17edcfbc866664da3083aef1ce6b64f"><div class="ttname"><a href="drawPulse_8C.html#af17edcfbc866664da3083aef1ce6b64f">drawPulse</a></div><div class="ttdeci">void drawPulse()</div><div class="ttdef"><b>Definition</b> <a href="drawPulse_8C_source.html#l00005">drawPulse.C:5</a></div></div>
-<div class="ttc" id="aejungwooA_8h_html"><div class="ttname"><a href="ejungwooA_8h.html">ejungwooA.h</a></div></div>
-<div class="ttc" id="aejungwooA_8h_html_a6f58057585cd464b504079250be10f79"><div class="ttname"><a href="ejungwooA_8h.html#a6f58057585cd464b504079250be10f79">e_cvs</a></div><div class="ttdeci">#define e_cvs(name)</div><div class="ttdef"><b>Definition</b> <a href="ejungwooA_8h_source.html#l00266">ejungwooA.h:266</a></div></div>
+<div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_a6f58057585cd464b504079250be10f79"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#a6f58057585cd464b504079250be10f79">e_cvs</a></div><div class="ttdeci">#define e_cvs(name)</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00266">macros_detectorplane/ejungwooA.h:266</a></div></div>
+<div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

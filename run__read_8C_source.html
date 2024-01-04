@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -59,16 +59,16 @@ $(function() {
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <a class="code hl_define" href="LKLogger_8h.html#a7577b65a19df400c9091cee0258c4257">lk_logger</a>(<span class="stringliteral">&quot;data/log&quot;</span>);</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">auto</span> run = <a class="code hl_function" href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun</a>();</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    run -&gt; AddDetector(<span class="keyword">new</span> <a class="code hl_class" href="classLHTpc.html">LHTpc</a>());</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    run -&gt; SetInputFile(<span class="stringliteral">&quot;../data/run_0000.digi.lamps.4.6d22b5d.root&quot;</span>);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    run -&gt; SetDataPath(<span class="stringliteral">&quot;data&quot;</span>);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    run -&gt; SetTag(<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <a class="code hl_function" href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun</a>();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddDetector(<span class="keyword">new</span> <a class="code hl_class" href="classLHTpc.html">LHTpc</a>());</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; SetInputFile(<span class="stringliteral">&quot;../data/run_0000.digi.lamps.4.6d22b5d.root&quot;</span>);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; SetDataPath(<span class="stringliteral">&quot;data&quot;</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; SetTag(<span class="stringliteral">&quot;read&quot;</span>);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    run -&gt; Init();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Init();</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> padArray = run -&gt; GetBranchA(<span class="stringliteral">&quot;Pad&quot;</span>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    run -&gt; GetEvent(0);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> padArray = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;Pad&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetEvent(0);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> numPads = padArray -&gt; GetEntries();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    lx_info &lt;&lt; <span class="stringliteral">&quot;Number of pads: &quot;</span> &lt;&lt; numPads &lt;&lt; endl;</div>
@@ -85,6 +85,7 @@ $(function() {
 <div class="ttc" id="aclassLHTpc_html"><div class="ttname"><a href="classLHTpc.html">LHTpc</a></div><div class="ttdef"><b>Definition</b> <a href="LHTpc_8h_source.html#l00007">LHTpc.h:8</a></div></div>
 <div class="ttc" id="aclassLKPad_html"><div class="ttname"><a href="classLKPad.html">LKPad</a></div><div class="ttdef"><b>Definition</b> <a href="LKPad_8h_source.html#l00016">LKPad.h:17</a></div></div>
 <div class="ttc" id="aclassLKRun_html_a63ea49223451b1fe09b1610018d9b581"><div class="ttname"><a href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun</a></div><div class="ttdeci">static LKRun * GetRun()</div><div class="ttdoc">Get LKRun static pointer.</div></div>
+<div class="ttc" id="adebug_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug_8C_source.html#l00003">debug.C:3</a></div></div>
 <div class="ttc" id="arun__read_8C_html_ac12bf9f241ee4b5bc71ff45aa49526c6"><div class="ttname"><a href="run__read_8C.html#ac12bf9f241ee4b5bc71ff45aa49526c6">run_read</a></div><div class="ttdeci">void run_read()</div><div class="ttdef"><b>Definition</b> <a href="run__read_8C_source.html#l00003">run_read.C:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64d532b1705d908d68217368c29ca1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af517c7c3f764030130ed7429840fe1ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulse.html#af517c7c3f764030130ed7429840fe1ed">GetNumAnalyzedChannels</a> () const</td></tr>
 <tr class="separator:af517c7c3f764030130ed7429840fe1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a513bfc881f285c9701c2c39190bf29d1"><td class="memItemLeft" align="right" valign="top">TGraphErrors *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulse.html#a513bfc881f285c9701c2c39190bf29d1">GetPulseGraph</a> (double tb0, double amplitude)</td></tr>
-<tr class="separator:a513bfc881f285c9701c2c39190bf29d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fba80ed82596ccdfb1ce43e6e2cfd1"><td class="memItemLeft" align="right" valign="top">TGraphErrors *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulse.html#a77fba80ed82596ccdfb1ce43e6e2cfd1">GetPulseGraph</a> (double tb0, double amplitude, double pedestal=0)</td></tr>
+<tr class="separator:a77fba80ed82596ccdfb1ce43e6e2cfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72cfc5050673555125da82e8e8f49dff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulse.html#a72cfc5050673555125da82e8e8f49dff">GetPulseRefTbMax</a> () const</td></tr>
 <tr class="separator:a72cfc5050673555125da82e8e8f49dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a385702c518e198769a04d3580df65a62"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulse.html#a385702c518e198769a04d3580df65a62">GetPulseRefTbMin</a> () const</td></tr>
@@ -967,8 +967,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a513bfc881f285c9701c2c39190bf29d1" name="a513bfc881f285c9701c2c39190bf29d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a513bfc881f285c9701c2c39190bf29d1">&#9670;&#160;</a></span>GetPulseGraph()</h2>
+<a id="a77fba80ed82596ccdfb1ce43e6e2cfd1" name="a77fba80ed82596ccdfb1ce43e6e2cfd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fba80ed82596ccdfb1ce43e6e2cfd1">&#9670;&#160;</a></span>GetPulseGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -983,7 +983,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>amplitude</em>&#160;</td>
+          <td class="paramname"><em>amplitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pedestal</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -995,7 +1001,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="tpc__general_2tool_2LKPulse_8cpp_source.html#l00078">78</a> of file <a class="el" href="tpc__general_2tool_2LKPulse_8cpp_source.html">tpc_general/tool/LKPulse.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="tpc__general_2tool_2LKPulse_8h_source.html#l00055">fGraphPulse</a>, and <a class="el" href="tpc__general_2tool_2LKPulse_8h_source.html#l00054">fNumPoints</a>.</p>
+<p class="reference">References <a class="el" href="tpc__general_2tool_2LKPulse_8h_source.html#l00055">fGraphPulse</a>, <a class="el" href="tpc__general_2tool_2LKPulse_8h_source.html#l00054">fNumPoints</a>, and <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>.</p>
 
 </div>
 </div>

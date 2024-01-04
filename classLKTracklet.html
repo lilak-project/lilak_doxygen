@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -75,8 +75,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25f76f3564d2e9b9e7637f66fc116697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5bf59f8afa380670d56eb8f33a8b943"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#af5bf59f8afa380670d56eb8f33a8b943">Clear</a> (Option_t *option=&quot;&quot;)</td></tr>
 <tr class="separator:af5bf59f8afa380670d56eb8f33a8b943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79f5d44f3aa19ac937b7d1019ecf0f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ac79f5d44f3aa19ac937b7d1019ecf0f1">ClearHits</a> ()</td></tr>
+<tr class="separator:ac79f5d44f3aa19ac937b7d1019ecf0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9f8452227c06cc2a0a1aae1c0d93ef1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ad9f8452227c06cc2a0a1aae1c0d93ef1">DoDrawOnDetectorPlane</a> ()</td></tr>
 <tr class="separator:ad9f8452227c06cc2a0a1aae1c0d93ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd8d5eb1299a94076ea3a8a95a8d2b8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a4dd8d5eb1299a94076ea3a8a95a8d2b8">DrawByDefault</a> ()</td></tr>
+<tr class="memdesc:a4dd8d5eb1299a94076ea3a8a95a8d2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if to be displayed on eve.  <br /></td></tr>
+<tr class="separator:a4dd8d5eb1299a94076ea3a8a95a8d2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6166d47b81cf2e67c351fb9a2e99f947"><td class="memItemLeft" align="right" valign="top">virtual TVector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a6166d47b81cf2e67c351fb9a2e99f947">ExtrapolateByLength</a> (Double_t l) const =0</td></tr>
 <tr class="memdesc:a6166d47b81cf2e67c351fb9a2e99f947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolate by length (tail:0), returns extrapolated position.  <br /></td></tr>
 <tr class="separator:a6166d47b81cf2e67c351fb9a2e99f947"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,16 +97,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7c979ae4ca438f69adeb50d79c934c2"><td class="memItemLeft" align="right" valign="top">virtual TVector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ac7c979ae4ca438f69adeb50d79c934c2">ExtrapolateTo</a> (TVector3 point) const =0</td></tr>
 <tr class="memdesc:ac7c979ae4ca438f69adeb50d79c934c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolate to POCA from point, returns extrapolated position.  <br /></td></tr>
 <tr class="separator:ac7c979ae4ca438f69adeb50d79c934c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf16c489731ed2708087b578c588f34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a2bf16c489731ed2708087b578c588f34">FillTrajectory</a> (TGraphErrors *graphTrack, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2)</td></tr>
+<tr class="separator:a2bf16c489731ed2708087b578c588f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236432188cd71e8a7cdec38342dbcd42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a236432188cd71e8a7cdec38342dbcd42">FillTrajectory</a> (TGraphErrors *graphTrack, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, bool(*fisout)(TVector3 pos))</td></tr>
+<tr class="separator:a236432188cd71e8a7cdec38342dbcd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a8046590ca6a68f6f0823af26b3e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#af8a8046590ca6a68f6f0823af26b3e9b">FillTrajectory3D</a> (TGraph2DErrors *graphTrack3D, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis3)</td></tr>
+<tr class="separator:af8a8046590ca6a68f6f0823af26b3e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce5206a40fb088a3db55d8d3b0597ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a9ce5206a40fb088a3db55d8d3b0597ee">FillTrajectory3D</a> (TGraph2DErrors *graphTrack3D, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis3, bool(*fisout)(TVector3 pos))</td></tr>
+<tr class="separator:a9ce5206a40fb088a3db55d8d3b0597ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae0a03680d1440277a5911aa5c73c6c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a5ae0a03680d1440277a5911aa5c73c6c">Fit</a> ()</td></tr>
 <tr class="separator:a5ae0a03680d1440277a5911aa5c73c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af040158e0c7cfc67334d4fe2f5429120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHit.html">LKHit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#af040158e0c7cfc67334d4fe2f5429120">GetHit</a> (Int_t idx) const</td></tr>
+<tr class="separator:af040158e0c7cfc67334d4fe2f5429120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e32197646c37c6a70404ebfd7f8910"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHitArray.html">LKHitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a30e32197646c37c6a70404ebfd7f8910">GetHitArray</a> ()</td></tr>
 <tr class="separator:a30e32197646c37c6a70404ebfd7f8910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfd5fa91bb24f1634fc7a84366eb9ee"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a2bfd5fa91bb24f1634fc7a84366eb9ee">GetHitID</a> (Int_t idx) const</td></tr>
+<tr class="separator:a2bfd5fa91bb24f1634fc7a84366eb9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972a547d6b41a4daa2fce021e2e1a6b0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Int_t &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a972a547d6b41a4daa2fce021e2e1a6b0">GetHitIDArray</a> ()</td></tr>
+<tr class="separator:a972a547d6b41a4daa2fce021e2e1a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ad71f21dc35438c75bf395992b1b16"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#af3ad71f21dc35438c75bf395992b1b16">GetNumHits</a> () const</td></tr>
+<tr class="separator:af3ad71f21dc35438c75bf395992b1b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca64bd7ada52ee35611645646212ac66"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#aca64bd7ada52ee35611645646212ac66">GetParentID</a> () const</td></tr>
 <tr class="separator:aca64bd7ada52ee35611645646212ac66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b17589554510fc1bc5ccdf771964d38"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a3b17589554510fc1bc5ccdf771964d38">GetPDG</a> () const</td></tr>
 <tr class="separator:a3b17589554510fc1bc5ccdf771964d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad804fd47ce0e12b83726b24e75682a07"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ad804fd47ce0e12b83726b24e75682a07">GetTrackID</a> () const</td></tr>
 <tr class="separator:ad804fd47ce0e12b83726b24e75682a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36c8eed13d166fa6fa95947b59e924c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ae36c8eed13d166fa6fa95947b59e924c">IsHoldingHits</a> ()</td></tr>
+<tr class="separator:ae36c8eed13d166fa6fa95947b59e924c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac11259136f1deabc18b3b88d4f1c1d"><td class="memItemLeft" align="right" valign="top">virtual Double_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#adac11259136f1deabc18b3b88d4f1c1d">LengthAt</a> (TVector3 point) const =0</td></tr>
 <tr class="memdesc:adac11259136f1deabc18b3b88d4f1c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length at POCA from point, where tail=0, head=TrackLength.  <br /></td></tr>
 <tr class="separator:adac11259136f1deabc18b3b88d4f1c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,12 +150,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c2868cfdfb31304cbf848fa0f91e3eb"><td class="memItemLeft" align="right" valign="top">virtual Double_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a7c2868cfdfb31304cbf848fa0f91e3eb">TrackLength</a> () const =0</td></tr>
 <tr class="memdesc:a7c2868cfdfb31304cbf848fa0f91e3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of track calculated from head to tail.  <br /></td></tr>
 <tr class="separator:a7c2868cfdfb31304cbf848fa0f91e3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6849fae19d8d0a1cfdc4b309304adc07"><td class="memItemLeft" align="right" valign="top">virtual TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a6849fae19d8d0a1cfdc4b309304adc07">TrajectoryOnPlane</a> (<a class="el" href="classLKDetectorPlane.html">LKDetectorPlane</a> *plane, Double_t scale=1)</td></tr>
-<tr class="separator:a6849fae19d8d0a1cfdc4b309304adc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80a659334e101c362febb35e8efb838"><td class="memItemLeft" align="right" valign="top">virtual TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ab80a659334e101c362febb35e8efb838">TrajectoryOnPlane</a> (<a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, bool(*fisout)(TVector3 pos), Double_t scale=1)</td></tr>
-<tr class="separator:ab80a659334e101c362febb35e8efb838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5af713c67389957450295823fe2213"><td class="memItemLeft" align="right" valign="top">virtual TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a0c5af713c67389957450295823fe2213">TrajectoryOnPlane</a> (<a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, Double_t scale=1)</td></tr>
-<tr class="separator:a0c5af713c67389957450295823fe2213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74878bdbb4a8abbc1387a2af4dd6885"><td class="memItemLeft" align="right" valign="top">virtual TGraphErrors *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#ab74878bdbb4a8abbc1387a2af4dd6885">TrajectoryOnPlane</a> (<a class="el" href="classLKDetectorPlane.html">LKDetectorPlane</a> *plane, Double_t scale=1)</td></tr>
+<tr class="separator:ab74878bdbb4a8abbc1387a2af4dd6885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1f200212e0703000c18ed0e15f2a9d"><td class="memItemLeft" align="right" valign="top">virtual TGraphErrors *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a7c1f200212e0703000c18ed0e15f2a9d">TrajectoryOnPlane</a> (<a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, bool(*fisout)(TVector3 pos), Double_t scale=1)</td></tr>
+<tr class="separator:a7c1f200212e0703000c18ed0e15f2a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8099598adac79de118026bd7eda2c6"><td class="memItemLeft" align="right" valign="top">virtual TGraphErrors *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a2a8099598adac79de118026bd7eda2c6">TrajectoryOnPlane</a> (<a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis1, <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a> axis2, Double_t scale=1)</td></tr>
+<tr class="separator:a2a8099598adac79de118026bd7eda2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f7723e5b6bb7ef7f94dd3de7c501bbf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a2f7723e5b6bb7ef7f94dd3de7c501bbf">~LKTracklet</a> ()</td></tr>
 <tr class="separator:a2f7723e5b6bb7ef7f94dd3de7c501bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLKContainer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLKContainer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLKContainer.html">LKContainer</a></td></tr>
@@ -140,6 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe651258d92c9579f68d3748c0543335 inherit pub_methods_classLKContainer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8344961a5ada61fda3048d7dc0a4d21e inherit pub_methods_classLKContainer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKContainer.html#a8344961a5ada61fda3048d7dc0a4d21e">Copy</a> (TObject &amp;object) const</td></tr>
 <tr class="separator:a8344961a5ada61fda3048d7dc0a4d21e inherit pub_methods_classLKContainer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cc6293f0e597f92347f1ea833d0b93 inherit pub_methods_classLKContainer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKContainer.html#a04cc6293f0e597f92347f1ea833d0b93">DrawByDefault</a> ()</td></tr>
+<tr class="memdesc:a04cc6293f0e597f92347f1ea833d0b93 inherit pub_methods_classLKContainer"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if to be displayed on eve.  <br /></td></tr>
+<tr class="separator:a04cc6293f0e597f92347f1ea833d0b93 inherit pub_methods_classLKContainer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4577ee71e18d92433da278ba89643a4 inherit pub_methods_classLKContainer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKContainer.html#aa4577ee71e18d92433da278ba89643a4">LKContainer</a> ()</td></tr>
 <tr class="separator:aa4577ee71e18d92433da278ba89643a4 inherit pub_methods_classLKContainer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7fb069ff4291b82cfc560f36a29645 inherit pub_methods_classLKContainer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKContainer.html#aaf7fb069ff4291b82cfc560f36a29645">~LKContainer</a> ()</td></tr>
@@ -149,6 +175,8 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a80c9f9f3c2bcff290109c7cbc4077771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHitArray.html">LKHitArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a80c9f9f3c2bcff290109c7cbc4077771">fHitArray</a></td></tr>
 <tr class="separator:a80c9f9f3c2bcff290109c7cbc4077771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e27a7641ba6768f5cc73ac51d71a807"><td class="memItemLeft" align="right" valign="top">vector&lt; Int_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a6e27a7641ba6768f5cc73ac51d71a807">fHitIDArray</a></td></tr>
+<tr class="separator:a6e27a7641ba6768f5cc73ac51d71a807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd00b15cc5131e3ea2ddfdd32ca9581"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#aafd00b15cc5131e3ea2ddfdd32ca9581">fParentID</a> = -1</td></tr>
 <tr class="memdesc:aafd00b15cc5131e3ea2ddfdd32ca9581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex ID.  <br /></td></tr>
 <tr class="separator:aafd00b15cc5131e3ea2ddfdd32ca9581"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,12 +184,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ada5fc0b59c16bfb4805fb2a91e5db5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65153652f10815e4fb71eb6b7f43c38f"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a65153652f10815e4fb71eb6b7f43c38f">fTrackID</a> = -1</td></tr>
 <tr class="separator:a65153652f10815e4fb71eb6b7f43c38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b6d397097dd43c6541a59b5d3523034"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#a9b6d397097dd43c6541a59b5d3523034">fTrajectoryOnPlane</a> = nullptr</td></tr>
-<tr class="separator:a9b6d397097dd43c6541a59b5d3523034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af904b2a77f8a20743f53d9778bf333c9"><td class="memItemLeft" align="right" valign="top">TGraphErrors *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTracklet.html#af904b2a77f8a20743f53d9778bf333c9">fTrajectoryOnPlane</a> = nullptr</td></tr>
+<tr class="separator:af904b2a77f8a20743f53d9778bf333c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00014">14</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00015">15</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac51751d0b8e14471de190c7ed15c4133" name="ac51751d0b8e14471de190c7ed15c4133"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac51751d0b8e14471de190c7ed15c4133">&#9670;&#160;</a></span>LKTracklet()</h2>
@@ -186,7 +214,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00026">26</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00028">28</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
 </div>
 </div>
@@ -213,7 +241,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00027">27</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00029">29</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
 </div>
 </div>
@@ -242,11 +270,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classLKHelixTrack.html#a0cfe0140a519884a54c0eeb84658eef4">LKHelixTrack</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00110">110</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00102">102</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="LKHitArray_8cpp_source.html#l00716">LKHitArray::AddHit()</a>, and <a class="el" href="LKTracklet_8h_source.html#l00021">fHitArray</a>.</p>
+<p class="reference">References <a class="el" href="LKHitArray_8cpp_source.html#l00716">LKHitArray::AddHit()</a>, <a class="el" href="LKTracklet_8h_source.html#l00022">fHitArray</a>, <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>, <a class="el" href="LKTracklet_8h_source.html#l00018">fTrackID</a>, <a class="el" href="LKHit_8h_source.html#l00116">LKHit::GetHitID()</a>, and <a class="el" href="LKTracklet_8h_source.html#l00039">SetTrackID()</a>.</p>
 
 </div>
 </div>
@@ -282,6 +308,35 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac79f5d44f3aa19ac937b7d1019ecf0f1" name="ac79f5d44f3aa19ac937b7d1019ecf0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79f5d44f3aa19ac937b7d1019ecf0f1">&#9670;&#160;</a></span>ClearHits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKTracklet::ClearHits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00104">104</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKHitArray_8cpp_source.html#l00088">LKHitArray::Clear()</a>, <a class="el" href="LKTracklet_8h_source.html#l00022">fHitArray</a>, and <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>.</p>
+
+</div>
+</div>
 <a id="ad9f8452227c06cc2a0a1aae1c0d93ef1" name="ad9f8452227c06cc2a0a1aae1c0d93ef1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9f8452227c06cc2a0a1aae1c0d93ef1">&#9670;&#160;</a></span>DoDrawOnDetectorPlane()</h2>
 
@@ -305,7 +360,38 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00151">151</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00178">178</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4dd8d5eb1299a94076ea3a8a95a8d2b8" name="a4dd8d5eb1299a94076ea3a8a95a8d2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd8d5eb1299a94076ea3a8a95a8d2b8">&#9670;&#160;</a></span>DrawByDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LKTracklet::DrawByDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return true if to be displayed on eve. </p>
+
+<p>Reimplemented from <a class="el" href="classLKContainer.html#a04cc6293f0e597f92347f1ea833d0b93">LKContainer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00139">139</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +453,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classLKHelixTrack.html#a552e43fd84bdf52a0ce7c9ba5fc5d19e">LKHelixTrack</a>, <a class="el" href="classLKLinearTrack.html#ab43e3d5416f2075c9ffa03ed22c8941b">LKLinearTrack</a>, <a class="el" href="classLKMCTrack.html#a00103899bba6baa086ea24e27e8cf882">LKMCTrack</a>, and <a class="el" href="classLKExtrapolatedTrack.html#ab9d2428c04cea1ccdc5264d45ddb90c6">LKExtrapolatedTrack</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00156">TrajectoryOnPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00207">FillTrajectory()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00222">FillTrajectory3D()</a>.</p>
 
 </div>
 </div>
@@ -461,6 +547,186 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2bf16c489731ed2708087b578c588f34" name="a2bf16c489731ed2708087b578c588f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf16c489731ed2708087b578c588f34">&#9670;&#160;</a></span>FillTrajectory() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKTracklet::FillTrajectory </td>
+          <td>(</td>
+          <td class="paramtype">TGraphErrors *&#160;</td>
+          <td class="paramname"><em>graphTrack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00216">216</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8cpp_source.html#l00207">FillTrajectory()</a>.</p>
+
+</div>
+</div>
+<a id="a236432188cd71e8a7cdec38342dbcd42" name="a236432188cd71e8a7cdec38342dbcd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236432188cd71e8a7cdec38342dbcd42">&#9670;&#160;</a></span>FillTrajectory() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKTracklet::FillTrajectory </td>
+          <td>(</td>
+          <td class="paramtype">TGraphErrors *&#160;</td>
+          <td class="paramname"><em>graphTrack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(TVector3 pos)&#160;</td>
+          <td class="paramname"><em>fisout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00207">207</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classLKTracklet.html#ac119b1eecf00199f88c7470affa256b4">ExtrapolateByRatio()</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>, and <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00216">FillTrajectory()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00183">TrajectoryOnPlane()</a>.</p>
+
+</div>
+</div>
+<a id="af8a8046590ca6a68f6f0823af26b3e9b" name="af8a8046590ca6a68f6f0823af26b3e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a8046590ca6a68f6f0823af26b3e9b">&#9670;&#160;</a></span>FillTrajectory3D() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKTracklet::FillTrajectory3D </td>
+          <td>(</td>
+          <td class="paramtype">TGraph2DErrors *&#160;</td>
+          <td class="paramname"><em>graphTrack3D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00231">231</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8cpp_source.html#l00222">FillTrajectory3D()</a>.</p>
+
+</div>
+</div>
+<a id="a9ce5206a40fb088a3db55d8d3b0597ee" name="a9ce5206a40fb088a3db55d8d3b0597ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce5206a40fb088a3db55d8d3b0597ee">&#9670;&#160;</a></span>FillTrajectory3D() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKTracklet::FillTrajectory3D </td>
+          <td>(</td>
+          <td class="paramtype">TGraph2DErrors *&#160;</td>
+          <td class="paramname"><em>graphTrack3D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
+          <td class="paramname"><em>axis3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(TVector3 pos)&#160;</td>
+          <td class="paramname"><em>fisout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00222">222</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classLKTracklet.html#ac119b1eecf00199f88c7470affa256b4">ExtrapolateByRatio()</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>, and <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00231">FillTrajectory3D()</a>.</p>
+
+</div>
+</div>
 <a id="a5ae0a03680d1440277a5911aa5c73c6c" name="a5ae0a03680d1440277a5911aa5c73c6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ae0a03680d1440277a5911aa5c73c6c">&#9670;&#160;</a></span>Fit()</h2>
 
@@ -486,7 +752,37 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLKHelixTrack.html#a34d6f0dea14aa169532e02fe2c848cef">LKHelixTrack</a>, and <a class="el" href="classLKLinearTrack.html#aa0b5141fd38fabf8044605b4fbd54fc2">LKLinearTrack</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00058">58</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+
+</div>
+</div>
+<a id="af040158e0c7cfc67334d4fe2f5429120" name="af040158e0c7cfc67334d4fe2f5429120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af040158e0c7cfc67334d4fe2f5429120">&#9670;&#160;</a></span>GetHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKHit.html">LKHit</a> * LKTracklet::GetHit </td>
+          <td>(</td>
+          <td class="paramtype">Int_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00048">48</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00022">fHitArray</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00023">LKHitArray::GetHit()</a>.</p>
 
 </div>
 </div>
@@ -513,9 +809,103 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00043">43</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00050">50</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00021">fHitArray</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00022">fHitArray</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00101">TTHTTrackingTask::MakeTrack()</a>.</p>
+
+</div>
+</div>
+<a id="a2bfd5fa91bb24f1634fc7a84366eb9ee" name="a2bfd5fa91bb24f1634fc7a84366eb9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bfd5fa91bb24f1634fc7a84366eb9ee">&#9670;&#160;</a></span>GetHitID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int_t LKTracklet::GetHitID </td>
+          <td>(</td>
+          <td class="paramtype">Int_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00049">49</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00117">RemoveHit()</a>.</p>
+
+</div>
+</div>
+<a id="a972a547d6b41a4daa2fce021e2e1a6b0" name="a972a547d6b41a4daa2fce021e2e1a6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972a547d6b41a4daa2fce021e2e1a6b0">&#9670;&#160;</a></span>GetHitIDArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; Int_t &gt; * LKTracklet::GetHitIDArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00051">51</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>.</p>
+
+</div>
+</div>
+<a id="af3ad71f21dc35438c75bf395992b1b16" name="af3ad71f21dc35438c75bf395992b1b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ad71f21dc35438c75bf395992b1b16">&#9670;&#160;</a></span>GetNumHits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int_t LKTracklet::GetNumHits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00047">47</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKLinearTrack_8cpp_source.html#l00115">LKLinearTrack::Print()</a>.</p>
 
 </div>
 </div>
@@ -542,11 +932,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00040">40</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00044">44</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00018">fParentID</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00019">fParentID</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKEveTask_8cpp_source.html#l00295">LKEveTask::SelectTrack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKEveTask_8cpp_source.html#l00410">LKEveTask::SelectTrack()</a>.</p>
 
 </div>
 </div>
@@ -573,11 +963,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00041">41</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00045">45</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00019">fPDG</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00020">fPDG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKEveTask_8cpp_source.html#l00295">LKEveTask::SelectTrack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKEveTask_8cpp_source.html#l00410">LKEveTask::SelectTrack()</a>.</p>
 
 </div>
 </div>
@@ -604,11 +994,32 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00039">39</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00043">43</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00017">fTrackID</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00018">fTrackID</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKVertex_8cpp_source.html#l00043">LKVertex::AddTrack()</a>, and <a class="el" href="LKEveTask_8cpp_source.html#l00295">LKEveTask::SelectTrack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKVertex_8cpp_source.html#l00043">LKVertex::AddTrack()</a>, and <a class="el" href="LKEveTask_8cpp_source.html#l00410">LKEveTask::SelectTrack()</a>.</p>
+
+</div>
+</div>
+<a id="ae36c8eed13d166fa6fa95947b59e924c" name="ae36c8eed13d166fa6fa95947b59e924c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36c8eed13d166fa6fa95947b59e924c">&#9670;&#160;</a></span>IsHoldingHits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LKTracklet::IsHoldingHits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00130">130</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00022">fHitArray</a>, <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00803">LKHitArray::GetNumHits()</a>.</p>
 
 </div>
 </div>
@@ -754,11 +1165,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classLKHelixTrack.html#acfc78147ab9d2a13075a3fade06fb400">LKHelixTrack</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00117">117</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00107">107</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00021">fHitArray</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00753">LKHitArray::RemoveHit()</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00022">fHitArray</a>, <a class="el" href="LKTracklet_8h_source.html#l00023">fHitIDArray</a>, <a class="el" href="LKTracklet_8h_source.html#l00049">GetHitID()</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00753">LKHitArray::RemoveHit()</a>.</p>
 
 </div>
 </div>
@@ -786,9 +1195,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00036">36</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00040">40</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00018">fParentID</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00019">fParentID</a>.</p>
 
 </div>
 </div>
@@ -816,9 +1225,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00037">37</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00041">41</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00019">fPDG</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00020">fPDG</a>.</p>
 
 </div>
 </div>
@@ -846,11 +1255,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00035">35</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00039">39</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00017">fTrackID</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8h_source.html#l00018">fTrackID</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKHelixTrack_8cpp_source.html#l00317">LKHelixTrack::FinalizeHits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00110">AddHit()</a>, and <a class="el" href="LKHelixTrack_8cpp_source.html#l00288">LKHelixTrack::FinalizeHits()</a>.</p>
 
 </div>
 </div>
@@ -883,8 +1292,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6849fae19d8d0a1cfdc4b309304adc07" name="a6849fae19d8d0a1cfdc4b309304adc07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6849fae19d8d0a1cfdc4b309304adc07">&#9670;&#160;</a></span>TrajectoryOnPlane() <span class="overload">[1/3]</span></h2>
+<a id="ab74878bdbb4a8abbc1387a2af4dd6885" name="ab74878bdbb4a8abbc1387a2af4dd6885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74878bdbb4a8abbc1387a2af4dd6885">&#9670;&#160;</a></span>TrajectoryOnPlane() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -893,7 +1302,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGraph * LKTracklet::TrajectoryOnPlane </td>
+          <td class="memname">TGraphErrors * LKTracklet::TrajectoryOnPlane </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classLKDetectorPlane.html">LKDetectorPlane</a> *&#160;</td>
           <td class="paramname"><em>plane</em>, </td>
@@ -917,16 +1326,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classLKLinearTrack.html#a45a344deb8562694c4cfffa997800f5a">LKLinearTrack</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00202">202</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00188">188</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="LKDetectorPlane_8cpp_source.html#l00063">LKDetectorPlane::GetAxis1()</a>, <a class="el" href="LKDetectorPlane_8cpp_source.html#l00064">LKDetectorPlane::GetAxis2()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00156">TrajectoryOnPlane()</a>.</p>
+<p class="reference">References <a class="el" href="LKDetectorPlane_8h_source.html#l00059">LKDetectorPlane::GetAxis1()</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00060">LKDetectorPlane::GetAxis2()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00183">TrajectoryOnPlane()</a>.</p>
 
 </div>
 </div>
-<a id="ab80a659334e101c362febb35e8efb838" name="ab80a659334e101c362febb35e8efb838"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab80a659334e101c362febb35e8efb838">&#9670;&#160;</a></span>TrajectoryOnPlane() <span class="overload">[2/3]</span></h2>
+<a id="a7c1f200212e0703000c18ed0e15f2a9d" name="a7c1f200212e0703000c18ed0e15f2a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1f200212e0703000c18ed0e15f2a9d">&#9670;&#160;</a></span>TrajectoryOnPlane() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -935,7 +1342,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGraph * LKTracklet::TrajectoryOnPlane </td>
+          <td class="memname">TGraphErrors * LKTracklet::TrajectoryOnPlane </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
           <td class="paramname"><em>axis1</em>, </td>
@@ -971,18 +1378,18 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classLKMCTrack.html#a434b8e370cad4f5c8b789fcde2447412">LKMCTrack</a>, and <a class="el" href="classLKExtrapolatedTrack.html#aeb695add759344fec4700d827484f22a">LKExtrapolatedTrack</a>.</p>
+<p>Reimplemented in <a class="el" href="classLKMCTrack.html#ab3eaccff6c00ccaae551ea0aa1ee0e05">LKMCTrack</a>, and <a class="el" href="classLKExtrapolatedTrack.html#a705471ece1025d8eec09c96409fa5a22">LKExtrapolatedTrack</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00156">156</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00183">183</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classLKTracklet.html#ac119b1eecf00199f88c7470affa256b4">ExtrapolateByRatio()</a>, <a class="el" href="LKTracklet_8h_source.html#l00023">fTrajectoryOnPlane</a>, and <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8cpp_source.html#l00207">FillTrajectory()</a>, and <a class="el" href="LKTracklet_8h_source.html#l00025">fTrajectoryOnPlane</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00188">TrajectoryOnPlane()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00182">TrajectoryOnPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00202">TrajectoryOnPlane()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00196">TrajectoryOnPlane()</a>.</p>
 
 </div>
 </div>
-<a id="a0c5af713c67389957450295823fe2213" name="a0c5af713c67389957450295823fe2213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c5af713c67389957450295823fe2213">&#9670;&#160;</a></span>TrajectoryOnPlane() <span class="overload">[3/3]</span></h2>
+<a id="a2a8099598adac79de118026bd7eda2c6" name="a2a8099598adac79de118026bd7eda2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8099598adac79de118026bd7eda2c6">&#9670;&#160;</a></span>TrajectoryOnPlane() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -991,7 +1398,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGraph * LKTracklet::TrajectoryOnPlane </td>
+          <td class="memname">TGraphErrors * LKTracklet::TrajectoryOnPlane </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>&#160;</td>
           <td class="paramname"><em>axis1</em>, </td>
@@ -1021,11 +1428,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classLKLinearTrack.html#a890af960c28181fac2ef82a286b73d25">LKLinearTrack</a>, and <a class="el" href="classLKExtrapolatedTrack.html#ae8ae01d35d03e6ea33047bf2f2b9f01a">LKExtrapolatedTrack</a>.</p>
+<p>Reimplemented in <a class="el" href="classLKExtrapolatedTrack.html#ade5ed6da6624f1f196dcb6a7129e0221">LKExtrapolatedTrack</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00182">182</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8cpp_source.html#l00196">196</a> of file <a class="el" href="LKTracklet_8cpp_source.html">LKTracklet.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTracklet_8cpp_source.html#l00156">TrajectoryOnPlane()</a>.</p>
+<p class="reference">References <a class="el" href="LKTracklet_8cpp_source.html#l00183">TrajectoryOnPlane()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1457,35 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00021">21</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00022">22</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKHelixTrack_8cpp_source.html#l00272">LKHelixTrack::AddHit()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00102">AddHit()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00028">LKHelixTrack::Clear()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00928">LKHelixTrack::Continuity()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00114">LKHelixTrack::Copy()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00317">LKHelixTrack::FinalizeHits()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00234">LKHelixTrack::Fit()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00125">LKLinearTrack::Fit()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00251">LKHelixTrack::FitPlane()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00411">LKHelixTrack::GetChargeSum()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00460">LKHelixTrack::GetHit()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00462">LKHelixTrack::GetHitArray()</a>, <a class="el" href="LKTracklet_8h_source.html#l00043">GetHitArray()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00405">LKHelixTrack::GetMean()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00365">LKHelixTrack::PerpLine()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00389">LKHelixTrack::PerpPlane()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00054">LKHelixTrack::Print()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00278">LKHelixTrack::RemoveHit()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00107">RemoveHit()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00022">LKLinearTrack::SetLine()</a>, and <a class="el" href="LKHelixTrack_8cpp_source.html#l00302">LKHelixTrack::SortHits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00110">AddHit()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00104">ClearHits()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00891">LKHelixTrack::Continuity()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00115">LKHelixTrack::Copy()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00288">LKHelixTrack::FinalizeHits()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00235">LKHelixTrack::Fit()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00133">LKLinearTrack::Fit()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00252">LKHelixTrack::FitPlane()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00382">LKHelixTrack::GetChargeSum()</a>, <a class="el" href="LKTracklet_8h_source.html#l00048">GetHit()</a>, <a class="el" href="LKTracklet_8h_source.html#l00050">GetHitArray()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00376">LKHelixTrack::GetMean()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00130">IsHoldingHits()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00336">LKHelixTrack::PerpLine()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00360">LKHelixTrack::PerpPlane()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00051">LKHelixTrack::Print()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00115">LKLinearTrack::Print()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00117">RemoveHit()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00022">LKLinearTrack::SetLine()</a>, and <a class="el" href="LKHelixTrack_8cpp_source.html#l00273">LKHelixTrack::SortHits()</a>.</p>
+
+</div>
+</div>
+<a id="a6e27a7641ba6768f5cc73ac51d71a807" name="a6e27a7641ba6768f5cc73ac51d71a807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e27a7641ba6768f5cc73ac51d71a807">&#9670;&#160;</a></span>fHitIDArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;Int_t&gt; LKTracklet::fHitIDArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00023">23</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00110">AddHit()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00104">ClearHits()</a>, <a class="el" href="LKTracklet_8h_source.html#l00049">GetHitID()</a>, <a class="el" href="LKTracklet_8h_source.html#l00051">GetHitIDArray()</a>, <a class="el" href="LKTracklet_8h_source.html#l00047">GetNumHits()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00130">IsHoldingHits()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00115">LKLinearTrack::Print()</a>, and <a class="el" href="LKTracklet_8cpp_source.html#l00117">RemoveHit()</a>.</p>
 
 </div>
 </div>
@@ -1078,9 +1511,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Vertex ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00018">18</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00019">19</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00114">LKHelixTrack::Copy()</a>, <a class="el" href="LKTracklet_8h_source.html#l00040">GetParentID()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00054">LKHelixTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00035">LKMCTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00067">LKMCTrack::SetMCTrack()</a>, <a class="el" href="LKTracklet_8h_source.html#l00036">SetParentID()</a>, and <a class="el" href="LKMCTrack_8cpp_source.html#l00227">LKMCTrack::TrajectoryOnPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00115">LKHelixTrack::Copy()</a>, <a class="el" href="LKTracklet_8h_source.html#l00044">GetParentID()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00051">LKHelixTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00045">LKMCTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00092">LKMCTrack::SetMCTrack()</a>, <a class="el" href="LKTracklet_8h_source.html#l00040">SetParentID()</a>, and <a class="el" href="LKMCTrack_8cpp_source.html#l00257">LKMCTrack::TrajectoryOnPlane()</a>.</p>
 
 </div>
 </div>
@@ -1104,9 +1537,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00019">19</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00020">20</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKTracklet_8h_source.html#l00041">GetPDG()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00035">LKMCTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00067">LKMCTrack::SetMCTrack()</a>, <a class="el" href="LKTracklet_8h_source.html#l00037">SetPDG()</a>, and <a class="el" href="LKMCTrack_8cpp_source.html#l00227">LKMCTrack::TrajectoryOnPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKTracklet_8h_source.html#l00045">GetPDG()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00045">LKMCTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00092">LKMCTrack::SetMCTrack()</a>, <a class="el" href="LKTracklet_8h_source.html#l00041">SetPDG()</a>, and <a class="el" href="LKMCTrack_8cpp_source.html#l00257">LKMCTrack::TrajectoryOnPlane()</a>.</p>
 
 </div>
 </div>
@@ -1130,14 +1563,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00017">17</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00018">18</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00114">LKHelixTrack::Copy()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00317">LKHelixTrack::FinalizeHits()</a>, <a class="el" href="LKTracklet_8h_source.html#l00039">GetTrackID()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00022">LKHelixTrack::LKHelixTrack()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00054">LKHelixTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00035">LKMCTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00067">LKMCTrack::SetMCTrack()</a>, and <a class="el" href="LKTracklet_8h_source.html#l00035">SetTrackID()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKTracklet_8cpp_source.html#l00110">AddHit()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00006">ClassImp()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00115">LKHelixTrack::Copy()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00288">LKHelixTrack::FinalizeHits()</a>, <a class="el" href="LKTracklet_8h_source.html#l00043">GetTrackID()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00022">LKHelixTrack::LKHelixTrack()</a>, <a class="el" href="LKHelixTrack_8cpp_source.html#l00051">LKHelixTrack::Print()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00115">LKLinearTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00045">LKMCTrack::Print()</a>, <a class="el" href="LKMCTrack_8cpp_source.html#l00092">LKMCTrack::SetMCTrack()</a>, and <a class="el" href="LKTracklet_8h_source.html#l00039">SetTrackID()</a>.</p>
 
 </div>
 </div>
-<a id="a9b6d397097dd43c6541a59b5d3523034" name="a9b6d397097dd43c6541a59b5d3523034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b6d397097dd43c6541a59b5d3523034">&#9670;&#160;</a></span>fTrajectoryOnPlane</h2>
+<a id="af904b2a77f8a20743f53d9778bf333c9" name="af904b2a77f8a20743f53d9778bf333c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af904b2a77f8a20743f53d9778bf333c9">&#9670;&#160;</a></span>fTrajectoryOnPlane</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1146,7 +1579,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGraph* LKTracklet::fTrajectoryOnPlane = nullptr</td>
+          <td class="memname">TGraphErrors* LKTracklet::fTrajectoryOnPlane = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1156,9 +1589,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00023">23</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKTracklet_8h_source.html#l00025">25</a> of file <a class="el" href="LKTracklet_8h_source.html">LKTracklet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKMCTrack_8cpp_source.html#l00227">LKMCTrack::TrajectoryOnPlane()</a>, <a class="el" href="LKLinearTrack_8cpp_source.html#l00207">LKLinearTrack::TrajectoryOnPlane()</a>, <a class="el" href="LKExtrapolatedTrack_8cpp_source.html#l00218">LKExtrapolatedTrack::TrajectoryOnPlane()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00156">TrajectoryOnPlane()</a>, and <a class="el" href="LKExtrapolatedTrack_8cpp_source.html#l00198">LKExtrapolatedTrack::TrajectoryOnPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKMCTrack_8cpp_source.html#l00257">LKMCTrack::TrajectoryOnPlane()</a>, <a class="el" href="LKExtrapolatedTrack_8cpp_source.html#l00218">LKExtrapolatedTrack::TrajectoryOnPlane()</a>, <a class="el" href="LKTracklet_8cpp_source.html#l00183">TrajectoryOnPlane()</a>, and <a class="el" href="LKExtrapolatedTrack_8cpp_source.html#l00198">LKExtrapolatedTrack::TrajectoryOnPlane()</a>.</p>
 
 </div>
 </div>

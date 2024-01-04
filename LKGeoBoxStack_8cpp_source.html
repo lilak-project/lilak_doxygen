@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
   <div class="headertitle"><div class="title">LKGeoBoxStack.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="LKGeoBoxStack_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;LKLogger.h&quot;</span></div>
+<a href="LKGeoBoxStack_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKLogger_8h.html">LKLogger.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="LKGeoBoxStack_8h.html">LKGeoBoxStack.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -162,7 +162,7 @@ $(function() {
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    Int_t ny = 1;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    Double_t y1=pos.<a class="code hl_function" href="classLKVector3.html#a5195530f0a8e98fb50301c1a0711723b">At</a>(a2)-.5*dis.<a class="code hl_function" href="classLKVector3.html#a5195530f0a8e98fb50301c1a0711723b">At</a>(a2);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Double_t y2=pos.<a class="code hl_function" href="classLKVector3.html#a5195530f0a8e98fb50301c1a0711723b">At</a>(a2)+.5*dis.<a class="code hl_function" href="classLKVector3.html#a5195530f0a8e98fb50301c1a0711723b">At</a>(a2);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Double_t <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>=pos.<a class="code hl_function" href="classLKVector3.html#a5195530f0a8e98fb50301c1a0711723b">At</a>(a2)+.5*dis.<a class="code hl_function" href="classLKVector3.html#a5195530f0a8e98fb50301c1a0711723b">At</a>(a2);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    Double_t max = <a class="code hl_function" href="classLKGeoBoxStack.html#a0410896c5a0b4f8ff741c8211bbcb466">GetStackAxisMax</a>();</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    Double_t min = <a class="code hl_function" href="classLKGeoBoxStack.html#ad109cfa342f0805c7e066f1c04af09bc">GetStackAxisMin</a>();</div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a2 == <a class="code hl_variable" href="classLKGeoBoxStack.html#ac30f42fdf378ff9c9f6dca2d8376fbdd">fStackAxis</a>) {</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        ny = <a class="code hl_variable" href="classLKGeoBoxStack.html#ae6b7d9445f83b46bca7387a6728bcc64">fNumStacks</a>;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        y1 = min;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        y2 = max;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a> = max;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">if</span> (name.IsNull())</div>
@@ -184,7 +184,7 @@ $(function() {
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span> (title.Index(<span class="stringliteral">&quot;;&quot;</span>)&lt;0)</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        title = title+<span class="stringliteral">&quot;;&quot;</span>+<a class="code hl_function" href="classLKVector3.html#a0df3f5ad47c13291df21071466fa8f8b">LKVector3::AxisName</a>(a1)+<span class="stringliteral">&quot;;&quot;</span>+<a class="code hl_function" href="classLKVector3.html#a0df3f5ad47c13291df21071466fa8f8b">LKVector3::AxisName</a>(a2);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">auto</span> hist = <span class="keyword">new</span> TH2D(name,title,nx,x1,x2,ny,y1,y2);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">auto</span> hist = <span class="keyword">new</span> TH2D(name,title,nx,x1,x2,ny,y1,<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> hist;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
@@ -234,6 +234,8 @@ $(function() {
 <div class="ttc" id="aLKGeoBoxStack_8cpp_html_a6413e1abe23e0e199e08b05b10d0b5bc"><div class="ttname"><a href="LKGeoBoxStack_8cpp.html#a6413e1abe23e0e199e08b05b10d0b5bc">ClassImp</a></div><div class="ttdeci">ClassImp(LKGeoBoxStack) LKGeoBoxStack</div><div class="ttdef"><b>Definition</b> <a href="LKGeoBoxStack_8cpp_source.html#l00005">LKGeoBoxStack.cpp:5</a></div></div>
 <div class="ttc" id="aLKGeoBoxStack_8h_html"><div class="ttname"><a href="LKGeoBoxStack_8h.html">LKGeoBoxStack.h</a></div></div>
 <div class="ttc" id="aLKGeoBoxStack_8h_html_ab37a20bb8adba98db5014fab19427b75"><div class="ttname"><a href="LKGeoBoxStack_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a></div><div class="ttdeci">LKVector3::Axis axis_t</div><div class="ttdef"><b>Definition</b> <a href="LKGeoBoxStack_8h_source.html#l00014">LKGeoBoxStack.h:14</a></div></div>
+<div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a5347e514ebe985fb371754ffd2b5ff83"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a></div><div class="ttdeci">double y2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00104">LKHTLineTracker3D.cpp:104</a></div></div>
+<div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_abdf08b50834a103803bcbdff6e038c58"><div class="ttname"><a href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a></div><div class="ttdeci">#define e_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00037">LKLogger.h:37</a></div></div>
 <div class="ttc" id="aclassLKGeoBoxStack_html"><div class="ttname"><a href="classLKGeoBoxStack.html">LKGeoBoxStack</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeoBoxStack_8h_source.html#l00016">LKGeoBoxStack.h:17</a></div></div>
 <div class="ttc" id="aclassLKGeoBoxStack_html_a01eebb4fb5d156b77948978b587f99f4"><div class="ttname"><a href="classLKGeoBoxStack.html#a01eebb4fb5d156b77948978b587f99f4">LKGeoBoxStack::Print</a></div><div class="ttdeci">virtual void Print(Option_t *option=&quot;&quot;) const</div><div class="ttdef"><b>Definition</b> <a href="LKGeoBoxStack_8cpp_source.html#l00018">LKGeoBoxStack.cpp:18</a></div></div>

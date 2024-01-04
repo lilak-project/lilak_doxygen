@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -83,11 +83,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa793a0808c89bc7ddea846832e22c275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad247d38e0bc23ae85683c074dd747ebb"><td class="memItemLeft" align="right" valign="top">TString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#ad247d38e0bc23ae85683c074dd747ebb">GetGroup</a> () const</td></tr>
 <tr class="separator:ad247d38e0bc23ae85683c074dd747ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61160e27aec3dd36e3ab08d3fddf198"><td class="memItemLeft" align="right" valign="top">TString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#ab61160e27aec3dd36e3ab08d3fddf198">GetGroup</a> (int ith)</td></tr>
+<tr class="separator:ab61160e27aec3dd36e3ab08d3fddf198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaedbde95bd501604cc1008ef4c6d39b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#aaedbde95bd501604cc1008ef4c6d39b4">GetInt</a> (int i=-1) const</td></tr>
 <tr class="memdesc:aaedbde95bd501604cc1008ef4c6d39b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get parameter in int.  <br /></td></tr>
 <tr class="separator:aaedbde95bd501604cc1008ef4c6d39b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc84b9b8d446581d7a473f6be5158fb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#a3fc84b9b8d446581d7a473f6be5158fb">GetLine</a> ()</td></tr>
 <tr class="separator:a3fc84b9b8d446581d7a473f6be5158fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8845a613d286399b0d9464f3f50358e"><td class="memItemLeft" align="right" valign="top">Long64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#ad8845a613d286399b0d9464f3f50358e">GetLong</a> (int i=-1) const</td></tr>
+<tr class="memdesc:ad8845a613d286399b0d9464f3f50358e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get parameter in int.  <br /></td></tr>
+<tr class="separator:ad8845a613d286399b0d9464f3f50358e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae665be6d98b513956bd4a97ed332f7c4"><td class="memItemLeft" align="right" valign="top">TString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#ae665be6d98b513956bd4a97ed332f7c4">GetMainName</a> () const</td></tr>
 <tr class="separator:ae665be6d98b513956bd4a97ed332f7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f30cacddc2bfd81a28506a0e2e1a6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#a41f30cacddc2bfd81a28506a0e2e1a6c">GetN</a> () const</td></tr>
@@ -148,6 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a82aa32c7894f751e3875c385c96de145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d709c8a9685bfed17896ec38be9e3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#a2d709c8a9685bfed17896ec38be9e3d2">SetPar</a> (TString name, TString raw, TString value, TString comment, int parameterType)</td></tr>
 <tr class="separator:a2d709c8a9685bfed17896ec38be9e3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8d68776e1300e69c337d800329135b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#a5d8d68776e1300e69c337d800329135b">SetValue</a> (TString value)</td></tr>
+<tr class="separator:a5d8d68776e1300e69c337d800329135b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667aa4c5a532e1dceb3ad75faf513456"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKParameter.html#a667aa4c5a532e1dceb3ad75faf513456">~LKParameter</a> ()</td></tr>
 <tr class="separator:a667aa4c5a532e1dceb3ad75faf513456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -313,9 +320,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00234">234</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00251">251</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00124">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00081">GetInt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00141">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00098">GetInt()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00086">GetLong()</a>.</p>
 
 </div>
 </div>
@@ -343,9 +350,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00060">60</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00065">65</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00078">fComment</a>, <a class="el" href="LKParameter_8h_source.html#l00074">fGroup</a>, <a class="el" href="LKParameter_8h_source.html#l00075">fMainName</a>, <a class="el" href="LKParameter_8h_source.html#l00079">fNumValues</a>, <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>, <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, and <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00082">fComment</a>, <a class="el" href="LKParameter_8h_source.html#l00078">fGroup</a>, <a class="el" href="LKParameter_8h_source.html#l00079">fMainName</a>, <a class="el" href="LKParameter_8h_source.html#l00083">fNumValues</a>, <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, and <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00021">SetLineComment()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
 
@@ -369,9 +376,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in <a class="el" href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00154">154</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00171">171</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>, <a class="el" href="LKVector3_8h_source.html#l00022">LKVector3::kI</a>, <a class="el" href="LKVector3_8h_source.html#l00023">LKVector3::kJ</a>, <a class="el" href="LKVector3_8h_source.html#l00024">LKVector3::kK</a>, <a class="el" href="LKVector3_8h_source.html#l00022">LKVector3::kMI</a>, <a class="el" href="LKVector3_8h_source.html#l00023">LKVector3::kMJ</a>, <a class="el" href="LKVector3_8h_source.html#l00024">LKVector3::kMK</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kMX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kMY</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kMZ</a>, <a class="el" href="LKVector3_8h_source.html#l00018">LKVector3::kNon</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, and <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>, <a class="el" href="LKVector3_8h_source.html#l00022">LKVector3::kI</a>, <a class="el" href="LKVector3_8h_source.html#l00023">LKVector3::kJ</a>, <a class="el" href="LKVector3_8h_source.html#l00024">LKVector3::kK</a>, <a class="el" href="LKVector3_8h_source.html#l00022">LKVector3::kMI</a>, <a class="el" href="LKVector3_8h_source.html#l00023">LKVector3::kMJ</a>, <a class="el" href="LKVector3_8h_source.html#l00024">LKVector3::kMK</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kMX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kMY</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kMZ</a>, <a class="el" href="LKVector3_8h_source.html#l00018">LKVector3::kNon</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, and <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>.</p>
 
 </div>
 </div>
@@ -393,11 +400,11 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in bool. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00092">92</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00109">109</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00228">ProcessTypeError()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00245">ProcessTypeError()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00180">GetVBool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00197">GetVBool()</a>.</p>
 
 </div>
 </div>
@@ -419,9 +426,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in Color_t. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00124">124</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00141">141</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00234">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00228">ProcessTypeError()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00251">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00245">ProcessTypeError()</a>.</p>
 
 </div>
 </div>
@@ -448,11 +455,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00029">29</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00030">30</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00078">fComment</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00082">fComment</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00233">LKParameterContainer::AddParameterContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00268">LKParameterContainer::AddParameterContainer()</a>.</p>
 
 </div>
 </div>
@@ -474,16 +481,16 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in double. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00105">105</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00122">122</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00234">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00228">ProcessTypeError()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00251">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00245">ProcessTypeError()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8h_source.html#l00055">GetSize()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00175">GetV3()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00204">GetVDouble()</a>, <a class="el" href="LKParameter_8h_source.html#l00056">GetX()</a>, <a class="el" href="LKParameter_8h_source.html#l00057">GetY()</a>, and <a class="el" href="LKParameter_8h_source.html#l00058">GetZ()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8h_source.html#l00059">GetSize()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00192">GetV3()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00221">GetVDouble()</a>, <a class="el" href="LKParameter_8h_source.html#l00060">GetX()</a>, <a class="el" href="LKParameter_8h_source.html#l00061">GetY()</a>, and <a class="el" href="LKParameter_8h_source.html#l00062">GetZ()</a>.</p>
 
 </div>
 </div>
 <a id="ad247d38e0bc23ae85683c074dd747ebb" name="ad247d38e0bc23ae85683c074dd747ebb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad247d38e0bc23ae85683c074dd747ebb">&#9670;&#160;</a></span>GetGroup()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad247d38e0bc23ae85683c074dd747ebb">&#9670;&#160;</a></span>GetGroup() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,11 +512,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00027">27</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00028">28</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00074">fGroup</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00078">fGroup</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00812">LKParameterContainer::CreateGroupContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l01012">LKParameterContainer::CreateGroupContainer()</a>.</p>
+
+</div>
+</div>
+<a id="ab61160e27aec3dd36e3ab08d3fddf198" name="ab61160e27aec3dd36e3ab08d3fddf198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab61160e27aec3dd36e3ab08d3fddf198">&#9670;&#160;</a></span>GetGroup() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TString LKParameter::GetGroup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ith</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00271">271</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,11 +558,11 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in int. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00081">81</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00098">98</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00234">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00228">ProcessTypeError()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00251">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00245">ProcessTypeError()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00192">GetVInt()</a>, and <a class="el" href="LKParameter_8h_source.html#l00054">GetWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00209">GetVInt()</a>, and <a class="el" href="LKParameter_8h_source.html#l00058">GetWidth()</a>.</p>
 
 </div>
 </div>
@@ -562,9 +589,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00035">35</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00038">38</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>.</p>
+
+</div>
+</div>
+<a id="ad8845a613d286399b0d9464f3f50358e" name="ad8845a613d286399b0d9464f3f50358e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8845a613d286399b0d9464f3f50358e">&#9670;&#160;</a></span>GetLong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Long64_t LKParameter::GetLong </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em> = <code>-1</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get parameter in int. </p>
+
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00086">86</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00251">CheckFormulaValidity()</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00245">ProcessTypeError()</a>.</p>
 
 </div>
 </div>
@@ -591,9 +642,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00028">28</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00029">29</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00075">fMainName</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00079">fMainName</a>.</p>
 
 </div>
 </div>
@@ -620,11 +671,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00032">32</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00033">33</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00079">fNumValues</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00083">fNumValues</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00180">GetVBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00204">GetVDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00192">GetVInt()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00216">GetVString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00197">GetVBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00221">GetVDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00209">GetVInt()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00233">GetVString()</a>.</p>
 
 </div>
 </div>
@@ -651,9 +702,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00030">30</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00031">31</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00233">LKParameterContainer::AddParameterContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00268">LKParameterContainer::AddParameterContainer()</a>.</p>
 
 </div>
 </div>
@@ -681,9 +732,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00055">55</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00059">59</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>.</p>
 
 </div>
 </div>
@@ -705,11 +756,11 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in TString. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00116">116</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00133">133</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, and <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, and <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00216">GetVString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00233">GetVString()</a>.</p>
 
 </div>
 </div>
@@ -736,11 +787,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00033">33</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00034">34</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00233">LKParameterContainer::AddParameterContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00268">LKParameterContainer::AddParameterContainer()</a>.</p>
 
 </div>
 </div>
@@ -761,9 +812,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get parameter in TVector3. </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00175">175</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00192">192</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>.</p>
 
 </div>
 </div>
@@ -790,11 +841,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00031">31</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00032">32</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00233">LKParameterContainer::AddParameterContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameterContainer_8cpp_source.html#l00268">LKParameterContainer::AddParameterContainer()</a>.</p>
 
 </div>
 </div>
@@ -813,9 +864,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00180">180</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00197">197</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00092">GetBool()</a>, and <a class="el" href="LKParameter_8h_source.html#l00032">GetN()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00109">GetBool()</a>, and <a class="el" href="LKParameter_8h_source.html#l00033">GetN()</a>.</p>
 
 </div>
 </div>
@@ -842,9 +893,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00066">66</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00070">70</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00192">GetVInt()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00209">GetVInt()</a>.</p>
 
 </div>
 </div>
@@ -863,11 +914,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00204">204</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00221">221</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>, and <a class="el" href="LKParameter_8h_source.html#l00032">GetN()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>, and <a class="el" href="LKParameter_8h_source.html#l00033">GetN()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8h_source.html#l00067">GetVSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8h_source.html#l00071">GetVSize()</a>.</p>
 
 </div>
 </div>
@@ -886,11 +937,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00192">192</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00209">209</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00081">GetInt()</a>, and <a class="el" href="LKParameter_8h_source.html#l00032">GetN()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00098">GetInt()</a>, and <a class="el" href="LKParameter_8h_source.html#l00033">GetN()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8h_source.html#l00066">GetVColor()</a>, and <a class="el" href="LKParameter_8h_source.html#l00065">GetVWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8h_source.html#l00070">GetVColor()</a>, and <a class="el" href="LKParameter_8h_source.html#l00069">GetVWidth()</a>.</p>
 
 </div>
 </div>
@@ -917,9 +968,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00067">67</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00071">71</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00204">GetVDouble()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00221">GetVDouble()</a>.</p>
 
 </div>
 </div>
@@ -938,9 +989,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00216">216</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00233">233</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00032">GetN()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00116">GetString()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00033">GetN()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00133">GetString()</a>.</p>
 
 </div>
 </div>
@@ -967,9 +1018,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00065">65</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00069">69</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00192">GetVInt()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00209">GetVInt()</a>.</p>
 
 </div>
 </div>
@@ -997,9 +1048,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00054">54</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00058">58</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00081">GetInt()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00098">GetInt()</a>.</p>
 
 </div>
 </div>
@@ -1026,9 +1077,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00056">56</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00060">60</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>.</p>
 
 </div>
 </div>
@@ -1055,9 +1106,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00057">57</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00061">61</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>.</p>
 
 </div>
 </div>
@@ -1084,9 +1135,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00058">58</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00062">62</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>.</p>
 
 </div>
 </div>
@@ -1113,9 +1164,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00043">43</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00046">46</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
 </div>
 </div>
@@ -1142,9 +1193,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00041">41</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00044">44</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
 </div>
 </div>
@@ -1171,9 +1222,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00044">44</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00047">47</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
 </div>
 </div>
@@ -1200,9 +1251,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00040">40</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00043">43</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
 </div>
 </div>
@@ -1229,9 +1280,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00042">42</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00045">45</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
 </div>
 </div>
@@ -1259,9 +1310,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00072">72</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00077">77</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00038">e_info</a>, <a class="el" href="LKParameter_8h_source.html#l00078">fComment</a>, <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>, and <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>.</p>
+<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00038">e_info</a>, <a class="el" href="LKParameter_8h_source.html#l00082">fComment</a>, <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>, and <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>.</p>
 
 </div>
 </div>
@@ -1289,11 +1340,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00228">228</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00245">245</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00040">e_error</a>, and <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>.</p>
+<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00040">e_error</a>, and <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00092">GetBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00124">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00081">GetInt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00109">GetBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00141">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00098">GetInt()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00086">GetLong()</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1366,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00021">21</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00078">fComment</a>, and <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00082">fComment</a>, and <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>.</p>
 
 </div>
 </div>
@@ -1365,9 +1416,33 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00028">28</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00078">fComment</a>, <a class="el" href="LKParameter_8h_source.html#l00074">fGroup</a>, <a class="el" href="LKParameter_8h_source.html#l00075">fMainName</a>, <a class="el" href="LKParameter_8h_source.html#l00079">fNumValues</a>, <a class="el" href="LKParameter_8h_source.html#l00088">fType</a>, <a class="el" href="LKParameter_8h_source.html#l00077">fValue</a>, and <a class="el" href="LKParameter_8h_source.html#l00080">fValueArray</a>.</p>
+<p class="reference">References <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00082">fComment</a>, <a class="el" href="LKParameter_8h_source.html#l00078">fGroup</a>, <a class="el" href="LKParameter_8h_source.html#l00079">fMainName</a>, <a class="el" href="LKParameter_8h_source.html#l00092">fType</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00052">SetValue()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00012">LKParameter()</a>.</p>
+
+</div>
+</div>
+<a id="a5d8d68776e1300e69c337d800329135b" name="a5d8d68776e1300e69c337d800329135b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8d68776e1300e69c337d800329135b">&#9670;&#160;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKParameter::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">TString&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKParameter_8cpp_source.html#l00052">52</a> of file <a class="el" href="LKParameter_8cpp_source.html">LKParameter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKParameter_8h_source.html#l00083">fNumValues</a>, <a class="el" href="LKParameter_8h_source.html#l00081">fValue</a>, and <a class="el" href="LKParameter_8h_source.html#l00084">fValueArray</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
 
 </div>
 </div>
@@ -1392,9 +1467,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00078">78</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00082">82</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00029">GetComment()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00072">Print()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00021">SetLineComment()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00030">GetComment()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00077">Print()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00021">SetLineComment()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
 
 </div>
 </div>
@@ -1420,9 +1495,9 @@ Private Attributes</h2></td></tr>
 
 <p>group of parameter </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00074">74</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00078">78</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00027">GetGroup()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00028">GetGroup()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
 
 </div>
 </div>
@@ -1448,9 +1523,9 @@ Private Attributes</h2></td></tr>
 
 <p>group of parameter </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00075">75</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00079">79</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00028">GetMainName()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00029">GetMainName()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
 
 </div>
 </div>
@@ -1474,9 +1549,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00079">79</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00083">83</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00032">GetN()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00033">GetN()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00052">SetValue()</a>.</p>
 
 </div>
 </div>
@@ -1501,9 +1576,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>0 : standard 1 : comment 2 : temporary 3 : conditional 4 : multiple </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00088">88</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00092">92</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00033">GetType()</a>, <a class="el" href="LKParameter_8h_source.html#l00043">IsConditional()</a>, <a class="el" href="LKParameter_8h_source.html#l00041">IsLineComment()</a>, <a class="el" href="LKParameter_8h_source.html#l00044">IsMultiple()</a>, <a class="el" href="LKParameter_8h_source.html#l00040">IsStandard()</a>, <a class="el" href="LKParameter_8h_source.html#l00042">IsTemporary()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00072">Print()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00021">SetLineComment()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8h_source.html#l00034">GetType()</a>, <a class="el" href="LKParameter_8h_source.html#l00046">IsConditional()</a>, <a class="el" href="LKParameter_8h_source.html#l00044">IsLineComment()</a>, <a class="el" href="LKParameter_8h_source.html#l00047">IsMultiple()</a>, <a class="el" href="LKParameter_8h_source.html#l00043">IsStandard()</a>, <a class="el" href="LKParameter_8h_source.html#l00045">IsTemporary()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00077">Print()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00021">SetLineComment()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
 
 </div>
 </div>
@@ -1529,9 +1604,9 @@ Private Attributes</h2></td></tr>
 
 <p>configured value </p>
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00077">77</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00081">81</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00154">GetAxis()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00092">GetBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00124">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00081">GetInt()</a>, <a class="el" href="LKParameter_8h_source.html#l00035">GetLine()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00116">GetString()</a>, <a class="el" href="LKParameter_8h_source.html#l00031">GetValue()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00072">Print()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00228">ProcessTypeError()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00171">GetAxis()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00109">GetBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00141">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00098">GetInt()</a>, <a class="el" href="LKParameter_8h_source.html#l00038">GetLine()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00086">GetLong()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00133">GetString()</a>, <a class="el" href="LKParameter_8h_source.html#l00032">GetValue()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00077">Print()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00245">ProcessTypeError()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00052">SetValue()</a>.</p>
 
 </div>
 </div>
@@ -1555,9 +1630,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00080">80</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKParameter_8h_source.html#l00084">84</a> of file <a class="el" href="LKParameter_8h_source.html">LKParameter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00060">Clear()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00154">GetAxis()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00092">GetBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00124">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00105">GetDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00081">GetInt()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00116">GetString()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00028">SetPar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKParameter_8cpp_source.html#l00065">Clear()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00171">GetAxis()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00109">GetBool()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00141">GetColor()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00122">GetDouble()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00098">GetInt()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00086">GetLong()</a>, <a class="el" href="LKParameter_8cpp_source.html#l00133">GetString()</a>, and <a class="el" href="LKParameter_8cpp_source.html#l00052">SetValue()</a>.</p>
 
 </div>
 </div>

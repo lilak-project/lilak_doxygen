@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="LKTask_8h.html">LKTask.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="LKHelixTrack_8h.html">LKHelixTrack.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="LKTpcHit_8h.html">LKTpcHit.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;LKTpcHit.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="LKHitArray_8h.html">LKHitArray.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="LHTpc_8h.html">LHTpc.h</a>&quot;</span></div>
@@ -124,10 +124,10 @@ $(function() {
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#a3f98bcda2e530e4cbb1637c41ea44dc1">ReturnBadHitsToPadPlane</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#ac841ba50d649afb5f367d66aced301c8">CorrelateHitWithTrackCandidate</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track, <a class="code hl_class" href="classLKTpcHit.html">LKTpcHit</a> *hit);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#aa12458253a7d9c308c5226893b7bcc99">CorrelateHitWithTrack</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track, <a class="code hl_class" href="classLKTpcHit.html">LKTpcHit</a> *hit, Double_t scale=1);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#ac841ba50d649afb5f367d66aced301c8">CorrelateHitWithTrackCandidate</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track, LKTpcHit *hit);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#aa12458253a7d9c308c5226893b7bcc99">CorrelateHitWithTrack</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track, LKTpcHit *hit, Double_t scale=1);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#a46ca4f498966a7f892b72b3bd186fde5">CheckParentTrackID</a>(<a class="code hl_class" href="classLKTpcHit.html">LKTpcHit</a> *hit);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#a46ca4f498966a7f892b72b3bd186fde5">CheckParentTrackID</a>(LKTpcHit *hit);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#ad0e1ac40a60184862b4a02982bb70d09">CheckTrackQuality</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#a00267e414214479eb83167fdcfc57644">CheckTrackContinuity</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classLHHelixTrackFindingTask.html#ab4ee96cfae6af4232b01740881e765b7">CheckHitDistInAlphaIsLargerThanQuarterPi</a>(<a class="code hl_class" href="classLKHelixTrack.html">LKHelixTrack</a> *track, Double_t dLength);</div>
@@ -189,7 +189,6 @@ $(function() {
 <div class="ttc" id="aLKHitArray_8h_html"><div class="ttname"><a href="LKHitArray_8h.html">LKHitArray.h</a></div></div>
 <div class="ttc" id="aLKPadPlane_8h_html"><div class="ttname"><a href="LKPadPlane_8h.html">LKPadPlane.h</a></div></div>
 <div class="ttc" id="aLKTask_8h_html"><div class="ttname"><a href="LKTask_8h.html">LKTask.h</a></div></div>
-<div class="ttc" id="aLKTpcHit_8h_html"><div class="ttname"><a href="LKTpcHit_8h.html">LKTpcHit.h</a></div></div>
 <div class="ttc" id="aclassLHHelixTrackFindingTask_html"><div class="ttname"><a href="classLHHelixTrackFindingTask.html">LHHelixTrackFindingTask</a></div><div class="ttdef"><b>Definition</b> <a href="LHHelixTrackFindingTask_8h_source.html#l00018">LHHelixTrackFindingTask.h:19</a></div></div>
 <div class="ttc" id="aclassLHHelixTrackFindingTask_html_a00267e414214479eb83167fdcfc57644"><div class="ttname"><a href="classLHHelixTrackFindingTask.html#a00267e414214479eb83167fdcfc57644">LHHelixTrackFindingTask::CheckTrackContinuity</a></div><div class="ttdeci">double CheckTrackContinuity(LKHelixTrack *track)</div><div class="ttdef"><b>Definition</b> <a href="LHHelixTrackFindingTask_8cpp_source.html#l00868">LHHelixTrackFindingTask.cpp:868</a></div></div>
 <div class="ttc" id="aclassLHHelixTrackFindingTask_html_a025276908bb8ce6d3d568e7ea4b1ac64"><div class="ttname"><a href="classLHHelixTrackFindingTask.html#a025276908bb8ce6d3d568e7ea4b1ac64">LHHelixTrackFindingTask::fCurrentTrack</a></div><div class="ttdeci">LKHelixTrack * fCurrentTrack</div><div class="ttdef"><b>Definition</b> <a href="LHHelixTrackFindingTask_8h_source.html#l00118">LHHelixTrackFindingTask.h:118</a></div></div>
@@ -276,7 +275,6 @@ $(function() {
 <div class="ttc" id="aclassLKHitArray_html"><div class="ttname"><a href="classLKHitArray.html">LKHitArray</a></div><div class="ttdef"><b>Definition</b> <a href="LKHitArray_8h_source.html#l00024">LKHitArray.h:25</a></div></div>
 <div class="ttc" id="aclassLKPadPlane_html"><div class="ttname"><a href="classLKPadPlane.html">LKPadPlane</a></div><div class="ttdef"><b>Definition</b> <a href="LKPadPlane_8h_source.html#l00035">LKPadPlane.h:36</a></div></div>
 <div class="ttc" id="aclassLKTask_html"><div class="ttname"><a href="classLKTask.html">LKTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKTask_8h_source.html#l00013">LKTask.h:14</a></div></div>
-<div class="ttc" id="aclassLKTpcHit_html"><div class="ttname"><a href="classLKTpcHit.html">LKTpcHit</a></div><div class="ttdef"><b>Definition</b> <a href="LKTpcHit_8h_source.html#l00017">LKTpcHit.h:18</a></div></div>
 <div class="ttc" id="aclassLKVector3_html_a6dae0d8d544b114a629b6abe758c604a"><div class="ttname"><a href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604a">LKVector3::Axis</a></div><div class="ttdeci">Axis</div><div class="ttdef"><b>Definition</b> <a href="LKVector3_8h_source.html#l00017">LKVector3.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

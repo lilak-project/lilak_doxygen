@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -54,7 +54,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="TTBeamSelectionTask_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="TTBeamSelectionTask_8h.html">TTBeamSelectionTask.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="MMChannel_8h.html">MMChannel.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="GETChannel_8h.html">GETChannel.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="TTBeamSelectionTask_8cpp.html#a464b898063debbef663511ddc66b24fe">    4</a></span><a class="code hl_function" href="TTBeamSelectionTask_8cpp.html#a464b898063debbef663511ddc66b24fe">ClassImp</a>(<a class="code hl_class" href="classTTBeamSelectionTask.html">TTBeamSelectionTask</a>);</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
@@ -74,103 +74,167 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4c4c39ce264a0681c66fc611ca5c9746">fChannelArray</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; GetBranchA(<span class="stringliteral">&quot;RawData&quot;</span>);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4a22abfb85aed394304c03332ec5ab6e">fBeamHeaderArray</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; RegisterBranchA(<span class="stringliteral">&quot;BeamHeader&quot;</span>, <span class="stringliteral">&quot;TTBeamHeader&quot;</span>, 1);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classTTBeamSelectionTask.html#ac657366d8881515cd12719676e2c0b0a">   25</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classTTBeamSelectionTask.html#ac657366d8881515cd12719676e2c0b0a">TTBeamSelectionTask::Exec</a>(Option_t *option)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;TTBeamSelectionTask&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Int_t mmMult = <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4c4c39ce264a0681c66fc611ca5c9746">fChannelArray</a> -&gt; GetEntries();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span> BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4ae50d26c9052497ddc71afb7bab27659a">TTBeamHeader::eBeam::kNon</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    Int_t RF = 0;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    Int_t PPAC = 0;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    Int_t BM = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">for</span>(Int_t iChannel=0; iChannel&lt;mmMult; iChannel++)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classMMChannel.html">MMChannel</a> *) <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4c4c39ce264a0681c66fc611ca5c9746">fChannelArray</a> -&gt; At(iChannel);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        Int_t EvtIdx = channel -&gt; GetEventIdx();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        Int_t chan = channel -&gt; GetChan();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        Int_t mmCobo = channel -&gt; GetCobo();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        Int_t mmAsad = channel -&gt; GetAsad();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        Int_t mmAget = channel -&gt; GetAget();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        Int_t *mmWaveformY = channel -&gt; GetWaveformY();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">auto</span> type = <a class="code hl_variable" href="classTTBeamSelectionTask.html#a1a87eb93d28e0972d6415ce713ec19e2">fDetector</a> -&gt; <a class="code hl_function" href="texat__reco_2macros__tracking_2anaExtractPulse_8C.html#a55497130d8a022a532f33be1828dec01">GetType</a>(mmCobo,mmAsad,mmAget,chan);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        Int_t base = channel -&gt; GetBase();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="classTTBeamSelectionTask.html#af8ace22a8822a690dce86678c57c1e83">Timing</a>[0] = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;RFtiming&quot;</span>,<span class="stringliteral">&quot;RFtiming&quot;</span>,512,0,512,132,-128,4096);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="classTTBeamSelectionTask.html#af8ace22a8822a690dce86678c57c1e83">Timing</a>[1] = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;PPACtiming&quot;</span>,<span class="stringliteral">&quot;PPACtiming&quot;</span>,512,0,512,132,-128,4096);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="classTTBeamSelectionTask.html#af8ace22a8822a690dce86678c57c1e83">Timing</a>[2] = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;BMtiming&quot;</span>,<span class="stringliteral">&quot;BMtiming&quot;</span>,512,0,512,132,-128,4096);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classTTBeamSelectionTask.html#ac657366d8881515cd12719676e2c0b0a">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classTTBeamSelectionTask.html#ac657366d8881515cd12719676e2c0b0a">TTBeamSelectionTask::Exec</a>(Option_t *option)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;TTBeamSelectionTask&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    Int_t mmMult = <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4c4c39ce264a0681c66fc611ca5c9746">fChannelArray</a> -&gt; GetEntries();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> eventHeader = (<a class="code hl_class" href="classTTEventHeader.html">TTEventHeader</a>*) <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4d59a655d575fdf4699de74fb3dc0fb8">fEventHeaderArray</a> -&gt; At(0);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">auto</span> EvtIdx = eventHeader -&gt; GetEventNumber();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">auto</span> BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4ae50d26c9052497ddc71afb7bab27659a">TTBeamHeader::eBeam::kNon</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Int_t RF = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Int_t PPAC = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Int_t BM = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// XXX</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Int_t tRF = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Int_t tPPAC = 0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Int_t tBM = 0;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">if</span>(mmCobo==1 &amp;&amp; mmAsad==1 &amp;&amp; mmAget==3)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">if</span>(chan==2)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">for</span>(Int_t buck=0; buck&lt;512; buck++)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">if</span>(mmWaveformY[buck]&lt;3780)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <span class="keywordflow">for</span>(Int_t t=buck+10; t&lt;buck+20; t++) RF += mmWaveformY[t];</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        RF /= 10;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                RF = base - RF;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan==7)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">for</span>(Int_t buck=0; buck&lt;512; buck++)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">if</span>(mmWaveformY[buck]&lt;3780)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        <span class="keywordflow">for</span>(Int_t t=buck+30; t&lt;buck+40; t++) PPAC += mmWaveformY[t];</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        PPAC /= 10;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                PPAC = base - PPAC;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan==16)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">for</span>(Int_t buck=0; buck&lt;512; buck++)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordflow">if</span>(mmWaveformY[buck]&lt;3700)</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        <span class="keywordflow">for</span>(Int_t t=buck+25; t&lt;buck+35; t++) BM += mmWaveformY[t];</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        BM /= 10;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                BM = base - BM;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_define" href="LKLogger_8h.html#a05885fa83b2a33b48e806206f776e70f">lk_cout</a> &lt;&lt; <span class="stringliteral">&quot;RF=&quot;</span> &lt;&lt; RF &lt;&lt; <span class="stringliteral">&quot; PPAC=&quot;</span> &lt;&lt; PPAC &lt;&lt; <span class="stringliteral">&quot; BM=&quot;</span> &lt;&lt; BM &lt;&lt; endl;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// Beam Selection</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span>(PPAC&gt;0)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">if</span>(PPAC&gt;=1500 &amp;&amp; PPAC&lt;2300) BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4a60cde95f4b5c8d7eaaef57186bd53e0c">TTBeamHeader::eBeam::kBeam14O</a>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(PPAC&gt;=2300 &amp;&amp; PPAC&lt;3200) BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4a6679d0c3aa941933020d85b68d442c3b">TTBeamHeader::eBeam::kBeam14N</a>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">else</span> BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4af5774e472d14412bc5fbf91b6c383ada">TTBeamHeader::eBeam::kBeamEtc</a>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">auto</span> beamHeader = (<a class="code hl_class" href="classTTBeamHeader.html">TTBeamHeader</a>*) <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4a22abfb85aed394304c03332ec5ab6e">fBeamHeaderArray</a> -&gt; ConstructedAt(0);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    beamHeader -&gt; SetBeamType(BeamType);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    beamHeader -&gt; SetTAC_RF(RF);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    beamHeader -&gt; SetTAC_PPAC(PPAC);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    beamHeader -&gt; SetTAC_BM(BM);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classTTBeamSelectionTask.html#adf36e3ba1cbb70650ff417c1642039cf">  107</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classTTBeamSelectionTask.html#adf36e3ba1cbb70650ff417c1642039cf">TTBeamSelectionTask::EndOfRun</a>()</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>{</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span>(Int_t <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;mmMult; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>++)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a> *) <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4c4c39ce264a0681c66fc611ca5c9746">fChannelArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        Int_t chan = channel -&gt; GetChan();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        Int_t mmCobo = channel -&gt; GetCobo();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        Int_t mmAsad = channel -&gt; GetAsad();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        Int_t mmAget = channel -&gt; GetAget();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        Int_t *mmWaveformY = channel -&gt; GetWaveformY();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> type = <a class="code hl_variable" href="classTTBeamSelectionTask.html#a1a87eb93d28e0972d6415ce713ec19e2">fDetector</a> -&gt; <a class="code hl_function" href="texat__reco_2macros__psa_2setChannels_8h.html#a55497130d8a022a532f33be1828dec01">GetType</a>(mmCobo,mmAsad,mmAget,chan);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        Int_t base = channel -&gt; GetBase();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span>(mmCobo==1 &amp;&amp; mmAsad==1 &amp;&amp; mmAget==3)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span>(chan==2)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">if</span>(mmWaveformY[140]&lt;3780)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    <span class="keywordflow">for</span>(Int_t t=150; t&lt;160; t++) RF += mmWaveformY[t];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    RF /= 10;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    RF = base - RF;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">else</span> RF = -100;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan==7)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">if</span>(mmWaveformY[50]&lt;3780)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    <span class="keywordflow">for</span>(Int_t t=70; t&lt;80; t++) PPAC += mmWaveformY[t];</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    PPAC /= 10;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    PPAC = base - PPAC;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="keywordflow">else</span> PPAC = -100;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan==16)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">if</span>(mmWaveformY[80]&lt;3700)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    <span class="keywordflow">for</span>(Int_t t=90; t&lt;100; t++) BM += mmWaveformY[t];</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    BM /= 10;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    BM = base - BM;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">else</span> BM = -100;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">//if(mmCobo==1 &amp;&amp; mmAsad==1 &amp;&amp; mmAget==3)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="comment">//{</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="comment">//    if(chan==2)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">//    {</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">//        for(Int_t buck=0; buck&lt;512; buck++)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">//        {</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">//            if(mmWaveformY[buck]&lt;3780)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">//            {</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="comment">//                tRF = buck;</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">//                for(Int_t t=buck+10; t&lt;buck+20; t++) RF += mmWaveformY[t];</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">//                RF /= 10;</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="comment">//                RF = base - RF;</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="comment">//                //Timing[0] -&gt; Fill(buck,RF);</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="comment">//                break;</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="comment">//            }</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="comment">//        }</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">//    }</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">//    else if(chan==7)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="comment">//    {</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">//        for(Int_t buck=0; buck&lt;512; buck++)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="comment">//        {</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="comment">//            if(mmWaveformY[buck]&lt;3780)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">//            {</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="comment">//                tPPAC = buck;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="comment">//                for(Int_t t=buck+30; t&lt;buck+40; t++) PPAC += mmWaveformY[t];</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="comment">//                PPAC /= 10;</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="comment">//                PPAC = base - PPAC;</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="comment">//                //Timing[1] -&gt; Fill(buck,PPAC);</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="comment">//                break;</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="comment">//            }</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="comment">//        }</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">//    }</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="comment">//    else if(chan==16)</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="comment">//    {</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="comment">//        for(Int_t buck=0; buck&lt;512; buck++)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="comment">//        {</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="comment">//            if(mmWaveformY[buck]&lt;3700)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="comment">//            {</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="comment">//                tBM = buck;</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="comment">//                for(Int_t t=buck+25; t&lt;buck+35; t++) BM += mmWaveformY[t];</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="comment">//                BM /= 10;</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="comment">//                BM = base - BM;</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="comment">//                //Timing[2] -&gt; Fill(buck,BM);</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="comment">//                break;</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="comment">//            }</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="comment">//        }</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="comment">//    }</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="comment">//}</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_define" href="LKLogger_8h.html#a05885fa83b2a33b48e806206f776e70f">lk_cout</a> &lt;&lt; <span class="stringliteral">&quot;RF=&quot;</span> &lt;&lt; RF &lt;&lt; <span class="stringliteral">&quot; PPAC=&quot;</span> &lt;&lt; PPAC &lt;&lt; <span class="stringliteral">&quot; BM=&quot;</span> &lt;&lt; BM &lt;&lt; endl;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="comment">//if(tBM&gt;50 &amp;&amp; tBM&lt;75) // XXX</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">//{</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="comment">//    Timing[0] -&gt; Fill(tRF,RF);</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="comment">//    Timing[1] -&gt; Fill(tPPAC,PPAC);</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="comment">//    Timing[2] -&gt; Fill(tBM,BM);</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="comment">//}</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="comment">// Beam Selection</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">if</span>(PPAC&gt;0)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">if</span>(PPAC&gt;=1500 &amp;&amp; PPAC&lt;2300) BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4a60cde95f4b5c8d7eaaef57186bd53e0c">TTBeamHeader::eBeam::kBeam14O</a>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(PPAC&gt;=2300 &amp;&amp; PPAC&lt;3200) BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4a6679d0c3aa941933020d85b68d442c3b">TTBeamHeader::eBeam::kBeam14N</a>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">else</span> BeamType = <a class="code hl_enumvalue" href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4af5774e472d14412bc5fbf91b6c383ada">TTBeamHeader::eBeam::kBeamEtc</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">auto</span> beamHeader = (<a class="code hl_class" href="classTTBeamHeader.html">TTBeamHeader</a>*) <a class="code hl_variable" href="classTTBeamSelectionTask.html#a4a22abfb85aed394304c03332ec5ab6e">fBeamHeaderArray</a> -&gt; ConstructedAt(0);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    beamHeader -&gt; SetBeamType(BeamType);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    beamHeader -&gt; SetTAC_RF(RF);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    beamHeader -&gt; SetTAC_PPAC(PPAC);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    beamHeader -&gt; SetTAC_BM(BM);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classTTBeamSelectionTask.html#adf36e3ba1cbb70650ff417c1642039cf">  168</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classTTBeamSelectionTask.html#adf36e3ba1cbb70650ff417c1642039cf">TTBeamSelectionTask::EndOfRun</a>()</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">//TFile* fout = new TFile(&quot;Timing.root&quot;,&quot;recreate&quot;);</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="comment">//for(Int_t i=0; i&lt;3; i++) Timing[i] -&gt; Write();</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="comment">//fout -&gt; Close();</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="ttc" id="aGETChannel_8h_html"><div class="ttname"><a href="GETChannel_8h.html">GETChannel.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_a05885fa83b2a33b48e806206f776e70f"><div class="ttname"><a href="LKLogger_8h.html#a05885fa83b2a33b48e806206f776e70f">lk_cout</a></div><div class="ttdeci">#define lk_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00028">LKLogger.h:28</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00029">LKLogger.h:29</a></div></div>
-<div class="ttc" id="aMMChannel_8h_html"><div class="ttname"><a href="MMChannel_8h.html">MMChannel.h</a></div></div>
 <div class="ttc" id="aTTBeamSelectionTask_8cpp_html_a464b898063debbef663511ddc66b24fe"><div class="ttname"><a href="TTBeamSelectionTask_8cpp.html#a464b898063debbef663511ddc66b24fe">ClassImp</a></div><div class="ttdeci">ClassImp(TTBeamSelectionTask)</div></div>
 <div class="ttc" id="aTTBeamSelectionTask_8h_html"><div class="ttname"><a href="TTBeamSelectionTask_8h.html">TTBeamSelectionTask.h</a></div></div>
+<div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00040">GETChannel.h:41</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
-<div class="ttc" id="aclassMMChannel_html"><div class="ttname"><a href="classMMChannel.html">MMChannel</a></div><div class="ttdef"><b>Definition</b> <a href="MMChannel_8h_source.html#l00037">MMChannel.h:38</a></div></div>
 <div class="ttc" id="aclassTTBeamHeader_html"><div class="ttname"><a href="classTTBeamHeader.html">TTBeamHeader</a></div><div class="ttdef"><b>Definition</b> <a href="TTBeamHeader_8h_source.html#l00036">TTBeamHeader.h:37</a></div></div>
 <div class="ttc" id="aclassTTBeamHeader_html_a1637177c9a401e860f257c9f26bf2dc4a60cde95f4b5c8d7eaaef57186bd53e0c"><div class="ttname"><a href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4a60cde95f4b5c8d7eaaef57186bd53e0c">TTBeamHeader::eBeam::kBeam14O</a></div><div class="ttdeci">@ kBeam14O</div></div>
 <div class="ttc" id="aclassTTBeamHeader_html_a1637177c9a401e860f257c9f26bf2dc4a6679d0c3aa941933020d85b68d442c3b"><div class="ttname"><a href="classTTBeamHeader.html#a1637177c9a401e860f257c9f26bf2dc4a6679d0c3aa941933020d85b68d442c3b">TTBeamHeader::eBeam::kBeam14N</a></div><div class="ttdeci">@ kBeam14N</div></div>
@@ -183,10 +247,13 @@ $(function() {
 <div class="ttc" id="aclassTTBeamSelectionTask_html_a4c4c39ce264a0681c66fc611ca5c9746"><div class="ttname"><a href="classTTBeamSelectionTask.html#a4c4c39ce264a0681c66fc611ca5c9746">TTBeamSelectionTask::fChannelArray</a></div><div class="ttdeci">TClonesArray * fChannelArray</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8h_source.html#l00040">TTBeamSelectionTask.h:40</a></div></div>
 <div class="ttc" id="aclassTTBeamSelectionTask_html_a4d59a655d575fdf4699de74fb3dc0fb8"><div class="ttname"><a href="classTTBeamSelectionTask.html#a4d59a655d575fdf4699de74fb3dc0fb8">TTBeamSelectionTask::fEventHeaderArray</a></div><div class="ttdeci">TClonesArray * fEventHeaderArray</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8h_source.html#l00039">TTBeamSelectionTask.h:39</a></div></div>
 <div class="ttc" id="aclassTTBeamSelectionTask_html_aad353d073dcc2f0c7950e6ba9edd4ca6"><div class="ttname"><a href="classTTBeamSelectionTask.html#aad353d073dcc2f0c7950e6ba9edd4ca6">TTBeamSelectionTask::TTBeamSelectionTask</a></div><div class="ttdeci">TTBeamSelectionTask()</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8cpp_source.html#l00006">TTBeamSelectionTask.cpp:6</a></div></div>
-<div class="ttc" id="aclassTTBeamSelectionTask_html_ac657366d8881515cd12719676e2c0b0a"><div class="ttname"><a href="classTTBeamSelectionTask.html#ac657366d8881515cd12719676e2c0b0a">TTBeamSelectionTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8cpp_source.html#l00025">TTBeamSelectionTask.cpp:25</a></div></div>
-<div class="ttc" id="aclassTTBeamSelectionTask_html_adf36e3ba1cbb70650ff417c1642039cf"><div class="ttname"><a href="classTTBeamSelectionTask.html#adf36e3ba1cbb70650ff417c1642039cf">TTBeamSelectionTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8cpp_source.html#l00107">TTBeamSelectionTask.cpp:107</a></div></div>
-<div class="ttc" id="aclassTexAT2_html"><div class="ttname"><a href="classTexAT2.html">TexAT2</a></div><div class="ttdef"><b>Definition</b> <a href="TexAT2_8h_source.html#l00016">TexAT2.h:17</a></div></div>
-<div class="ttc" id="atexat__reco_2macros__tracking_2anaExtractPulse_8C_html_a55497130d8a022a532f33be1828dec01"><div class="ttname"><a href="texat__reco_2macros__tracking_2anaExtractPulse_8C.html#a55497130d8a022a532f33be1828dec01">GetType</a></div><div class="ttdeci">int GetType(int cobo, int asad, int aget, int chan)</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros__tracking_2anaExtractPulse_8C_source.html#l00194">texat_reco/macros_tracking/anaExtractPulse.C:194</a></div></div>
+<div class="ttc" id="aclassTTBeamSelectionTask_html_ac657366d8881515cd12719676e2c0b0a"><div class="ttname"><a href="classTTBeamSelectionTask.html#ac657366d8881515cd12719676e2c0b0a">TTBeamSelectionTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8cpp_source.html#l00029">TTBeamSelectionTask.cpp:29</a></div></div>
+<div class="ttc" id="aclassTTBeamSelectionTask_html_adf36e3ba1cbb70650ff417c1642039cf"><div class="ttname"><a href="classTTBeamSelectionTask.html#adf36e3ba1cbb70650ff417c1642039cf">TTBeamSelectionTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8cpp_source.html#l00168">TTBeamSelectionTask.cpp:168</a></div></div>
+<div class="ttc" id="aclassTTBeamSelectionTask_html_af8ace22a8822a690dce86678c57c1e83"><div class="ttname"><a href="classTTBeamSelectionTask.html#af8ace22a8822a690dce86678c57c1e83">TTBeamSelectionTask::Timing</a></div><div class="ttdeci">TH2D * Timing[3]</div><div class="ttdef"><b>Definition</b> <a href="TTBeamSelectionTask_8h_source.html#l00043">TTBeamSelectionTask.h:43</a></div></div>
+<div class="ttc" id="aclassTTEventHeader_html"><div class="ttname"><a href="classTTEventHeader.html">TTEventHeader</a></div><div class="ttdoc">Event header for TexAT experiment.</div><div class="ttdef"><b>Definition</b> <a href="TTEventHeader_8h_source.html#l00010">TTEventHeader.h:11</a></div></div>
+<div class="ttc" id="aclassTexAT2_html"><div class="ttname"><a href="classTexAT2.html">TexAT2</a></div><div class="ttdef"><b>Definition</b> <a href="TexAT2_8h_source.html#l00017">TexAT2.h:18</a></div></div>
+<div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>
+<div class="ttc" id="atexat__reco_2macros__psa_2setChannels_8h_html_a55497130d8a022a532f33be1828dec01"><div class="ttname"><a href="texat__reco_2macros__psa_2setChannels_8h.html#a55497130d8a022a532f33be1828dec01">GetType</a></div><div class="ttdeci">int GetType(int cobo, int asad, int aget, int chan)</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00112">texat_reco/macros_psa/setChannels.h:112</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
   <div class="headertitle"><div class="title">LKGeo2DBox.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="LKGeo2DBox_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;LKLogger.h&quot;</span></div>
+<a href="LKGeo2DBox_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKLogger_8h.html">LKLogger.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="LKGeo2DBox_8h.html">LKGeo2DBox.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
@@ -62,9 +62,9 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_function" href="classLKGeo2DBox.html#a00964f334d4ca2c9cc365e573612960a">LKGeo2DBox::LKGeo2DBox</a>() {}</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#a14de52c88d7e06d6d74950bde9b2966b">   10</a></span><a class="code hl_function" href="classLKGeo2DBox.html#a00964f334d4ca2c9cc365e573612960a">LKGeo2DBox::LKGeo2DBox</a>(Double_t x1, Double_t x2, Double_t y1, Double_t y2)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#a14de52c88d7e06d6d74950bde9b2966b">   10</a></span><a class="code hl_function" href="classLKGeo2DBox.html#a00964f334d4ca2c9cc365e573612960a">LKGeo2DBox::LKGeo2DBox</a>(Double_t x1, Double_t x2, Double_t y1, Double_t <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">Set2DBox</a>(x1,x2,y1,y2);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">Set2DBox</a>(x1,x2,y1,<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#a9c00b3174c96dc7b04a36667a4320ddb">   15</a></span><a class="code hl_function" href="classLKGeo2DBox.html#a00964f334d4ca2c9cc365e573612960a">LKGeo2DBox::LKGeo2DBox</a>(Double_t xc, Double_t yc, Double_t dx, Double_t dy, Double_t rotation)</div>
@@ -89,12 +89,12 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#ab44c9bf883df89820a0d341abd9b51cf">   35</a></span>TVector3 <a class="code hl_function" href="classLKGeo2DBox.html#ab44c9bf883df89820a0d341abd9b51cf">LKGeo2DBox::GetCenter</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TVector3(<a class="code hl_function" href="classLKGeo2DBox.html#a4aa549aed808a8dabf62f608b839edaf">GetXCenter</a>(),<a class="code hl_function" href="classLKGeo2DBox.html#adb0c373d21a2bb5d935d6a135c27a772">GetYCenter</a>(),0); }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">LKGeo2DBox::Set2DBox</a>(Double_t x1, Double_t x2, Double_t y1, Double_t y2)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">LKGeo2DBox::Set2DBox</a>(Double_t x1, Double_t x2, Double_t y1, Double_t <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">fX</a>[0] = x1; <a class="code hl_variable" href="classLKGeo2DBox.html#a40bddb0c2c254a484e4e7535cee53af6">fY</a>[0] = y1;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_variable" href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">fX</a>[1] = x2; <a class="code hl_variable" href="classLKGeo2DBox.html#a40bddb0c2c254a484e4e7535cee53af6">fY</a>[1] = y1;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_variable" href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">fX</a>[2] = x2; <a class="code hl_variable" href="classLKGeo2DBox.html#a40bddb0c2c254a484e4e7535cee53af6">fY</a>[2] = y2;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_variable" href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">fX</a>[3] = x1; <a class="code hl_variable" href="classLKGeo2DBox.html#a40bddb0c2c254a484e4e7535cee53af6">fY</a>[3] = y2;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_variable" href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">fX</a>[2] = x2; <a class="code hl_variable" href="classLKGeo2DBox.html#a40bddb0c2c254a484e4e7535cee53af6">fY</a>[2] = <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_variable" href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">fX</a>[3] = x1; <a class="code hl_variable" href="classLKGeo2DBox.html#a40bddb0c2c254a484e4e7535cee53af6">fY</a>[3] = <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classLKGeo2DBox.html#a9b4b587a0032c5aa32b3baa211a318cd">   45</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKGeo2DBox.html#a6ec9a503c975b432df8afb8bf3a9caf9">LKGeo2DBox::Set2DBox</a>(Double_t xc, Double_t yc, Double_t dx, Double_t dy, Double_t rotation)</div>
@@ -176,7 +176,7 @@ $(function() {
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">auto</span> graph = <span class="keyword">new</span> TGraph();</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : {0,1,2,3,0}) {</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        TVector3 cn = <a class="code hl_function" href="classLKGeo2DBox.html#a34d0b3dc3cf847ec5f825cf64981f89b">GetCorner</a>(i);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        graph -&gt; SetPoint(graph -&gt; GetN(),cn.X(),cn.Y());</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        graph -&gt; <a class="code hl_function" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a>(graph -&gt; GetN(),cn.X(),cn.Y());</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> graph;</div>
@@ -201,6 +201,9 @@ $(function() {
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 <div class="ttc" id="aLKGeo2DBox_8cpp_html_a398574ae1be8061c95f4a379c24799d0"><div class="ttname"><a href="LKGeo2DBox_8cpp.html#a398574ae1be8061c95f4a379c24799d0">ClassImp</a></div><div class="ttdeci">ClassImp(LKGeo2DBox) LKGeo2DBox</div><div class="ttdef"><b>Definition</b> <a href="LKGeo2DBox_8cpp_source.html#l00006">LKGeo2DBox.cpp:6</a></div></div>
 <div class="ttc" id="aLKGeo2DBox_8h_html"><div class="ttname"><a href="LKGeo2DBox_8h.html">LKGeo2DBox.h</a></div></div>
+<div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a5347e514ebe985fb371754ffd2b5ff83"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a></div><div class="ttdeci">double y2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00104">LKHTLineTracker3D.cpp:104</a></div></div>
+<div class="ttc" id="aLKHTLineTracker3D_8cpp_html_abc88e651d827d77b6db5f12e23f9d154"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a></div><div class="ttdeci">fParamPoint SetPoint(fTransformCenter, y1, z1, t1, p1, y2, z2, t2, p2, fParamData[iy][iz][it][ip])</div></div>
+<div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_abdf08b50834a103803bcbdff6e038c58"><div class="ttname"><a href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a></div><div class="ttdeci">#define e_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00037">LKLogger.h:37</a></div></div>
 <div class="ttc" id="aclassLKGeo2DBox_html"><div class="ttname"><a href="classLKGeo2DBox.html">LKGeo2DBox</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeo2DBox_8h_source.html#l00010">LKGeo2DBox.h:11</a></div></div>
 <div class="ttc" id="aclassLKGeo2DBox_html_a00964f334d4ca2c9cc365e573612960a"><div class="ttname"><a href="classLKGeo2DBox.html#a00964f334d4ca2c9cc365e573612960a">LKGeo2DBox::LKGeo2DBox</a></div><div class="ttdeci">LKGeo2DBox()</div></div>
@@ -220,7 +223,7 @@ $(function() {
 <div class="ttc" id="aclassLKGeo2DBox_html_af60bbce79429702595d6a9da8da9c191"><div class="ttname"><a href="classLKGeo2DBox.html#af60bbce79429702595d6a9da8da9c191">LKGeo2DBox::DrawGraph</a></div><div class="ttdeci">TGraph * DrawGraph()</div><div class="ttdef"><b>Definition</b> <a href="LKGeo2DBox_8cpp_source.html#l00119">LKGeo2DBox.cpp:119</a></div></div>
 <div class="ttc" id="aclassLKGeo2DBox_html_afa595bc899ebcf8bfbf2ba45d6727319"><div class="ttname"><a href="classLKGeo2DBox.html#afa595bc899ebcf8bfbf2ba45d6727319">LKGeo2DBox::fX</a></div><div class="ttdeci">Double_t fX[4]</div><div class="ttdef"><b>Definition</b> <a href="LKGeo2DBox_8h_source.html#l00047">LKGeo2DBox.h:47</a></div></div>
 <div class="ttc" id="aclassLKGeo2DBox_html_afe950da169a35d4027ffbad0fbabc211"><div class="ttname"><a href="classLKGeo2DBox.html#afe950da169a35d4027ffbad0fbabc211">LKGeo2DBox::GetdX</a></div><div class="ttdeci">Double_t GetdX() const</div><div class="ttdef"><b>Definition</b> <a href="LKGeo2DBox_8cpp_source.html#l00061">LKGeo2DBox.cpp:61</a></div></div>
-<div class="ttc" id="aclassLKGeoLine_html"><div class="ttname"><a href="classLKGeoLine.html">LKGeoLine</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeoLine_8h_source.html#l00010">LKGeoLine.h:11</a></div></div>
+<div class="ttc" id="aclassLKGeoLine_html"><div class="ttname"><a href="classLKGeoLine.html">LKGeoLine</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeoLine_8h_source.html#l00017">LKGeoLine.h:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

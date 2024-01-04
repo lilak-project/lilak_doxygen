@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -54,7 +54,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="TTPID__MMvsFSi_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="TTPID__MMvsFSi_8h.html">TTPID_MMvsFSi.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="MMChannel_8h.html">MMChannel.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="GETChannel_8h.html">GETChannel.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="TTPID__MMvsFSi_8cpp.html#ac1828c926a5d09ae31a4f02f7a436de9">    4</a></span><a class="code hl_function" href="TTPID__MMvsFSi_8cpp.html#ac1828c926a5d09ae31a4f02f7a436de9">ClassImp</a>(<a class="code hl_class" href="classTTPID__MMvsFSi.html">TTPID_MMvsFSi</a>);</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
@@ -115,15 +115,15 @@ $(function() {
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    Int_t mmMult = <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a148b8d33b46983f64ddb79f4e7e58ca4">fChannelArray</a> -&gt; GetEntries();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// FSi and FCsI</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span>(Int_t iChannel=0; iChannel&lt;mmMult; iChannel++)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span>(Int_t <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;mmMult; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>++)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classMMChannel.html">MMChannel</a> *) <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a148b8d33b46983f64ddb79f4e7e58ca4">fChannelArray</a> -&gt; At(iChannel);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a> *) <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a148b8d33b46983f64ddb79f4e7e58ca4">fChannelArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        Int_t mmCobo = channel -&gt; GetCobo();</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        Int_t mmAsad = channel -&gt; GetAsad();</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        Int_t mmAget = channel -&gt; GetAget();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        Int_t mmChan = channel -&gt; GetChan();</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        Int_t *mmWaveformY = channel -&gt; GetWaveformY();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">auto</span> type = <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a3073e385f713a3ba6b7c4da454bf65f4">fDetector</a> -&gt; <a class="code hl_function" href="texat__reco_2macros__tracking_2anaExtractPulse_8C.html#a55497130d8a022a532f33be1828dec01">GetType</a>(mmCobo,mmAsad,mmAget,mmChan);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">auto</span> type = <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a3073e385f713a3ba6b7c4da454bf65f4">fDetector</a> -&gt; <a class="code hl_function" href="texat__reco_2macros__psa_2setChannels_8h.html#a55497130d8a022a532f33be1828dec01">GetType</a>(mmCobo,mmAsad,mmAget,mmChan);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        Int_t base = channel -&gt; GetBase();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span>(!(mmChan==11 || mmChan==22 || mmChan==45 || mmChan==56))</div>
@@ -159,16 +159,16 @@ $(function() {
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(detnum%2==1) buckbegin = <a class="code hl_variable" href="classTTPID__MMvsFSi.html#ad0c6235a829416d910c489d1449d0283">BeamTiming</a>;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// MM</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">for</span>(Int_t iChannel=0; iChannel&lt;mmMult; iChannel++)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">for</span>(Int_t <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;mmMult; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>++)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classMMChannel.html">MMChannel</a> *) <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a148b8d33b46983f64ddb79f4e7e58ca4">fChannelArray</a> -&gt; At(iChannel);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a> *) <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a148b8d33b46983f64ddb79f4e7e58ca4">fChannelArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        Int_t mmCobo = channel -&gt; GetCobo();</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        Int_t mmAsad = channel -&gt; GetAsad();</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        Int_t mmAget = channel -&gt; GetAget();</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        Int_t mmChan = channel -&gt; GetChan();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        Int_t dchan = channel -&gt; GetDChan();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        Int_t dchan = channel -&gt; GetChan2();</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        Int_t *mmWaveformY = channel -&gt; GetWaveformY();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keyword">auto</span> type = <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a3073e385f713a3ba6b7c4da454bf65f4">fDetector</a> -&gt; <a class="code hl_function" href="texat__reco_2macros__tracking_2anaExtractPulse_8C.html#a55497130d8a022a532f33be1828dec01">GetType</a>(mmCobo,mmAsad,mmAget,dchan);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keyword">auto</span> type = <a class="code hl_variable" href="classTTPID__MMvsFSi.html#a3073e385f713a3ba6b7c4da454bf65f4">fDetector</a> -&gt; <a class="code hl_function" href="texat__reco_2macros__psa_2setChannels_8h.html#a55497130d8a022a532f33be1828dec01">GetType</a>(mmCobo,mmAsad,mmAget,dchan);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        Int_t mmBase = channel -&gt; GetBase();</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">if</span>(!(mmChan==11 || mmChan==22 || mmChan==45 || mmChan==56))</div>
@@ -221,13 +221,13 @@ $(function() {
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="ttc" id="aGETChannel_8h_html"><div class="ttname"><a href="GETChannel_8h.html">GETChannel.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00029">LKLogger.h:29</a></div></div>
-<div class="ttc" id="aMMChannel_8h_html"><div class="ttname"><a href="MMChannel_8h.html">MMChannel.h</a></div></div>
 <div class="ttc" id="aTTPID__MMvsFSi_8cpp_html_ac1828c926a5d09ae31a4f02f7a436de9"><div class="ttname"><a href="TTPID__MMvsFSi_8cpp.html#ac1828c926a5d09ae31a4f02f7a436de9">ClassImp</a></div><div class="ttdeci">ClassImp(TTPID_MMvsFSi)</div></div>
 <div class="ttc" id="aTTPID__MMvsFSi_8h_html"><div class="ttname"><a href="TTPID__MMvsFSi_8h.html">TTPID_MMvsFSi.h</a></div></div>
+<div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00040">GETChannel.h:41</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
-<div class="ttc" id="aclassMMChannel_html"><div class="ttname"><a href="classMMChannel.html">MMChannel</a></div><div class="ttdef"><b>Definition</b> <a href="MMChannel_8h_source.html#l00037">MMChannel.h:38</a></div></div>
-<div class="ttc" id="aclassTTEventHeader_html"><div class="ttname"><a href="classTTEventHeader.html">TTEventHeader</a></div><div class="ttdef"><b>Definition</b> <a href="TTEventHeader_8h_source.html#l00036">TTEventHeader.h:37</a></div></div>
+<div class="ttc" id="aclassTTEventHeader_html"><div class="ttname"><a href="classTTEventHeader.html">TTEventHeader</a></div><div class="ttdoc">Event header for TexAT experiment.</div><div class="ttdef"><b>Definition</b> <a href="TTEventHeader_8h_source.html#l00010">TTEventHeader.h:11</a></div></div>
 <div class="ttc" id="aclassTTEventHeader_html_aa51adf6f2e17595916d7880d25564c09a293c23ff2528dca36c7c615aea655240"><div class="ttname"><a href="classTTEventHeader.html#aa51adf6f2e17595916d7880d25564c09a293c23ff2528dca36c7c615aea655240">TTEventHeader::eGoodSiEvt::kFSiL</a></div><div class="ttdeci">@ kFSiL</div></div>
 <div class="ttc" id="aclassTTEventHeader_html_aa51adf6f2e17595916d7880d25564c09afccdaad0fe346bdc05592d7c9011081f"><div class="ttname"><a href="classTTEventHeader.html#aa51adf6f2e17595916d7880d25564c09afccdaad0fe346bdc05592d7c9011081f">TTEventHeader::eGoodSiEvt::kFSiR</a></div><div class="ttdeci">@ kFSiR</div></div>
 <div class="ttc" id="aclassTTPID__MMvsFSi_html"><div class="ttname"><a href="classTTPID__MMvsFSi.html">TTPID_MMvsFSi</a></div><div class="ttdef"><b>Definition</b> <a href="TTPID__MMvsFSi_8h_source.html#l00025">TTPID_MMvsFSi.h:26</a></div></div>
@@ -244,7 +244,7 @@ $(function() {
 <div class="ttc" id="aclassTTPID__MMvsFSi_html_ac4572ed61613c5b688f12b6971968886"><div class="ttname"><a href="classTTPID__MMvsFSi.html#ac4572ed61613c5b688f12b6971968886">TTPID_MMvsFSi::MMvsFAll</a></div><div class="ttdeci">TH2D * MMvsFAll[10]</div><div class="ttdef"><b>Definition</b> <a href="TTPID__MMvsFSi_8h_source.html#l00045">TTPID_MMvsFSi.h:45</a></div></div>
 <div class="ttc" id="aclassTTPID__MMvsFSi_html_ad0c6235a829416d910c489d1449d0283"><div class="ttname"><a href="classTTPID__MMvsFSi.html#ad0c6235a829416d910c489d1449d0283">TTPID_MMvsFSi::BeamTiming</a></div><div class="ttdeci">Int_t BeamTiming</div><div class="ttdef"><b>Definition</b> <a href="TTPID__MMvsFSi_8h_source.html#l00047">TTPID_MMvsFSi.h:47</a></div></div>
 <div class="ttc" id="aclassTTPID__MMvsFSi_html_af55b978201e608cdfd18a093a641c59b"><div class="ttname"><a href="classTTPID__MMvsFSi.html#af55b978201e608cdfd18a093a641c59b">TTPID_MMvsFSi::MMvsFSi_all</a></div><div class="ttdeci">TH2D * MMvsFSi_all</div><div class="ttdef"><b>Definition</b> <a href="TTPID__MMvsFSi_8h_source.html#l00042">TTPID_MMvsFSi.h:42</a></div></div>
-<div class="ttc" id="aclassTexAT2_html"><div class="ttname"><a href="classTexAT2.html">TexAT2</a></div><div class="ttdef"><b>Definition</b> <a href="TexAT2_8h_source.html#l00016">TexAT2.h:17</a></div></div>
+<div class="ttc" id="aclassTexAT2_html"><div class="ttname"><a href="classTexAT2.html">TexAT2</a></div><div class="ttdef"><b>Definition</b> <a href="TexAT2_8h_source.html#l00017">TexAT2.h:18</a></div></div>
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35a0c3e3ac0c3bb5edca419c7c7122fa80c"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35a0c3e3ac0c3bb5edca419c7c7122fa80c">TexAT2::eType::kForwardCsI</a></div><div class="ttdeci">@ kForwardCsI</div></div>
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35a10878d5133289d5d7a8f3ad31a11a14f"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35a10878d5133289d5d7a8f3ad31a11a14f">TexAT2::eType::kLeftStrip</a></div><div class="ttdeci">@ kLeftStrip</div></div>
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35a8c9302b67e94637effa96658ea7428f6"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35a8c9302b67e94637effa96658ea7428f6">TexAT2::eType::kLeftChain</a></div><div class="ttdeci">@ kLeftChain</div></div>
@@ -252,7 +252,8 @@ $(function() {
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35ae507bb1509acba0f075670b2affbcbd4"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35ae507bb1509acba0f075670b2affbcbd4">TexAT2::eType::kForwardSi</a></div><div class="ttdeci">@ kForwardSi</div></div>
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35ae50d26c9052497ddc71afb7bab27659a"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35ae50d26c9052497ddc71afb7bab27659a">TexAT2::eType::kNon</a></div><div class="ttdeci">@ kNon</div></div>
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35aed69ba8242ea7d9eab99a099540515c5"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35aed69ba8242ea7d9eab99a099540515c5">TexAT2::eType::kRightChain</a></div><div class="ttdeci">@ kRightChain</div></div>
-<div class="ttc" id="atexat__reco_2macros__tracking_2anaExtractPulse_8C_html_a55497130d8a022a532f33be1828dec01"><div class="ttname"><a href="texat__reco_2macros__tracking_2anaExtractPulse_8C.html#a55497130d8a022a532f33be1828dec01">GetType</a></div><div class="ttdeci">int GetType(int cobo, int asad, int aget, int chan)</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros__tracking_2anaExtractPulse_8C_source.html#l00194">texat_reco/macros_tracking/anaExtractPulse.C:194</a></div></div>
+<div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>
+<div class="ttc" id="atexat__reco_2macros__psa_2setChannels_8h_html_a55497130d8a022a532f33be1828dec01"><div class="ttname"><a href="texat__reco_2macros__psa_2setChannels_8h.html#a55497130d8a022a532f33be1828dec01">GetType</a></div><div class="ttdeci">int GetType(int cobo, int asad, int aget, int chan)</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00112">texat_reco/macros_psa/setChannels.h:112</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

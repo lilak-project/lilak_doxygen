@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
   <div class="headertitle"><div class="title">LKWPoint.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="LKWPoint_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;LKLogger.h&quot;</span></div>
+<a href="LKWPoint_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKLogger_8h.html">LKLogger.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="LKWPoint_8h.html">LKWPoint.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    wp.Set(<a class="code hl_variable" href="classLKWPoint.html#a03c6d44e4dc48f37f2ab9cbd7436de99">fX</a>, <a class="code hl_variable" href="classLKWPoint.html#a52b43a528603db2d2b953ce6f252244f">fY</a>, <a class="code hl_variable" href="classLKWPoint.html#a32a8f26c852776f2db8fcb31bc2e5ebf">fZ</a>, <a class="code hl_variable" href="classLKWPoint.html#ac409a5ac06cacfc093d81ac793ce8356">fW</a>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classLKWPoint.html#a49f20ae269b5385db4c03e895cc575c9">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKWPoint.html#a49f20ae269b5385db4c03e895cc575c9">LKWPoint::SetW</a>(Double_t w) { <a class="code hl_variable" href="classLKWPoint.html#ac409a5ac06cacfc093d81ac793ce8356">fW</a> = <a class="code hl_function" href="classLKWPoint.html#ad01a1011ca2aec79495dd0fff6d578db">w</a>; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classLKWPoint.html#ab7cbafa56d32fe9786d4de9be6c312d6">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKWPoint.html#ab7cbafa56d32fe9786d4de9be6c312d6">LKWPoint::SetWeight</a>(Double_t w) { <a class="code hl_variable" href="classLKWPoint.html#ac409a5ac06cacfc093d81ac793ce8356">fW</a> = <a class="code hl_function" href="classLKWPoint.html#ad01a1011ca2aec79495dd0fff6d578db">w</a>; }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classLKWPoint.html#a9c58e5fbfedfe8cc528e71bc6d39665f">   63</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKWPoint.html#a9c58e5fbfedfe8cc528e71bc6d39665f">LKWPoint::SetPosition</a>(Double_t x, Double_t y, Double_t z)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifdef ACTIVATE_EVE</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">bool</span> LKWPoint::DrawByDefault() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLKContainer.html#a04cc6293f0e597f92347f1ea833d0b93">LKWPoint::DrawByDefault</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">bool</span> LKWPoint::IsEveSet() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>TEveElement *LKWPoint::CreateEveElement()</div>
@@ -153,9 +153,11 @@ $(function() {
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    pointSet -&gt; SetNextPoint(scale*<a class="code hl_variable" href="classLKWPoint.html#a03c6d44e4dc48f37f2ab9cbd7436de99">fX</a>, scale*<a class="code hl_variable" href="classLKWPoint.html#a52b43a528603db2d2b953ce6f252244f">fY</a>, scale*<a class="code hl_variable" href="classLKWPoint.html#a32a8f26c852776f2db8fcb31bc2e5ebf">fZ</a>);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00038">LKLogger.h:38</a></div></div>
 <div class="ttc" id="aLKWPoint_8cpp_html_af8bc3fa352cd1f3483efea28eb3b00c0"><div class="ttname"><a href="LKWPoint_8cpp.html#af8bc3fa352cd1f3483efea28eb3b00c0">ClassImp</a></div><div class="ttdeci">ClassImp(LKWPoint) LKWPoint</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8cpp_source.html#l00007">LKWPoint.cpp:7</a></div></div>
 <div class="ttc" id="aLKWPoint_8h_html"><div class="ttname"><a href="LKWPoint_8h.html">LKWPoint.h</a></div></div>
+<div class="ttc" id="aclassLKContainer_html_a04cc6293f0e597f92347f1ea833d0b93"><div class="ttname"><a href="classLKContainer.html#a04cc6293f0e597f92347f1ea833d0b93">LKContainer::DrawByDefault</a></div><div class="ttdeci">virtual bool DrawByDefault()</div><div class="ttdoc">return true if to be displayed on eve.</div><div class="ttdef"><b>Definition</b> <a href="LKContainer_8h_source.html#l00018">LKContainer.h:18</a></div></div>
 <div class="ttc" id="aclassLKContainer_html_a8344961a5ada61fda3048d7dc0a4d21e"><div class="ttname"><a href="classLKContainer.html#a8344961a5ada61fda3048d7dc0a4d21e">LKContainer::Copy</a></div><div class="ttdeci">virtual void Copy(TObject &amp;object) const</div><div class="ttdef"><b>Definition</b> <a href="LKContainer_8cpp_source.html#l00016">LKContainer.cpp:16</a></div></div>
 <div class="ttc" id="aclassLKContainer_html_afe651258d92c9579f68d3748c0543335"><div class="ttname"><a href="classLKContainer.html#afe651258d92c9579f68d3748c0543335">LKContainer::Clear</a></div><div class="ttdeci">virtual void Clear(Option_t *option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="LKContainer_8cpp_source.html#l00011">LKContainer.cpp:11</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html"><div class="ttname"><a href="classLKWPoint.html">LKWPoint</a></div><div class="ttdoc">position data with weight</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00017">LKWPoint.h:18</a></div></div>
@@ -165,10 +167,10 @@ $(function() {
 <div class="ttc" id="aclassLKWPoint_html_a17a83cce0badbdccb11b9538c891e235"><div class="ttname"><a href="classLKWPoint.html#a17a83cce0badbdccb11b9538c891e235">LKWPoint::LKWPoint</a></div><div class="ttdeci">LKWPoint()</div></div>
 <div class="ttc" id="aclassLKWPoint_html_a2202688599756ae09f5484dfb839b288"><div class="ttname"><a href="classLKWPoint.html#a2202688599756ae09f5484dfb839b288">LKWPoint::z</a></div><div class="ttdeci">Double_t z() const</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00037">LKWPoint.h:37</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_a32a8f26c852776f2db8fcb31bc2e5ebf"><div class="ttname"><a href="classLKWPoint.html#a32a8f26c852776f2db8fcb31bc2e5ebf">LKWPoint::fZ</a></div><div class="ttdeci">Double_t fZ</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00084">LKWPoint.h:84</a></div></div>
-<div class="ttc" id="aclassLKWPoint_html_a49f20ae269b5385db4c03e895cc575c9"><div class="ttname"><a href="classLKWPoint.html#a49f20ae269b5385db4c03e895cc575c9">LKWPoint::SetW</a></div><div class="ttdeci">void SetW(Double_t w)</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8cpp_source.html#l00061">LKWPoint.cpp:61</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_a52b43a528603db2d2b953ce6f252244f"><div class="ttname"><a href="classLKWPoint.html#a52b43a528603db2d2b953ce6f252244f">LKWPoint::fY</a></div><div class="ttdeci">Double_t fY</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00083">LKWPoint.h:83</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_a85bc822f347bb7e6c5840ec66209fe6c"><div class="ttname"><a href="classLKWPoint.html#a85bc822f347bb7e6c5840ec66209fe6c">LKWPoint::x</a></div><div class="ttdeci">Double_t x() const</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00035">LKWPoint.h:35</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_a9c58e5fbfedfe8cc528e71bc6d39665f"><div class="ttname"><a href="classLKWPoint.html#a9c58e5fbfedfe8cc528e71bc6d39665f">LKWPoint::SetPosition</a></div><div class="ttdeci">void SetPosition(Double_t x, Double_t y, Double_t z)</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8cpp_source.html#l00063">LKWPoint.cpp:63</a></div></div>
+<div class="ttc" id="aclassLKWPoint_html_ab7cbafa56d32fe9786d4de9be6c312d6"><div class="ttname"><a href="classLKWPoint.html#ab7cbafa56d32fe9786d4de9be6c312d6">LKWPoint::SetWeight</a></div><div class="ttdeci">void SetWeight(Double_t w)</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8cpp_source.html#l00061">LKWPoint.cpp:61</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_ab8f07d71f54def4ac231a44a06466f99"><div class="ttname"><a href="classLKWPoint.html#ab8f07d71f54def4ac231a44a06466f99">LKWPoint::Print</a></div><div class="ttdeci">virtual void Print(Option_t *option=&quot;&quot;) const</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8cpp_source.html#l00027">LKWPoint.cpp:27</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_ac409a5ac06cacfc093d81ac793ce8356"><div class="ttname"><a href="classLKWPoint.html#ac409a5ac06cacfc093d81ac793ce8356">LKWPoint::fW</a></div><div class="ttdeci">Double_t fW</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00085">LKWPoint.h:85</a></div></div>
 <div class="ttc" id="aclassLKWPoint_html_ad01a1011ca2aec79495dd0fff6d578db"><div class="ttname"><a href="classLKWPoint.html#ad01a1011ca2aec79495dd0fff6d578db">LKWPoint::w</a></div><div class="ttdeci">Double_t w() const</div><div class="ttdef"><b>Definition</b> <a href="LKWPoint_8h_source.html#l00038">LKWPoint.h:38</a></div></div>

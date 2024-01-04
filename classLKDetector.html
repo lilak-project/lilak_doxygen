@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -62,10 +62,13 @@ Inheritance diagram for LKDetector:</div>
  <div class="center">
   <img src="classLKDetector.png" usemap="#LKDetector_map" alt=""/>
   <map id="LKDetector_map" name="LKDetector_map">
-<area href="classLKGear.html" alt="LKGear" shape="rect" coords="127,0,202,24"/>
-<area href="classLHTpc.html" alt="LHTpc" shape="rect" coords="0,112,75,136"/>
-<area href="classLKTpc.html" alt="LKTpc" shape="rect" coords="85,112,160,136"/>
-<area href="classTexAT2.html" alt="TexAT2" shape="rect" coords="170,112,245,136"/>
+<area href="classLKGear.html" alt="LKGear" shape="rect" coords="267,0,346,24"/>
+<area href="classATTPC.html" alt="ATTPC" shape="rect" coords="0,112,79,136"/>
+<area href="classAToMX.html" alt="AToMX" shape="rect" coords="89,112,168,136"/>
+<area href="classLAMPSTPC.html" alt="LAMPSTPC" shape="rect" coords="178,112,257,136"/>
+<area href="classLHTpc.html" alt="LHTpc" shape="rect" coords="267,112,346,136"/>
+<area href="classLKTpc.html" alt="LKTpc" shape="rect" coords="356,112,435,136"/>
+<area href="classTexAT2.html" alt="TexAT2" shape="rect" coords="445,112,524,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -77,18 +80,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1902e18b174f1c4455e6a8ac3b8a5845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab078e5339e5130c682d8fbac3581ac0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#ab078e5339e5130c682d8fbac3581ac0c">FinishGeometry</a> ()</td></tr>
 <tr class="separator:ab078e5339e5130c682d8fbac3581ac0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bcda0b2fda28aab9788a38b93a2e83"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a36bcda0b2fda28aab9788a38b93a2e83">GetChannelAnalyzer</a> (int id=0)</td></tr>
+<tr class="separator:a36bcda0b2fda28aab9788a38b93a2e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68ec311802b077b093d14cac16405ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKDetectorPlane.html">LKDetectorPlane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#ae68ec311802b077b093d14cac16405ba">GetDetectorPlane</a> (Int_t idx=0)</td></tr>
 <tr class="separator:ae68ec311802b077b093d14cac16405ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b216f9af05ff7965cd191bf636c6c3c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a9b216f9af05ff7965cd191bf636c6c3c">GetEffectiveDimension</a> (Double_t &amp;x1, Double_t &amp;y1, Double_t &amp;<a class="el" href="LKHTLineTracker3D_8cpp.html#a0e1fe82df628138c8f3907ecddb514ae">z1</a>, Double_t &amp;x2, Double_t &amp;<a class="el" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>, Double_t &amp;<a class="el" href="LKHTLineTracker3D_8cpp.html#a822ab991099a420eb62b3f0e2b0021a2">z2</a>)</td></tr>
+<tr class="separator:a9b216f9af05ff7965cd191bf636c6c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2b3fd3b57625eca95621a275da1a77"><td class="memItemLeft" align="right" valign="top">TGeoManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#aed2b3fd3b57625eca95621a275da1a77">GetGeoManager</a> ()</td></tr>
 <tr class="separator:aed2b3fd3b57625eca95621a275da1a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af2d4cd5f3a79738b7cef53d90d0032"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a8af2d4cd5f3a79738b7cef53d90d0032">GetNumPlanes</a> ()</td></tr>
 <tr class="separator:a8af2d4cd5f3a79738b7cef53d90d0032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18af9b3a542445d8ef8d4f7241e7612f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKDetectorSystem.html">LKDetectorSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a18af9b3a542445d8ef8d4f7241e7612f">GetParent</a> ()</td></tr>
 <tr class="separator:a18af9b3a542445d8ef8d4f7241e7612f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af14987fb3f86075a579be53124dceede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKPulseGenerator.html">LKPulseGenerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#af14987fb3f86075a579be53124dceede">GetPulseGenerator</a> ()</td></tr>
-<tr class="separator:af14987fb3f86075a579be53124dceede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313ee7e9da1d935070c7167a874164d5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a313ee7e9da1d935070c7167a874164d5">Init</a> ()=0</td></tr>
-<tr class="separator:a313ee7e9da1d935070c7167a874164d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae262836bcc60db6c9bc965ee7f30ecd4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#ae262836bcc60db6c9bc965ee7f30ecd4">Init</a> ()</td></tr>
+<tr class="separator:ae262836bcc60db6c9bc965ee7f30ecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c33eb4da76f6dd2da5bed2318a5bfd8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a1c33eb4da76f6dd2da5bed2318a5bfd8">IsInBoundary</a> (Double_t x, Double_t y, Double_t z)</td></tr>
 <tr class="separator:a1c33eb4da76f6dd2da5bed2318a5bfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05639a58e2662934ae62d58e99c2a3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#aa05639a58e2662934ae62d58e99c2a3b">LKDetector</a> ()</td></tr>
@@ -101,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4d207d134e0b1be3ce036435847c255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c30d7322e8d0b370948a47d5ab4093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#af5c30d7322e8d0b370948a47d5ab4093">SetParent</a> (<a class="el" href="classLKDetectorSystem.html">LKDetectorSystem</a> *system)</td></tr>
 <tr class="separator:af5c30d7322e8d0b370948a47d5ab4093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a403a29b10505ccc9a87f2bd5d1ba0fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a403a29b10505ccc9a87f2bd5d1ba0fd7">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *run)</td></tr>
+<tr class="memitem:a403a29b10505ccc9a87f2bd5d1ba0fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a403a29b10505ccc9a87f2bd5d1ba0fd7">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *<a class="el" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a>)</td></tr>
 <tr class="separator:a403a29b10505ccc9a87f2bd5d1ba0fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac979d2610f64c038e0a1014a31fb7aa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#ac979d2610f64c038e0a1014a31fb7aa3">SetTransparency</a> (Int_t transparency)</td></tr>
 <tr class="separator:ac979d2610f64c038e0a1014a31fb7aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e46624504516d1bf1f77138a15ea352 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2b2ba0fd03e84062f32899bfa6c6f1 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#a8d2b2ba0fd03e84062f32899bfa6c6f1">SetRank</a> (Int_t rank)</td></tr>
 <tr class="separator:a8d2b2ba0fd03e84062f32899bfa6c6f1 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#ada05dd787bc825f3dd7680086c5dd560">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *run)</td></tr>
+<tr class="memitem:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#ada05dd787bc825f3dd7680086c5dd560">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *<a class="el" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a>)</td></tr>
 <tr class="separator:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466d2dc32afb9b217e3dfaf0322944fe inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#a466d2dc32afb9b217e3dfaf0322944fe">~LKGear</a> ()</td></tr>
 <tr class="separator:a466d2dc32afb9b217e3dfaf0322944fe inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +151,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a8de7b164f0e9136c5ebb6db97bb42b90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a8de7b164f0e9136c5ebb6db97bb42b90">fChannelAnalyzer0</a> = nullptr</td></tr>
+<tr class="separator:a8de7b164f0e9136c5ebb6db97bb42b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a772a25f579cef50899a5f35003f686f2"><td class="memItemLeft" align="right" valign="top">TObjArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a772a25f579cef50899a5f35003f686f2">fDetectorPlaneArray</a></td></tr>
 <tr class="separator:a772a25f579cef50899a5f35003f686f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699477f5dbd126e525d749d78fc4206f"><td class="memItemLeft" align="right" valign="top">TGeoManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKDetector.html#a699477f5dbd126e525d749d78fc4206f">fGeoManager</a> = nullptr</td></tr>
@@ -166,7 +173,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00016">16</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00017">17</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa05639a58e2662934ae62d58e99c2a3b" name="aa05639a58e2662934ae62d58e99c2a3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa05639a58e2662934ae62d58e99c2a3b">&#9670;&#160;</a></span>LKDetector() <span class="overload">[1/2]</span></h2>
@@ -238,7 +245,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00021">21</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00022">22</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
 </div>
 </div>
@@ -269,11 +276,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00039">39</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00049">49</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00052">fNumPlanes</a>, <a class="el" href="LKGear_8h_source.html#l00041">LKGear::fRank</a>, <a class="el" href="LKGear_8h_source.html#l00040">LKGear::fRun</a>, <a class="el" href="classLKDetector.html#a313ee7e9da1d935070c7167a874164d5">Init()</a>, <a class="el" href="LKGear_8cpp_source.html#l00033">LKGear::SetRank()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00082">SetRun()</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00056">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00055">fNumPlanes</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKGear_8h_source.html#l00041">LKGear::fRank</a>, <a class="el" href="LKGear_8h_source.html#l00040">LKGear::fRun</a>, <a class="el" href="LKGear_8h_source.html#l00026">LKGear::SetPar()</a>, <a class="el" href="LKGear_8cpp_source.html#l00035">LKGear::SetRank()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00094">SetRun()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00077">LHTpc::BuildDetectorPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00077">LHTpc::BuildDetectorPlane()</a>, <a class="el" href="LAMPSTPC_8cpp_source.html#l00101">LAMPSTPC::BuildDetectorPlane()</a>, <a class="el" href="ATTPC_8cpp_source.html#l00153">ATTPC::BuildDetectorPlane()</a>, and <a class="el" href="TexAT2_8cpp_source.html#l00421">TexAT2::BuildDetectorPlane()</a>.</p>
 
 </div>
 </div>
@@ -300,7 +307,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classLHTpc.html#aab0979ee10b8c7b3dbf24c21b851c224">LHTpc</a>, and <a class="el" href="classTexAT2.html#ae228f1f0573d76b204a3ba5d703c29ca">TexAT2</a>.</p>
+<p>Implemented in <a class="el" href="classAToMX.html#a51303785f1e00a44717fb350654ef89f">AToMX</a>, <a class="el" href="classLHTpc.html#aab0979ee10b8c7b3dbf24c21b851c224">LHTpc</a>, <a class="el" href="classLAMPSTPC.html#ade3e468d037b229ae1bebe8dafe60a58">LAMPSTPC</a>, <a class="el" href="classATTPC.html#a5b3db68918f90a16306d84f3eebbca66">ATTPC</a>, and <a class="el" href="classTexAT2.html#ae228f1f0573d76b204a3ba5d703c29ca">TexAT2</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00028">Init()</a>.</p>
 
 </div>
 </div>
@@ -327,7 +336,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classLHTpc.html#a00b9a87abcc3e164221df4649c8499e8">LHTpc</a>, and <a class="el" href="classTexAT2.html#af31fdc0f1aac88a7e76bea95cb07f470">TexAT2</a>.</p>
+<p>Implemented in <a class="el" href="classAToMX.html#afcb15153c38178b7b76fa47abc2de1cc">AToMX</a>, <a class="el" href="classLHTpc.html#a00b9a87abcc3e164221df4649c8499e8">LHTpc</a>, <a class="el" href="classLAMPSTPC.html#a9c7c01b0a3d31e1b233e433a8f57f22e">LAMPSTPC</a>, <a class="el" href="classATTPC.html#a8882b6b788dcfa883492e34f18bffa2a">ATTPC</a>, and <a class="el" href="classTexAT2.html#af31fdc0f1aac88a7e76bea95cb07f470">TexAT2</a>.</p>
 
 </div>
 </div>
@@ -347,9 +356,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00058">58</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00069">69</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00050">fGeoManager</a>, <a class="el" href="LKDetector_8h_source.html#l00056">fParent</a>, and <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fGeoManager</a>, <a class="el" href="LKDetector_8h_source.html#l00059">fParent</a>, and <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>.</p>
 
@@ -370,11 +379,43 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00070">70</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00082">82</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00050">fGeoManager</a>, <a class="el" href="LKDetector_8h_source.html#l00056">fParent</a>, and <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fGeoManager</a>, <a class="el" href="LKDetector_8h_source.html#l00059">fParent</a>, and <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>, and <a class="el" href="ATTPC_8cpp_source.html#l00045">ATTPC::BuildGeometry()</a>.</p>
+
+</div>
+</div>
+<a id="a36bcda0b2fda28aab9788a38b93a2e83" name="a36bcda0b2fda28aab9788a38b93a2e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bcda0b2fda28aab9788a38b93a2e83">&#9670;&#160;</a></span>GetChannelAnalyzer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a> * LKDetector::GetChannelAnalyzer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classLAMPSTPC.html#a3352edb0d51a119450fa0ae149349a8f">LAMPSTPC</a>, and <a class="el" href="classTexAT2.html#a6a6059f38b8495578c2eb47294986fef">TexAT2</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00104">104</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKParameterContainer_8cpp_source.html#l01035">LKParameterContainer::CheckPar()</a>, <a class="el" href="LKDetector_8h_source.html#l00061">fChannelAnalyzer0</a>, and <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>.</p>
 
 </div>
 </div>
@@ -394,11 +435,75 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00053">53</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00064">64</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fDetectorPlaneArray</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00056">fDetectorPlaneArray</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKTpc_8cpp_source.html#l00018">LKTpc::GetPadPlane()</a>.</p>
+
+</div>
+</div>
+<a id="a9b216f9af05ff7965cd191bf636c6c3c" name="a9b216f9af05ff7965cd191bf636c6c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b216f9af05ff7965cd191bf636c6c3c">&#9670;&#160;</a></span>GetEffectiveDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LKDetector::GetEffectiveDimension </td>
+          <td>(</td>
+          <td class="paramtype">Double_t &amp;&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t &amp;&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t &amp;&#160;</td>
+          <td class="paramname"><em>z1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t &amp;&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t &amp;&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t &amp;&#160;</td>
+          <td class="paramname"><em>z2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classLAMPSTPC.html#a051b423bed8841a3c40a01aa87bed8d9">LAMPSTPC</a>, and <a class="el" href="classTexAT2.html#aad99536cc977e5172f5fa8225f4cb9c7">TexAT2</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00045">45</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
 </div>
 </div>
@@ -417,9 +522,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00028">28</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00038">38</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00050">fGeoManager</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fGeoManager</a>.</p>
 
 </div>
 </div>
@@ -438,9 +543,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00051">51</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00062">62</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00052">fNumPlanes</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00055">fNumPlanes</a>.</p>
 
 </div>
 </div>
@@ -459,35 +564,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00055">55</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00066">66</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00056">fParent</a>.</p>
-
-</div>
-</div>
-<a id="af14987fb3f86075a579be53124dceede" name="af14987fb3f86075a579be53124dceede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af14987fb3f86075a579be53124dceede">&#9670;&#160;</a></span>GetPulseGenerator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLKPulseGenerator.html">LKPulseGenerator</a> * LKDetector::GetPulseGenerator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00092">92</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKDetector_8h_source.html#l00055">fPulseGenerator</a>, <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>, and <a class="el" href="LKLogger_8h_source.html#l00030">lk_warning</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00059">fParent</a>.</p>
 
 </div>
 </div>
-<a id="a313ee7e9da1d935070c7167a874164d5" name="a313ee7e9da1d935070c7167a874164d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a313ee7e9da1d935070c7167a874164d5">&#9670;&#160;</a></span>Init()</h2>
+<a id="ae262836bcc60db6c9bc965ee7f30ecd4" name="ae262836bcc60db6c9bc965ee7f30ecd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae262836bcc60db6c9bc965ee7f30ecd4">&#9670;&#160;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +580,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool LKDetector::Init </td>
+          <td class="memname">bool LKDetector::Init </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -504,14 +588,18 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classLHTpc.html#a0db375c64344223eb01564d2e3374eda">LHTpc</a>, and <a class="el" href="classTexAT2.html#a515cb9ee97778c26077762f1b1d38987">TexAT2</a>.</p>
+<p>Reimplemented in <a class="el" href="classAToMX.html#ae382b4acab38861c1273930b41f27284">AToMX</a>, <a class="el" href="classLHTpc.html#a0db375c64344223eb01564d2e3374eda">LHTpc</a>, <a class="el" href="classLAMPSTPC.html#aaccab96e189a1e14397524708fc638be">LAMPSTPC</a>, <a class="el" href="classATTPC.html#a7ac2ecf70ab471994229944a7595574c">ATTPC</a>, and <a class="el" href="classTexAT2.html#a515cb9ee97778c26077762f1b1d38987">TexAT2</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00039">AddPlane()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00028">28</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="classLKDetector.html#a11394153fbf4d7f78152d90af61ba8ef">BuildDetectorPlane()</a>, <a class="el" href="LKDetector_8h_source.html#l00056">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00055">fNumPlanes</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00028">Init()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LAMPSTPC_8cpp_source.html#l00029">LAMPSTPC::Init()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00028">Init()</a>, and <a class="el" href="TexAT2_8cpp_source.html#l00028">TexAT2::Init()</a>.</p>
 
 </div>
 </div>
@@ -555,9 +643,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classTexAT2.html#a1958e3a76adc493cffc0f4014a23c6ac">TexAT2</a>.</p>
+<p>Reimplemented in <a class="el" href="classAToMX.html#a26aaa0cdd64add14593d5c3a7296dc2d">AToMX</a>, <a class="el" href="classLAMPSTPC.html#a8a542aba16ed5554d466043c2d772e11">LAMPSTPC</a>, and <a class="el" href="classTexAT2.html#a1958e3a76adc493cffc0f4014a23c6ac">TexAT2</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00033">33</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00034">34</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
 </div>
 </div>
@@ -585,11 +673,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classTexAT2.html#a96ed160fc72ab18d3ed8eec8ff88c3d9">TexAT2</a>.</p>
+<p>Reimplemented in <a class="el" href="classAToMX.html#ab8570de76c717815efbcdd3bf9960280">AToMX</a>, <a class="el" href="classLAMPSTPC.html#a4390a41670e28271cfd7bc7ad102e4b4">LAMPSTPC</a>, and <a class="el" href="classTexAT2.html#a96ed160fc72ab18d3ed8eec8ff88c3d9">TexAT2</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00019">19</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00052">fNumPlanes</a>, <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00056">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00055">fNumPlanes</a>, <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>.</p>
 
@@ -611,9 +699,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00029">29</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00039">39</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00050">fGeoManager</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fGeoManager</a>.</p>
 
 </div>
 </div>
@@ -633,9 +721,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00056">56</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00067">67</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00056">fParent</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00059">fParent</a>.</p>
 
 </div>
 </div>
@@ -655,11 +743,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00082">82</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00094">94</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00053">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00052">fNumPlanes</a>, <a class="el" href="LKGear_8h_source.html#l00040">LKGear::fRun</a>, <a class="el" href="LKLogger_8h_source.html#l00027">lk_debug</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00082">SetRun()</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8h_source.html#l00056">fDetectorPlaneArray</a>, <a class="el" href="LKDetector_8h_source.html#l00055">fNumPlanes</a>, <a class="el" href="LKGear_8h_source.html#l00040">LKGear::fRun</a>, <a class="el" href="LKLogger_8h_source.html#l00027">lk_debug</a>, <a class="el" href="debug_8C_source.html#l00003">run</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00094">SetRun()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00039">AddPlane()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00082">SetRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00049">AddPlane()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00094">SetRun()</a>.</p>
 
 </div>
 </div>
@@ -679,15 +767,41 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00031">31</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8cpp_source.html#l00041">41</a> of file <a class="el" href="LKDetector_8cpp_source.html">LKDetector.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetector_8cpp_source.html#l00031">SetTransparency()</a>.</p>
+<p class="reference">References <a class="el" href="LKDetector_8cpp_source.html#l00041">SetTransparency()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00031">SetTransparency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>, <a class="el" href="ATTPC_8cpp_source.html#l00045">ATTPC::BuildGeometry()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00041">SetTransparency()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8de7b164f0e9136c5ebb6db97bb42b90" name="a8de7b164f0e9136c5ebb6db97bb42b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de7b164f0e9136c5ebb6db97bb42b90">&#9670;&#160;</a></span>fChannelAnalyzer0</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a>* LKDetector::fChannelAnalyzer0 = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00061">61</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00104">GetChannelAnalyzer()</a>.</p>
+
+</div>
+</div>
 <a id="a772a25f579cef50899a5f35003f686f2" name="a772a25f579cef50899a5f35003f686f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a772a25f579cef50899a5f35003f686f2">&#9670;&#160;</a></span>fDetectorPlaneArray</h2>
 
@@ -708,9 +822,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00053">53</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00056">56</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00039">AddPlane()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00053">GetDetectorPlane()</a>, <a class="el" href="LHTpc_8cpp_source.html#l00038">LHTpc::GetDriftPlane()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00082">SetRun()</a>, and <a class="el" href="TexAT2_8cpp_source.html#l00005">TexAT2::TexAT2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00049">AddPlane()</a>, <a class="el" href="AToMX_8cpp_source.html#l00005">AToMX::AToMX()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00064">GetDetectorPlane()</a>, <a class="el" href="LHTpc_8cpp_source.html#l00038">LHTpc::GetDriftPlane()</a>, <a class="el" href="ATTPC_8cpp_source.html#l00040">ATTPC::GetDriftPlane()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00028">Init()</a>, <a class="el" href="LAMPSTPC_8cpp_source.html#l00006">LAMPSTPC::LAMPSTPC()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00094">SetRun()</a>, and <a class="el" href="TexAT2_8cpp_source.html#l00006">TexAT2::TexAT2()</a>.</p>
 
 </div>
 </div>
@@ -734,9 +848,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00050">50</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00053">53</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00058">CreateGeoTop()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00070">FinishGeometry()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00028">GetGeoManager()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00029">SetGeoManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LHTpc_8cpp_source.html#l00043">LHTpc::BuildGeometry()</a>, <a class="el" href="ATTPC_8cpp_source.html#l00045">ATTPC::BuildGeometry()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00069">CreateGeoTop()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00082">FinishGeometry()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00038">GetGeoManager()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00039">SetGeoManager()</a>.</p>
 
 </div>
 </div>
@@ -760,9 +874,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00052">52</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00055">55</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00039">AddPlane()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00051">GetNumPlanes()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00082">SetRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00049">AddPlane()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00062">GetNumPlanes()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00028">Init()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00019">Print()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00094">SetRun()</a>.</p>
 
 </div>
 </div>
@@ -786,9 +900,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00056">56</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00059">59</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00058">CreateGeoTop()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00070">FinishGeometry()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00055">GetParent()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00056">SetParent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00069">CreateGeoTop()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00082">FinishGeometry()</a>, <a class="el" href="LKDetector_8cpp_source.html#l00066">GetParent()</a>, and <a class="el" href="LKDetector_8cpp_source.html#l00067">SetParent()</a>.</p>
 
 </div>
 </div>
@@ -812,9 +926,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00055">55</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="LKDetector_8cpp_source.html#l00092">GetPulseGenerator()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKDetector_8h_source.html#l00058">58</a> of file <a class="el" href="LKDetector_8h_source.html">LKDetector.h</a>.</p>
 
 </div>
 </div>

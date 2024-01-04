@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
   <div class="headertitle"><div class="title">LKMCStep.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="LKMCStep_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;LKLogger.h&quot;</span></div>
+<a href="LKMCStep_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKLogger_8h.html">LKLogger.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="LKMCStep_8h.html">LKMCStep.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef ACTIVATE_EVE</span></div>
@@ -123,7 +123,7 @@ $(function() {
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#ifdef ACTIVATE_EVE</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">bool</span> LKMCStep::DrawByDefault() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLKContainer.html#a04cc6293f0e597f92347f1ea833d0b93">LKMCStep::DrawByDefault</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">bool</span> LKMCStep::IsEveSet() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>TEveElement *LKMCStep::CreateEveElement()</div>
@@ -146,9 +146,11 @@ $(function() {
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    pointSet -&gt; SetNextPoint(scale*<a class="code hl_variable" href="classLKMCStep.html#a25c151eaea226a62245f04ef8ae72f6c">fX</a>, scale*<a class="code hl_variable" href="classLKMCStep.html#ace2b7a1532bcd58f2c590f0a08a5f544">fY</a>, scale*<a class="code hl_variable" href="classLKMCStep.html#ad5ecd8a5c65ed07b73571002be0ce6d4">fZ</a>);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00038">LKLogger.h:38</a></div></div>
 <div class="ttc" id="aLKMCStep_8cpp_html_a3b1b43a3b999a83dd9e066861e4e7392"><div class="ttname"><a href="LKMCStep_8cpp.html#a3b1b43a3b999a83dd9e066861e4e7392">ClassImp</a></div><div class="ttdeci">ClassImp(LKMCStep) LKMCStep</div><div class="ttdef"><b>Definition</b> <a href="LKMCStep_8cpp_source.html#l00012">LKMCStep.cpp:12</a></div></div>
 <div class="ttc" id="aLKMCStep_8h_html"><div class="ttname"><a href="LKMCStep_8h.html">LKMCStep.h</a></div></div>
+<div class="ttc" id="aclassLKContainer_html_a04cc6293f0e597f92347f1ea833d0b93"><div class="ttname"><a href="classLKContainer.html#a04cc6293f0e597f92347f1ea833d0b93">LKContainer::DrawByDefault</a></div><div class="ttdeci">virtual bool DrawByDefault()</div><div class="ttdoc">return true if to be displayed on eve.</div><div class="ttdef"><b>Definition</b> <a href="LKContainer_8h_source.html#l00018">LKContainer.h:18</a></div></div>
 <div class="ttc" id="aclassLKMCStep_html"><div class="ttname"><a href="classLKMCStep.html">LKMCStep</a></div><div class="ttdef"><b>Definition</b> <a href="LKMCStep_8h_source.html#l00011">LKMCStep.h:12</a></div></div>
 <div class="ttc" id="aclassLKMCStep_html_a04f4a5af1e086c6adec312558f28154e"><div class="ttname"><a href="classLKMCStep.html#a04f4a5af1e086c6adec312558f28154e">LKMCStep::GetTime</a></div><div class="ttdeci">Double_t GetTime() const</div><div class="ttdef"><b>Definition</b> <a href="LKMCStep_8cpp_source.html#l00065">LKMCStep.cpp:65</a></div></div>
 <div class="ttc" id="aclassLKMCStep_html_a0b50e364433fea4690ece2d11f678320"><div class="ttname"><a href="classLKMCStep.html#a0b50e364433fea4690ece2d11f678320">LKMCStep::SetY</a></div><div class="ttdeci">void SetY(Double_t val)</div><div class="ttdef"><b>Definition</b> <a href="LKMCStep_8cpp_source.html#l00046">LKMCStep.cpp:46</a></div></div>

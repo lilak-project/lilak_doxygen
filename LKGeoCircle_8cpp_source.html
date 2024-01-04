@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -54,7 +54,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="LKGeoCircle_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKGeoCircle_8h.html">LKGeoCircle.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;LKLogger.h&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="LKLogger_8h.html">LKLogger.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;TMath.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;TRandom.h&quot;</span></div>
@@ -109,7 +109,7 @@ $(function() {
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        TVector3 pointer(<a class="code hl_variable" href="classLKGeoCircle.html#a23fb5a851c9174a971ecc6782430473f">fR</a>,0,0);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        pointer.RotateZ(i*(theta2-theta1)/n);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">auto</span> point = center + pointer;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        graph -&gt; SetPoint(graph-&gt;GetN(), point.X(), point.Y());</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        graph -&gt; <a class="code hl_function" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a>(graph-&gt;GetN(), point.X(), point.Y());</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> graph;</div>
@@ -134,6 +134,8 @@ $(function() {
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 <div class="ttc" id="aLKGeoCircle_8cpp_html_af101dc6bf166e663d6be273fe4fe5bba"><div class="ttname"><a href="LKGeoCircle_8cpp.html#af101dc6bf166e663d6be273fe4fe5bba">ClassImp</a></div><div class="ttdeci">ClassImp(LKGeoCircle) LKGeoCircle</div><div class="ttdef"><b>Definition</b> <a href="LKGeoCircle_8cpp_source.html#l00008">LKGeoCircle.cpp:8</a></div></div>
 <div class="ttc" id="aLKGeoCircle_8h_html"><div class="ttname"><a href="LKGeoCircle_8h.html">LKGeoCircle.h</a></div></div>
+<div class="ttc" id="aLKHTLineTracker3D_8cpp_html_abc88e651d827d77b6db5f12e23f9d154"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a></div><div class="ttdeci">fParamPoint SetPoint(fTransformCenter, y1, z1, t1, p1, y2, z2, t2, p2, fParamData[iy][iz][it][ip])</div></div>
+<div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00038">LKLogger.h:38</a></div></div>
 <div class="ttc" id="aclassLKGeoCircle_html"><div class="ttname"><a href="classLKGeoCircle.html">LKGeoCircle</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeoCircle_8h_source.html#l00010">LKGeoCircle.h:11</a></div></div>
 <div class="ttc" id="aclassLKGeoCircle_html_a126596741af5aee6257d03389845af0d"><div class="ttname"><a href="classLKGeoCircle.html#a126596741af5aee6257d03389845af0d">LKGeoCircle::GetRadius</a></div><div class="ttdeci">Double_t GetRadius() const</div><div class="ttdef"><b>Definition</b> <a href="LKGeoCircle_8cpp_source.html#l00043">LKGeoCircle.cpp:43</a></div></div>

@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -56,30 +56,34 @@ $(function() {
 <a href="LKSteppingAction_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LKSTEPPINGACTION_HH</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LKSTEPPINGACTION_HH</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="LKG4RunManager_8h.html">LKG4RunManager.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;G4UserSteppingAction.hh&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;G4Step.hh&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;globals.hh&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classLKSteppingAction.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classLKSteppingAction.html">LKSteppingAction</a> : <span class="keyword">public</span> G4UserSteppingAction</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_function" href="classLKSteppingAction.html#af4b08b1acb080114fdecf861c5c527d8">LKSteppingAction</a>();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_function" href="classLKSteppingAction.html#af4b08b1acb080114fdecf861c5c527d8">LKSteppingAction</a>(<a class="code hl_class" href="classLKG4RunManager.html">LKG4RunManager</a> *man);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classLKSteppingAction.html#a07152a24914d7d49e61116cb9996a8ba">   14</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classLKSteppingAction.html#a07152a24914d7d49e61116cb9996a8ba">~LKSteppingAction</a>() {}</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classLKSteppingAction.html#a5f2182b6bab8134400fae459840b1d04">UserSteppingAction</a>(<span class="keyword">const</span> G4Step*);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classLKSteppingAction.html#a311dd546e83c8b7c6a2528f2ac80d68b">   19</a></span>        <a class="code hl_class" href="classLKG4RunManager.html">LKG4RunManager</a> *<a class="code hl_variable" href="classLKSteppingAction.html#a311dd546e83c8b7c6a2528f2ac80d68b">fRunManager</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="LKSteppingAction_8h.html#acedf1e182d3803b152971f59f0ca47be">    4</a></span><span class="preprocessor">#define TEST_KILL_TRACK</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//#define LKG4_DEBUG_STEPPINGACTION</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="LKG4RunManager_8h.html">LKG4RunManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;G4UserSteppingAction.hh&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;G4Step.hh&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;globals.hh&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classLKSteppingAction.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classLKSteppingAction.html">LKSteppingAction</a> : <span class="keyword">public</span> G4UserSteppingAction</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_function" href="classLKSteppingAction.html#af4b08b1acb080114fdecf861c5c527d8">LKSteppingAction</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_function" href="classLKSteppingAction.html#af4b08b1acb080114fdecf861c5c527d8">LKSteppingAction</a>(<a class="code hl_class" href="classLKG4RunManager.html">LKG4RunManager</a> *man);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classLKSteppingAction.html#a07152a24914d7d49e61116cb9996a8ba">   18</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classLKSteppingAction.html#a07152a24914d7d49e61116cb9996a8ba">~LKSteppingAction</a>() {}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classLKSteppingAction.html#a5f2182b6bab8134400fae459840b1d04">UserSteppingAction</a>(<span class="keyword">const</span> G4Step*);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classLKSteppingAction.html#a311dd546e83c8b7c6a2528f2ac80d68b">   23</a></span>        <a class="code hl_class" href="classLKG4RunManager.html">LKG4RunManager</a> *<a class="code hl_variable" href="classLKSteppingAction.html#a311dd546e83c8b7c6a2528f2ac80d68b">fRunManager</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aLKG4RunManager_8h_html"><div class="ttname"><a href="LKG4RunManager_8h.html">LKG4RunManager.h</a></div></div>
-<div class="ttc" id="aclassLKG4RunManager_html"><div class="ttname"><a href="classLKG4RunManager.html">LKG4RunManager</a></div><div class="ttdef"><b>Definition</b> <a href="LKG4RunManager_8h_source.html#l00027">LKG4RunManager.h:28</a></div></div>
-<div class="ttc" id="aclassLKSteppingAction_html"><div class="ttname"><a href="classLKSteppingAction.html">LKSteppingAction</a></div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8h_source.html#l00009">LKSteppingAction.h:10</a></div></div>
-<div class="ttc" id="aclassLKSteppingAction_html_a07152a24914d7d49e61116cb9996a8ba"><div class="ttname"><a href="classLKSteppingAction.html#a07152a24914d7d49e61116cb9996a8ba">LKSteppingAction::~LKSteppingAction</a></div><div class="ttdeci">virtual ~LKSteppingAction()</div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8h_source.html#l00014">LKSteppingAction.h:14</a></div></div>
-<div class="ttc" id="aclassLKSteppingAction_html_a311dd546e83c8b7c6a2528f2ac80d68b"><div class="ttname"><a href="classLKSteppingAction.html#a311dd546e83c8b7c6a2528f2ac80d68b">LKSteppingAction::fRunManager</a></div><div class="ttdeci">LKG4RunManager * fRunManager</div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8h_source.html#l00019">LKSteppingAction.h:19</a></div></div>
+<div class="ttc" id="aclassLKG4RunManager_html"><div class="ttname"><a href="classLKG4RunManager.html">LKG4RunManager</a></div><div class="ttdef"><b>Definition</b> <a href="LKG4RunManager_8h_source.html#l00032">LKG4RunManager.h:33</a></div></div>
+<div class="ttc" id="aclassLKSteppingAction_html"><div class="ttname"><a href="classLKSteppingAction.html">LKSteppingAction</a></div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8h_source.html#l00013">LKSteppingAction.h:14</a></div></div>
+<div class="ttc" id="aclassLKSteppingAction_html_a07152a24914d7d49e61116cb9996a8ba"><div class="ttname"><a href="classLKSteppingAction.html#a07152a24914d7d49e61116cb9996a8ba">LKSteppingAction::~LKSteppingAction</a></div><div class="ttdeci">virtual ~LKSteppingAction()</div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8h_source.html#l00018">LKSteppingAction.h:18</a></div></div>
+<div class="ttc" id="aclassLKSteppingAction_html_a311dd546e83c8b7c6a2528f2ac80d68b"><div class="ttname"><a href="classLKSteppingAction.html#a311dd546e83c8b7c6a2528f2ac80d68b">LKSteppingAction::fRunManager</a></div><div class="ttdeci">LKG4RunManager * fRunManager</div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8h_source.html#l00023">LKSteppingAction.h:23</a></div></div>
 <div class="ttc" id="aclassLKSteppingAction_html_a5f2182b6bab8134400fae459840b1d04"><div class="ttname"><a href="classLKSteppingAction.html#a5f2182b6bab8134400fae459840b1d04">LKSteppingAction::UserSteppingAction</a></div><div class="ttdeci">virtual void UserSteppingAction(const G4Step *)</div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8cpp_source.html#l00017">LKSteppingAction.cpp:17</a></div></div>
 <div class="ttc" id="aclassLKSteppingAction_html_af4b08b1acb080114fdecf861c5c527d8"><div class="ttname"><a href="classLKSteppingAction.html#af4b08b1acb080114fdecf861c5c527d8">LKSteppingAction::LKSteppingAction</a></div><div class="ttdeci">LKSteppingAction()</div><div class="ttdef"><b>Definition</b> <a href="LKSteppingAction_8cpp_source.html#l00006">LKSteppingAction.cpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

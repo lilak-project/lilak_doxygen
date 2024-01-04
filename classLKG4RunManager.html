@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -48,6 +48,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLKG4RunManager-members.html">List of all members</a>  </div>
@@ -70,10 +71,10 @@ Inheritance diagram for LKG4RunManager:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a862dae7b869ff80d504df9d7d3fe7d6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a862dae7b869ff80d504df9d7d3fe7d6e">AddMCStep</a> (Int_t dID, Double_t x, Double_t y, Double_t z, Double_t t, Double_t e)</td></tr>
 <tr class="separator:a862dae7b869ff80d504df9d7d3fe7d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c77430174b695338a61812978a167e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#aa4c77430174b695338a61812978a167e">AddMCTrack</a> (Int_t trackID, Int_t parentID, Int_t pdg, Double_t px, Double_t py, Double_t pz, Int_t dID, Double_t vx, Double_t vy, Double_t vz, Int_t pcID)</td></tr>
-<tr class="separator:aa4c77430174b695338a61812978a167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80b47eef3c4834a8c2a874b893a108dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a80b47eef3c4834a8c2a874b893a108dc">AddTrackVertex</a> (Double_t px, Double_t py, Double_t pz, Int_t dID, Double_t vx, Double_t vy, Double_t vz)</td></tr>
-<tr class="separator:a80b47eef3c4834a8c2a874b893a108dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146d8839493b8949872b73be89f9a329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a146d8839493b8949872b73be89f9a329">AddMCTrack</a> (Int_t trackID, Int_t parentID, Int_t pdg, Int_t detectorID, Int_t processID, Double_t vx, Double_t vy, Double_t vz, Double_t px, Double_t py, Double_t pz, Double_t energy)</td></tr>
+<tr class="separator:a146d8839493b8949872b73be89f9a329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6069d8b43709f480fec68f48a8c3ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a2d6069d8b43709f480fec68f48a8c3ee">AddTrackVertex</a> (Int_t detectorID, Int_t processID, Double_t vx, Double_t vy, Double_t vz, Double_t px, Double_t py, Double_t pz, Double_t energy)</td></tr>
+<tr class="separator:a2d6069d8b43709f480fec68f48a8c3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65285cc3dccbc68da3e2aaa2624e5bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a65285cc3dccbc68da3e2aaa2624e5bc6">BeamOn</a> (G4int numEvents, const char *macroFile=0, G4int numSelect=-1)</td></tr>
 <tr class="separator:a65285cc3dccbc68da3e2aaa2624e5bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45759543fd1515c1ce70213ec3c5b673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a45759543fd1515c1ce70213ec3c5b673">BeamOnAll</a> ()</td></tr>
@@ -88,6 +89,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a65273c15bdfb22ec126b72f9c9eba42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc8eede4898e9db22c8630bb971d44b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a1bc8eede4898e9db22c8630bb971d44b">Initialize</a> ()</td></tr>
 <tr class="separator:a1bc8eede4898e9db22c8630bb971d44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e12685364ab0e222348f71ca79ff52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a84e12685364ab0e222348f71ca79ff52">InitializeAndRun</a> (G4int argc=0, char **argv=nullptr, const G4String &amp;type=&quot;&quot;)</td></tr>
+<tr class="separator:a84e12685364ab0e222348f71ca79ff52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8b1e3f2ae0f63cc6c4f9636cdfa26d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#afc8b1e3f2ae0f63cc6c4f9636cdfa26d">InitializeGeometry</a> ()</td></tr>
 <tr class="separator:afc8b1e3f2ae0f63cc6c4f9636cdfa26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a251ab4d96d90e71ebf029eff161aa1e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a251ab4d96d90e71ebf029eff161aa1e4">InitializePhysics</a> ()</td></tr>
@@ -135,10 +138,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e46624504516d1bf1f77138a15ea352 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2b2ba0fd03e84062f32899bfa6c6f1 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#a8d2b2ba0fd03e84062f32899bfa6c6f1">SetRank</a> (Int_t rank)</td></tr>
 <tr class="separator:a8d2b2ba0fd03e84062f32899bfa6c6f1 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#ada05dd787bc825f3dd7680086c5dd560">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *run)</td></tr>
+<tr class="memitem:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#ada05dd787bc825f3dd7680086c5dd560">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *<a class="el" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a>)</td></tr>
 <tr class="separator:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466d2dc32afb9b217e3dfaf0322944fe inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#a466d2dc32afb9b217e3dfaf0322944fe">~LKGear</a> ()</td></tr>
 <tr class="separator:a466d2dc32afb9b217e3dfaf0322944fe inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a86ee3a393b9bd5e33b7387a1b272252c"><td class="memItemLeft" align="right" valign="top">G4double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a86ee3a393b9bd5e33b7387a1b272252c">fRandomNumber</a></td></tr>
+<tr class="separator:a86ee3a393b9bd5e33b7387a1b272252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -153,10 +161,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4cc818f58853f43feaaa2cf2d2717106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41be16ec03eed5cc95602000493e638b"><td class="memItemLeft" align="right" valign="top">Double_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a41be16ec03eed5cc95602000493e638b">fEdepSumArray</a> [200] = {0}</td></tr>
 <tr class="separator:a41be16ec03eed5cc95602000493e638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d57f8d54ac6a61588eed5329a6bfbd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a9d57f8d54ac6a61588eed5329a6bfbd5">fEdepSumPersistency</a> = false</td></tr>
+<tr class="separator:a9d57f8d54ac6a61588eed5329a6bfbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b139e7b5cff600116f14f30ecb2d2ab"><td class="memItemLeft" align="right" valign="top">TFile *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a1b139e7b5cff600116f14f30ecb2d2ab">fFile</a></td></tr>
 <tr class="separator:a1b139e7b5cff600116f14f30ecb2d2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049959e9bb143a35cb46b9e7d5eb34b2"><td class="memItemLeft" align="right" valign="top">std::map&lt; Int_t, Int_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a049959e9bb143a35cb46b9e7d5eb34b2">fIdxOfCopyNo</a></td></tr>
 <tr class="separator:a049959e9bb143a35cb46b9e7d5eb34b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312c3e7f62903d81c6507a0d47395e67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a312c3e7f62903d81c6507a0d47395e67">fInitialized</a> = false</td></tr>
+<tr class="separator:a312c3e7f62903d81c6507a0d47395e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3fdc7e84654407a2c81e185935190d"><td class="memItemLeft" align="right" valign="top">map&lt; Int_t, Int_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#ace3fdc7e84654407a2c81e185935190d">fMapSDToAssembly</a></td></tr>
 <tr class="separator:ace3fdc7e84654407a2c81e185935190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38f07478ba50d0087473ed4a8786d1a5"><td class="memItemLeft" align="right" valign="top">map&lt; Int_t, Int_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a38f07478ba50d0087473ed4a8786d1a5">fMapSDToStep</a></td></tr>
@@ -177,8 +189,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af0ba344bbd5d0fe1088e02d41ed469bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54586067b26d7b9ff6a1b92fce71afe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKParameterContainer.html">LKParameterContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a54586067b26d7b9ff6a1b92fce71afe4">fSensitiveDetectors</a></td></tr>
 <tr class="separator:a54586067b26d7b9ff6a1b92fce71afe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db2686ca7d2451c672ef4e22c2e1a04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a4db2686ca7d2451c672ef4e22c2e1a04">fSetEdepSumTree</a> = false</td></tr>
-<tr class="separator:a4db2686ca7d2451c672ef4e22c2e1a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a588a29a27fbf59b1b48857f5bb4a7a"><td class="memItemLeft" align="right" valign="top">TObjArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a4a588a29a27fbf59b1b48857f5bb4a7a">fStepArrayList</a></td></tr>
 <tr class="separator:a4a588a29a27fbf59b1b48857f5bb4a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb5d33350bf55be6d4450a81f14d77e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKG4RunManager.html#a6eb5d33350bf55be6d4450a81f14d77e">fStepPersistency</a> = false</td></tr>
@@ -208,7 +218,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00027">27</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00032">32</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afaf445f41e4c27c484bf0160593cdcc3" name="afaf445f41e4c27c484bf0160593cdcc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afaf445f41e4c27c484bf0160593cdcc3">&#9670;&#160;</a></span>LKG4RunManager()</h2>
@@ -225,9 +235,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00020">20</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00021">21</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00088">fProcessTable</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fSensitiveDetectors</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00086">fVolumes</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00094">fProcessTable</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00093">fSensitiveDetectors</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00092">fVolumes</a>.</p>
 
 </div>
 </div>
@@ -254,7 +264,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00035">35</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00036">36</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -309,14 +319,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">371</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">394</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00076">fEdepSumArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00078">fIdxOfCopyNo</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00081">fSetEdepSumTree</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00074">fStepArrayList</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00082">fStepPersistency</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00097">fTrackID</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00082">fEdepSumArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00088">fEdepSumPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00084">fIdxOfCopyNo</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00080">fStepArrayList</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fStepPersistency</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00103">fTrackID</a>.</p>
 
 </div>
 </div>
-<a id="aa4c77430174b695338a61812978a167e" name="aa4c77430174b695338a61812978a167e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4c77430174b695338a61812978a167e">&#9670;&#160;</a></span>AddMCTrack()</h2>
+<a id="a146d8839493b8949872b73be89f9a329" name="a146d8839493b8949872b73be89f9a329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146d8839493b8949872b73be89f9a329">&#9670;&#160;</a></span>AddMCTrack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,26 +352,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>px</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>py</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>pz</em>, </td>
+          <td class="paramtype">Int_t&#160;</td>
+          <td class="paramname"><em>detectorID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>dID</em>, </td>
+          <td class="paramname"><em>processID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -384,32 +382,6 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>pcID</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00351">351</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00098">fCurrentTrack</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00083">fSecondaryPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00073">fTrackArray</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00097">fTrackID</a>.</p>
-
-</div>
-</div>
-<a id="a80b47eef3c4834a8c2a874b893a108dc" name="a80b47eef3c4834a8c2a874b893a108dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80b47eef3c4834a8c2a874b893a108dc">&#9670;&#160;</a></span>AddTrackVertex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LKG4RunManager::AddTrackVertex </td>
-          <td>(</td>
           <td class="paramtype">Double_t&#160;</td>
           <td class="paramname"><em>px</em>, </td>
         </tr>
@@ -428,8 +400,40 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Double_t&#160;</td>
+          <td class="paramname"><em>energy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00374">374</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00104">fCurrentTrack</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00089">fSecondaryPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00079">fTrackArray</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00103">fTrackID</a>.</p>
+
+</div>
+</div>
+<a id="a2d6069d8b43709f480fec68f48a8c3ee" name="a2d6069d8b43709f480fec68f48a8c3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6069d8b43709f480fec68f48a8c3ee">&#9670;&#160;</a></span>AddTrackVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKG4RunManager::AddTrackVertex </td>
+          <td>(</td>
           <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>dID</em>, </td>
+          <td class="paramname"><em>detectorID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Int_t&#160;</td>
+          <td class="paramname"><em>processID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -447,7 +451,31 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>vz</em>&#160;</td>
+          <td class="paramname"><em>vz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t&#160;</td>
+          <td class="paramname"><em>pz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t&#160;</td>
+          <td class="paramname"><em>energy</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -457,9 +485,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00363">363</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00386">386</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00098">fCurrentTrack</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00084">fTrackVertexPersistency</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00104">fCurrentTrack</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00090">fTrackVertexPersistency</a>.</p>
 
 </div>
 </div>
@@ -495,11 +523,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00172">172</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00186">186</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00069">fSuppressInitMessage</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00075">fSuppressInitMessage</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00167">BeamOnAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00181">BeamOnAll()</a>.</p>
 
 </div>
 </div>
@@ -518,9 +546,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00167">167</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00181">181</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8cpp_source.html#l00172">BeamOn()</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00100">fNumEvents</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8cpp_source.html#l00186">BeamOn()</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00106">fNumEvents</a>.</p>
 
 </div>
 </div>
@@ -539,11 +567,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">418</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00445">445</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00071">fFile</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00072">fTree</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00077">fFile</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00078">fTree</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">Run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>.</p>
 
 </div>
 </div>
@@ -562,9 +590,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00347">347</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00370">370</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00088">fProcessTable</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00094">fProcessTable</a>.</p>
 
 </div>
 </div>
@@ -583,9 +611,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00346">346</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00369">369</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00087">fSensitiveDetectors</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00093">fSensitiveDetectors</a>.</p>
 
 </div>
 </div>
@@ -604,9 +632,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00345">345</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00368">368</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00086">fVolumes</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00092">fVolumes</a>.</p>
 
 </div>
 </div>
@@ -633,11 +661,45 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">39</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">40</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00027">LKGear::AddPar()</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00088">fProcessTable</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00090">fSDAssembly</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00091">fSDNames</a>, <a class="el" href="LKParameterContainer_8cpp_source.html#l00728">LKParameterContainer::GetParString()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00201">SetGeneratorFile()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00027">LKGear::AddPar()</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00108">fInitialized</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00094">fProcessTable</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00096">fSDAssembly</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00097">fSDNames</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00075">fSuppressInitMessage</a>, <a class="el" href="LKParameterContainer_8cpp_source.html#l00921">LKParameterContainer::GetParString()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00215">SetGeneratorFile()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">Run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>.</p>
+
+</div>
+</div>
+<a id="a84e12685364ab0e222348f71ca79ff52" name="a84e12685364ab0e222348f71ca79ff52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e12685364ab0e222348f71ca79ff52">&#9670;&#160;</a></span>InitializeAndRun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LKG4RunManager::InitializeAndRun </td>
+          <td>(</td>
+          <td class="paramtype">G4int&#160;</td>
+          <td class="paramname"><em>argc</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const G4String &amp;&#160;</td>
+          <td class="paramname"><em>type</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -664,9 +726,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00093">93</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00100">100</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00069">fSuppressInitMessage</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00075">fSuppressInitMessage</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
 </div>
 </div>
@@ -693,9 +755,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00108">108</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00115">115</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00069">fSuppressInitMessage</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00075">fSuppressInitMessage</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
 </div>
 </div>
@@ -714,9 +776,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">395</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">418</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00076">fEdepSumArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00079">fNumActiveVolumes</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00074">fStepArrayList</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00082">fStepPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00073">fTrackArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00072">fTree</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00082">fEdepSumArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00085">fNumActiveVolumes</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00068">fRandomNumber</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00080">fStepArrayList</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fStepPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00079">fTrackArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00078">fTree</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
 </div>
 </div>
@@ -752,9 +814,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">123</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">130</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameterContainer_8cpp_source.html#l00835">LKParameterContainer::CheckPar()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">EndOfRun()</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00088">fProcessTable</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fSensitiveDetectors</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00086">fVolumes</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">Initialize()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00411">WriteToFile()</a>.</p>
+<p class="reference">References <a class="el" href="LKParameterContainer_8cpp_source.html#l01035">LKParameterContainer::CheckPar()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00445">EndOfRun()</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00108">fInitialized</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00094">fProcessTable</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00093">fSensitiveDetectors</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00092">fVolumes</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>, <a class="el" href="test__psa_8C_source.html#l00005">next()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00438">WriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -782,9 +844,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00201">201</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00215">215</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">Initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -804,9 +866,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00390">390</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00413">413</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00100">fNumEvents</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00106">fNumEvents</a>.</p>
 
 </div>
 </div>
@@ -834,11 +896,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">208</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">222</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00076">fEdepSumArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00071">fFile</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00078">fIdxOfCopyNo</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00079">fNumActiveVolumes</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00083">fSecondaryPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fSensitiveDetectors</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00081">fSetEdepSumTree</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00074">fStepArrayList</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00082">fStepPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00073">fTrackArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00084">fTrackVertexPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00072">fTree</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00088">fEdepSumPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00077">fFile</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00084">fIdxOfCopyNo</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00085">fNumActiveVolumes</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00089">fSecondaryPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00093">fSensitiveDetectors</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00080">fStepArrayList</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fStepPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00079">fTrackArray</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00090">fTrackVertexPersistency</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00078">fTree</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">Initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -868,11 +930,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00319">319</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00341">341</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00027">LKGear::AddPar()</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00094">fMapSDToAssembly</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00093">fNumSDAssemblyInTree</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00087">fSensitiveDetectors</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00027">LKGear::AddPar()</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00100">fMapSDToAssembly</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00099">fNumSDAssemblyInTree</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00093">fSensitiveDetectors</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00266">SetVolume()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00288">SetVolume()</a>.</p>
 
 </div>
 </div>
@@ -892,9 +954,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00199">199</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00213">213</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00069">fSuppressInitMessage</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00075">fSuppressInitMessage</a>.</p>
 
 </div>
 </div>
@@ -914,9 +976,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00266">266</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00288">288</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00027">LKGear::AddPar()</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00090">fSDAssembly</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00091">fSDNames</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00086">fVolumes</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00319">SetSensitiveDetector()</a>.</p>
+<p class="reference">References <a class="el" href="LKGear_8h_source.html#l00027">LKGear::AddPar()</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00096">fSDAssembly</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00097">fSDNames</a>, <a class="el" href="LKG4RunManager_8h_source.html#l00092">fVolumes</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00341">SetSensitiveDetector()</a>.</p>
 
 </div>
 </div>
@@ -936,11 +998,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00411">411</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8cpp_source.html#l00438">438</a> of file <a class="el" href="LKG4RunManager_8cpp_source.html">LKG4RunManager.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00071">fFile</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00004">g4man_info</a>.</p>
+<p class="reference">References <a class="el" href="LKG4RunManager_8h_source.html#l00077">fFile</a>, and <a class="el" href="LKG4RunManager_8h_source.html#l00009">g4man_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">Run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>.</p>
 
 </div>
 </div>
@@ -965,9 +1027,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00098">98</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00104">104</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00351">AddMCTrack()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00363">AddTrackVertex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00374">AddMCTrack()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00386">AddTrackVertex()</a>.</p>
 
 </div>
 </div>
@@ -991,9 +1053,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00076">76</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00082">82</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">AddMCStep()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>.</p>
+
+</div>
+</div>
+<a id="a9d57f8d54ac6a61588eed5329a6bfbd5" name="a9d57f8d54ac6a61588eed5329a6bfbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d57f8d54ac6a61588eed5329a6bfbd5">&#9670;&#160;</a></span>fEdepSumPersistency</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LKG4RunManager::fEdepSumPersistency = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00088">88</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1017,9 +1105,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00071">71</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00077">77</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">EndOfRun()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00411">WriteToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00445">EndOfRun()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00438">WriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1043,9 +1131,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00078">78</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00084">84</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
+
+</div>
+</div>
+<a id="a312c3e7f62903d81c6507a0d47395e67" name="a312c3e7f62903d81c6507a0d47395e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312c3e7f62903d81c6507a0d47395e67">&#9670;&#160;</a></span>fInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LKG4RunManager::fInitialized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00108">108</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>.</p>
 
 </div>
 </div>
@@ -1069,9 +1183,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00094">94</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00100">100</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00319">SetSensitiveDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00341">SetSensitiveDetector()</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1209,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00095">95</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00101">101</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
 </div>
 </div>
@@ -1119,9 +1233,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00079">79</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00085">85</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1145,9 +1259,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00100">100</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00106">106</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00167">BeamOnAll()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00390">SetNumEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00181">BeamOnAll()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00413">SetNumEvents()</a>.</p>
 
 </div>
 </div>
@@ -1171,9 +1285,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00093">93</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00099">99</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00319">SetSensitiveDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00341">SetSensitiveDetector()</a>.</p>
 
 </div>
 </div>
@@ -1197,9 +1311,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00088">88</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00094">94</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00347">GetProcessTable()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">Initialize()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00020">LKG4RunManager()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">Run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00370">GetProcessTable()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00021">LKG4RunManager()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>.</p>
+
+</div>
+</div>
+<a id="a86ee3a393b9bd5e33b7387a1b272252c" name="a86ee3a393b9bd5e33b7387a1b272252c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ee3a393b9bd5e33b7387a1b272252c">&#9670;&#160;</a></span>fRandomNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">G4double LKG4RunManager::fRandomNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00068">68</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>.</p>
 
 </div>
 </div>
@@ -1223,9 +1355,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00090">90</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00096">96</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">Initialize()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00266">SetVolume()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00288">SetVolume()</a>.</p>
 
 </div>
 </div>
@@ -1249,9 +1381,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00091">91</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00097">97</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00039">Initialize()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00266">SetVolume()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00288">SetVolume()</a>.</p>
 
 </div>
 </div>
@@ -1275,9 +1407,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00083">83</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00089">89</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00351">AddMCTrack()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00374">AddMCTrack()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1301,35 +1433,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00087">87</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00093">93</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00346">GetSensitiveDetectors()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00020">LKG4RunManager()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">Run()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00319">SetSensitiveDetector()</a>.</p>
-
-</div>
-</div>
-<a id="a4db2686ca7d2451c672ef4e22c2e1a04" name="a4db2686ca7d2451c672ef4e22c2e1a04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4db2686ca7d2451c672ef4e22c2e1a04">&#9670;&#160;</a></span>fSetEdepSumTree</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LKG4RunManager::fSetEdepSumTree = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00081">81</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00369">GetSensitiveDetectors()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00021">LKG4RunManager()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00341">SetSensitiveDetector()</a>.</p>
 
 </div>
 </div>
@@ -1353,9 +1459,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00074">74</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00080">80</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">AddMCStep()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">AddMCStep()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1379,9 +1485,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00082">82</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00087">87</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">AddMCStep()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">AddMCStep()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1405,9 +1511,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00069">69</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00075">75</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00172">BeamOn()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00093">InitializeGeometry()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00108">InitializePhysics()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00199">SetSuppressInitMessage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00186">BeamOn()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00040">Initialize()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00100">InitializeGeometry()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00115">InitializePhysics()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00213">SetSuppressInitMessage()</a>.</p>
 
 </div>
 </div>
@@ -1431,9 +1537,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00073">73</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00079">79</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00351">AddMCTrack()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00374">AddMCTrack()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1457,9 +1563,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00097">97</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00103">103</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00371">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00351">AddMCTrack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00394">AddMCStep()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00374">AddMCTrack()</a>.</p>
 
 </div>
 </div>
@@ -1483,9 +1589,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00084">84</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00090">90</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00363">AddTrackVertex()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00386">AddTrackVertex()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1615,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00072">72</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00078">78</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">EndOfRun()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00395">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00208">SetOutputFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00445">EndOfRun()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00418">NextEvent()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00222">SetOutputFile()</a>.</p>
 
 </div>
 </div>
@@ -1535,9 +1641,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00086">86</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKG4RunManager_8h_source.html#l00092">92</a> of file <a class="el" href="LKG4RunManager_8h_source.html">LKG4RunManager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00345">GetVolumes()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00020">LKG4RunManager()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00123">Run()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00266">SetVolume()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKG4RunManager_8cpp_source.html#l00368">GetVolumes()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00021">LKG4RunManager()</a>, <a class="el" href="LKG4RunManager_8cpp_source.html#l00130">Run()</a>, and <a class="el" href="LKG4RunManager_8cpp_source.html#l00288">SetVolume()</a>.</p>
 
 </div>
 </div>

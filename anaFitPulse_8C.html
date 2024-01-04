@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -46,17 +46,19 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_0aa24c58683c4887b6c051988482ec96.html">macros_tracking</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_0c066ba2a6dfc02fafa72ec6aec021b3.html">macros_psa</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">anaFitPulse.C File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ejungwooA_8h_source.html">ejungwooA.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="LKPulseAnalyzer_8h_source.html">LKPulseAnalyzer.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="macros__psa_2ejungwooA_8h_source.html">ejungwooA.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tpc__general_2macros__psa_2setChannels_8h_source.html">setChannels.h</a>&quot;</code><br />
+<code>#include &quot;LKPulseAnalyzer.h&quot;</code><br />
 <code>#include &quot;LKChannelAnalyzer.h&quot;</code><br />
 <code>#include &quot;LKPulse.h&quot;</code><br />
 </div>
@@ -66,6 +68,41 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a8b46319f3eaadafec2fda00f18e50ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a8b46319f3eaadafec2fda00f18e50ba0">anaFitPulse</a> (double scaleBeta=0.7)</td></tr>
 <tr class="separator:a8b46319f3eaadafec2fda00f18e50ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d843b5173319ca4d90439f7e427aeef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a0d843b5173319ca4d90439f7e427aeef">NextChannel</a> (int pass=0)</td></tr>
+<tr class="separator:a0d843b5173319ca4d90439f7e427aeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aca163692e57446da71bcf2417f8850d0"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#aca163692e57446da71bcf2417f8850d0">fChannelArray</a> = nullptr</td></tr>
+<tr class="separator:aca163692e57446da71bcf2417f8850d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d16999afbf39df5bfc90d1fbf542bfb"><td class="memItemLeft" align="right" valign="top">TCanvas *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a2d16999afbf39df5bfc90d1fbf542bfb">fCvs</a></td></tr>
+<tr class="separator:a2d16999afbf39df5bfc90d1fbf542bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad417260e43276ccc4b0c021fcef826f8"><td class="memItemLeft" align="right" valign="top">TCanvas *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#ad417260e43276ccc4b0c021fcef826f8">fCvsDebug</a></td></tr>
+<tr class="separator:ad417260e43276ccc4b0c021fcef826f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e131665260d89886eb319bb311a5e18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a6e131665260d89886eb319bb311a5e18">fCvsDX</a> = 1200</td></tr>
+<tr class="separator:a6e131665260d89886eb319bb311a5e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b6bcfa580577fd59fe96462619dabb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#aa9b6bcfa580577fd59fe96462619dabb">fCvsDY</a> = 720</td></tr>
+<tr class="separator:aa9b6bcfa580577fd59fe96462619dabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab20384f8ac799e581de23e7597c8be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#adab20384f8ac799e581de23e7597c8be">fCvsGroupDX</a> = 3</td></tr>
+<tr class="separator:adab20384f8ac799e581de23e7597c8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82b916fb96c8541aa6c54d0647197f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#ad82b916fb96c8541aa6c54d0647197f9">fCvsGroupDY</a> = 2</td></tr>
+<tr class="separator:ad82b916fb96c8541aa6c54d0647197f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ba74504901c3df323cb960990f5c4c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a37ba74504901c3df323cb960990f5c4c">fDataPath</a> = &quot;data&quot;</td></tr>
+<tr class="separator:a37ba74504901c3df323cb960990f5c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3569c59593dfc4acf49e9917d86698f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTexAT2.html">TexAT2</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a></td></tr>
+<tr class="separator:ac3569c59593dfc4acf49e9917d86698f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4bde32fc5aa7770feaef89a8f3bbbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a5e4bde32fc5aa7770feaef89a8f3bbbe">fEndOfEvent</a> = true</td></tr>
+<tr class="separator:a5e4bde32fc5aa7770feaef89a8f3bbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e41e4dbd60f11749e9f52e49061f078"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a7e41e4dbd60f11749e9f52e49061f078">fIdxChannel</a> = 0</td></tr>
+<tr class="separator:a7e41e4dbd60f11749e9f52e49061f078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf57ddaa191adb7d4c9a023e6e9d12f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a4cf57ddaa191adb7d4c9a023e6e9d12f">fMaxInputFiles</a> = 1</td></tr>
+<tr class="separator:a4cf57ddaa191adb7d4c9a023e6e9d12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68667c19237e90a4438041c17486dee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a68667c19237e90a4438041c17486dee5">fNumChannels</a></td></tr>
+<tr class="separator:a68667c19237e90a4438041c17486dee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0833bce4687cbf75f27241a1e5e3d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a8e0833bce4687cbf75f27241a1e5e3d0">fNumCvsGroup</a> = 0</td></tr>
+<tr class="separator:a8e0833bce4687cbf75f27241a1e5e3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a43a7b50b5bac0ce0fbe65791fe4461"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKRun.html">LKRun</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="anaFitPulse_8C.html#a5a43a7b50b5bac0ce0fbe65791fe4461">fRun</a></td></tr>
+<tr class="separator:a5a43a7b50b5bac0ce0fbe65791fe4461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a8b46319f3eaadafec2fda00f18e50ba0" name="a8b46319f3eaadafec2fda00f18e50ba0"></a>
@@ -84,9 +121,292 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00006">6</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00026">26</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
 
-<p class="reference">References <a class="el" href="ejungwooA_8h_source.html#l00265">e_add</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00030">fCAAC</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00008">fCvsDX</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00009">fCvsDY</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00012">fCvsGroupDX</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00013">fCvsGroupDY</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00033">fDataPath</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00015">fDrawChannel</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00016">fDrawOnlyGoodChannels</a>, <a class="el" href="tpc__general_2macros__tracking_2anaExtractPulse_8C_source.html#l00031">fMaxInputFiles</a>, <a class="el" href="texat__reco_2macros__tracking_2anaExtractPulse_8C_source.html#l00009">fNumCvsGroup</a>, <a class="el" href="TTPulseExtractionTask_8h_source.html#l00012">fNumTypes</a>, <a class="el" href="setChannels_8h_source.html#l00063">fPulseCuts</a>, <a class="el" href="texat__reco_2macros__tracking_2anaExtractPulse_8C_source.html#l00034">fSelTypes</a>, <a class="el" href="texat__reco_2macros__tracking_2anaExtractPulse_8C_source.html#l00027">fTypeNames</a>, <a class="el" href="LKPulseAnalyzer_8h_source.html#l00186">LKPulseAnalyzer::GetNumGoodChannels()</a>, <a class="el" href="LKPulseAnalyzer_8h_source.html#l00187">LKPulseAnalyzer::GetNumHistChannels()</a>, <a class="el" href="texat__reco_2macros__tracking_2anaExtractPulse_8C_source.html#l00194">GetType()</a>, and <a class="el" href="LKPulseAnalyzer_8h_source.html#l00185">LKPulseAnalyzer::IsCollected()</a>.</p>
+<p class="reference">References <a class="el" href="macros__detectorplane_2ejungwooA_8h_source.html#l00500">ejungwoo::Canvas()</a>, <a class="el" href="macros__detectorplane_2ejungwooA_8h_source.html#l00266">e_cvs</a>, <a class="el" href="anaFitPulse_8C_source.html#l00017">fChannelArray</a>, <a class="el" href="anaFitPulse_8C_source.html#l00021">fCvs</a>, <a class="el" href="anaFitPulse_8C_source.html#l00022">fCvsDebug</a>, <a class="el" href="anaFitPulse_8C_source.html#l00019">fDetector</a>, <a class="el" href="anaFitPulse_8C_source.html#l00012">fMaxInputFiles</a>, <a class="el" href="anaFitPulse_8C_source.html#l00018">fRun</a>, <a class="el" href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00021">fSelTypes</a>, <a class="el" href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00042">fTypeNames</a>, <a class="el" href="LKLogger_8h_source.html#l00011">lk_logger</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a0d843b5173319ca4d90439f7e427aeef" name="a0d843b5173319ca4d90439f7e427aeef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d843b5173319ca4d90439f7e427aeef">&#9670;&#160;</a></span>NextChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NextChannel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pass</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00099">99</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">References <a class="el" href="test__psa_8C_source.html#l00003">ana</a>, <a class="el" href="macros__detectorplane_2ejungwooA_8h_source.html#l00270">e_frame</a>, <a class="el" href="LKLogger_8h_source.html#l00041">e_test</a>, <a class="el" href="LKLogger_8h_source.html#l00039">e_warning</a>, <a class="el" href="anaFitPulse_8C_source.html#l00017">fChannelArray</a>, <a class="el" href="anaFitPulse_8C_source.html#l00021">fCvs</a>, <a class="el" href="anaFitPulse_8C_source.html#l00022">fCvsDebug</a>, <a class="el" href="anaFitPulse_8C_source.html#l00019">fDetector</a>, <a class="el" href="anaFitPulse_8C_source.html#l00016">fEndOfEvent</a>, <a class="el" href="anaFitPulse_8C_source.html#l00015">fIdxChannel</a>, <a class="el" href="anaFitPulse_8C_source.html#l00014">fNumChannels</a>, <a class="el" href="macros__detectorplane_2ejungwooA_8h_source.html#l00613">ejungwoo::Frame()</a>, <a class="el" href="anaFitPulse_8C_source.html#l00018">fRun</a>, <a class="el" href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00021">fSelTypes</a>, <a class="el" href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00042">fTypeNames</a>, <a class="el" href="tpc__general_2tool_2LKChannelAnalyzer_8h_source.html#l00236">LKChannelAnalyzer::GetBuffer()</a>, <a class="el" href="LKRun_8h_source.html#l00181">LKRun::GetCurrentEventID()</a>, <a class="el" href="macros__detectorplane_2ejungwooA_8h_source.html#l00655">ejungwoo::MakeChannelHist()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aca163692e57446da71bcf2417f8850d0" name="aca163692e57446da71bcf2417f8850d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca163692e57446da71bcf2417f8850d0">&#9670;&#160;</a></span>fChannelArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TClonesArray* fChannelArray = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00017">17</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a2d16999afbf39df5bfc90d1fbf542bfb" name="a2d16999afbf39df5bfc90d1fbf542bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d16999afbf39df5bfc90d1fbf542bfb">&#9670;&#160;</a></span>fCvs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCanvas* fCvs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00021">21</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="ad417260e43276ccc4b0c021fcef826f8" name="ad417260e43276ccc4b0c021fcef826f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad417260e43276ccc4b0c021fcef826f8">&#9670;&#160;</a></span>fCvsDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCanvas* fCvsDebug</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00022">22</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a6e131665260d89886eb319bb311a5e18" name="a6e131665260d89886eb319bb311a5e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e131665260d89886eb319bb311a5e18">&#9670;&#160;</a></span>fCvsDX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fCvsDX = 1200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00007">7</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+</div>
+</div>
+<a id="aa9b6bcfa580577fd59fe96462619dabb" name="aa9b6bcfa580577fd59fe96462619dabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b6bcfa580577fd59fe96462619dabb">&#9670;&#160;</a></span>fCvsDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fCvsDY = 720</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00008">8</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+</div>
+</div>
+<a id="adab20384f8ac799e581de23e7597c8be" name="adab20384f8ac799e581de23e7597c8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab20384f8ac799e581de23e7597c8be">&#9670;&#160;</a></span>fCvsGroupDX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fCvsGroupDX = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00009">9</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+</div>
+</div>
+<a id="ad82b916fb96c8541aa6c54d0647197f9" name="ad82b916fb96c8541aa6c54d0647197f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82b916fb96c8541aa6c54d0647197f9">&#9670;&#160;</a></span>fCvsGroupDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fCvsGroupDY = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00010">10</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+</div>
+</div>
+<a id="a37ba74504901c3df323cb960990f5c4c" name="a37ba74504901c3df323cb960990f5c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ba74504901c3df323cb960990f5c4c">&#9670;&#160;</a></span>fDataPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* fDataPath = &quot;data&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00013">13</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+</div>
+</div>
+<a id="ac3569c59593dfc4acf49e9917d86698f" name="ac3569c59593dfc4acf49e9917d86698f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3569c59593dfc4acf49e9917d86698f">&#9670;&#160;</a></span>fDetector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTexAT2.html">TexAT2</a>* fDetector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00019">19</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a5e4bde32fc5aa7770feaef89a8f3bbbe" name="a5e4bde32fc5aa7770feaef89a8f3bbbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4bde32fc5aa7770feaef89a8f3bbbe">&#9670;&#160;</a></span>fEndOfEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fEndOfEvent = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00016">16</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a7e41e4dbd60f11749e9f52e49061f078" name="a7e41e4dbd60f11749e9f52e49061f078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e41e4dbd60f11749e9f52e49061f078">&#9670;&#160;</a></span>fIdxChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fIdxChannel = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00015">15</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a4cf57ddaa191adb7d4c9a023e6e9d12f" name="a4cf57ddaa191adb7d4c9a023e6e9d12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf57ddaa191adb7d4c9a023e6e9d12f">&#9670;&#160;</a></span>fMaxInputFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fMaxInputFiles = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00012">12</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>.</p>
+
+</div>
+</div>
+<a id="a68667c19237e90a4438041c17486dee5" name="a68667c19237e90a4438041c17486dee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68667c19237e90a4438041c17486dee5">&#9670;&#160;</a></span>fNumChannels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fNumChannels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00014">14</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
+
+</div>
+</div>
+<a id="a8e0833bce4687cbf75f27241a1e5e3d0" name="a8e0833bce4687cbf75f27241a1e5e3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0833bce4687cbf75f27241a1e5e3d0">&#9670;&#160;</a></span>fNumCvsGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fNumCvsGroup = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00011">11</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+</div>
+</div>
+<a id="a5a43a7b50b5bac0ce0fbe65791fe4461" name="a5a43a7b50b5bac0ce0fbe65791fe4461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a43a7b50b5bac0ce0fbe65791fe4461">&#9670;&#160;</a></span>fRun</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKRun.html">LKRun</a>* fRun</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="anaFitPulse_8C_source.html#l00018">18</a> of file <a class="el" href="anaFitPulse_8C_source.html">anaFitPulse.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="anaFitPulse_8C_source.html#l00026">anaFitPulse()</a>, and <a class="el" href="anaFitPulse_8C_source.html#l00099">NextChannel()</a>.</p>
 
 </div>
 </div>

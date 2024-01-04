@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_229db20e1aa433fca15a9a470cc75424.html">task</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_5d7f56b3bedbfcb51793f5f8ea013e46.html">texat_reco</a></li><li class="navelem"><a class="el" href="dir_62f329edd111b94401bb1ded3da4b06c.html">task</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -97,9 +97,9 @@ $(function() {
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> eventID = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; GetCurrentEventID();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">int</span> numChannels = <a class="code hl_variable" href="classTTPulseExtractionTask.html#ac70575e2664f766161ff81d6236e40c0">fChannelArray</a> -&gt; GetEntries();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iChannel=0; iChannel&lt;numChannels; iChannel++)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;numChannels; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>++)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classMMChannel.html">MMChannel</a> *) <a class="code hl_variable" href="classTTPulseExtractionTask.html#ac70575e2664f766161ff81d6236e40c0">fChannelArray</a> -&gt; At(iChannel);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a> *) <a class="code hl_variable" href="classTTPulseExtractionTask.html#ac70575e2664f766161ff81d6236e40c0">fChannelArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">auto</span> cobo = channel -&gt; GetCobo();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">auto</span> asad = channel -&gt; GetAsad();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">auto</span> aget = channel -&gt; GetAget();</div>
@@ -188,12 +188,12 @@ $(function() {
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00029">LKLogger.h:29</a></div></div>
 <div class="ttc" id="aTTPulseExtractionTask_8cpp_html_a31ee94e7f27d5d5d398c67fae686c755"><div class="ttname"><a href="TTPulseExtractionTask_8cpp.html#a31ee94e7f27d5d5d398c67fae686c755">ClassImp</a></div><div class="ttdeci">ClassImp(TTPulseExtractionTask)</div></div>
 <div class="ttc" id="aTTPulseExtractionTask_8h_html"><div class="ttname"><a href="TTPulseExtractionTask_8h.html">TTPulseExtractionTask.h</a></div></div>
+<div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00040">GETChannel.h:41</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a1298df2f206df44122ccdf4d685adf08"><div class="ttname"><a href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">LKGear::fPar</a></div><div class="ttdeci">LKParameterContainer * fPar</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00039">LKGear.h:39</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
-<div class="ttc" id="aclassLKParameterContainer_html_a11dde3f260e453dbd6d1edb1a678ff66"><div class="ttname"><a href="classLKParameterContainer.html#a11dde3f260e453dbd6d1edb1a678ff66">LKParameterContainer::CheckPar</a></div><div class="ttdeci">Bool_t CheckPar(TString name) const</div><div class="ttdef"><b>Definition</b> <a href="LKParameterContainer_8cpp_source.html#l00835">LKParameterContainer.cpp:835</a></div></div>
+<div class="ttc" id="aclassLKParameterContainer_html_a11dde3f260e453dbd6d1edb1a678ff66"><div class="ttname"><a href="classLKParameterContainer.html#a11dde3f260e453dbd6d1edb1a678ff66">LKParameterContainer::CheckPar</a></div><div class="ttdeci">Bool_t CheckPar(TString name) const</div><div class="ttdef"><b>Definition</b> <a href="LKParameterContainer_8cpp_source.html#l01035">LKParameterContainer.cpp:1035</a></div></div>
 <div class="ttc" id="aclassLKPulseAnalyzer_html"><div class="ttname"><a href="classLKPulseAnalyzer.html">LKPulseAnalyzer</a></div><div class="ttdoc">LKPulseAnalyzer find channels containing single pulse and create reference pulse from their average....</div><div class="ttdef"><b>Definition</b> <a href="LKPulseAnalyzer_8h_source.html#l00120">LKPulseAnalyzer.h:121</a></div></div>
-<div class="ttc" id="aclassLKRun_html_a3458842a4f860c4081635eea13c0fcd1"><div class="ttname"><a href="classLKRun.html#a3458842a4f860c4081635eea13c0fcd1">LKRun::GetDataPath</a></div><div class="ttdeci">TString GetDataPath()</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00072">LKRun.h:72</a></div></div>
-<div class="ttc" id="aclassMMChannel_html"><div class="ttname"><a href="classMMChannel.html">MMChannel</a></div><div class="ttdef"><b>Definition</b> <a href="MMChannel_8h_source.html#l00037">MMChannel.h:38</a></div></div>
+<div class="ttc" id="aclassLKRun_html_a3458842a4f860c4081635eea13c0fcd1"><div class="ttname"><a href="classLKRun.html#a3458842a4f860c4081635eea13c0fcd1">LKRun::GetDataPath</a></div><div class="ttdeci">TString GetDataPath()</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00080">LKRun.h:80</a></div></div>
 <div class="ttc" id="aclassTTPulseExtractionTask_html"><div class="ttname"><a href="classTTPulseExtractionTask.html">TTPulseExtractionTask</a></div><div class="ttdef"><b>Definition</b> <a href="TTPulseExtractionTask_8h_source.html#l00014">TTPulseExtractionTask.h:15</a></div></div>
 <div class="ttc" id="aclassTTPulseExtractionTask_html_a1692ea364f3f76ae41d3f4fd45ace9bf"><div class="ttname"><a href="classTTPulseExtractionTask.html#a1692ea364f3f76ae41d3f4fd45ace9bf">TTPulseExtractionTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="TTPulseExtractionTask_8cpp_source.html#l00069">TTPulseExtractionTask.cpp:69</a></div></div>
 <div class="ttc" id="aclassTTPulseExtractionTask_html_a1d1739b3424f78606f9ee3e584f3ff47"><div class="ttname"><a href="classTTPulseExtractionTask.html#a1d1739b3424f78606f9ee3e584f3ff47">TTPulseExtractionTask::eMMCenter00</a></div><div class="ttdeci">int eMMCenter00</div><div class="ttdef"><b>Definition</b> <a href="TTPulseExtractionTask_8h_source.html#l00030">TTPulseExtractionTask.h:30</a></div></div>
@@ -223,6 +223,7 @@ $(function() {
 <div class="ttc" id="aclassTTPulseExtractionTask_html_af0a8978d80bfea4b1a5a6dad859a2c45"><div class="ttname"><a href="classTTPulseExtractionTask.html#af0a8978d80bfea4b1a5a6dad859a2c45">TTPulseExtractionTask::eMMCenter13</a></div><div class="ttdeci">int eMMCenter13</div><div class="ttdef"><b>Definition</b> <a href="TTPulseExtractionTask_8h_source.html#l00037">TTPulseExtractionTask.h:37</a></div></div>
 <div class="ttc" id="aclassTTPulseExtractionTask_html_af25e02629f2031c5f8d891acc177ea77"><div class="ttname"><a href="classTTPulseExtractionTask.html#af25e02629f2031c5f8d891acc177ea77">TTPulseExtractionTask::TTPulseExtractionTask</a></div><div class="ttdeci">TTPulseExtractionTask()</div><div class="ttdef"><b>Definition</b> <a href="TTPulseExtractionTask_8cpp_source.html#l00005">TTPulseExtractionTask.cpp:5</a></div></div>
 <div class="ttc" id="aclassTTPulseExtractionTask_html_af9e26b5e097c35fea6685846d9e2b6f3"><div class="ttname"><a href="classTTPulseExtractionTask.html#af9e26b5e097c35fea6685846d9e2b6f3">TTPulseExtractionTask::eMMRightSide</a></div><div class="ttdeci">int eMMRightSide</div><div class="ttdef"><b>Definition</b> <a href="TTPulseExtractionTask_8h_source.html#l00040">TTPulseExtractionTask.h:40</a></div></div>
+<div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
