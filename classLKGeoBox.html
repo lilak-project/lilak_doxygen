@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -81,6 +81,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a589ac23bae1d4e4e5ab7366655569385"><td class="memItemLeft" align="right" valign="top">TVector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a589ac23bae1d4e4e5ab7366655569385">GetCorner</a> (Int_t xpm, Int_t ypm, Int_t zpm) const</td></tr>
 <tr class="memdesc:a589ac23bae1d4e4e5ab7366655569385"><td class="mdescLeft">&#160;</td><td class="mdescRight">pm should be 1(high) or -1(low)  <br /></td></tr>
 <tr class="separator:a589ac23bae1d4e4e5ab7366655569385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9015068387d7f77816d0e31a5bd865f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#af9015068387d7f77816d0e31a5bd865f">GetCrossingPoints</a> (<a class="el" href="classLKGeoLine.html">LKGeoLine</a> line, TVector3 &amp;point1, TVector3 &amp;point2) const</td></tr>
+<tr class="separator:af9015068387d7f77816d0e31a5bd865f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a9629d664ec21e39336752ad484326"><td class="memItemLeft" align="right" valign="top">Double_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#ae9a9629d664ec21e39336752ad484326">GetdX</a> () const</td></tr>
 <tr class="separator:ae9a9629d664ec21e39336752ad484326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b0f04ffa1211badbb90edccceea6f0d"><td class="memItemLeft" align="right" valign="top">Double_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a4b0f04ffa1211badbb90edccceea6f0d">GetdY</a> () const</td></tr>
@@ -94,28 +96,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a49cfc07aa310fb96c3d2da4778c5bd48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKGeoLine.html">LKGeoLine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a49cfc07aa310fb96c3d2da4778c5bd48">GetEdge</a> (Int_t xpm, Int_t ypm, Int_t zpm) const</td></tr>
 <tr class="memdesc:a49cfc07aa310fb96c3d2da4778c5bd48"><td class="mdescLeft">&#160;</td><td class="mdescRight">pm of edge axis is 0 while the other two should be 1(high) or -1(low)  <br /></td></tr>
 <tr class="separator:a49cfc07aa310fb96c3d2da4778c5bd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f47f70e04a77862cfda32d575c38150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKGeo2DBox.html">LKGeo2DBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a6f47f70e04a77862cfda32d575c38150">GetFace</a> (<a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a> axis) const</td></tr>
-<tr class="separator:a6f47f70e04a77862cfda32d575c38150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a417996605ff05d801c797629f17655"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKGeo2DBox.html">LKGeo2DBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a5a417996605ff05d801c797629f17655">GetFace</a> (<a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a> xaxis, <a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a> yaxis) const</td></tr>
 <tr class="separator:a5a417996605ff05d801c797629f17655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b93a722969483badebff507db50552"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKGeo2DBox.html">LKGeo2DBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a15b93a722969483badebff507db50552">GetFace</a> (Int_t idx) const</td></tr>
-<tr class="separator:a15b93a722969483badebff507db50552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad81654eaf4a8f625cbcebe2d8148775b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#ad81654eaf4a8f625cbcebe2d8148775b">IsInside</a> (Double_t x, Double_t y, Double_t z)</td></tr>
-<tr class="separator:ad81654eaf4a8f625cbcebe2d8148775b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c6ab3a0e9610fe27ce5c80ca28cc883"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a6c6ab3a0e9610fe27ce5c80ca28cc883">IsInside</a> (TVector3 pos)</td></tr>
-<tr class="separator:a6c6ab3a0e9610fe27ce5c80ca28cc883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f8e6e941805e9ee2eb1b8421f3161a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKGeoPlaneWithCenter.html">LKGeoPlaneWithCenter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a13f8e6e941805e9ee2eb1b8421f3161a">GetPlane</a> (<a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a> xaxis, <a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a> yaxis) const</td></tr>
+<tr class="separator:a13f8e6e941805e9ee2eb1b8421f3161a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96df7783f3c855effbb6b885f4537fa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKGeoPlaneWithCenter.html">LKGeoPlaneWithCenter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a96df7783f3c855effbb6b885f4537fa1">GetPlane</a> (Int_t axis) const</td></tr>
+<tr class="separator:a96df7783f3c855effbb6b885f4537fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3ab2fd8fd326b606e00e8aebc5837f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#aed3ab2fd8fd326b606e00e8aebc5837f">IsInside</a> (Double_t x, Double_t y, Double_t z) const</td></tr>
+<tr class="separator:aed3ab2fd8fd326b606e00e8aebc5837f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41c4f33a17ba24291d399c917cd88a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#af41c4f33a17ba24291d399c917cd88a9">IsInside</a> (TVector3 pos) const</td></tr>
+<tr class="separator:af41c4f33a17ba24291d399c917cd88a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8ee8912436626dc81678857097c7fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#ada8ee8912436626dc81678857097c7fd">LKGeoBox</a> ()</td></tr>
 <tr class="separator:ada8ee8912436626dc81678857097c7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04713edfd7caa88aaf9c259a01a1ce3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#ac04713edfd7caa88aaf9c259a01a1ce3">LKGeoBox</a> (Double_t xc, Double_t yc, Double_t zc, Double_t dx, Double_t dy, Double_t dz)</td></tr>
 <tr class="separator:ac04713edfd7caa88aaf9c259a01a1ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8136881d8c957005e80979b551c70b26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a8136881d8c957005e80979b551c70b26">LKGeoBox</a> (TVector3 center, Double_t dx, Double_t dy, Double_t dz)</td></tr>
-<tr class="separator:a8136881d8c957005e80979b551c70b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644405ede103ef954ebd193137f4c552"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a644405ede103ef954ebd193137f4c552">LKGeoBox</a> (TVector3 center, TVector3 length)</td></tr>
+<tr class="separator:a644405ede103ef954ebd193137f4c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be17262989ecc3a84328f9dfc04bac0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a1be17262989ecc3a84328f9dfc04bac0">Print</a> (Option_t *option=&quot;&quot;) const</td></tr>
 <tr class="separator:a1be17262989ecc3a84328f9dfc04bac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb10eff2bdc2a1017a435baabb87089d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#abb10eff2bdc2a1017a435baabb87089d">SetBox</a> (Double_t xc, Double_t yc, Double_t zc, Double_t dx, Double_t dy, Double_t dz)</td></tr>
 <tr class="separator:abb10eff2bdc2a1017a435baabb87089d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8492856885227144af31fae0713cf67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#ac8492856885227144af31fae0713cf67">SetBox</a> (TVector3 center, Double_t dx, Double_t dy, Double_t dz)</td></tr>
-<tr class="separator:ac8492856885227144af31fae0713cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb04f509170bdc891c793e3b24cbd03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#aebb04f509170bdc891c793e3b24cbd03">SetBox</a> (TVector3 center, TVector3 length)</td></tr>
+<tr class="separator:aebb04f509170bdc891c793e3b24cbd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f3faa3c198cd59e4fa8c695670c0d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a66f3faa3c198cd59e4fa8c695670c0d2">TestPointInsidePlane</a> (int iPlane, TVector3 point) const</td></tr>
+<tr class="separator:a66f3faa3c198cd59e4fa8c695670c0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab6bccd6973eb4dddd1ea058c1a3bed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGeoBox.html#a0ab6bccd6973eb4dddd1ea058c1a3bed">~LKGeoBox</a> ()</td></tr>
 <tr class="separator:a0ab6bccd6973eb4dddd1ea058c1a3bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLKGeoRotated"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLKGeoRotated')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLKGeoRotated.html">LKGeoRotated</a></td></tr>
@@ -237,14 +241,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00012">12</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00014">14</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
 
 </div>
 </div>
-<a id="a8136881d8c957005e80979b551c70b26" name="a8136881d8c957005e80979b551c70b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8136881d8c957005e80979b551c70b26">&#9670;&#160;</a></span>LKGeoBox() <span class="overload">[3/3]</span></h2>
+<a id="a644405ede103ef954ebd193137f4c552" name="a644405ede103ef954ebd193137f4c552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644405ede103ef954ebd193137f4c552">&#9670;&#160;</a></span>LKGeoBox() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,20 +262,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>dx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>dy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>dz</em>&#160;</td>
+          <td class="paramtype">TVector3&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,9 +273,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00017">17</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00019">19</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -341,9 +333,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKGeoRotated.html#a0b935eeeb98357953729b4a7df363e45">LKGeoRotated</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00048">48</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00058">58</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classLKGeoRotated.html#a0b935eeeb98357953729b4a7df363e45">LKGeoRotated::Clear()</a>, <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="classLKGeoRotated.html#a0b935eeeb98357953729b4a7df363e45">LKGeoRotated::Clear()</a>, <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
 
 </div>
 </div>
@@ -371,9 +363,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00043">43</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00053">53</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -403,9 +395,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00143">143</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00242">242</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeo2DBox_8cpp_source.html#l00119">LKGeo2DBox::DrawGraph()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00127">GetFace()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeo2DBox_8cpp_source.html#l00119">LKGeo2DBox::DrawGraph()</a>, and <a class="el" href="LKGeoPlaneBox_8cpp_source.html#l00082">GetFace()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKGeoBoxStack_8cpp_source.html#l00072">LKGeoBoxStack::DrawStackGraph()</a>.</p>
 
@@ -436,9 +428,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKGeoRotated.html#acffd6905b7e8d0f44d8c987aa3a73418">LKGeoRotated</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00079">79</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00089">89</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
 
 </div>
 </div>
@@ -458,11 +450,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00085">85</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00095">95</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00106">GetEdge()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00113">GetEdge()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00118">GetEdge()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00127">GetFace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00116">GetEdge()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00123">GetEdge()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00128">GetEdge()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00137">GetFace()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00159">GetPlane()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00178">TestPointInsidePlane()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +492,49 @@ Protected Attributes</h2></td></tr>
 
 <p>pm should be 1(high) or -1(low) </p>
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00098">98</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00108">108</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
+
+</div>
+</div>
+<a id="af9015068387d7f77816d0e31a5bd865f" name="af9015068387d7f77816d0e31a5bd865f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9015068387d7f77816d0e31a5bd865f">&#9670;&#160;</a></span>GetCrossingPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LKGeoBox::GetCrossingPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLKGeoLine.html">LKGeoLine</a>&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TVector3 &amp;&#160;</td>
+          <td class="paramname"><em>point1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TVector3 &amp;&#160;</td>
+          <td class="paramname"><em>point2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00208">208</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00153">GetPlane()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00178">TestPointInsidePlane()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">TTHTTrackingTask::MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -521,9 +553,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00081">81</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00091">91</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>.</p>
 
 </div>
 </div>
@@ -542,9 +574,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00082">82</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00092">92</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>.</p>
 
 </div>
 </div>
@@ -563,9 +595,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00083">83</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00093">93</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>.</p>
 
 </div>
 </div>
@@ -585,9 +617,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00106">106</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00116">116</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>.</p>
 
 </div>
 </div>
@@ -617,9 +649,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00113">113</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00123">123</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>.</p>
 
 </div>
 </div>
@@ -657,32 +689,14 @@ Protected Attributes</h2></td></tr>
 
 <p>pm of edge axis is 0 while the other two should be 1(high) or -1(low) </p>
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00118">118</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00128">128</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>.</p>
-
-</div>
-</div>
-<a id="a6f47f70e04a77862cfda32d575c38150" name="a6f47f70e04a77862cfda32d575c38150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f47f70e04a77862cfda32d575c38150">&#9670;&#160;</a></span>GetFace() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLKGeo2DBox.html">LKGeo2DBox</a> LKGeoBox::GetFace </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a>&#160;</td>
-          <td class="paramname"><em>axis</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>.</p>
 
 </div>
 </div>
 <a id="a5a417996605ff05d801c797629f17655" name="a5a417996605ff05d801c797629f17655"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a417996605ff05d801c797629f17655">&#9670;&#160;</a></span>GetFace() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a417996605ff05d801c797629f17655">&#9670;&#160;</a></span>GetFace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,34 +721,73 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00127">127</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00137">137</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00143">Draw2DBox()</a>, and <a class="el" href="LKGeoBoxStack_8cpp_source.html#l00137">LKGeoBoxStack::DrawStackHistPoly()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBoxStack_8cpp_source.html#l00137">LKGeoBoxStack::DrawStackHistPoly()</a>.</p>
 
 </div>
 </div>
-<a id="a15b93a722969483badebff507db50552" name="a15b93a722969483badebff507db50552"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15b93a722969483badebff507db50552">&#9670;&#160;</a></span>GetFace() <span class="overload">[3/3]</span></h2>
+<a id="a13f8e6e941805e9ee2eb1b8421f3161a" name="a13f8e6e941805e9ee2eb1b8421f3161a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f8e6e941805e9ee2eb1b8421f3161a">&#9670;&#160;</a></span>GetPlane() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classLKGeo2DBox.html">LKGeo2DBox</a> LKGeoBox::GetFace </td>
+          <td class="memname"><a class="el" href="classLKGeoPlaneWithCenter.html">LKGeoPlaneWithCenter</a> LKGeoBox::GetPlane </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a>&#160;</td>
+          <td class="paramname"><em>xaxis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="LKGeoBox_8h.html#ab37a20bb8adba98db5014fab19427b75">axis_t</a>&#160;</td>
+          <td class="paramname"><em>yaxis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00153">153</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00153">GetPlane()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00208">GetCrossingPoints()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00153">GetPlane()</a>.</p>
+
 </div>
 </div>
-<a id="ad81654eaf4a8f625cbcebe2d8148775b" name="ad81654eaf4a8f625cbcebe2d8148775b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad81654eaf4a8f625cbcebe2d8148775b">&#9670;&#160;</a></span>IsInside() <span class="overload">[1/2]</span></h2>
+<a id="a96df7783f3c855effbb6b885f4537fa1" name="a96df7783f3c855effbb6b885f4537fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96df7783f3c855effbb6b885f4537fa1">&#9670;&#160;</a></span>GetPlane() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKGeoPlaneWithCenter.html">LKGeoPlaneWithCenter</a> LKGeoBox::GetPlane </td>
+          <td>(</td>
+          <td class="paramtype">Int_t&#160;</td>
+          <td class="paramname"><em>axis</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>+X = 0 -X = 1 +Y = 2 -Y = 3 +Z = 4 -Z = 5 </p>
+
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00159">159</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKVector3_8cpp_source.html#l00164">LKVector3::GetXYZ()</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kMX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kMY</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kMZ</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>, and <a class="el" href="LKVector3_8cpp_source.html#l00120">LKVector3::SetAt()</a>.</p>
+
+</div>
+</div>
+<a id="aed3ab2fd8fd326b606e00e8aebc5837f" name="aed3ab2fd8fd326b606e00e8aebc5837f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3ab2fd8fd326b606e00e8aebc5837f">&#9670;&#160;</a></span>IsInside() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,19 +813,19 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00153">153</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00252">252</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
 
 </div>
 </div>
-<a id="a6c6ab3a0e9610fe27ce5c80ca28cc883" name="a6c6ab3a0e9610fe27ce5c80ca28cc883"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6ab3a0e9610fe27ce5c80ca28cc883">&#9670;&#160;</a></span>IsInside() <span class="overload">[2/2]</span></h2>
+<a id="af41c4f33a17ba24291d399c917cd88a9" name="af41c4f33a17ba24291d399c917cd88a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41c4f33a17ba24291d399c917cd88a9">&#9670;&#160;</a></span>IsInside() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -782,16 +835,16 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">TVector3&#160;</td>
           <td class="paramname"><em>pos</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00148">148</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00247">247</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00148">IsInside()</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00247">IsInside()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00148">IsInside()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00247">IsInside()</a>.</p>
 
 </div>
 </div>
@@ -819,9 +872,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00022">22</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00024">24</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00037">e_cout</a>, <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00039">e_cout</a>, <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
 
 </div>
 </div>
@@ -883,16 +936,16 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00059">59</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00069">69</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00012">LKGeoBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00017">LKGeoBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00014">LKGeoBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00019">LKGeoBox()</a>.</p>
 
 </div>
 </div>
-<a id="ac8492856885227144af31fae0713cf67" name="ac8492856885227144af31fae0713cf67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8492856885227144af31fae0713cf67">&#9670;&#160;</a></span>SetBox() <span class="overload">[2/2]</span></h2>
+<a id="aebb04f509170bdc891c793e3b24cbd03" name="aebb04f509170bdc891c793e3b24cbd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb04f509170bdc891c793e3b24cbd03">&#9670;&#160;</a></span>SetBox() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,20 +962,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>dx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>dy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Double_t&#160;</td>
-          <td class="paramname"><em>dz</em>&#160;</td>
+          <td class="paramtype">TVector3&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -937,9 +978,43 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00069">69</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00079">79</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00054">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00055">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00056">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00051">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00052">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00053">fZ</a>.</p>
+<p class="reference">References <a class="el" href="LKGeoBox_8h_source.html#l00065">fdX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00066">fdY</a>, <a class="el" href="LKGeoBox_8h_source.html#l00067">fdZ</a>, <a class="el" href="LKGeoBox_8h_source.html#l00062">fX</a>, <a class="el" href="LKGeoBox_8h_source.html#l00063">fY</a>, and <a class="el" href="LKGeoBox_8h_source.html#l00064">fZ</a>.</p>
+
+</div>
+</div>
+<a id="a66f3faa3c198cd59e4fa8c695670c0d2" name="a66f3faa3c198cd59e4fa8c695670c0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f3faa3c198cd59e4fa8c695670c0d2">&#9670;&#160;</a></span>TestPointInsidePlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LKGeoBox::TestPointInsidePlane </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPlane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TVector3&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8cpp_source.html#l00178">178</a> of file <a class="el" href="LKGeoBox_8cpp_source.html">LKGeoBox.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00208">GetCrossingPoints()</a>.</p>
 
 </div>
 </div>
@@ -964,9 +1039,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00054">54</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00065">65</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00048">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00098">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00081">GetdX()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00153">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00022">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00058">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00108">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00091">GetdX()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00252">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00024">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00079">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -990,9 +1065,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00055">55</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00066">66</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00048">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00098">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00082">GetdY()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00153">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00022">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00058">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00108">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00092">GetdY()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00252">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00024">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00079">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -1016,9 +1091,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00056">56</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00067">67</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00048">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00098">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00083">GetdZ()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00153">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00022">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00058">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00108">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00093">GetdZ()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00252">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00024">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00079">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -1042,9 +1117,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00051">51</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00062">62</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00048">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00079">GetCenter()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00098">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00153">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00022">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00058">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00089">GetCenter()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00108">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00252">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00024">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00079">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -1068,9 +1143,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00052">52</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00063">63</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00048">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00079">GetCenter()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00098">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00153">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00022">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00058">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00089">GetCenter()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00108">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00252">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00024">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00079">SetBox()</a>.</p>
 
 </div>
 </div>
@@ -1094,9 +1169,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00053">53</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKGeoBox_8h_source.html#l00064">64</a> of file <a class="el" href="LKGeoBox_8h_source.html">LKGeoBox.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00048">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00043">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00079">GetCenter()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00085">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00098">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00153">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00022">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00059">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKGeoBox_8cpp_source.html#l00058">Clear()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00053">Copy()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00089">GetCenter()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00095">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00108">GetCorner()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00252">IsInside()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00024">Print()</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00069">SetBox()</a>, and <a class="el" href="LKGeoBox_8cpp_source.html#l00079">SetBox()</a>.</p>
 
 </div>
 </div>

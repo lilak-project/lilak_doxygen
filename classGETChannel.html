@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classGETChannel-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">GETChannel Class Reference</div></div>
 </div><!--header-->
@@ -63,85 +62,79 @@ Inheritance diagram for GETChannel:</div>
  <div class="center">
   <img src="classGETChannel.png" usemap="#GETChannel_map" alt=""/>
   <map id="GETChannel_map" name="GETChannel_map">
-<area href="classLKChannel.html" alt="LKChannel" shape="rect" coords="0,112,83,136"/>
-<area href="classLKContainer.html" alt="LKContainer" shape="rect" coords="0,56,83,80"/>
+<area href="classLKChannel.html" alt="LKChannel" shape="rect" coords="0,112,100,136"/>
+<area href="classGETParameters.html" alt="GETParameters" shape="rect" coords="110,112,210,136"/>
+<area href="classLKContainer.html" alt="LKContainer" shape="rect" coords="0,56,100,80"/>
+<area href="classLKPad.html" alt="LKPad" shape="rect" coords="55,224,155,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a103fab326ee8df1ccd0aaf237d826e88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a103fab326ee8df1ccd0aaf237d826e88">Clear</a> (Option_t *option=&quot;&quot;)</td></tr>
+<tr class="memitem:ae140f6b65cb5741a64e137d31268bf16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ae140f6b65cb5741a64e137d31268bf16">AddHit</a> (<a class="el" href="classLKHit.html">LKHit</a> *hit)</td></tr>
+<tr class="separator:ae140f6b65cb5741a64e137d31268bf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8484377f0eb1fd0d21d0838c9109219e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a8484377f0eb1fd0d21d0838c9109219e">CalculateGroupFluctuation</a> (int numGroups=8, int tb2=512)</td></tr>
+<tr class="separator:a8484377f0eb1fd0d21d0838c9109219e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103fab326ee8df1ccd0aaf237d826e88"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a103fab326ee8df1ccd0aaf237d826e88">Clear</a> (Option_t *option=&quot;&quot;)</td></tr>
 <tr class="separator:a103fab326ee8df1ccd0aaf237d826e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a272ae23f2164daebe0752292d0d1b35c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGETChannel.html">GETChannel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a272ae23f2164daebe0752292d0d1b35c">CloneChannel</a> () const</td></tr>
-<tr class="separator:a272ae23f2164daebe0752292d0d1b35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c3f7f4c8bc2e582e6efe988e1f8872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a57c3f7f4c8bc2e582e6efe988e1f8872">Copy</a> (TObject &amp;object) const</td></tr>
+<tr class="memitem:aa9e424134e77ecfdf1da829a64ad942c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aa9e424134e77ecfdf1da829a64ad942c">ClearHits</a> ()</td></tr>
+<tr class="separator:aa9e424134e77ecfdf1da829a64ad942c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c3f7f4c8bc2e582e6efe988e1f8872"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a57c3f7f4c8bc2e582e6efe988e1f8872">Copy</a> (TObject &amp;object) const</td></tr>
 <tr class="separator:a57c3f7f4c8bc2e582e6efe988e1f8872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2341406f166b32165b7b402cf31bdc37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a2341406f166b32165b7b402cf31bdc37">Draw</a> (Option_t *option=&quot;&quot;)</td></tr>
 <tr class="separator:a2341406f166b32165b7b402cf31bdc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40cd5df9dbd0e3f4fe0d2b1dab3bc427"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a40cd5df9dbd0e3f4fe0d2b1dab3bc427">GetAget</a> () const</td></tr>
-<tr class="separator:a40cd5df9dbd0e3f4fe0d2b1dab3bc427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f94a865e39bbecd250245a3c138c48"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a34f94a865e39bbecd250245a3c138c48">GetAsad</a> () const</td></tr>
-<tr class="separator:a34f94a865e39bbecd250245a3c138c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc6f526e86d42a7a76f56ccd6a129a7"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aecc6f526e86d42a7a76f56ccd6a129a7">GetBase</a> () const</td></tr>
-<tr class="separator:aecc6f526e86d42a7a76f56ccd6a129a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff5bb9ca73b19170e392b238b9d4500e"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aff5bb9ca73b19170e392b238b9d4500e">GetCAAC</a> () const</td></tr>
-<tr class="separator:aff5bb9ca73b19170e392b238b9d4500e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b80de78299104db41f5c3c93e8210cd"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6b80de78299104db41f5c3c93e8210cd">GetChan</a> () const</td></tr>
-<tr class="separator:a6b80de78299104db41f5c3c93e8210cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98910da5e5cbc419e5735d2e9adacc35"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a98910da5e5cbc419e5735d2e9adacc35">GetChan2</a> () const</td></tr>
-<tr class="separator:a98910da5e5cbc419e5735d2e9adacc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54000a424a33f71ebf6b8508b1e2ebe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a54000a424a33f71ebf6b8508b1e2ebe1">FillGraph</a> (TGraph *graph)</td></tr>
+<tr class="separator:a54000a424a33f71ebf6b8508b1e2ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb516171c8b343d022c7f2d5588fea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a9cb516171c8b343d022c7f2d5588fea7">FillHist</a> (TH1D *hist)</td></tr>
+<tr class="separator:a9cb516171c8b343d022c7f2d5588fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be401d5d967701599c6d0b79486cc3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKBufferI.html">LKBufferI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6be401d5d967701599c6d0b79486cc3a">GetBuffer</a> ()</td></tr>
+<tr class="separator:a6be401d5d967701599c6d0b79486cc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8223ff4a34293801d78590216afa26eb"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a8223ff4a34293801d78590216afa26eb">GetBufferArray</a> ()</td></tr>
+<tr class="separator:a8223ff4a34293801d78590216afa26eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf24e3e1d21c6ebfe3a365f5003d6d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a8cf24e3e1d21c6ebfe3a365f5003d6d1">GETChannel</a> ()</td></tr>
 <tr class="separator:a8cf24e3e1d21c6ebfe3a365f5003d6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a2da8b05eb9abd21ea421d455aa6dfa"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a9a2da8b05eb9abd21ea421d455aa6dfa">GetCobo</a> () const</td></tr>
-<tr class="separator:a9a2da8b05eb9abd21ea421d455aa6dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b936ef51af253341c8e00eadbf2e29"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ae7b936ef51af253341c8e00eadbf2e29">GetDecayNo</a> () const</td></tr>
-<tr class="separator:ae7b936ef51af253341c8e00eadbf2e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598dec5fa1e8e90f2b6cca0ff897f1ff"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a598dec5fa1e8e90f2b6cca0ff897f1ff">GetDetType</a> () const</td></tr>
-<tr class="separator:a598dec5fa1e8e90f2b6cca0ff897f1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1160e232abe16aef699ac455b2074b02"><td class="memItemLeft" align="right" valign="top">Float_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a1160e232abe16aef699ac455b2074b02">GetEnergy</a> () const</td></tr>
-<tr class="separator:a1160e232abe16aef699ac455b2074b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3bd51925416abc72d6c9e641f72ed99"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ac3bd51925416abc72d6c9e641f72ed99">GetFrameNo</a> () const</td></tr>
-<tr class="separator:ac3bd51925416abc72d6c9e641f72ed99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e888bdd5c1cbcc784958bfb275b59e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6e888bdd5c1cbcc784958bfb275b59e1">GetGroupMeanStdDev</a> (int numGroups, int tb2, double *pedestalGroup, double *stddevGroup)</td></tr>
+<tr class="separator:a6e888bdd5c1cbcc784958bfb275b59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd0b068f3606caf4d4416fdd422bb25"><td class="memItemLeft" align="right" valign="top">TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a1dd0b068f3606caf4d4416fdd422bb25">GetHist</a> (TString name=&quot;&quot;)</td></tr>
 <tr class="separator:a1dd0b068f3606caf4d4416fdd422bb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd26f7baf4e01983d06f69e425f2f4a"><td class="memItemLeft" align="right" valign="top">Float_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a0dd26f7baf4e01983d06f69e425f2f4a">GetTime</a> () const</td></tr>
-<tr class="separator:a0dd26f7baf4e01983d06f69e425f2f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88561eb0a18ac44ccac4622d94faa1b8"><td class="memItemLeft" align="right" valign="top">Int_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a88561eb0a18ac44ccac4622d94faa1b8">GetWaveformX</a> ()</td></tr>
-<tr class="separator:a88561eb0a18ac44ccac4622d94faa1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c2566b738167c5c331dbfa542703fb"><td class="memItemLeft" align="right" valign="top">Int_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a10c2566b738167c5c331dbfa542703fb">GetWaveformY</a> ()</td></tr>
-<tr class="separator:a10c2566b738167c5c331dbfa542703fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4aebc1debfddb00a3078abaa692531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a7b4aebc1debfddb00a3078abaa692531">Print</a> (Option_t *option=&quot;&quot;) const</td></tr>
+<tr class="memitem:aa7896b04d81a57ff2f77a9ae753f555c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHit.html">LKHit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aa7896b04d81a57ff2f77a9ae753f555c">GetHit</a> (int idx)</td></tr>
+<tr class="separator:aa7896b04d81a57ff2f77a9ae753f555c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f9839f40bbf19a994fba1c8f588729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHitArray.html">LKHitArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a88f9839f40bbf19a994fba1c8f588729">GetHitArray</a> ()</td></tr>
+<tr class="separator:a88f9839f40bbf19a994fba1c8f588729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6183bd7400f6609c65f28012c61a509"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#af6183bd7400f6609c65f28012c61a509">GetHitGraph</a> ()</td></tr>
+<tr class="separator:af6183bd7400f6609c65f28012c61a509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6fe7770a9350c6c1be20cc7d3223715"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ac6fe7770a9350c6c1be20cc7d3223715">GetNumHits</a> () const</td></tr>
+<tr class="separator:ac6fe7770a9350c6c1be20cc7d3223715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab851093948a89f0044f00df6c6fe4aeb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ab851093948a89f0044f00df6c6fe4aeb">GetScale</a> (double *buffer)</td></tr>
+<tr class="separator:ab851093948a89f0044f00df6c6fe4aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad613b1bc7db12fd00e745d7d2216fd8f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ad613b1bc7db12fd00e745d7d2216fd8f">GetScale</a> (int *buffer)</td></tr>
+<tr class="separator:ad613b1bc7db12fd00e745d7d2216fd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5544aa09d7e81dfb8f8dbb2954934d32"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a5544aa09d7e81dfb8f8dbb2954934d32">GetWaveformY</a> ()</td></tr>
+<tr class="separator:a5544aa09d7e81dfb8f8dbb2954934d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4aebc1debfddb00a3078abaa692531"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a7b4aebc1debfddb00a3078abaa692531">Print</a> (Option_t *option=&quot;&quot;) const</td></tr>
 <tr class="separator:a7b4aebc1debfddb00a3078abaa692531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4c74050254fba01ce49225c5a8b876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a7b4c74050254fba01ce49225c5a8b876">SetAget</a> (Int_t aget)</td></tr>
-<tr class="separator:a7b4c74050254fba01ce49225c5a8b876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad968f88404b719d75a902b48a4b71ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ad968f88404b719d75a902b48a4b71ee5">SetAsad</a> (Int_t asad)</td></tr>
-<tr class="separator:ad968f88404b719d75a902b48a4b71ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a296cdeeabda1c9dae23a780476a100fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a296cdeeabda1c9dae23a780476a100fb">SetBase</a> (Int_t Base)</td></tr>
-<tr class="separator:a296cdeeabda1c9dae23a780476a100fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf7a22b2dd51221694a066452ee55a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a3cf7a22b2dd51221694a066452ee55a7">SetChan</a> (Int_t chan)</td></tr>
-<tr class="separator:a3cf7a22b2dd51221694a066452ee55a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3725c3e9b7488a57cb8a16916d517ecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a3725c3e9b7488a57cb8a16916d517ecd">SetChan2</a> (Int_t dChan)</td></tr>
-<tr class="separator:a3725c3e9b7488a57cb8a16916d517ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bdc15007890f2cab3942d4c4b676df7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a5bdc15007890f2cab3942d4c4b676df7">SetCobo</a> (Int_t cobo)</td></tr>
-<tr class="separator:a5bdc15007890f2cab3942d4c4b676df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45bae4b20e0f27959d59f7ec3304e324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a45bae4b20e0f27959d59f7ec3304e324">SetDecayNo</a> (Int_t decayNo)</td></tr>
-<tr class="separator:a45bae4b20e0f27959d59f7ec3304e324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49d47e0bd001a26213ecac14a25cc573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a49d47e0bd001a26213ecac14a25cc573">SetDetType</a> (Int_t eventIdx)</td></tr>
-<tr class="separator:a49d47e0bd001a26213ecac14a25cc573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a1c002753dfa9dec8cfd57bcdf6e3ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a3a1c002753dfa9dec8cfd57bcdf6e3ae">SetEnergy</a> (Float_t energy)</td></tr>
-<tr class="separator:a3a1c002753dfa9dec8cfd57bcdf6e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a952e2d1e991628a7fbfb7addf1082e0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a952e2d1e991628a7fbfb7addf1082e0b">SetFrameNo</a> (Int_t frameNo)</td></tr>
-<tr class="separator:a952e2d1e991628a7fbfb7addf1082e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c10fe9ea4d103fb94c9cebc54abe20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a36c10fe9ea4d103fb94c9cebc54abe20">SetTime</a> (Float_t time)</td></tr>
-<tr class="separator:a36c10fe9ea4d103fb94c9cebc54abe20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6570bfc3c470d832aa0839eca4b58304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6570bfc3c470d832aa0839eca4b58304">SetWaveformX</a> (const Int_t *waveform)</td></tr>
-<tr class="separator:a6570bfc3c470d832aa0839eca4b58304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dd163e9b08901aab4ba396fd598f0b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a7dd163e9b08901aab4ba396fd598f0b7">SetWaveformY</a> (const Int_t *waveform)</td></tr>
-<tr class="separator:a7dd163e9b08901aab4ba396fd598f0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91f9217ab2aee874e339d1f015c45338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a91f9217ab2aee874e339d1f015c45338">SetWaveformY</a> (const UInt_t *waveform)</td></tr>
-<tr class="separator:a91f9217ab2aee874e339d1f015c45338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f09ae2baf0e5b735849b08145872cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a69f09ae2baf0e5b735849b08145872cf">SetWaveformY</a> (std::vector&lt; unsigned int &gt; waveform)</td></tr>
-<tr class="separator:a69f09ae2baf0e5b735849b08145872cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3898bdbcb34b62ec63f57cb7b315280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#af3898bdbcb34b62ec63f57cb7b315280">PullOutHits</a> (<a class="el" href="classLKHitArray.html">LKHitArray</a> *hits)</td></tr>
+<tr class="separator:af3898bdbcb34b62ec63f57cb7b315280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953ee72448e2cae7d20c6c0a0684dc8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a953ee72448e2cae7d20c6c0a0684dc8c">PullOutHits</a> (vector&lt; <a class="el" href="classLKHit.html">LKHit</a> * &gt; *hits)</td></tr>
+<tr class="separator:a953ee72448e2cae7d20c6c0a0684dc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c876140c47d6bcd33e95a4e90a5f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHit.html">LKHit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a76c876140c47d6bcd33e95a4e90a5f6a">PullOutNextFreeHit</a> ()</td></tr>
+<tr class="separator:a76c876140c47d6bcd33e95a4e90a5f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb622a06fb5515ffa5c6e78a7a55f20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6fb622a06fb5515ffa5c6e78a7a55f20">SetBuffer</a> (<a class="el" href="classLKBufferI.html">LKBufferI</a> buffer)</td></tr>
+<tr class="separator:a6fb622a06fb5515ffa5c6e78a7a55f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d7082c3056bcff80be2c12ecb806b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a44d7082c3056bcff80be2c12ecb806b1">SetWaveformY</a> (const int *array)</td></tr>
+<tr class="separator:a44d7082c3056bcff80be2c12ecb806b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44410bddb0d8c7964416bfb0da147d46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a44410bddb0d8c7964416bfb0da147d46">SetWaveformY</a> (const unsigned int *array)</td></tr>
+<tr class="separator:a44410bddb0d8c7964416bfb0da147d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70ff4107fc49226af2dbbd799f44d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#af70ff4107fc49226af2dbbd799f44d36">SetWaveformY</a> (std::vector&lt; unsigned int &gt; array)</td></tr>
+<tr class="separator:af70ff4107fc49226af2dbbd799f44d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2a1842c9a21ee9722a3685b3fd4fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a5a2a1842c9a21ee9722a3685b3fd4fc5">SubtractArray</a> (double *buffer)</td></tr>
+<tr class="separator:a5a2a1842c9a21ee9722a3685b3fd4fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cea3acf0b672314f66d30b6cb21ccdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a5cea3acf0b672314f66d30b6cb21ccdd">SubtractArray</a> (double *buffer, double scale)</td></tr>
+<tr class="separator:a5cea3acf0b672314f66d30b6cb21ccdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606e94521d44ec93023c74720efa2746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a606e94521d44ec93023c74720efa2746">SubtractArray</a> (int *buffer)</td></tr>
+<tr class="separator:a606e94521d44ec93023c74720efa2746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3203b46de1f46e85f67cabaf919875cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a3203b46de1f46e85f67cabaf919875cc">SubtractArray</a> (int *buffer, double scale)</td></tr>
+<tr class="separator:a3203b46de1f46e85f67cabaf919875cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2964fb39d82c3116a01d4a08f6f33026"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a2964fb39d82c3116a01d4a08f6f33026">~GETChannel</a> ()</td></tr>
 <tr class="separator:a2964fb39d82c3116a01d4a08f6f33026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLKChannel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLKChannel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLKChannel.html">LKChannel</a></td></tr>
@@ -149,12 +142,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad01c1a179b3c0c36b275696108fed631 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c87b2186a643f8907e5f90e7ee580d inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a52c87b2186a643f8907e5f90e7ee580d">Copy</a> (TObject &amp;obj) const</td></tr>
 <tr class="separator:a52c87b2186a643f8907e5f90e7ee580d inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7544c08aa8a0a35b4cf4b3d7ee7c3d6 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#ae7544c08aa8a0a35b4cf4b3d7ee7c3d6">GetID</a> () const</td></tr>
-<tr class="separator:ae7544c08aa8a0a35b4cf4b3d7ee7c3d6 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0485a40d52563269b688cecdebe58e7a inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a0485a40d52563269b688cecdebe58e7a">GetChannelID</a> () const</td></tr>
+<tr class="separator:a0485a40d52563269b688cecdebe58e7a inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa978b4787454cd617e219bfdc1f50716 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#aa978b4787454cd617e219bfdc1f50716">GetEnergy</a> () const</td></tr>
+<tr class="separator:aa978b4787454cd617e219bfdc1f50716 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ae5ed8b1d77b990b703aba2cec63fb inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a95ae5ed8b1d77b990b703aba2cec63fb">GetNoiseScale</a> () const</td></tr>
+<tr class="separator:a95ae5ed8b1d77b990b703aba2cec63fb inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8679a1f2394f8f6cfd2ee29cb0d7a37d inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a8679a1f2394f8f6cfd2ee29cb0d7a37d">GetPadID</a> () const</td></tr>
+<tr class="separator:a8679a1f2394f8f6cfd2ee29cb0d7a37d inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66aad6dcd5390a8c1c4316894c69b031 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a66aad6dcd5390a8c1c4316894c69b031">GetPedestal</a> () const</td></tr>
+<tr class="separator:a66aad6dcd5390a8c1c4316894c69b031 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0be414e0627678ab0c91d98a6c99a8 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a7b0be414e0627678ab0c91d98a6c99a8">GetTime</a> () const</td></tr>
+<tr class="separator:a7b0be414e0627678ab0c91d98a6c99a8 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a182a2cf0cebef7ba123748ac871113 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a3a182a2cf0cebef7ba123748ac871113">LKChannel</a> ()</td></tr>
 <tr class="separator:a3a182a2cf0cebef7ba123748ac871113 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60288b4093c48cb79773ee8651633fd0 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a60288b4093c48cb79773ee8651633fd0">SetID</a> (Int_t id)</td></tr>
-<tr class="separator:a60288b4093c48cb79773ee8651633fd0 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b6b656c3c6524bb69f5844b887cfe8 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a29b6b656c3c6524bb69f5844b887cfe8">Print</a> (Option_t *option=&quot;&quot;) const</td></tr>
+<tr class="separator:a29b6b656c3c6524bb69f5844b887cfe8 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae6dbd0096f38e6b6a8c199a615c36c inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#afae6dbd0096f38e6b6a8c199a615c36c">SetChannelID</a> (int value)</td></tr>
+<tr class="separator:afae6dbd0096f38e6b6a8c199a615c36c inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879385a1260ec4ea34c39755622981d3 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a879385a1260ec4ea34c39755622981d3">SetEnergy</a> (double value)</td></tr>
+<tr class="separator:a879385a1260ec4ea34c39755622981d3 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2b9925f4b80f33300333a7a5338b9a inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a4c2b9925f4b80f33300333a7a5338b9a">SetNoiseScale</a> (double value)</td></tr>
+<tr class="separator:a4c2b9925f4b80f33300333a7a5338b9a inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb91eb6665ea3f968f0a973811a3167 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a7fb91eb6665ea3f968f0a973811a3167">SetPadID</a> (int value)</td></tr>
+<tr class="separator:a7fb91eb6665ea3f968f0a973811a3167 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740627d058d380733d82d4f97ba0a029 inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a740627d058d380733d82d4f97ba0a029">SetPedestal</a> (double value)</td></tr>
+<tr class="separator:a740627d058d380733d82d4f97ba0a029 inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12eb72978f456930405dd564a91ae04e inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a12eb72978f456930405dd564a91ae04e">SetTime</a> (double value)</td></tr>
+<tr class="separator:a12eb72978f456930405dd564a91ae04e inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab597af8ae145df3edcb50e71c1c644a inherit pub_methods_classLKChannel"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#aab597af8ae145df3edcb50e71c1c644a">~LKChannel</a> ()</td></tr>
 <tr class="separator:aab597af8ae145df3edcb50e71c1c644a inherit pub_methods_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLKContainer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLKContainer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLKContainer.html">LKContainer</a></td></tr>
@@ -169,56 +184,92 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa4577ee71e18d92433da278ba89643a4 inherit pub_methods_classLKContainer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7fb069ff4291b82cfc560f36a29645 inherit pub_methods_classLKContainer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKContainer.html#aaf7fb069ff4291b82cfc560f36a29645">~LKContainer</a> ()</td></tr>
 <tr class="separator:aaf7fb069ff4291b82cfc560f36a29645 inherit pub_methods_classLKContainer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classGETParameters"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGETParameters')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classGETParameters.html">GETParameters</a></td></tr>
+<tr class="memitem:a111507136016df6d21f117b9df0e0378 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a111507136016df6d21f117b9df0e0378">ClearParameters</a> ()</td></tr>
+<tr class="separator:a111507136016df6d21f117b9df0e0378 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e041bb4a4eee7580376444a7b657607 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a1e041bb4a4eee7580376444a7b657607">GetAget</a> () const</td></tr>
+<tr class="separator:a1e041bb4a4eee7580376444a7b657607 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04a30b0bf4964fed60d39ca577426f9 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#ae04a30b0bf4964fed60d39ca577426f9">GetAsad</a> () const</td></tr>
+<tr class="separator:ae04a30b0bf4964fed60d39ca577426f9 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a10faee254a4bd5512ce2791d9b53a inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a36a10faee254a4bd5512ce2791d9b53a">GetCAAC</a> () const</td></tr>
+<tr class="separator:a36a10faee254a4bd5512ce2791d9b53a inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad768177498c192a69a6e45368b490d67 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#ad768177498c192a69a6e45368b490d67">GetChan</a> () const</td></tr>
+<tr class="separator:ad768177498c192a69a6e45368b490d67 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa515ee82e2f9f22992d8f4b43dbb50e1 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#aa515ee82e2f9f22992d8f4b43dbb50e1">GetCobo</a> () const</td></tr>
+<tr class="separator:aa515ee82e2f9f22992d8f4b43dbb50e1 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f2d836070871aad9cd31855caa8276 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#af1f2d836070871aad9cd31855caa8276">GetDecayNo</a> () const</td></tr>
+<tr class="separator:af1f2d836070871aad9cd31855caa8276 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f55bb393d50654ebd71908766b4a603 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a1f55bb393d50654ebd71908766b4a603">GetDetType</a> () const</td></tr>
+<tr class="separator:a1f55bb393d50654ebd71908766b4a603 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0745af2bf3c62765288e8793e1c2ae inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a4f0745af2bf3c62765288e8793e1c2ae">GetFrameNo</a> () const</td></tr>
+<tr class="separator:a4f0745af2bf3c62765288e8793e1c2ae inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cd67f80a1c88275b2a7eb44af81085 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#ab2cd67f80a1c88275b2a7eb44af81085">GETParameters</a> ()</td></tr>
+<tr class="separator:ab2cd67f80a1c88275b2a7eb44af81085 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ff1a8dcee960dc4e1078cf312f89a5 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a01ff1a8dcee960dc4e1078cf312f89a5">PrintParameters</a> (TString option=&quot;&quot;) const</td></tr>
+<tr class="separator:a01ff1a8dcee960dc4e1078cf312f89a5 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ac4725cc1ca820ae6287a68f9e6a26 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a74ac4725cc1ca820ae6287a68f9e6a26">SetAget</a> (int aget)</td></tr>
+<tr class="separator:a74ac4725cc1ca820ae6287a68f9e6a26 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584739ae4b3ca93b4eb489e4c1a3a021 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a584739ae4b3ca93b4eb489e4c1a3a021">SetAsad</a> (int asad)</td></tr>
+<tr class="separator:a584739ae4b3ca93b4eb489e4c1a3a021 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa991979db780d6e22338b709348f1f9 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#aaa991979db780d6e22338b709348f1f9">SetChan</a> (int chan)</td></tr>
+<tr class="separator:aaa991979db780d6e22338b709348f1f9 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82772166854185b77b043dd9fe79fb30 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a82772166854185b77b043dd9fe79fb30">SetCobo</a> (int cobo)</td></tr>
+<tr class="separator:a82772166854185b77b043dd9fe79fb30 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae42cf3a9579b578b2cf475541189d2f inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#aae42cf3a9579b578b2cf475541189d2f">SetDecayNo</a> (int id)</td></tr>
+<tr class="separator:aae42cf3a9579b578b2cf475541189d2f inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac134070d02deb0723aa46bdef007c368 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#ac134070d02deb0723aa46bdef007c368">SetDetType</a> (int id)</td></tr>
+<tr class="separator:ac134070d02deb0723aa46bdef007c368 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea3fa76024737cb1d8a7da4198b2e51 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#aaea3fa76024737cb1d8a7da4198b2e51">SetFrameNo</a> (int id)</td></tr>
+<tr class="separator:aaea3fa76024737cb1d8a7da4198b2e51 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22277a3e6ece74248e73cd0c00d24eb9 inherit pub_methods_classGETParameters"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a22277a3e6ece74248e73cd0c00d24eb9">~GETParameters</a> ()</td></tr>
+<tr class="separator:a22277a3e6ece74248e73cd0c00d24eb9 inherit pub_methods_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aea5dd93f3114bc546edef6e703ed056e"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aea5dd93f3114bc546edef6e703ed056e">fAget</a> = -1</td></tr>
-<tr class="separator:aea5dd93f3114bc546edef6e703ed056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a840fd6d0b37e0c3986be3286d5fd97bc"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a840fd6d0b37e0c3986be3286d5fd97bc">fAsad</a> = -1</td></tr>
-<tr class="separator:a840fd6d0b37e0c3986be3286d5fd97bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef6a63bf3566ae7aad4d5a5cd41f75c"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aaef6a63bf3566ae7aad4d5a5cd41f75c">fBase</a> = -1</td></tr>
-<tr class="separator:aaef6a63bf3566ae7aad4d5a5cd41f75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a318af4f6b4459fd28f9b7de244196ec9"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a318af4f6b4459fd28f9b7de244196ec9">fChan</a> = -1</td></tr>
-<tr class="separator:a318af4f6b4459fd28f9b7de244196ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa604afd903b6290be3d09529396573f4"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#aa604afd903b6290be3d09529396573f4">fChan2</a> = -1</td></tr>
-<tr class="separator:aa604afd903b6290be3d09529396573f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5186a32e00b8c1a509b8148e1d81038b"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a5186a32e00b8c1a509b8148e1d81038b">fCobo</a> = -1</td></tr>
-<tr class="separator:a5186a32e00b8c1a509b8148e1d81038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7b03c40fdc8f529aab8c47d220754d"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6a7b03c40fdc8f529aab8c47d220754d">fDecayNo</a> = -1</td></tr>
-<tr class="separator:a6a7b03c40fdc8f529aab8c47d220754d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5efb1f665891c90b47bc85232ef1f54"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ab5efb1f665891c90b47bc85232ef1f54">fDetType</a> = -1</td></tr>
-<tr class="separator:ab5efb1f665891c90b47bc85232ef1f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d34e06d6897b8380f8a2053a3329178"><td class="memItemLeft" align="right" valign="top">Float_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a0d34e06d6897b8380f8a2053a3329178">fEnergy</a> = -1</td></tr>
-<tr class="separator:a0d34e06d6897b8380f8a2053a3329178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f18b0cded40ac2d34b37fe5e82dc4bd"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a6f18b0cded40ac2d34b37fe5e82dc4bd">fFrameNo</a> = -1</td></tr>
-<tr class="separator:a6f18b0cded40ac2d34b37fe5e82dc4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1135083e091ce259213c53bd243907c"><td class="memItemLeft" align="right" valign="top">Float_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ab1135083e091ce259213c53bd243907c">fTime</a> = -1</td></tr>
-<tr class="separator:ab1135083e091ce259213c53bd243907c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c12decaa6f55c3e55e35781f9b3368"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a45c12decaa6f55c3e55e35781f9b3368">fWaveformX</a> [512]</td></tr>
-<tr class="separator:a45c12decaa6f55c3e55e35781f9b3368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a768218ed4a9dd7d65efd5c9aceca8801"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a768218ed4a9dd7d65efd5c9aceca8801">fWaveformY</a> [512]</td></tr>
-<tr class="separator:a768218ed4a9dd7d65efd5c9aceca8801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0a9e97389565837455766dd932785653"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a0a9e97389565837455766dd932785653">ClassDef</a> (<a class="el" href="classGETChannel.html">GETChannel</a>, 4)</td></tr>
+<tr class="separator:a0a9e97389565837455766dd932785653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad040ab999f3faf6820e93e3d0f1efef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ad040ab999f3faf6820e93e3d0f1efef9">ClassDef</a> (<a class="el" href="classGETChannel.html">GETChannel</a>, 2)</td></tr>
-<tr class="separator:ad040ab999f3faf6820e93e3d0f1efef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2a7f5e87fdd287853938634f40a88e20"><td class="memItemLeft" align="right" valign="top">TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a2a7f5e87fdd287853938634f40a88e20">fHist</a> = nullptr</td></tr>
-<tr class="separator:a2a7f5e87fdd287853938634f40a88e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:af4d74acbde76da31cb04b89591a18553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKBufferI.html">LKBufferI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#af4d74acbde76da31cb04b89591a18553">fBufferRawSig</a></td></tr>
+<tr class="separator:af4d74acbde76da31cb04b89591a18553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714824a8cf8e0a0708bb79633818be18"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#a714824a8cf8e0a0708bb79633818be18">fGraphHit</a></td></tr>
+<tr class="separator:a714824a8cf8e0a0708bb79633818be18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac231d3bac6df555691e133d7e52d08d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHitArray.html">LKHitArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETChannel.html#ac231d3bac6df555691e133d7e52d08d5">fHitArray</a></td></tr>
+<tr class="separator:ac231d3bac6df555691e133d7e52d08d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classLKChannel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLKChannel')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLKChannel.html">LKChannel</a></td></tr>
-<tr class="memitem:aa52b017f53d58958207d924e4ccc1997 inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">Int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#aa52b017f53d58958207d924e4ccc1997">fID</a> = -1</td></tr>
-<tr class="separator:aa52b017f53d58958207d924e4ccc1997 inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337acd2d7f66907f33d3fe914322d4ed inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a337acd2d7f66907f33d3fe914322d4ed">fChannelID</a> = -1</td></tr>
+<tr class="separator:a337acd2d7f66907f33d3fe914322d4ed inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4557af096326ffbb8685be8139e95c6b inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a4557af096326ffbb8685be8139e95c6b">fEnergy</a> = -1</td></tr>
+<tr class="separator:a4557af096326ffbb8685be8139e95c6b inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf6e693f5bb11874dddf8054474d3a8 inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#acaf6e693f5bb11874dddf8054474d3a8">fNoiseScale</a> = -1</td></tr>
+<tr class="separator:acaf6e693f5bb11874dddf8054474d3a8 inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b00590d185721357141479a40310735 inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a7b00590d185721357141479a40310735">fPadID</a> = -1</td></tr>
+<tr class="separator:a7b00590d185721357141479a40310735 inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a539c84f28eab679b279b20889bc8c5 inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a1a539c84f28eab679b279b20889bc8c5">fPedestal</a> = -1</td></tr>
+<tr class="separator:a1a539c84f28eab679b279b20889bc8c5 inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7856d75deced962bf8a99c01ef0c4476 inherit pro_attribs_classLKChannel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKChannel.html#a7856d75deced962bf8a99c01ef0c4476">fTime</a> = -1</td></tr>
+<tr class="separator:a7856d75deced962bf8a99c01ef0c4476 inherit pro_attribs_classLKChannel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classGETParameters"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGETParameters')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classGETParameters.html">GETParameters</a></td></tr>
+<tr class="memitem:a81a63efa3ec2ed135d634cb008ce2b43 inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a81a63efa3ec2ed135d634cb008ce2b43">fAget</a> = -1</td></tr>
+<tr class="separator:a81a63efa3ec2ed135d634cb008ce2b43 inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2f49eb51a88e110a0a6c5f3ca7ea79 inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a2c2f49eb51a88e110a0a6c5f3ca7ea79">fAsad</a> = -1</td></tr>
+<tr class="separator:a2c2f49eb51a88e110a0a6c5f3ca7ea79 inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89274f7124816c48644a5044d718194 inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#ac89274f7124816c48644a5044d718194">fChan</a> = -1</td></tr>
+<tr class="separator:ac89274f7124816c48644a5044d718194 inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c04aa4caed3da0c45ae901b8bf12e5f inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a6c04aa4caed3da0c45ae901b8bf12e5f">fCobo</a> = -1</td></tr>
+<tr class="separator:a6c04aa4caed3da0c45ae901b8bf12e5f inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7168ebf2da859ca921103c2b7ff812 inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#adc7168ebf2da859ca921103c2b7ff812">fDecayNo</a> = -1</td></tr>
+<tr class="separator:adc7168ebf2da859ca921103c2b7ff812 inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb7f0f9101567b8517937584237d87b inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#acbb7f0f9101567b8517937584237d87b">fDetType</a> = -1</td></tr>
+<tr class="separator:acbb7f0f9101567b8517937584237d87b inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1830b8ee828d971625d2ce25ff22c823 inherit pro_attribs_classGETParameters"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGETParameters.html#a1830b8ee828d971625d2ce25ff22c823">fFrameNo</a> = -1</td></tr>
+<tr class="separator:a1830b8ee828d971625d2ce25ff22c823 inherit pro_attribs_classGETParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Raw event data from GET </p>
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00040">40</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00022">22</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8cf24e3e1d21c6ebfe3a365f5003d6d1" name="a8cf24e3e1d21c6ebfe3a365f5003d6d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cf24e3e1d21c6ebfe3a365f5003d6d1">&#9670;&#160;</a></span>GETChannel()</h2>
@@ -238,8 +289,6 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00005">5</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
 
 </div>
 </div>
@@ -266,13 +315,85 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00044">44</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00026">26</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad040ab999f3faf6820e93e3d0f1efef9" name="ad040ab999f3faf6820e93e3d0f1efef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad040ab999f3faf6820e93e3d0f1efef9">&#9670;&#160;</a></span>ClassDef()</h2>
+<a id="ae140f6b65cb5741a64e137d31268bf16" name="ae140f6b65cb5741a64e137d31268bf16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae140f6b65cb5741a64e137d31268bf16">&#9670;&#160;</a></span>AddHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETChannel::AddHit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLKHit.html">LKHit</a> *&#160;</td>
+          <td class="paramname"><em>hit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00052">52</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="LKHitArray_8cpp_source.html#l00721">LKHitArray::AddHit()</a>, and <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00097">PullOutHits()</a>.</p>
+
+</div>
+</div>
+<a id="a8484377f0eb1fd0d21d0838c9109219e" name="a8484377f0eb1fd0d21d0838c9109219e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8484377f0eb1fd0d21d0838c9109219e">&#9670;&#160;</a></span>CalculateGroupFluctuation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GETChannel::CalculateGroupFluctuation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numGroups</em> = <code>8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tb2</em> = <code>512</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00068">68</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="LKBufferI_8cpp_source.html#l00106">LKBufferI::CalculateGroupFluctuation()</a>, and <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>.</p>
+
+</div>
+</div>
+<a id="a0a9e97389565837455766dd932785653" name="a0a9e97389565837455766dd932785653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9e97389565837455766dd932785653">&#9670;&#160;</a></span>ClassDef()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">2&#160;</td>
+          <td class="paramtype">4&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -300,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -333,32 +454,42 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKChannel.html#ad01c1a179b3c0c36b275696108fed631">LKChannel</a>.</p>
 
+<p>Reimplemented in <a class="el" href="classLKPad.html#aeb8ba484d7fcda964ed63e49c6b25b28">LKPad</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00010">10</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKChannel_8cpp_source.html#l00011">LKChannel::Clear()</a>, <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>, <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>, <a class="el" href="GETChannel_8h_source.html#l00092">fChan2</a>, <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>, <a class="el" href="GETChannel_8h_source.html#l00087">fDecayNo</a>, <a class="el" href="GETChannel_8h_source.html#l00085">fDetType</a>, <a class="el" href="GETChannel_8h_source.html#l00094">fEnergy</a>, <a class="el" href="GETChannel_8h_source.html#l00086">fFrameNo</a>, <a class="el" href="GETChannel_8h_source.html#l00093">fTime</a>, <a class="el" href="GETChannel_8h_source.html#l00095">fWaveformX</a>, and <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferI_8cpp_source.html#l00011">LKBufferI::Clear()</a>, <a class="el" href="LKChannel_8cpp_source.html#l00012">LKChannel::Clear()</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00088">LKHitArray::Clear()</a>, <a class="el" href="GETParameters_8cpp_source.html#l00012">GETParameters::ClearParameters()</a>, <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00005">GETChannel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKPad_8cpp_source.html#l00012">ClassImp()</a>, and <a class="el" href="GETChannel_8cpp_source.html#l00005">GETChannel()</a>.</p>
 
 </div>
 </div>
-<a id="a272ae23f2164daebe0752292d0d1b35c" name="a272ae23f2164daebe0752292d0d1b35c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a272ae23f2164daebe0752292d0d1b35c">&#9670;&#160;</a></span>CloneChannel()</h2>
+<a id="aa9e424134e77ecfdf1da829a64ad942c" name="aa9e424134e77ecfdf1da829a64ad942c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e424134e77ecfdf1da829a64ad942c">&#9670;&#160;</a></span>ClearHits()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGETChannel.html">GETChannel</a> * GETChannel::CloneChannel </td>
+          <td class="memname">void GETChannel::ClearHits </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00064">64</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00055">55</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>, <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>, <a class="el" href="GETChannel_8h_source.html#l00092">fChan2</a>, <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>, <a class="el" href="GETChannel_8h_source.html#l00087">fDecayNo</a>, <a class="el" href="GETChannel_8h_source.html#l00085">fDetType</a>, <a class="el" href="GETChannel_8h_source.html#l00094">fEnergy</a>, <a class="el" href="GETChannel_8h_source.html#l00086">fFrameNo</a>, <a class="el" href="GETChannel_8h_source.html#l00093">fTime</a>, <a class="el" href="GETChannel_8h_source.html#l00095">fWaveformX</a>, <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>, <a class="el" href="GETChannel_8cpp_source.html#l00005">GETChannel()</a>, <a class="el" href="GETChannel_8h_source.html#l00075">SetAget()</a>, <a class="el" href="GETChannel_8h_source.html#l00074">SetAsad()</a>, <a class="el" href="GETChannel_8h_source.html#l00076">SetChan()</a>, <a class="el" href="GETChannel_8h_source.html#l00077">SetChan2()</a>, <a class="el" href="GETChannel_8h_source.html#l00073">SetCobo()</a>, <a class="el" href="GETChannel_8h_source.html#l00072">SetDecayNo()</a>, <a class="el" href="GETChannel_8h_source.html#l00070">SetDetType()</a>, <a class="el" href="GETChannel_8h_source.html#l00079">SetEnergy()</a>, <a class="el" href="GETChannel_8h_source.html#l00071">SetFrameNo()</a>, <a class="el" href="GETChannel_8h_source.html#l00078">SetTime()</a>, <a class="el" href="GETChannel_8h_source.html#l00080">SetWaveformX()</a>, and <a class="el" href="GETChannel_8h_source.html#l00081">SetWaveformY()</a>.</p>
+<p class="reference">References <a class="el" href="LKHitArray_8cpp_source.html#l00088">LKHitArray::Clear()</a>, and <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>.</p>
 
 </div>
 </div>
@@ -388,9 +519,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKChannel.html#a52c87b2186a643f8907e5f90e7ee580d">LKChannel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00045">45</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00018">18</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKChannel_8cpp_source.html#l00019">LKChannel::Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>, <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>, <a class="el" href="GETChannel_8h_source.html#l00092">fChan2</a>, <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>, <a class="el" href="GETChannel_8h_source.html#l00087">fDecayNo</a>, <a class="el" href="GETChannel_8h_source.html#l00085">fDetType</a>, <a class="el" href="GETChannel_8h_source.html#l00094">fEnergy</a>, <a class="el" href="GETChannel_8h_source.html#l00086">fFrameNo</a>, <a class="el" href="GETChannel_8h_source.html#l00093">fTime</a>, <a class="el" href="GETChannel_8h_source.html#l00095">fWaveformX</a>, and <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
+<p class="reference">References <a class="el" href="LKChannel_8cpp_source.html#l00024">LKChannel::Copy()</a>, <a class="el" href="GETParameters_8h_source.html#l00038">GETParameters::fAget</a>, <a class="el" href="GETParameters_8h_source.html#l00037">GETParameters::fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, <a class="el" href="GETParameters_8h_source.html#l00039">GETParameters::fChan</a>, <a class="el" href="GETParameters_8h_source.html#l00036">GETParameters::fCobo</a>, and <a class="el" href="GETParameters_8h_source.html#l00035">GETParameters::fDetType</a>.</p>
 
 </div>
 </div>
@@ -418,16 +549,62 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00082">82</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classLKPad.html#ad4fdef48c6b9acc97543890bc48377a1">LKPad</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8cpp_source.html#l00082">Draw()</a>, <a class="el" href="GETChannel_8h_source.html#l00103">fHist</a>, and <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00040">40</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00082">Draw()</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8cpp_source.html#l00040">Draw()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00046">GetHist()</a>, and <a class="el" href="GETChannel_8cpp_source.html#l00066">GetHitGraph()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00040">Draw()</a>.</p>
 
 </div>
 </div>
-<a id="a40cd5df9dbd0e3f4fe0d2b1dab3bc427" name="a40cd5df9dbd0e3f4fe0d2b1dab3bc427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40cd5df9dbd0e3f4fe0d2b1dab3bc427">&#9670;&#160;</a></span>GetAget()</h2>
+<a id="a54000a424a33f71ebf6b8508b1e2ebe1" name="a54000a424a33f71ebf6b8508b1e2ebe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54000a424a33f71ebf6b8508b1e2ebe1">&#9670;&#160;</a></span>FillGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETChannel::FillGraph </td>
+          <td>(</td>
+          <td class="paramtype">TGraph *&#160;</td>
+          <td class="paramname"><em>graph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00060">60</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00065">LKBufferI::FillGraph()</a>.</p>
+
+</div>
+</div>
+<a id="a9cb516171c8b343d022c7f2d5588fea7" name="a9cb516171c8b343d022c7f2d5588fea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb516171c8b343d022c7f2d5588fea7">&#9670;&#160;</a></span>FillHist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETChannel::FillHist </td>
+          <td>(</td>
+          <td class="paramtype">TH1D *&#160;</td>
+          <td class="paramname"><em>hist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00053">53</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="GETParameters_8h_source.html#l00038">GETParameters::fAget</a>, <a class="el" href="GETParameters_8h_source.html#l00037">GETParameters::fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, <a class="el" href="GETParameters_8h_source.html#l00039">GETParameters::fChan</a>, <a class="el" href="GETParameters_8h_source.html#l00036">GETParameters::fCobo</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00050">LKBufferI::FillHist()</a>.</p>
+
+</div>
+</div>
+<a id="a6be401d5d967701599c6d0b79486cc3a" name="a6be401d5d967701599c6d0b79486cc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be401d5d967701599c6d0b79486cc3a">&#9670;&#160;</a></span>GetBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,10 +613,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Int_t GETChannel::GetAget </td>
+          <td class="memname"><a class="el" href="classLKBufferI.html">LKBufferI</a> GETChannel::GetBuffer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -449,14 +626,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00060">60</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00043">43</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>.</p>
 
 </div>
 </div>
-<a id="a34f94a865e39bbecd250245a3c138c48" name="a34f94a865e39bbecd250245a3c138c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f94a865e39bbecd250245a3c138c48">&#9670;&#160;</a></span>GetAsad()</h2>
+<a id="a8223ff4a34293801d78590216afa26eb" name="a8223ff4a34293801d78590216afa26eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8223ff4a34293801d78590216afa26eb">&#9670;&#160;</a></span>GetBufferArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -465,10 +642,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Int_t GETChannel::GetAsad </td>
+          <td class="memname">int * GETChannel::GetBufferArray </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -478,14 +655,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00059">59</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00042">42</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00034">LKBufferI::GetArray()</a>.</p>
 
 </div>
 </div>
-<a id="aecc6f526e86d42a7a76f56ccd6a129a7" name="aecc6f526e86d42a7a76f56ccd6a129a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc6f526e86d42a7a76f56ccd6a129a7">&#9670;&#160;</a></span>GetBase()</h2>
+<a id="a6e888bdd5c1cbcc784958bfb275b59e1" name="a6e888bdd5c1cbcc784958bfb275b59e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e888bdd5c1cbcc784958bfb275b59e1">&#9670;&#160;</a></span>GetGroupMeanStdDev()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -494,10 +671,33 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Int_t GETChannel::GetBase </td>
+          <td class="memname">void GETChannel::GetGroupMeanStdDev </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numGroups</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tb2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>pedestalGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>stddevGroup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -507,241 +707,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00098">98</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00069">69</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00100">fBase</a>.</p>
-
-</div>
-</div>
-<a id="aff5bb9ca73b19170e392b238b9d4500e" name="aff5bb9ca73b19170e392b238b9d4500e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff5bb9ca73b19170e392b238b9d4500e">&#9670;&#160;</a></span>GetCAAC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetCAAC </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00068">68</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>, <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>, and <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>.</p>
-
-</div>
-</div>
-<a id="a6b80de78299104db41f5c3c93e8210cd" name="a6b80de78299104db41f5c3c93e8210cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b80de78299104db41f5c3c93e8210cd">&#9670;&#160;</a></span>GetChan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetChan </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00061">61</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>.</p>
-
-</div>
-</div>
-<a id="a98910da5e5cbc419e5735d2e9adacc35" name="a98910da5e5cbc419e5735d2e9adacc35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98910da5e5cbc419e5735d2e9adacc35">&#9670;&#160;</a></span>GetChan2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetChan2 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00062">62</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00092">fChan2</a>.</p>
-
-</div>
-</div>
-<a id="a9a2da8b05eb9abd21ea421d455aa6dfa" name="a9a2da8b05eb9abd21ea421d455aa6dfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a2da8b05eb9abd21ea421d455aa6dfa">&#9670;&#160;</a></span>GetCobo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetCobo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00058">58</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>.</p>
-
-</div>
-</div>
-<a id="ae7b936ef51af253341c8e00eadbf2e29" name="ae7b936ef51af253341c8e00eadbf2e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b936ef51af253341c8e00eadbf2e29">&#9670;&#160;</a></span>GetDecayNo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetDecayNo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00057">57</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00087">fDecayNo</a>.</p>
-
-</div>
-</div>
-<a id="a598dec5fa1e8e90f2b6cca0ff897f1ff" name="a598dec5fa1e8e90f2b6cca0ff897f1ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a598dec5fa1e8e90f2b6cca0ff897f1ff">&#9670;&#160;</a></span>GetDetType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetDetType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00055">55</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00085">fDetType</a>.</p>
-
-</div>
-</div>
-<a id="a1160e232abe16aef699ac455b2074b02" name="a1160e232abe16aef699ac455b2074b02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1160e232abe16aef699ac455b2074b02">&#9670;&#160;</a></span>GetEnergy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Float_t GETChannel::GetEnergy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00064">64</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00094">fEnergy</a>.</p>
-
-</div>
-</div>
-<a id="ac3bd51925416abc72d6c9e641f72ed99" name="ac3bd51925416abc72d6c9e641f72ed99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3bd51925416abc72d6c9e641f72ed99">&#9670;&#160;</a></span>GetFrameNo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::GetFrameNo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00056">56</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00086">fFrameNo</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00125">LKBufferI::GetGroupMeanStdDev()</a>.</p>
 
 </div>
 </div>
@@ -761,16 +729,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00089">89</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00046">46</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>, <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>, <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>, <a class="el" href="GETChannel_8h_source.html#l00103">fHist</a>, and <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
+<p class="reference">References <a class="el" href="GETParameters_8h_source.html#l00038">GETParameters::fAget</a>, <a class="el" href="GETParameters_8h_source.html#l00037">GETParameters::fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, <a class="el" href="GETParameters_8h_source.html#l00039">GETParameters::fChan</a>, <a class="el" href="GETParameters_8h_source.html#l00036">GETParameters::fCobo</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00040">LKBufferI::GetHist()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00082">Draw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00040">Draw()</a>.</p>
 
 </div>
 </div>
-<a id="a0dd26f7baf4e01983d06f69e425f2f4a" name="a0dd26f7baf4e01983d06f69e425f2f4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd26f7baf4e01983d06f69e425f2f4a">&#9670;&#160;</a></span>GetTime()</h2>
+<a id="aa7896b04d81a57ff2f77a9ae753f555c" name="aa7896b04d81a57ff2f77a9ae753f555c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7896b04d81a57ff2f77a9ae753f555c">&#9670;&#160;</a></span>GetHit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -779,10 +747,11 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Float_t GETChannel::GetTime </td>
+          <td class="memname"><a class="el" href="classLKHit.html">LKHit</a> * GETChannel::GetHit </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -792,14 +761,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00063">63</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00054">54</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00093">fTime</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00023">LKHitArray::GetHit()</a>.</p>
 
 </div>
 </div>
-<a id="a88561eb0a18ac44ccac4622d94faa1b8" name="a88561eb0a18ac44ccac4622d94faa1b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88561eb0a18ac44ccac4622d94faa1b8">&#9670;&#160;</a></span>GetWaveformX()</h2>
+<a id="a88f9839f40bbf19a994fba1c8f588729" name="a88f9839f40bbf19a994fba1c8f588729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f9839f40bbf19a994fba1c8f588729">&#9670;&#160;</a></span>GetHitArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +777,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Int_t * GETChannel::GetWaveformX </td>
+          <td class="memname"><a class="el" href="classLKHitArray.html">LKHitArray</a> * GETChannel::GetHitArray </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -821,14 +790,37 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00065">65</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00051">51</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00095">fWaveformX</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>.</p>
 
 </div>
 </div>
-<a id="a10c2566b738167c5c331dbfa542703fb" name="a10c2566b738167c5c331dbfa542703fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10c2566b738167c5c331dbfa542703fb">&#9670;&#160;</a></span>GetWaveformY()</h2>
+<a id="af6183bd7400f6609c65f28012c61a509" name="af6183bd7400f6609c65f28012c61a509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6183bd7400f6609c65f28012c61a509">&#9670;&#160;</a></span>GetHitGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGraph * GETChannel::GetHitGraph </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00066">66</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKChannel_8h_source.html#l00038">LKChannel::fEnergy</a>, <a class="el" href="GETChannel_8h_source.html#l00075">fGraphHit</a>, <a class="el" href="LKChannel_8h_source.html#l00039">LKChannel::fPedestal</a>, <a class="el" href="LKChannel_8h_source.html#l00037">LKChannel::fTime</a>, and <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00040">Draw()</a>.</p>
+
+</div>
+</div>
+<a id="ac6fe7770a9350c6c1be20cc7d3223715" name="ac6fe7770a9350c6c1be20cc7d3223715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fe7770a9350c6c1be20cc7d3223715">&#9670;&#160;</a></span>GetNumHits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -837,9 +829,71 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Int_t * GETChannel::GetWaveformY </td>
+          <td class="memname">int GETChannel::GetNumHits </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00053">53</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00810">LKHitArray::GetNumHits()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKDetectorPlane_8cpp_source.html#l00136">LKDetectorPlane::FillDataToHist()</a>, <a class="el" href="LKPadPlane_8cpp_source.html#l00119">LKPadPlane::FillDataToHist()</a>, <a class="el" href="LTPadPlane_8cpp_source.html#l00675">LTPadPlane::FillDataToHist()</a>, and <a class="el" href="LKEvePlane_8cpp_source.html#l00680">LKEvePlane::FillDataToHistEventDisplay1()</a>.</p>
+
+</div>
+</div>
+<a id="ab851093948a89f0044f00df6c6fe4aeb" name="ab851093948a89f0044f00df6c6fe4aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab851093948a89f0044f00df6c6fe4aeb">&#9670;&#160;</a></span>GetScale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GETChannel::GetScale </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00067">67</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00078">LKBufferI::GetScale()</a>.</p>
+
+</div>
+</div>
+<a id="ad613b1bc7db12fd00e745d7d2216fd8f" name="ad613b1bc7db12fd00e745d7d2216fd8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad613b1bc7db12fd00e745d7d2216fd8f">&#9670;&#160;</a></span>GetScale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GETChannel::GetScale </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -852,7 +906,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00066">66</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00078">LKBufferI::GetScale()</a>.</p>
+
+</div>
+</div>
+<a id="a5544aa09d7e81dfb8f8dbb2954934d32" name="a5544aa09d7e81dfb8f8dbb2954934d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5544aa09d7e81dfb8f8dbb2954934d32">&#9670;&#160;</a></span>GetWaveformY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * GETChannel::GetWaveformY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00041">41</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00034">LKBufferI::GetArray()</a>.</p>
 
 </div>
 </div>
@@ -861,6 +944,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GETChannel::Print </td>
@@ -870,16 +956,92 @@ Additional Inherited Members</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00027">27</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+<p>Reimplemented from <a class="el" href="classLKChannel.html#a29b6b656c3c6524bb69f5844b887cfe8">LKChannel</a>.</p>
 
-<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00037">e_cout</a>, <a class="el" href="LKLogger_8h_source.html#l00038">e_info</a>, <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>, <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>, <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>, <a class="el" href="GETChannel_8h_source.html#l00092">fChan2</a>, <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>, <a class="el" href="GETChannel_8h_source.html#l00087">fDecayNo</a>, <a class="el" href="GETChannel_8h_source.html#l00085">fDetType</a>, <a class="el" href="GETChannel_8h_source.html#l00094">fEnergy</a>, <a class="el" href="GETChannel_8h_source.html#l00086">fFrameNo</a>, <a class="el" href="GETChannel_8h_source.html#l00093">fTime</a>, <a class="el" href="GETChannel_8h_source.html#l00095">fWaveformX</a>, and <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
+<p>Reimplemented in <a class="el" href="classLKPad.html#aa7509e324cd355ece6af30aee0c102ea">LKPad</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00030">30</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00040">e_info</a>, <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00109">LKHitArray::Print()</a>, <a class="el" href="LKBufferI_8cpp_source.html#l00023">LKBufferI::Print()</a>, <a class="el" href="LKChannel_8cpp_source.html#l00036">LKChannel::Print()</a>, and <a class="el" href="GETParameters_8cpp_source.html#l00023">GETParameters::PrintParameters()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKPad_8cpp_source.html#l00035">LKPad::Print()</a>.</p>
 
 </div>
 </div>
-<a id="a7b4c74050254fba01ce49225c5a8b876" name="a7b4c74050254fba01ce49225c5a8b876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b4c74050254fba01ce49225c5a8b876">&#9670;&#160;</a></span>SetAget()</h2>
+<a id="af3898bdbcb34b62ec63f57cb7b315280" name="af3898bdbcb34b62ec63f57cb7b315280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3898bdbcb34b62ec63f57cb7b315280">&#9670;&#160;</a></span>PullOutHits() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETChannel::PullOutHits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLKHitArray.html">LKHitArray</a> *&#160;</td>
+          <td class="paramname"><em>hits</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00097">97</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00052">AddHit()</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00088">LKHitArray::Clear()</a>, <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00023">LKHitArray::GetHit()</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00810">LKHitArray::GetNumHits()</a>.</p>
+
+</div>
+</div>
+<a id="a953ee72448e2cae7d20c6c0a0684dc8c" name="a953ee72448e2cae7d20c6c0a0684dc8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953ee72448e2cae7d20c6c0a0684dc8c">&#9670;&#160;</a></span>PullOutHits() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETChannel::PullOutHits </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="classLKHit.html">LKHit</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>hits</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00109">109</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="LKHitArray_8cpp_source.html#l00088">LKHitArray::Clear()</a>, <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00023">LKHitArray::GetHit()</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00810">LKHitArray::GetNumHits()</a>.</p>
+
+</div>
+</div>
+<a id="a76c876140c47d6bcd33e95a4e90a5f6a" name="a76c876140c47d6bcd33e95a4e90a5f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c876140c47d6bcd33e95a4e90a5f6a">&#9670;&#160;</a></span>PullOutNextFreeHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKHit.html">LKHit</a> * GETChannel::PullOutNextFreeHit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00080">80</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00074">fHitArray</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00023">LKHitArray::GetHit()</a>, <a class="el" href="LKHitArray_8cpp_source.html#l00810">LKHitArray::GetNumHits()</a>, and <a class="el" href="LKHitArray_8cpp_source.html#l00759">LKHitArray::RemoveHit()</a>.</p>
+
+</div>
+</div>
+<a id="a6fb622a06fb5515ffa5c6e78a7a55f20" name="a6fb622a06fb5515ffa5c6e78a7a55f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb622a06fb5515ffa5c6e78a7a55f20">&#9670;&#160;</a></span>SetBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -888,10 +1050,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetAget </td>
+          <td class="memname">void GETChannel::SetBuffer </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>aget</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classLKBufferI.html">LKBufferI</a>&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -902,16 +1064,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00075">75</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00048">48</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00090">fAget</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8cpp_source.html#l00072">LKBufferI::SetBuffer()</a>.</p>
 
 </div>
 </div>
-<a id="ad968f88404b719d75a902b48a4b71ee5" name="ad968f88404b719d75a902b48a4b71ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad968f88404b719d75a902b48a4b71ee5">&#9670;&#160;</a></span>SetAsad()</h2>
+<a id="a44d7082c3056bcff80be2c12ecb806b1" name="a44d7082c3056bcff80be2c12ecb806b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44d7082c3056bcff80be2c12ecb806b1">&#9670;&#160;</a></span>SetWaveformY() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -920,10 +1080,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetAsad </td>
+          <td class="memname">void GETChannel::SetWaveformY </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>asad</em></td><td>)</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -934,16 +1094,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00074">74</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00045">45</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00089">fAsad</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00027">LKBufferI::SetArray()</a>.</p>
 
 </div>
 </div>
-<a id="a296cdeeabda1c9dae23a780476a100fb" name="a296cdeeabda1c9dae23a780476a100fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a296cdeeabda1c9dae23a780476a100fb">&#9670;&#160;</a></span>SetBase()</h2>
+<a id="a44410bddb0d8c7964416bfb0da147d46" name="a44410bddb0d8c7964416bfb0da147d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44410bddb0d8c7964416bfb0da147d46">&#9670;&#160;</a></span>SetWaveformY() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -952,10 +1110,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetBase </td>
+          <td class="memname">void GETChannel::SetWaveformY </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>Base</em></td><td>)</td>
+          <td class="paramtype">const unsigned int *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -966,14 +1124,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00099">99</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00046">46</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00100">fBase</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00027">LKBufferI::SetArray()</a>.</p>
 
 </div>
 </div>
-<a id="a3cf7a22b2dd51221694a066452ee55a7" name="a3cf7a22b2dd51221694a066452ee55a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cf7a22b2dd51221694a066452ee55a7">&#9670;&#160;</a></span>SetChan()</h2>
+<a id="af70ff4107fc49226af2dbbd799f44d36" name="af70ff4107fc49226af2dbbd799f44d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70ff4107fc49226af2dbbd799f44d36">&#9670;&#160;</a></span>SetWaveformY() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -982,10 +1140,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetChan </td>
+          <td class="memname">void GETChannel::SetWaveformY </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -996,16 +1154,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00076">76</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00047">47</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00091">fChan</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00027">LKBufferI::SetArray()</a>.</p>
 
 </div>
 </div>
-<a id="a3725c3e9b7488a57cb8a16916d517ecd" name="a3725c3e9b7488a57cb8a16916d517ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3725c3e9b7488a57cb8a16916d517ecd">&#9670;&#160;</a></span>SetChan2()</h2>
+<a id="a5a2a1842c9a21ee9722a3685b3fd4fc5" name="a5a2a1842c9a21ee9722a3685b3fd4fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2a1842c9a21ee9722a3685b3fd4fc5">&#9670;&#160;</a></span>SubtractArray() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1014,10 +1170,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetChan2 </td>
+          <td class="memname">void GETChannel::SubtractArray </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>dChan</em></td><td>)</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1028,16 +1184,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00077">77</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00062">62</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00092">fChan2</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00036">LKBufferI::SubtractArray()</a>.</p>
 
 </div>
 </div>
-<a id="a5bdc15007890f2cab3942d4c4b676df7" name="a5bdc15007890f2cab3942d4c4b676df7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bdc15007890f2cab3942d4c4b676df7">&#9670;&#160;</a></span>SetCobo()</h2>
+<a id="a5cea3acf0b672314f66d30b6cb21ccdd" name="a5cea3acf0b672314f66d30b6cb21ccdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cea3acf0b672314f66d30b6cb21ccdd">&#9670;&#160;</a></span>SubtractArray() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1046,10 +1200,50 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetCobo </td>
+          <td class="memname">void GETChannel::SubtractArray </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>cobo</em></td><td>)</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00064">64</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00036">LKBufferI::SubtractArray()</a>.</p>
+
+</div>
+</div>
+<a id="a606e94521d44ec93023c74720efa2746" name="a606e94521d44ec93023c74720efa2746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606e94521d44ec93023c74720efa2746">&#9670;&#160;</a></span>SubtractArray() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETChannel::SubtractArray </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1060,16 +1254,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00073">73</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00061">61</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00088">fCobo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00036">LKBufferI::SubtractArray()</a>.</p>
 
 </div>
 </div>
-<a id="a45bae4b20e0f27959d59f7ec3304e324" name="a45bae4b20e0f27959d59f7ec3304e324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45bae4b20e0f27959d59f7ec3304e324">&#9670;&#160;</a></span>SetDecayNo()</h2>
+<a id="a3203b46de1f46e85f67cabaf919875cc" name="a3203b46de1f46e85f67cabaf919875cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3203b46de1f46e85f67cabaf919875cc">&#9670;&#160;</a></span>SubtractArray() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1078,30 +1270,65 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetDecayNo </td>
+          <td class="memname">void GETChannel::SubtractArray </td>
           <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>decayNo</em></td><td>)</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00063">63</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00072">fBufferRawSig</a>, and <a class="el" href="LKBufferI_8h_source.html#l00036">LKBufferI::SubtractArray()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af4d74acbde76da31cb04b89591a18553" name="af4d74acbde76da31cb04b89591a18553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d74acbde76da31cb04b89591a18553">&#9670;&#160;</a></span>fBufferRawSig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLKBufferI.html">LKBufferI</a> GETChannel::fBufferRawSig</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00072">72</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00087">fDecayNo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GETChannel_8h_source.html#l00068">CalculateGroupFluctuation()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00018">Copy()</a>, <a class="el" href="LKPad_8h_source.html#l00031">LKPad::FillBufferRawSig()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00060">FillGraph()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00053">FillHist()</a>, <a class="el" href="LKPad_8h_source.html#l00037">LKPad::GetArrayRawSig()</a>, <a class="el" href="GETChannel_8h_source.html#l00043">GetBuffer()</a>, <a class="el" href="GETChannel_8h_source.html#l00042">GetBufferArray()</a>, <a class="el" href="LKPad_8h_source.html#l00039">LKPad::GetBufferRawSig()</a>, <a class="el" href="GETChannel_8h_source.html#l00069">GetGroupMeanStdDev()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00046">GetHist()</a>, <a class="el" href="GETChannel_8h_source.html#l00067">GetScale()</a>, <a class="el" href="GETChannel_8h_source.html#l00066">GetScale()</a>, <a class="el" href="GETChannel_8h_source.html#l00041">GetWaveformY()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00030">Print()</a>, <a class="el" href="GETChannel_8h_source.html#l00048">SetBuffer()</a>, <a class="el" href="LKPad_8h_source.html#l00032">LKPad::SetBufferRawSig()</a>, <a class="el" href="LKPad_8h_source.html#l00034">LKPad::SetBufferRawSig()</a>, <a class="el" href="LKPad_8cpp_source.html#l00062">LKPad::SetHist()</a>, <a class="el" href="GETChannel_8h_source.html#l00045">SetWaveformY()</a>, <a class="el" href="GETChannel_8h_source.html#l00046">SetWaveformY()</a>, <a class="el" href="GETChannel_8h_source.html#l00047">SetWaveformY()</a>, <a class="el" href="GETChannel_8h_source.html#l00062">SubtractArray()</a>, <a class="el" href="GETChannel_8h_source.html#l00064">SubtractArray()</a>, <a class="el" href="GETChannel_8h_source.html#l00061">SubtractArray()</a>, and <a class="el" href="GETChannel_8h_source.html#l00063">SubtractArray()</a>.</p>
 
 </div>
 </div>
-<a id="a49d47e0bd001a26213ecac14a25cc573" name="a49d47e0bd001a26213ecac14a25cc573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49d47e0bd001a26213ecac14a25cc573">&#9670;&#160;</a></span>SetDetType()</h2>
+<a id="a714824a8cf8e0a0708bb79633818be18" name="a714824a8cf8e0a0708bb79633818be18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714824a8cf8e0a0708bb79633818be18">&#9670;&#160;</a></span>fGraphHit</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1110,30 +1337,24 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetDetType </td>
-          <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>eventIdx</em></td><td>)</td>
-          <td></td>
+          <td class="memname">TGraph* GETChannel::fGraphHit</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00070">70</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00075">75</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00085">fDetType</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00066">GetHitGraph()</a>.</p>
 
 </div>
 </div>
-<a id="a3a1c002753dfa9dec8cfd57bcdf6e3ae" name="a3a1c002753dfa9dec8cfd57bcdf6e3ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a1c002753dfa9dec8cfd57bcdf6e3ae">&#9670;&#160;</a></span>SetEnergy()</h2>
+<a id="ac231d3bac6df555691e133d7e52d08d5" name="ac231d3bac6df555691e133d7e52d08d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac231d3bac6df555691e133d7e52d08d5">&#9670;&#160;</a></span>fHitArray</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1142,458 +1363,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GETChannel::SetEnergy </td>
-          <td>(</td>
-          <td class="paramtype">Float_t&#160;</td>
-          <td class="paramname"><em>energy</em></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="classLKHitArray.html">LKHitArray</a> GETChannel::fHitArray</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00079">79</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00074">74</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00094">fEnergy</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
-
-</div>
-</div>
-<a id="a952e2d1e991628a7fbfb7addf1082e0b" name="a952e2d1e991628a7fbfb7addf1082e0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a952e2d1e991628a7fbfb7addf1082e0b">&#9670;&#160;</a></span>SetFrameNo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GETChannel::SetFrameNo </td>
-          <td>(</td>
-          <td class="paramtype">Int_t&#160;</td>
-          <td class="paramname"><em>frameNo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00071">71</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00086">fFrameNo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
-
-</div>
-</div>
-<a id="a36c10fe9ea4d103fb94c9cebc54abe20" name="a36c10fe9ea4d103fb94c9cebc54abe20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36c10fe9ea4d103fb94c9cebc54abe20">&#9670;&#160;</a></span>SetTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GETChannel::SetTime </td>
-          <td>(</td>
-          <td class="paramtype">Float_t&#160;</td>
-          <td class="paramname"><em>time</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00078">78</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00093">fTime</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
-
-</div>
-</div>
-<a id="a6570bfc3c470d832aa0839eca4b58304" name="a6570bfc3c470d832aa0839eca4b58304"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6570bfc3c470d832aa0839eca4b58304">&#9670;&#160;</a></span>SetWaveformX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GETChannel::SetWaveformX </td>
-          <td>(</td>
-          <td class="paramtype">const Int_t *&#160;</td>
-          <td class="paramname"><em>waveform</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00080">80</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00095">fWaveformX</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
-
-</div>
-</div>
-<a id="a7dd163e9b08901aab4ba396fd598f0b7" name="a7dd163e9b08901aab4ba396fd598f0b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dd163e9b08901aab4ba396fd598f0b7">&#9670;&#160;</a></span>SetWaveformY() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GETChannel::SetWaveformY </td>
-          <td>(</td>
-          <td class="paramtype">const Int_t *&#160;</td>
-          <td class="paramname"><em>waveform</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00081">81</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>.</p>
-
-</div>
-</div>
-<a id="a91f9217ab2aee874e339d1f015c45338" name="a91f9217ab2aee874e339d1f015c45338"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f9217ab2aee874e339d1f015c45338">&#9670;&#160;</a></span>SetWaveformY() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GETChannel::SetWaveformY </td>
-          <td>(</td>
-          <td class="paramtype">const UInt_t *&#160;</td>
-          <td class="paramname"><em>waveform</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00104">104</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
-
-</div>
-</div>
-<a id="a69f09ae2baf0e5b735849b08145872cf" name="a69f09ae2baf0e5b735849b08145872cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f09ae2baf0e5b735849b08145872cf">&#9670;&#160;</a></span>SetWaveformY() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GETChannel::SetWaveformY </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
-          <td class="paramname"><em>waveform</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8cpp_source.html#l00110">110</a> of file <a class="el" href="GETChannel_8cpp_source.html">GETChannel.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00096">fWaveformY</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aea5dd93f3114bc546edef6e703ed056e" name="aea5dd93f3114bc546edef6e703ed056e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea5dd93f3114bc546edef6e703ed056e">&#9670;&#160;</a></span>fAget</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fAget = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00090">90</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00060">GetAget()</a>, <a class="el" href="GETChannel_8h_source.html#l00068">GetCAAC()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00075">SetAget()</a>.</p>
-
-</div>
-</div>
-<a id="a840fd6d0b37e0c3986be3286d5fd97bc" name="a840fd6d0b37e0c3986be3286d5fd97bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a840fd6d0b37e0c3986be3286d5fd97bc">&#9670;&#160;</a></span>fAsad</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fAsad = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00089">89</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00059">GetAsad()</a>, <a class="el" href="GETChannel_8h_source.html#l00068">GetCAAC()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00074">SetAsad()</a>.</p>
-
-</div>
-</div>
-<a id="aaef6a63bf3566ae7aad4d5a5cd41f75c" name="aaef6a63bf3566ae7aad4d5a5cd41f75c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaef6a63bf3566ae7aad4d5a5cd41f75c">&#9670;&#160;</a></span>fBase</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fBase = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00100">100</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8h_source.html#l00098">GetBase()</a>, and <a class="el" href="GETChannel_8h_source.html#l00099">SetBase()</a>.</p>
-
-</div>
-</div>
-<a id="a318af4f6b4459fd28f9b7de244196ec9" name="a318af4f6b4459fd28f9b7de244196ec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318af4f6b4459fd28f9b7de244196ec9">&#9670;&#160;</a></span>fChan</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fChan = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00091">91</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00068">GetCAAC()</a>, <a class="el" href="GETChannel_8h_source.html#l00061">GetChan()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00076">SetChan()</a>.</p>
-
-</div>
-</div>
-<a id="aa604afd903b6290be3d09529396573f4" name="aa604afd903b6290be3d09529396573f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa604afd903b6290be3d09529396573f4">&#9670;&#160;</a></span>fChan2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fChan2 = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00092">92</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00062">GetChan2()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00077">SetChan2()</a>.</p>
-
-</div>
-</div>
-<a id="a5186a32e00b8c1a509b8148e1d81038b" name="a5186a32e00b8c1a509b8148e1d81038b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5186a32e00b8c1a509b8148e1d81038b">&#9670;&#160;</a></span>fCobo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fCobo = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00088">88</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00068">GetCAAC()</a>, <a class="el" href="GETChannel_8h_source.html#l00058">GetCobo()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00073">SetCobo()</a>.</p>
-
-</div>
-</div>
-<a id="a6a7b03c40fdc8f529aab8c47d220754d" name="a6a7b03c40fdc8f529aab8c47d220754d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a7b03c40fdc8f529aab8c47d220754d">&#9670;&#160;</a></span>fDecayNo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fDecayNo = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00087">87</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00057">GetDecayNo()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00072">SetDecayNo()</a>.</p>
-
-</div>
-</div>
-<a id="ab5efb1f665891c90b47bc85232ef1f54" name="ab5efb1f665891c90b47bc85232ef1f54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5efb1f665891c90b47bc85232ef1f54">&#9670;&#160;</a></span>fDetType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fDetType = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00085">85</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00055">GetDetType()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00070">SetDetType()</a>.</p>
-
-</div>
-</div>
-<a id="a0d34e06d6897b8380f8a2053a3329178" name="a0d34e06d6897b8380f8a2053a3329178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d34e06d6897b8380f8a2053a3329178">&#9670;&#160;</a></span>fEnergy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Float_t GETChannel::fEnergy = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00094">94</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00064">GetEnergy()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00079">SetEnergy()</a>.</p>
-
-</div>
-</div>
-<a id="a6f18b0cded40ac2d34b37fe5e82dc4bd" name="a6f18b0cded40ac2d34b37fe5e82dc4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f18b0cded40ac2d34b37fe5e82dc4bd">&#9670;&#160;</a></span>fFrameNo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fFrameNo = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00086">86</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00056">GetFrameNo()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00071">SetFrameNo()</a>.</p>
-
-</div>
-</div>
-<a id="a2a7f5e87fdd287853938634f40a88e20" name="a2a7f5e87fdd287853938634f40a88e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a7f5e87fdd287853938634f40a88e20">&#9670;&#160;</a></span>fHist</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TH1D* GETChannel::fHist = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00103">103</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00082">Draw()</a>, and <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>.</p>
-
-</div>
-</div>
-<a id="ab1135083e091ce259213c53bd243907c" name="ab1135083e091ce259213c53bd243907c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1135083e091ce259213c53bd243907c">&#9670;&#160;</a></span>fTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Float_t GETChannel::fTime = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00093">93</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00063">GetTime()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00078">SetTime()</a>.</p>
-
-</div>
-</div>
-<a id="a45c12decaa6f55c3e55e35781f9b3368" name="a45c12decaa6f55c3e55e35781f9b3368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45c12decaa6f55c3e55e35781f9b3368">&#9670;&#160;</a></span>fWaveformX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fWaveformX[512]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00095">95</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8h_source.html#l00065">GetWaveformX()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, and <a class="el" href="GETChannel_8h_source.html#l00080">SetWaveformX()</a>.</p>
-
-</div>
-</div>
-<a id="a768218ed4a9dd7d65efd5c9aceca8801" name="a768218ed4a9dd7d65efd5c9aceca8801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a768218ed4a9dd7d65efd5c9aceca8801">&#9670;&#160;</a></span>fWaveformY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int_t GETChannel::fWaveformY[512]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GETChannel_8h_source.html#l00096">96</a> of file <a class="el" href="GETChannel_8h_source.html">GETChannel.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00064">CloneChannel()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00045">Copy()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00089">GetHist()</a>, <a class="el" href="GETChannel_8h_source.html#l00066">GetWaveformY()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00027">Print()</a>, <a class="el" href="GETChannel_8h_source.html#l00081">SetWaveformY()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00104">SetWaveformY()</a>, and <a class="el" href="GETChannel_8cpp_source.html#l00110">SetWaveformY()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GETChannel_8h_source.html#l00052">AddHit()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00010">Clear()</a>, <a class="el" href="GETChannel_8h_source.html#l00055">ClearHits()</a>, <a class="el" href="GETChannel_8h_source.html#l00054">GetHit()</a>, <a class="el" href="GETChannel_8h_source.html#l00051">GetHitArray()</a>, <a class="el" href="GETChannel_8h_source.html#l00053">GetNumHits()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00030">Print()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00097">PullOutHits()</a>, <a class="el" href="GETChannel_8cpp_source.html#l00109">PullOutHits()</a>, and <a class="el" href="GETChannel_8cpp_source.html#l00080">PullOutNextFreeHit()</a>.</p>
 
 </div>
 </div>

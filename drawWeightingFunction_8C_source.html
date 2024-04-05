@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_d92ec69621328ffc96741771ada4adbc.html">macros_hough</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f15a9216d410f17d353472f984959b91.html">zzz</a></li><li class="navelem"><a class="el" href="dir_1e1f4ddd66f77390d8c216ccbca54efe.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_261ceda3bc0b5ef9d540430a7973fe2a.html">macros_hough</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,7 +73,7 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="stringliteral">&quot;LKHoughWFLinear&quot;</span>,</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="stringliteral">&quot;LKHoughWFInverse&quot;</span>,</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_function" href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a>(<span class="stringliteral">&quot;cvsWeightingFunction&quot;</span>,100,50,3,1);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_function" href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a>(<span class="stringliteral">&quot;cvsWeightingFunction&quot;</span>,100,50,3,1);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : {0,1,2})</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keyword">auto</span> weight = wf -&gt; EvalFromDistance(x,1,1);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            graph -&gt; <a class="code hl_function" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a>(graph-&gt;GetN(),x,weight);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(i+1) -&gt; SetGrid(1,1);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(i+1) -&gt; SetGrid(1,1);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        hist -&gt; SetStats(0);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        hist -&gt; Draw();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        graph -&gt; SetMarkerStyle(20);</div>
@@ -95,10 +95,10 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_abc88e651d827d77b6db5f12e23f9d154"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a></div><div class="ttdeci">fParamPoint SetPoint(fTransformCenter, y1, z1, t1, p1, y2, z2, t2, p2, fParamData[iy][iz][it][ip])</div></div>
-<div class="ttc" id="aclassLKHoughWFConst_html"><div class="ttname"><a href="classLKHoughWFConst.html">LKHoughWFConst</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00032">LKHTLineTracker.h:32</a></div></div>
-<div class="ttc" id="aclassLKHoughWFInverse_html"><div class="ttname"><a href="classLKHoughWFInverse.html">LKHoughWFInverse</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00050">LKHTLineTracker.h:50</a></div></div>
-<div class="ttc" id="aclassLKHoughWFLinear_html"><div class="ttname"><a href="classLKHoughWFLinear.html">LKHoughWFLinear</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00039">LKHTLineTracker.h:39</a></div></div>
-<div class="ttc" id="adebug_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug_8C_source.html#l00004">debug.C:4</a></div></div>
+<div class="ttc" id="aclassLKHoughWFConst_html"><div class="ttname"><a href="classLKHoughWFConst.html">LKHoughWFConst</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00033">LKHTLineTracker.h:33</a></div></div>
+<div class="ttc" id="aclassLKHoughWFInverse_html"><div class="ttname"><a href="classLKHoughWFInverse.html">LKHoughWFInverse</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00051">LKHTLineTracker.h:51</a></div></div>
+<div class="ttc" id="aclassLKHoughWFLinear_html"><div class="ttname"><a href="classLKHoughWFLinear.html">LKHoughWFLinear</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00040">LKHTLineTracker.h:40</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="adrawWeightingFunction_8C_html_a59811a90b2b09e36fcba41289b964ba0"><div class="ttname"><a href="drawWeightingFunction_8C.html#a59811a90b2b09e36fcba41289b964ba0">drawWeightingFunction</a></div><div class="ttdeci">void drawWeightingFunction()</div><div class="ttdef"><b>Definition</b> <a href="drawWeightingFunction_8C_source.html#l00004">drawWeightingFunction.C:4</a></div></div>
 <div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
 <div class="ttc" id="anamespaceejungwoo_html_a078ea57cd7c40b2d1a48a6635e904682"><div class="ttname"><a href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a></div><div class="ttdeci">TCanvas * Canvas(const char *name=&quot;&quot;, int wx=800, int wy=680, int dx=1, int dy=1)</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00500">macros_detectorplane/ejungwooA.h:500</a></div></div>

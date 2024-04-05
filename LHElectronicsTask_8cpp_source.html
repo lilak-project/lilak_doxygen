@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_ea3558b123065c52f2bc63f66d5af138.html">lamps</a></li><li class="navelem"><a class="el" href="dir_72cfb5c95255f16685638e280ea4d521.html">task</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f15a9216d410f17d353472f984959b91.html">zzz</a></li><li class="navelem"><a class="el" href="dir_59bcbadb21b47cf6046e3bfe67ee916e.html">lamps0</a></li><li class="navelem"><a class="el" href="dir_a721b67f978edab392f4930b70c13d74.html">task</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,19 +68,19 @@ $(function() {
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classLHElectronicsTask.html#ab8e2f17b990676b41dae3c01cc4b73bb">   14</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLHElectronicsTask.html#ab8e2f17b990676b41dae3c01cc4b73bb">LHElectronicsTask::Init</a>()</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_class" href="classLKRun.html">LKRun</a> *<a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <a class="code hl_function" href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_class" href="classLKRun.html">LKRun</a> *<a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <a class="code hl_function" href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun</a>();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="classLKParameterContainer.html">LKParameterContainer</a> *par = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; <a class="code hl_function" href="classLKGear.html#a14f11c65db46bc7ad14c2ce1a7ad34b9">GetParameterContainer</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="classLHTpc.html">LHTpc</a> *det = (<a class="code hl_class" href="classLHTpc.html">LHTpc</a> *) (<a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetDetectorSystem() -&gt; GetDetector());</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="classLKParameterContainer.html">LKParameterContainer</a> *par = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; <a class="code hl_function" href="classLKGear.html#a14f11c65db46bc7ad14c2ce1a7ad34b9">GetParameterContainer</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="classLHTpc.html">LHTpc</a> *det = (<a class="code hl_class" href="classLHTpc.html">LHTpc</a> *) (<a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetDetectorSystem() -&gt; GetDetector());</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#aceea3bcfa7d876c5391651281daad822">fNPlanes</a> = det -&gt; GetNumPlanes();</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#a04ebe71fdc45cfcd53ffdcd42846a661">fNTbs</a> = par -&gt; GetParInt(<span class="stringliteral">&quot;LHElectronicsTask/numTbs&quot;</span>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#a9c9da1f7dd032db951360ad3531f8ff4">feVToADC</a> = par -&gt; GetParDouble(<span class="stringliteral">&quot;LHElectronicsTask/eVToADC&quot;</span>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#aa32d7980ff67dfce70486ac3e7ec1508">fDynamicRange</a> = par -&gt; GetParDouble(<span class="stringliteral">&quot;LHElectronicsTask/dynamicRange&quot;</span>);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#a5c15b0deca939b4a15f24959e21ef4c5">fPadArray</a> = (TClonesArray *) <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;Pad&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#a5c15b0deca939b4a15f24959e21ef4c5">fPadArray</a> = (TClonesArray *) <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;Pad&quot;</span>);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="classLKPulseGenerator.html">LKPulseGenerator</a> *pulseGen = <span class="keyword">new</span> <a class="code hl_class" href="classLKPulseGenerator.html">LKPulseGenerator</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  LKPulseGenerator *pulseGen = <span class="keyword">new</span> LKPulseGenerator();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#a4c9005fd451efe28eb286deeee876425">fPulseFunction</a> = pulseGen -&gt; GetPulseFunction();</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_variable" href="classLHElectronicsTask.html#a4c9005fd451efe28eb286deeee876425">fPulseFunction</a> -&gt; SetParameters(<a class="code hl_variable" href="classLHElectronicsTask.html#a9c9da1f7dd032db951360ad3531f8ff4">feVToADC</a>,0);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -156,7 +156,7 @@ $(function() {
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="ttc" id="aLHElectronicsTask_8cpp_html_a7b260c3a23c6a29ef22d0f5b52a51080"><div class="ttname"><a href="LHElectronicsTask_8cpp.html#a7b260c3a23c6a29ef22d0f5b52a51080">ClassImp</a></div><div class="ttdeci">ClassImp(LHElectronicsTask) LHElectronicsTask</div><div class="ttdef"><b>Definition</b> <a href="LHElectronicsTask_8cpp_source.html#l00007">LHElectronicsTask.cpp:7</a></div></div>
 <div class="ttc" id="aLHElectronicsTask_8h_html"><div class="ttname"><a href="LHElectronicsTask_8h.html">LHElectronicsTask.h</a></div></div>
-<div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00029">LKLogger.h:29</a></div></div>
+<div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00030">LKLogger.h:30</a></div></div>
 <div class="ttc" id="aLKRun_8h_html"><div class="ttname"><a href="LKRun_8h.html">LKRun.h</a></div></div>
 <div class="ttc" id="aclassLHElectronicsTask_html"><div class="ttname"><a href="classLHElectronicsTask.html">LHElectronicsTask</a></div><div class="ttdef"><b>Definition</b> <a href="LHElectronicsTask_8h_source.html#l00012">LHElectronicsTask.h:13</a></div></div>
 <div class="ttc" id="aclassLHElectronicsTask_html_a04ebe71fdc45cfcd53ffdcd42846a661"><div class="ttname"><a href="classLHElectronicsTask.html#a04ebe71fdc45cfcd53ffdcd42846a661">LHElectronicsTask::fNTbs</a></div><div class="ttdeci">Int_t fNTbs</div><div class="ttdef"><b>Definition</b> <a href="LHElectronicsTask_8h_source.html#l00029">LHElectronicsTask.h:29</a></div></div>
@@ -171,13 +171,12 @@ $(function() {
 <div class="ttc" id="aclassLHElectronicsTask_html_ad56bacb84abf9693b297d90510f0ab7f"><div class="ttname"><a href="classLHElectronicsTask.html#ad56bacb84abf9693b297d90510f0ab7f">LHElectronicsTask::fUsePointChargeMC</a></div><div class="ttdeci">Bool_t fUsePointChargeMC</div><div class="ttdef"><b>Definition</b> <a href="LHElectronicsTask_8h_source.html#l00035">LHElectronicsTask.h:35</a></div></div>
 <div class="ttc" id="aclassLHTpc_html"><div class="ttname"><a href="classLHTpc.html">LHTpc</a></div><div class="ttdef"><b>Definition</b> <a href="LHTpc_8h_source.html#l00007">LHTpc.h:8</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a14f11c65db46bc7ad14c2ce1a7ad34b9"><div class="ttname"><a href="classLKGear.html#a14f11c65db46bc7ad14c2ce1a7ad34b9">LKGear::GetParameterContainer</a></div><div class="ttdeci">LKParameterContainer * GetParameterContainer() const</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8cpp_source.html#l00032">LKGear.cpp:32</a></div></div>
-<div class="ttc" id="aclassLKPad_html"><div class="ttname"><a href="classLKPad.html">LKPad</a></div><div class="ttdef"><b>Definition</b> <a href="LKPad_8h_source.html#l00016">LKPad.h:17</a></div></div>
+<div class="ttc" id="aclassLKPad_html"><div class="ttname"><a href="classLKPad.html">LKPad</a></div><div class="ttdef"><b>Definition</b> <a href="LKPad_8h_source.html#l00014">LKPad.h:15</a></div></div>
 <div class="ttc" id="aclassLKParameterContainer_html"><div class="ttname"><a href="classLKParameterContainer.html">LKParameterContainer</a></div><div class="ttdef"><b>Definition</b> <a href="LKParameterContainer_8h_source.html#l00125">LKParameterContainer.h:126</a></div></div>
-<div class="ttc" id="aclassLKPulseGenerator_html"><div class="ttname"><a href="classLKPulseGenerator.html">LKPulseGenerator</a></div><div class="ttdef"><b>Definition</b> <a href="LKPulseGenerator_8h_source.html#l00011">LKPulseGenerator.h:12</a></div></div>
 <div class="ttc" id="aclassLKRun_html"><div class="ttname"><a href="classLKRun.html">LKRun</a></div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00035">LKRun.h:36</a></div></div>
 <div class="ttc" id="aclassLKRun_html_a63ea49223451b1fe09b1610018d9b581"><div class="ttname"><a href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun</a></div><div class="ttdeci">static LKRun * GetRun()</div><div class="ttdoc">Get LKRun static pointer.</div></div>
 <div class="ttc" id="aclassLKTask_html"><div class="ttname"><a href="classLKTask.html">LKTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKTask_8h_source.html#l00013">LKTask.h:14</a></div></div>
-<div class="ttc" id="adebug_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug_8C_source.html#l00003">debug.C:3</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00003">debug_ht.C:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

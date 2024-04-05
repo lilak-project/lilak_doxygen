@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a6bfa8051882fd59a0259ef115cf20ce.html">lamps_2023</a></li><li class="navelem"><a class="el" href="dir_119163b417c2ec32a186253da3eda4fe.html">detector</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_ea3558b123065c52f2bc63f66d5af138.html">lamps</a></li><li class="navelem"><a class="el" href="dir_9946e49f0c76dbef6b5dc0401d18b515.html">detector</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -178,64 +178,30 @@ $(function() {
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a822ab991099a420eb62b3f0e2b0021a2">z2</a> = 1350;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classLAMPSTPC.html#a669a93bb4e5cac55c5f6f2b3d5fcba36">  127</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classLAMPSTPC.html#a669a93bb4e5cac55c5f6f2b3d5fcba36">LAMPSTPC::GetElectronicsID</a>(<span class="keywordtype">int</span> caac) {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">auto</span> caac0 = caac;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">auto</span> cobo = int(caac0/10000); caac0 -= cobo*10000;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">auto</span> asad = int(caac0/1000); caac0 -= asad*1000;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">auto</span> aget = int(caac0/100); caac0 -= aget*100;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">auto</span> chan = caac0;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classLAMPSTPC.html#a669a93bb4e5cac55c5f6f2b3d5fcba36">GetElectronicsID</a>(cobo, asad, aget, chan);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classLAMPSTPC.html#a321df089fcb839d2684a13466f916957">  136</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classLAMPSTPC.html#a669a93bb4e5cac55c5f6f2b3d5fcba36">LAMPSTPC::GetElectronicsID</a>(<span class="keywordtype">int</span> cobo, <span class="keywordtype">int</span> asad, <span class="keywordtype">int</span> aget, <span class="keywordtype">int</span> chan)</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>{</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classLAMPSTPC.html#a89a82e816a6c340cd3f36d1f7c2b0a16">  141</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLAMPSTPC.html#a89a82e816a6c340cd3f36d1f7c2b0a16">LAMPSTPC::CAACToGlobalPosition</a>(Int_t caac,</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        Double_t &amp;posx, Double_t &amp;posy, Double_t &amp;posz,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        Double_t &amp;errx, Double_t &amp;erry, Double_t &amp;errz)</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">auto</span> caac0 = caac;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">auto</span> cobo = int(caac0/10000); caac0 -= cobo*10000;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">auto</span> asad = int(caac0/1000); caac0 -= asad*1000;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">auto</span> aget = int(caac0/100); caac0 -= aget*100;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">auto</span> chan = caac0;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_function" href="classLAMPSTPC.html#a89a82e816a6c340cd3f36d1f7c2b0a16">CAACToGlobalPosition</a>(cobo,asad,aget,chan,posx,posy,posz,errx,erry,errz);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classLAMPSTPC.html#ab99259c5cd10870f9c4c810ccab36906">  153</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLAMPSTPC.html#a89a82e816a6c340cd3f36d1f7c2b0a16">LAMPSTPC::CAACToGlobalPosition</a>(Int_t Cobo, Int_t Asad, Int_t Aget, Int_t Chan,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        Double_t &amp;posx, Double_t &amp;posy, Double_t &amp;posz,</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        Double_t &amp;errx, Double_t &amp;erry, Double_t &amp;errz)</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>{</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
 <div class="ttc" id="aLAMPSTPC_8cpp_html_aebf7af2e9e632f5e3753a58491253f6d"><div class="ttname"><a href="LAMPSTPC_8cpp.html#aebf7af2e9e632f5e3753a58491253f6d">ClassImp</a></div><div class="ttdeci">ClassImp(LAMPSTPC)</div></div>
 <div class="ttc" id="aLAMPSTPC_8h_html"><div class="ttname"><a href="LAMPSTPC_8h.html">LAMPSTPC.h</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a0e1fe82df628138c8f3907ecddb514ae"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a0e1fe82df628138c8f3907ecddb514ae">z1</a></div><div class="ttdeci">double z1</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00105">LKHTLineTracker3D.cpp:105</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a5347e514ebe985fb371754ffd2b5ff83"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a></div><div class="ttdeci">double y2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00104">LKHTLineTracker3D.cpp:104</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a822ab991099a420eb62b3f0e2b0021a2"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a822ab991099a420eb62b3f0e2b0021a2">z2</a></div><div class="ttdeci">double z2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00106">LKHTLineTracker3D.cpp:106</a></div></div>
-<div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00038">LKLogger.h:38</a></div></div>
+<div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00040">LKLogger.h:40</a></div></div>
 <div class="ttc" id="aLTPadPlane_8h_html"><div class="ttname"><a href="LTPadPlane_8h.html">LTPadPlane.h</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html"><div class="ttname"><a href="classLAMPSTPC.html">LAMPSTPC</a></div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8h_source.html#l00017">LAMPSTPC.h:18</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_a051b423bed8841a3c40a01aa87bed8d9"><div class="ttname"><a href="classLAMPSTPC.html#a051b423bed8841a3c40a01aa87bed8d9">LAMPSTPC::GetEffectiveDimension</a></div><div class="ttdeci">bool GetEffectiveDimension(Double_t &amp;x1, Double_t &amp;y1, Double_t &amp;z1, Double_t &amp;x2, Double_t &amp;y2, Double_t &amp;z2)</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00116">LAMPSTPC.cpp:116</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_a0631039200a9df5e3211fccd163d3ad3"><div class="ttname"><a href="classLAMPSTPC.html#a0631039200a9df5e3211fccd163d3ad3">LAMPSTPC::InitChannelAnalyzer</a></div><div class="ttdeci">bool InitChannelAnalyzer()</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00041">LAMPSTPC.cpp:41</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_a4390a41670e28271cfd7bc7ad102e4b4"><div class="ttname"><a href="classLAMPSTPC.html#a4390a41670e28271cfd7bc7ad102e4b4">LAMPSTPC::Print</a></div><div class="ttdeci">void Print(Option_t *option=&quot;&quot;) const</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00091">LAMPSTPC.cpp:91</a></div></div>
-<div class="ttc" id="aclassLAMPSTPC_html_a669a93bb4e5cac55c5f6f2b3d5fcba36"><div class="ttname"><a href="classLAMPSTPC.html#a669a93bb4e5cac55c5f6f2b3d5fcba36">LAMPSTPC::GetElectronicsID</a></div><div class="ttdeci">int GetElectronicsID(int caac)</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00127">LAMPSTPC.cpp:127</a></div></div>
-<div class="ttc" id="aclassLAMPSTPC_html_a6a67198e4b9a3c0975b7a2a5acb985f3"><div class="ttname"><a href="classLAMPSTPC.html#a6a67198e4b9a3c0975b7a2a5acb985f3">LAMPSTPC::fChannelAnalyzer</a></div><div class="ttdeci">LKChannelAnalyzer * fChannelAnalyzer[18]</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8h_source.html#l00053">LAMPSTPC.h:53</a></div></div>
-<div class="ttc" id="aclassLAMPSTPC_html_a89a82e816a6c340cd3f36d1f7c2b0a16"><div class="ttname"><a href="classLAMPSTPC.html#a89a82e816a6c340cd3f36d1f7c2b0a16">LAMPSTPC::CAACToGlobalPosition</a></div><div class="ttdeci">void CAACToGlobalPosition(Int_t caac, Double_t &amp;posx, Double_t &amp;posy, Double_t &amp;posz, Double_t &amp;errx, Double_t &amp;erry, Double_t &amp;errz)</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00141">LAMPSTPC.cpp:141</a></div></div>
+<div class="ttc" id="aclassLAMPSTPC_html_a6a67198e4b9a3c0975b7a2a5acb985f3"><div class="ttname"><a href="classLAMPSTPC.html#a6a67198e4b9a3c0975b7a2a5acb985f3">LAMPSTPC::fChannelAnalyzer</a></div><div class="ttdeci">LKChannelAnalyzer * fChannelAnalyzer[18]</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8h_source.html#l00035">LAMPSTPC.h:35</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_a8a542aba16ed5554d466043c2d772e11"><div class="ttname"><a href="classLAMPSTPC.html#a8a542aba16ed5554d466043c2d772e11">LAMPSTPC::IsInBoundary</a></div><div class="ttdeci">bool IsInBoundary(Double_t x, Double_t y, Double_t z)</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00108">LAMPSTPC.cpp:108</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_a9c7c01b0a3d31e1b233e433a8f57f22e"><div class="ttname"><a href="classLAMPSTPC.html#a9c7c01b0a3d31e1b233e433a8f57f22e">LAMPSTPC::BuildGeometry</a></div><div class="ttdeci">bool BuildGeometry()</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00096">LAMPSTPC.cpp:96</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_aaccab96e189a1e14397524708fc638be"><div class="ttname"><a href="classLAMPSTPC.html#aaccab96e189a1e14397524708fc638be">LAMPSTPC::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00029">LAMPSTPC.cpp:29</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_ab994042d00ed0dfe355e28d987e37174"><div class="ttname"><a href="classLAMPSTPC.html#ab994042d00ed0dfe355e28d987e37174">LAMPSTPC::LAMPSTPC</a></div><div class="ttdeci">LAMPSTPC()</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00006">LAMPSTPC.cpp:6</a></div></div>
 <div class="ttc" id="aclassLAMPSTPC_html_ade3e468d037b229ae1bebe8dafe60a58"><div class="ttname"><a href="classLAMPSTPC.html#ade3e468d037b229ae1bebe8dafe60a58">LAMPSTPC::BuildDetectorPlane</a></div><div class="ttdeci">bool BuildDetectorPlane()</div><div class="ttdef"><b>Definition</b> <a href="LAMPSTPC_8cpp_source.html#l00101">LAMPSTPC.cpp:101</a></div></div>
 <div class="ttc" id="aclassLKChannelAnalyzer_html"><div class="ttname"><a href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a></div><div class="ttdoc">LKChannelAnalyzer find and fit pulse signal from the given channel buffer using input pulse data....</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKChannelAnalyzer_8h_source.html#l00007">macros/dummy_class_writter/output/LKChannelAnalyzer.h:8</a></div></div>
-<div class="ttc" id="aclassLKDetector_html_a40319dcb04d9a582006cc504576ccf03"><div class="ttname"><a href="classLKDetector.html#a40319dcb04d9a582006cc504576ccf03">LKDetector::AddPlane</a></div><div class="ttdeci">void AddPlane(LKDetectorPlane *plane, Int_t planeID=0)</div><div class="ttdef"><b>Definition</b> <a href="LKDetector_8cpp_source.html#l00049">LKDetector.cpp:49</a></div></div>
-<div class="ttc" id="aclassLKDetector_html_a772a25f579cef50899a5f35003f686f2"><div class="ttname"><a href="classLKDetector.html#a772a25f579cef50899a5f35003f686f2">LKDetector::fDetectorPlaneArray</a></div><div class="ttdeci">TObjArray * fDetectorPlaneArray</div><div class="ttdef"><b>Definition</b> <a href="LKDetector_8h_source.html#l00056">LKDetector.h:56</a></div></div>
+<div class="ttc" id="aclassLKDetector_html_a40319dcb04d9a582006cc504576ccf03"><div class="ttname"><a href="classLKDetector.html#a40319dcb04d9a582006cc504576ccf03">LKDetector::AddPlane</a></div><div class="ttdeci">void AddPlane(LKDetectorPlane *plane, Int_t planeID=0)</div><div class="ttdef"><b>Definition</b> <a href="LKDetector_8cpp_source.html#l00057">LKDetector.cpp:57</a></div></div>
+<div class="ttc" id="aclassLKDetector_html_a772a25f579cef50899a5f35003f686f2"><div class="ttname"><a href="classLKDetector.html#a772a25f579cef50899a5f35003f686f2">LKDetector::fDetectorPlaneArray</a></div><div class="ttdeci">TObjArray * fDetectorPlaneArray</div><div class="ttdef"><b>Definition</b> <a href="LKDetector_8h_source.html#l00055">LKDetector.h:55</a></div></div>
 <div class="ttc" id="aclassLKDetector_html_ae262836bcc60db6c9bc965ee7f30ecd4"><div class="ttname"><a href="classLKDetector.html#ae262836bcc60db6c9bc965ee7f30ecd4">LKDetector::Init</a></div><div class="ttdeci">virtual bool Init()</div><div class="ttdef"><b>Definition</b> <a href="LKDetector_8cpp_source.html#l00028">LKDetector.cpp:28</a></div></div>
 <div class="ttc" id="aclassLKGear_html_ab5cf8fc8216599335fdd1f66d2020d6c"><div class="ttname"><a href="classLKGear.html#ab5cf8fc8216599335fdd1f66d2020d6c">LKGear::AddPar</a></div><div class="ttdeci">void AddPar(LKParameterContainer *par)</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00027">LKGear.h:27</a></div></div>
 <div class="ttc" id="aclassLKParameterContainer_html"><div class="ttname"><a href="classLKParameterContainer.html">LKParameterContainer</a></div><div class="ttdef"><b>Definition</b> <a href="LKParameterContainer_8h_source.html#l00125">LKParameterContainer.h:126</a></div></div>
-<div class="ttc" id="aclassLTPadPlane_html"><div class="ttname"><a href="classLTPadPlane.html">LTPadPlane</a></div><div class="ttdef"><b>Definition</b> <a href="LTPadPlane_8h_source.html#l00008">LTPadPlane.h:9</a></div></div>
+<div class="ttc" id="aclassLTPadPlane_html"><div class="ttname"><a href="classLTPadPlane.html">LTPadPlane</a></div><div class="ttdef"><b>Definition</b> <a href="LTPadPlane_8h_source.html#l00009">LTPadPlane.h:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">texat_reco/macros/run_eve.C File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -62,10 +63,19 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a041249f802c5bf4c2deae666610e03c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texat__reco_2macros_2run__eve_8C.html#a041249f802c5bf4c2deae666610e03c4">next</a> ()</td></tr>
 <tr class="separator:a041249f802c5bf4c2deae666610e03c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ece8f9d1071c3e26ce12cad006a547e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texat__reco_2macros_2run__eve_8C.html#a1ece8f9d1071c3e26ce12cad006a547e">read_event</a> ()</td></tr>
+<tr class="separator:a1ece8f9d1071c3e26ce12cad006a547e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e90ab4c71143ec10425a627cc2fb61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texat__reco_2macros_2run__eve_8C.html#a73e90ab4c71143ec10425a627cc2fb61">run_eve</a> ()</td></tr>
 <tr class="separator:a73e90ab4c71143ec10425a627cc2fb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac759501cf6c7895a70eecbef0226ae1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texat__reco_2macros_2run__eve_8C.html#aac759501cf6c7895a70eecbef0226ae1">write</a> ()</td></tr>
 <tr class="separator:aac759501cf6c7895a70eecbef0226ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0902c26932719f17290a199534cd8745"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texat__reco_2macros_2run__eve_8C.html#a0902c26932719f17290a199534cd8745">beamArray</a> = nullptr</td></tr>
+<tr class="separator:a0902c26932719f17290a199534cd8745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af829f49e47e3734a6e105562cded339b"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a> = nullptr</td></tr>
+<tr class="separator:af829f49e47e3734a6e105562cded339b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a041249f802c5bf4c2deae666610e03c4" name="a041249f802c5bf4c2deae666610e03c4"></a>
@@ -83,11 +93,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00001">1</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00015">15</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
 
-<p class="reference">References <a class="el" href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun()</a>.</p>
+<p class="reference">References <a class="el" href="classLKRun.html#a63ea49223451b1fe09b1610018d9b581">LKRun::GetRun()</a>, and <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00004">read_event()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00007">run_eve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00025">run_eve()</a>.</p>
+
+</div>
+</div>
+<a id="a1ece8f9d1071c3e26ce12cad006a547e" name="a1ece8f9d1071c3e26ce12cad006a547e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ece8f9d1071c3e26ce12cad006a547e">&#9670;&#160;</a></span>read_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_event </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00004">4</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
+
+<p class="reference">References <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00002">beamArray</a>, and <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00001">trackArray</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00015">next()</a>.</p>
 
 </div>
 </div>
@@ -106,9 +139,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00007">7</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00025">25</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
 
-<p class="reference">References <a class="el" href="LKWindowManager_8cpp_source.html#l00012">LKWindowManager::GetWindowManager()</a>, <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00001">next()</a>, and <a class="el" href="debug_8C_source.html#l00003">run</a>.</p>
+<p class="reference">References <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00002">beamArray</a>, <a class="el" href="LKWindowManager_8cpp_source.html#l00012">LKWindowManager::GetWindowManager()</a>, <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00015">next()</a>, <a class="el" href="debug__ht_8C_source.html#l00003">run</a>, and <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00001">trackArray</a>.</p>
 
 </div>
 </div>
@@ -127,9 +160,46 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00005">5</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00023">23</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
 
 <p class="reference">References <a class="el" href="TTMicromegas_8cpp_source.html#l00010">TTMicromegas::GetPlane()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0902c26932719f17290a199534cd8745" name="a0902c26932719f17290a199534cd8745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0902c26932719f17290a199534cd8745">&#9670;&#160;</a></span>beamArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TClonesArray* beamArray = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00002">2</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00004">read_event()</a>, and <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00025">run_eve()</a>.</p>
+
+</div>
+</div>
+<a id="af829f49e47e3734a6e105562cded339b" name="af829f49e47e3734a6e105562cded339b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af829f49e47e3734a6e105562cded339b">&#9670;&#160;</a></span>trackArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TClonesArray* trackArray = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00001">1</a> of file <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html">texat_reco/macros/run_eve.C</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="draw__energy_8C_source.html#l00001">draw_energy()</a>, <a class="el" href="draw__hough_8C_source.html#l00001">draw_hough()</a>, <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00004">read_event()</a>, <a class="el" href="texat__reco_2macros_2run__eve_8C_source.html#l00025">run_eve()</a>, and <a class="el" href="test__track_8C_source.html#l00001">test_track()</a>.</p>
 
 </div>
 </div>

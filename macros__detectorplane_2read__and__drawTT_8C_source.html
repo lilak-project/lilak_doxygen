@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_908d423613cc993f5baf04926697cda7.html">macros_detectorplane</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f15a9216d410f17d353472f984959b91.html">zzz</a></li><li class="navelem"><a class="el" href="dir_1e1f4ddd66f77390d8c216ccbca54efe.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_49760868584e43f9b41bbea13cd0b362.html">macros_detectorplane</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -59,7 +59,7 @@ $(function() {
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordtype">int</span> cobo, asad, aget, chan, dumi;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>, x1, x2, <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a7126e2a81725dd5a1c850cb186894150">z0</a>, <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a0e1fe82df628138c8f3907ecddb514ae">z1</a>, <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a822ab991099a420eb62b3f0e2b0021a2">z2</a>;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_function" href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a>(<span class="stringliteral">&quot;cvsXZ&quot;</span>,100,70,2,1);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_function" href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a>(<span class="stringliteral">&quot;cvsXZ&quot;</span>,100,70,2,1);</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">    auto histL = new TH2Poly(&quot;hist_TexAT_v2_left&quot;, &quot;Strip and Center;x;z&quot;,-125,125,180,420);</span></div>
@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    cout &lt;&lt; countY &lt;&lt; endl;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_variable" href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(1); histL -&gt; Draw(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(1); histL -&gt; Draw(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">auto</span> histR = <span class="keyword">new</span> TH2Poly(<span class="stringliteral">&quot;hist_TexAT_v2_right&quot;</span>,<span class="stringliteral">&quot;Chain and Center;x;z&quot;</span>,-125,125,180,420);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    histR -&gt; SetStats(0);</div>
@@ -105,13 +105,13 @@ $(function() {
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    cout &lt;&lt; countX &lt;&lt; endl;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(2); histR -&gt; Draw(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(2); histR -&gt; Draw(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a0e1fe82df628138c8f3907ecddb514ae"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a0e1fe82df628138c8f3907ecddb514ae">z1</a></div><div class="ttdeci">double z1</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00105">LKHTLineTracker3D.cpp:105</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a7126e2a81725dd5a1c850cb186894150"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a7126e2a81725dd5a1c850cb186894150">z0</a></div><div class="ttdeci">double z0</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00111">LKHTLineTracker3D.cpp:111</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a822ab991099a420eb62b3f0e2b0021a2"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a822ab991099a420eb62b3f0e2b0021a2">z2</a></div><div class="ttdeci">double z2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00106">LKHTLineTracker3D.cpp:106</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_ae553c80321ef2d7c454cc4f62b42d0d1"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a></div><div class="ttdeci">double x0</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00111">LKHTLineTracker3D.cpp:111</a></div></div>
-<div class="ttc" id="adebug_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug_8C_source.html#l00004">debug.C:4</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="amacros__detectorplane_2read__and__drawTT_8C_html_abd7dda3893a40cc15824033c8a9a27ac"><div class="ttname"><a href="macros__detectorplane_2read__and__drawTT_8C.html#abd7dda3893a40cc15824033c8a9a27ac">read_and_drawTT</a></div><div class="ttdeci">void read_and_drawTT()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2read__and__drawTT_8C_source.html#l00003">macros_detectorplane/read_and_drawTT.C:3</a></div></div>
 <div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
 <div class="ttc" id="anamespaceejungwoo_html_a078ea57cd7c40b2d1a48a6635e904682"><div class="ttname"><a href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a></div><div class="ttdeci">TCanvas * Canvas(const char *name=&quot;&quot;, int wx=800, int wy=680, int dx=1, int dy=1)</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00500">macros_detectorplane/ejungwooA.h:500</a></div></div>

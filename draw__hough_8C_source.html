@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -57,16 +57,16 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    gStyle -&gt; SetOptStat(0);</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <span class="keyword">new</span> <a class="code hl_class" href="classLKRun.html">LKRun</a>();</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddInputFile(<span class="stringliteral">&quot;data/texat_0824.hough.root&quot;</span>);</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <span class="keyword">new</span> <a class="code hl_class" href="classLKRun.html">LKRun</a>();</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddInputFile(<span class="stringliteral">&quot;data/texat_0824.hough.root&quot;</span>);</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">//run -&gt; AddFriend(&quot;data/texat_0824.raw.root&quot;);</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Init();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Init();</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">//auto header = (TTEventHeader *) run -&gt; GetBranch(&quot;EventHeader&quot;);</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">auto</span> hitArray = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;HoughHit&quot;</span>);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">auto</span> trackArray = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;HoughTrack&quot;</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">auto</span> numEvents = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetNumEvents();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">auto</span> tree = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetInputTree();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">auto</span> hitArray = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;HoughHit&quot;</span>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a> = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranchA(<span class="stringliteral">&quot;HoughTrack&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">auto</span> numEvents = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetNumEvents();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">auto</span> tree = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetInputTree();</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">new</span> TCanvas(<span class="stringliteral">&quot;cvs_hough_hits&quot;</span>,<span class="stringliteral">&quot;cvs_hough_hits&quot;</span>,20,50,600,500);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span> histAll = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;histAll&quot;</span>,<span class="stringliteral">&quot;hough hits (all events);x;z&quot;</span>,140,0,140,140,0,140);</div>
@@ -75,7 +75,7 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    vector&lt;int&gt; listGoodEvents;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iEvent=0; iEvent&lt;numEvents; ++iEvent) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetEvent(iEvent);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetEvent(iEvent);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="comment">//if (header-&gt;GetIsMMEvent()==false) continue;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">if</span> (hitArray -&gt; GetEntries()&lt;50)</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">continue</span>;</div>
@@ -96,8 +96,9 @@ $(function() {
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="ttc" id="aclassLKRun_html"><div class="ttname"><a href="classLKRun.html">LKRun</a></div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00035">LKRun.h:36</a></div></div>
-<div class="ttc" id="adebug_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug_8C_source.html#l00003">debug.C:3</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00003">debug_ht.C:3</a></div></div>
 <div class="ttc" id="adraw__hough_8C_html_ad5ab163f8482f69d9217b278711e3790"><div class="ttname"><a href="draw__hough_8C.html#ad5ab163f8482f69d9217b278711e3790">draw_hough</a></div><div class="ttdeci">void draw_hough()</div><div class="ttdef"><b>Definition</b> <a href="draw__hough_8C_source.html#l00001">draw_hough.C:1</a></div></div>
+<div class="ttc" id="atexat__reco_2macros_2run__eve_8C_html_af829f49e47e3734a6e105562cded339b"><div class="ttname"><a href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a></div><div class="ttdeci">TClonesArray * trackArray</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros_2run__eve_8C_source.html#l00001">texat_reco/macros/run_eve.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

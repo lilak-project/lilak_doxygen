@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -58,23 +58,24 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> file = <span class="keyword">new</span> TFile(<span class="stringliteral">&quot;data/texat_0824.hough.root&quot;</span>);</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">auto</span> tree = file -&gt; Get&lt;TTree&gt;(<span class="stringliteral">&quot;event&quot;</span>);</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    TClonesArray *trackArray = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    TClonesArray *<a class="code hl_variable" href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="classTTEventHeader.html">TTEventHeader</a> *header = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    tree -&gt; SetBranchAddress(<span class="stringliteral">&quot;EventHeader&quot;</span>,&amp;header);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    tree -&gt; SetBranchAddress(<span class="stringliteral">&quot;HoughTrack&quot;</span>,&amp;trackArray);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    tree -&gt; SetBranchAddress(<span class="stringliteral">&quot;HoughTrack&quot;</span>,&amp;<a class="code hl_variable" href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a>);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">auto</span> numEvents = tree -&gt; GetEntries();</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iEvent=0; iEvent&lt;numEvents; ++iEvent) {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        tree -&gt; GetEntry(iEvent);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">if</span> (header-&gt;GetIsMMEvent()==<span class="keyword">false</span>)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">auto</span> track = (<a class="code hl_class" href="classLKLinearTrack.html">LKLinearTrack</a> *) trackArray -&gt; At(0);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">auto</span> track = (<a class="code hl_class" href="classLKLinearTrack.html">LKLinearTrack</a> *) <a class="code hl_variable" href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a> -&gt; At(0);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        track -&gt; Print();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 <div class="ttc" id="aclassLKLinearTrack_html"><div class="ttname"><a href="classLKLinearTrack.html">LKLinearTrack</a></div><div class="ttdef"><b>Definition</b> <a href="LKLinearTrack_8h_source.html#l00009">LKLinearTrack.h:10</a></div></div>
 <div class="ttc" id="aclassTTEventHeader_html"><div class="ttname"><a href="classTTEventHeader.html">TTEventHeader</a></div><div class="ttdoc">Event header for TexAT experiment.</div><div class="ttdef"><b>Definition</b> <a href="TTEventHeader_8h_source.html#l00010">TTEventHeader.h:11</a></div></div>
 <div class="ttc" id="atest__track_8C_html_a1079f1d9f3ef4538b7293c4b44d68dea"><div class="ttname"><a href="test__track_8C.html#a1079f1d9f3ef4538b7293c4b44d68dea">test_track</a></div><div class="ttdeci">void test_track()</div><div class="ttdef"><b>Definition</b> <a href="test__track_8C_source.html#l00001">test_track.C:1</a></div></div>
+<div class="ttc" id="atexat__reco_2macros_2run__eve_8C_html_af829f49e47e3734a6e105562cded339b"><div class="ttname"><a href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a></div><div class="ttdeci">TClonesArray * trackArray</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros_2run__eve_8C_source.html#l00001">texat_reco/macros/run_eve.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

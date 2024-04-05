@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.80.6268d1e</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0f45a622591eb6a045c5c179ff19f020.html">tpc_general</a></li><li class="navelem"><a class="el" href="dir_0aa24c58683c4887b6c051988482ec96.html">macros_tracking</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_33d1a70a2ef97dba7e9eced0aac0e4f1.html">tool</a></li><li class="navelem"><a class="el" href="dir_47455f9f30f820bb283b2d50bc35c2cb.html">hough_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -55,32 +55,36 @@ $(function() {
 <div class="contents">
 <a href="test_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">    1</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">test</a>()</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> chan=0; chan&lt;40; ++chan)</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        <span class="keywordtype">int</span> dchan=chan, dchan2;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <span class="comment">//if (chan&gt;11) dchan -= 1;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="comment">//if (chan&gt;22) dchan -= 1;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="comment">//if (chan&gt;45) dchan -= 1;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">//if (chan&gt;57) dchan -= 1;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">//     if(           chan&lt;11) dchan2 = chan;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="comment">//else if(chan&gt;11 &amp;&amp; chan&lt;22) dchan2 = chan - 1;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">//else if(chan&gt;22 &amp;&amp; chan&lt;45) dchan2 = chan - 2;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="comment">//else if(chan&gt;45 &amp;&amp; chan&lt;56) dchan2 = chan - 3;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="comment">//else if(chan&gt;56           ) dchan2 = chan - 4;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>             <span class="keywordflow">if</span>(chan&lt;11) dchan2 = chan;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan&lt;22) dchan2 = chan - 1;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan&lt;45) dchan2 = chan - 2;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(chan&lt;56) dchan2 = chan - 3;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">else</span>             dchan2 = chan - 4;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> n = 50;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">auto</span> hist = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;hist&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,n,0,100,n,0,100);</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">auto</span> f1 = <span class="keyword">new</span> TF1(<span class="stringliteral">&quot;f1&quot;</span>,<span class="stringliteral">&quot;-x+100-10&quot;</span>,0,100);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">auto</span> f2 = <span class="keyword">new</span> TF1(<span class="stringliteral">&quot;f2&quot;</span>,<span class="stringliteral">&quot;-x+100-38&quot;</span>,0,100);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">double</span> x, y, s;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;500; ++i)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        x = gRandom -&gt; Uniform(0,100);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        s = gRandom -&gt; Uniform(-2,2);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        y = f1 -&gt; Eval(x) + s;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        hist -&gt; Fill(x,y);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        x = gRandom -&gt; Uniform(0,100);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        s = gRandom -&gt; Uniform(-2,2);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        y = f2 -&gt; Eval(x) + s;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        hist -&gt; Fill(x,y);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">int</span> type = 0;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">if</span> ((<span class="keywordtype">int</span>(dchan+1)/2)%2==0)</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            type = 1;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">if</span> (chan!=11&amp;&amp;chan!=22&amp;&amp;chan!=45&amp;&amp;chan!=57)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            cout &lt;&lt; chan &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; dchan &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; dchan2 &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; int(dchan==dchan2) &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> &lt;&lt; type &lt;&lt; endl;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_function" href="classLKWindowManager.html#a328b53542a62bcc14108770001fb9840">LKWindowManager::GetWindowManager</a>() -&gt; CanvasResize(<span class="stringliteral">&quot;cvs&quot;</span>,100,50,0.6);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; Divide(2,1);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> tracker = <span class="keyword">new</span> <a class="code hl_class" href="classLKHTLineTracker.html">LKHTLineTracker</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    tracker -&gt; SetTransformCenter(0,0);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    tracker -&gt; AddHistogram(hist);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    tracker -&gt; SetParamSpaceBins(60,60);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    tracker -&gt; Transform();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    tracker -&gt; Draw(<a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a>-&gt;cd(1),<a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a>-&gt;cd(2),<span class="stringliteral">&quot;colz::colz&quot;</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00178">LKHTLineTracker.h:179</a></div></div>
+<div class="ttc" id="aclassLKWindowManager_html_a328b53542a62bcc14108770001fb9840"><div class="ttname"><a href="classLKWindowManager.html#a328b53542a62bcc14108770001fb9840">LKWindowManager::GetWindowManager</a></div><div class="ttdeci">static LKWindowManager * GetWindowManager()</div><div class="ttdef"><b>Definition</b> <a href="LKWindowManager_8cpp_source.html#l00012">LKWindowManager.cpp:12</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="atest_8C_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="test_8C_source.html#l00001">test.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

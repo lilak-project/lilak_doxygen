@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -77,8 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae93719bccbbb82e801d63136b7417643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa99792c389de491e0d37995bdbbc569f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#aa99792c389de491e0d37995bdbbc569f">Init</a> ()</td></tr>
 <tr class="separator:aa99792c389de491e0d37995bdbbc569f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4ebeb675fe924cf2680c604f7bb0a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a2a4ebeb675fe924cf2680c604f7bb0a1">MakeTrack</a> (<a class="el" href="classLKLinearTrack.html">LKLinearTrack</a> *trackXY, <a class="el" href="classLKLinearTrack.html">LKLinearTrack</a> *trackZY, double x1, double x2)</td></tr>
-<tr class="separator:a2a4ebeb675fe924cf2680c604f7bb0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea49367785ac54ef5ed999e9a14bf4ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#aea49367785ac54ef5ed999e9a14bf4ea">MakeTrack</a> (int iLeftRight)</td></tr>
+<tr class="separator:aea49367785ac54ef5ed999e9a14bf4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fdfde02d5b15d3b5380a62cad9cde11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a2fdfde02d5b15d3b5380a62cad9cde11">TransformAndSelectHits</a> (<a class="el" href="classLKHTLineTracker.html">LKHTLineTracker</a> *trackerXY, <a class="el" href="classLKHTLineTracker.html">LKHTLineTracker</a> *trackerZY)</td></tr>
 <tr class="separator:a2fdfde02d5b15d3b5380a62cad9cde11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23dc9cfc3b1db91747ef59f9cfb0cc10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a23dc9cfc3b1db91747ef59f9cfb0cc10">TTHTTrackingTask</a> ()</td></tr>
@@ -100,10 +100,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57cd0fb1e5da7a22c452ba11822a7681 inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20127bb296c907c85369b8fd7621addf inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#a20127bb296c907c85369b8fd7621addf">InitTasks</a> ()</td></tr>
 <tr class="separator:a20127bb296c907c85369b8fd7621addf inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86652ee2bc0b6cdb90d16d520093a76 inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#aa86652ee2bc0b6cdb90d16d520093a76">IsEventTrigger</a> ()</td></tr>
+<tr class="separator:aa86652ee2bc0b6cdb90d16d520093a76 inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10fcb3b239b2f47c0b6a0f3c03c92676 inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#a10fcb3b239b2f47c0b6a0f3c03c92676">LKTask</a> ()</td></tr>
 <tr class="separator:a10fcb3b239b2f47c0b6a0f3c03c92676 inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa836849b7aae8864fb009247f441e8d8 inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#aa836849b7aae8864fb009247f441e8d8">LKTask</a> (const char *name, const char *title)</td></tr>
 <tr class="separator:aa836849b7aae8864fb009247f441e8d8 inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac653c05a665b5b330529a7cf2c5dd683 inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#ac653c05a665b5b330529a7cf2c5dd683">Run</a> (Long64_t numEvents=-1)</td></tr>
+<tr class="separator:ac653c05a665b5b330529a7cf2c5dd683 inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29b5b38f3139fa0a98bd0d038e86d232 inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#a29b5b38f3139fa0a98bd0d038e86d232">SetRank</a> (Int_t rank)</td></tr>
 <tr class="separator:a29b5b38f3139fa0a98bd0d038e86d232 inherit pub_methods_classLKTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a218f467183dcff9e19200f16db282f75 inherit pub_methods_classLKTask"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKTask.html#a218f467183dcff9e19200f16db282f75">SignalNextEvent</a> ()</td></tr>
@@ -135,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e46624504516d1bf1f77138a15ea352 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2b2ba0fd03e84062f32899bfa6c6f1 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#a8d2b2ba0fd03e84062f32899bfa6c6f1">SetRank</a> (Int_t rank)</td></tr>
 <tr class="separator:a8d2b2ba0fd03e84062f32899bfa6c6f1 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#ada05dd787bc825f3dd7680086c5dd560">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *<a class="el" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a>)</td></tr>
+<tr class="memitem:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#ada05dd787bc825f3dd7680086c5dd560">SetRun</a> (<a class="el" href="classLKRun.html">LKRun</a> *<a class="el" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a>)</td></tr>
 <tr class="separator:ada05dd787bc825f3dd7680086c5dd560 inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466d2dc32afb9b217e3dfaf0322944fe inherit pub_methods_classLKGear"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKGear.html#a466d2dc32afb9b217e3dfaf0322944fe">~LKGear</a> ()</td></tr>
 <tr class="separator:a466d2dc32afb9b217e3dfaf0322944fe inherit pub_methods_classLKGear"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +161,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0b46ab2c560f108adad9351ab7df2417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14597ff5ef9cb00f3302847b95872200"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a14597ff5ef9cb00f3302847b95872200">fNT</a> = 100</td></tr>
 <tr class="separator:a14597ff5ef9cb00f3302847b95872200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb424dfe99faddcb3438d6b50a100b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#aaeb424dfe99faddcb3438d6b50a100b2">fNumHitsCutForTransform</a> = 3</td></tr>
-<tr class="separator:aaeb424dfe99faddcb3438d6b50a100b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d520f32d02112f2f5d0308d6649d3aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a7d520f32d02112f2f5d0308d6649d3aa">fNumChainHitsCutForTransform</a> = 3</td></tr>
+<tr class="memdesc:a7d520f32d02112f2f5d0308d6649d3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of chain hits should be larger than this cut to be reconstructed  <br /></td></tr>
+<tr class="separator:a7d520f32d02112f2f5d0308d6649d3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f6ffab2715d9332d2e52f80fc0f198"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a23f6ffab2715d9332d2e52f80fc0f198">fNumStripHitsCutForTransform</a> = 3</td></tr>
+<tr class="memdesc:a23f6ffab2715d9332d2e52f80fc0f198"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of strip hits should be larger than this cut to be reconstructed  <br /></td></tr>
+<tr class="separator:a23f6ffab2715d9332d2e52f80fc0f198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e47a37541af7b3427ec68171152838"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a72e47a37541af7b3427ec68171152838">fNumTracks</a> = 0</td></tr>
 <tr class="separator:a72e47a37541af7b3427ec68171152838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e4060e0cee1cea5a7129768f23deedd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a2e4060e0cee1cea5a7129768f23deedd">fNX</a> = 143</td></tr>
@@ -167,6 +175,20 @@ Private Attributes</h2></td></tr>
 <tr class="separator:acd94cdeb7d919d8bca4d62a868e4e38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a275ed0f4f57038b707fc82f93ae9bfcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a275ed0f4f57038b707fc82f93ae9bfcb">fNZ</a> = 141</td></tr>
 <tr class="separator:a275ed0f4f57038b707fc82f93ae9bfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0117b05a63fdd5683507425900491dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#ac0117b05a63fdd5683507425900491dc">fR1</a> = 0</td></tr>
+<tr class="separator:ac0117b05a63fdd5683507425900491dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42aad313c8325202dfa38a9f3993d227"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a42aad313c8325202dfa38a9f3993d227">fR2</a> = 0</td></tr>
+<tr class="separator:a42aad313c8325202dfa38a9f3993d227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47c97538d98af7d8437017732bc0fdd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#aa47c97538d98af7d8437017732bc0fdd">fT1</a> = 0</td></tr>
+<tr class="separator:aa47c97538d98af7d8437017732bc0fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2928d87c78b44341b23929beb80f43e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a2928d87c78b44341b23929beb80f43e2">fT2</a> = 0</td></tr>
+<tr class="separator:a2928d87c78b44341b23929beb80f43e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a9034c4731ae3429aa342367500a40"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#ac0a9034c4731ae3429aa342367500a40">fTCX</a> = <a class="el" href="classTTHTTrackingTask.html#adce2f27118e14a80f81ead14ee238efb">fX1</a></td></tr>
+<tr class="separator:ac0a9034c4731ae3429aa342367500a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673d3aab1511720cf309eb3d220d3203"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a673d3aab1511720cf309eb3d220d3203">fTCY</a> = <a class="el" href="classTTHTTrackingTask.html#aa8d9606fdb451a3f8aeb62f892f5a55e">fY1</a></td></tr>
+<tr class="separator:a673d3aab1511720cf309eb3d220d3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578a26c54eae9d51526990c7d58f8bc8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a578a26c54eae9d51526990c7d58f8bc8">fTCZ</a> = <a class="el" href="classTTHTTrackingTask.html#abd179ff4d78336ecbd32a98e1203662e">fZ1</a></td></tr>
+<tr class="separator:a578a26c54eae9d51526990c7d58f8bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc9198cd372a4881aaa562230db7277"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#addc9198cd372a4881aaa562230db7277">fTrackArray</a> = nullptr</td></tr>
 <tr class="separator:addc9198cd372a4881aaa562230db7277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fd15921654576e099ace6c878e07e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLKHTLineTracker.html">LKHTLineTracker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a5fd15921654576e099ace6c878e07e69">fTracker</a> [2][2]</td></tr>
@@ -183,7 +205,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:adb7279d87dd292c9cdf255ce0a9504b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8d9606fdb451a3f8aeb62f892f5a55e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#aa8d9606fdb451a3f8aeb62f892f5a55e">fY1</a> = 0</td></tr>
 <tr class="separator:aa8d9606fdb451a3f8aeb62f892f5a55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a622c42e8bdf4de9db99162af85ff91e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a622c42e8bdf4de9db99162af85ff91e9">fY2</a> = 330</td></tr>
+<tr class="memitem:a622c42e8bdf4de9db99162af85ff91e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#a622c42e8bdf4de9db99162af85ff91e9">fY2</a> = 350</td></tr>
 <tr class="separator:a622c42e8bdf4de9db99162af85ff91e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd179ff4d78336ecbd32a98e1203662e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTHTTrackingTask.html#abd179ff4d78336ecbd32a98e1203662e">fZ1</a> = 150</td></tr>
 <tr class="separator:abd179ff4d78336ecbd32a98e1203662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +267,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00005">5</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00006">6</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +360,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKTask.html#a59e2a05fcac155b4473cb05805716f05">LKTask</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00198">198</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00219">219</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
 
 </div>
 </div>
@@ -358,9 +380,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">137</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">161</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="TTHTTrackingTask_8h_source.html#l00045">fEventHeaderHolder</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00043">fHitArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00087">fNumHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00054">fNumTracks</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">fTrackArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00049">fTracker</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00051">fTrackXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00052">fTrackZY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00094">fUseTransformCSCombination</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00057">fX1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00058">fX2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00070">kLChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00083">kLeft</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00069">kLStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00072">kRChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00084">kRight</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00071">kRStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00075">kViewXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00076">kViewZY</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>, <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00101">MakeTrack()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">TransformAndSelectHits()</a>.</p>
+<p class="reference">References <a class="el" href="TTHTTrackingTask_8h_source.html#l00045">fEventHeaderHolder</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00043">fHitArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00099">fNumChainHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00100">fNumStripHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00054">fNumTracks</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">fTrackArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00049">fTracker</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00107">fUseTransformCSCombination</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00082">kLChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00095">kLeft</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00081">kLStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00084">kRChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00096">kRight</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00083">kRStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00087">kViewXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00088">kViewZY</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
 
 </div>
 </div>
@@ -429,14 +451,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKTask.html#a0b04c0b631d2fe9f6ea8057bcd15bcf6">LKTask</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">10</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">11</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameterContainer_8cpp_source.html#l01035">LKParameterContainer::CheckPar()</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00047">fCrossHitCollection</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00045">fEventHeaderHolder</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00043">fHitArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00065">fNR</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00066">fNT</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00056">fNX</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00059">fNY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00062">fNZ</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="LKGear_8h_source.html#l00040">LKGear::fRun</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">fTrackArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00049">fTracker</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00094">fUseTransformCSCombination</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00057">fX1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00058">fX2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00060">fY1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00061">fY2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00063">fZ1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00064">fZ2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00068">kCenter</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00070">kLChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00083">kLeft</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00069">kLStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00073">kOthers</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00072">kRChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00084">kRight</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00071">kRStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00075">kViewXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00076">kViewZY</a>, <a class="el" href="LKLogger_8h_source.html#l00029">lk_info</a>, <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00071">SetImageSpaceRange()</a>, and <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00104">y2</a>.</p>
+<p class="reference">References <a class="el" href="TTHTTrackingTask_8h_source.html#l00047">fCrossHitCollection</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00045">fEventHeaderHolder</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00043">fHitArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00068">fNR</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00072">fNT</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00099">fNumChainHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00100">fNumStripHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00056">fNX</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00060">fNY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00064">fNZ</a>, <a class="el" href="LKGear_8h_source.html#l00039">LKGear::fPar</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00069">fR1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00070">fR2</a>, <a class="el" href="LKGear_8h_source.html#l00040">LKGear::fRun</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00073">fT1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00074">fT2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00076">fTCX</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00077">fTCY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00078">fTCZ</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">fTrackArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00049">fTracker</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00107">fUseTransformCSCombination</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00057">fX1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00058">fX2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00061">fY1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00062">fY2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00065">fZ1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00066">fZ2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00080">kCenter</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00082">kLChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00095">kLeft</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00081">kLStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00085">kOthers</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00084">kRChain</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00096">kRight</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00083">kRStrip</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00087">kViewXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00088">kViewZY</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00071">SetImageSpaceRange()</a>, <a class="el" href="LKHTLineTracker3D_8cpp.html#a2097afbaa00d1dffffe683985d049d92">SetParamSpaceRange()</a>, <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00107">t1</a>, <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00108">t2</a>, and <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00104">y2</a>.</p>
 
 </div>
 </div>
-<a id="a2a4ebeb675fe924cf2680c604f7bb0a1" name="a2a4ebeb675fe924cf2680c604f7bb0a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a4ebeb675fe924cf2680c604f7bb0a1">&#9670;&#160;</a></span>MakeTrack()</h2>
+<a id="aea49367785ac54ef5ed999e9a14bf4ea" name="aea49367785ac54ef5ed999e9a14bf4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea49367785ac54ef5ed999e9a14bf4ea">&#9670;&#160;</a></span>MakeTrack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,40 +466,18 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool TTHTTrackingTask::MakeTrack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classLKLinearTrack.html">LKLinearTrack</a> *&#160;</td>
-          <td class="paramname"><em>trackXY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iLeftRight</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classLKLinearTrack.html">LKLinearTrack</a> *&#160;</td>
-          <td class="paramname"><em>trackZY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00101">101</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">113</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="TTHTTrackingTask_8h_source.html#l00054">fNumTracks</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">fTrackArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00094">fUseTransformCSCombination</a>, <a class="el" href="LKGeoPlaneWithCenter_8cpp_source.html#l00062">LKGeoPlaneWithCenter::GetCrossSectionLine()</a>, <a class="el" href="LKTracklet_8h_source.html#l00050">LKTracklet::GetHitArray()</a>, and <a class="el" href="LKGeoLine_8cpp_source.html#l00085">LKGeoLine::GetPointAtX()</a>.</p>
+<p class="reference">References <a class="el" href="TTHTTrackingTask_8h_source.html#l00054">fNumTracks</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">fTrackArray</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00051">fTrackXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00052">fTrackZY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00107">fUseTransformCSCombination</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00057">fX1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00058">fX2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00061">fY1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00062">fY2</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00065">fZ1</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00066">fZ2</a>, <a class="el" href="LKGeoBox_8cpp_source.html#l00208">LKGeoBox::GetCrossingPoints()</a>, <a class="el" href="LKTracklet_8h_source.html#l00086">LKTracklet::GetHitArray()</a>, and <a class="el" href="TTHTTrackingTask_8h_source.html#l00096">kRight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>.</p>
 
 </div>
 </div>
@@ -507,11 +507,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">55</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">67</a> of file <a class="el" href="TTHTTrackingTask_8cpp_source.html">TTHTTrackingTask.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKTask_8cpp_source.html#l00016">LKTask::Add()</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00047">fCrossHitCollection</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00087">fNumHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00051">fTrackXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00052">fTrackZY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00094">fUseTransformCSCombination</a>, <a class="el" href="LKHit_8h_source.html#l00116">LKHit::GetHitID()</a>, <a class="el" href="LKHit_8h_source.html#l00125">LKHit::GetSortValue()</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, and <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>.</p>
+<p class="reference">References <a class="el" href="LKTask_8cpp_source.html#l00016">LKTask::Add()</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00047">fCrossHitCollection</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00099">fNumChainHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00100">fNumStripHitsCutForTransform</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00051">fTrackXY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00052">fTrackZY</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00107">fUseTransformCSCombination</a>, <a class="el" href="LKHit_8h_source.html#l00117">LKHit::GetHitID()</a>, <a class="el" href="LKHit_8h_source.html#l00126">LKHit::GetSortValue()</a>, <a class="el" href="LKVector3_8h_source.html#l00019">LKVector3::kX</a>, <a class="el" href="LKVector3_8h_source.html#l00020">LKVector3::kY</a>, and <a class="el" href="LKVector3_8h_source.html#l00021">LKVector3::kZ</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>.</p>
 
 </div>
 </div>
@@ -538,7 +538,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00047">47</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">TransformAndSelectHits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00045">45</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -590,7 +590,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00043">43</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -614,9 +614,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00065">65</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00068">68</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -640,14 +640,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00066">66</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00072">72</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
-<a id="aaeb424dfe99faddcb3438d6b50a100b2" name="aaeb424dfe99faddcb3438d6b50a100b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeb424dfe99faddcb3438d6b50a100b2">&#9670;&#160;</a></span>fNumHitsCutForTransform</h2>
+<a id="a7d520f32d02112f2f5d0308d6649d3aa" name="a7d520f32d02112f2f5d0308d6649d3aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d520f32d02112f2f5d0308d6649d3aa">&#9670;&#160;</a></span>fNumChainHitsCutForTransform</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,7 +656,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int TTHTTrackingTask::fNumHitsCutForTransform = 3</td>
+          <td class="memname">int TTHTTrackingTask::fNumChainHitsCutForTransform = 3</td>
         </tr>
       </table>
   </td>
@@ -666,9 +666,39 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00087">87</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p>number of chain hits should be larger than this cut to be reconstructed </p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">TransformAndSelectHits()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00099">99</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
+
+</div>
+</div>
+<a id="a23f6ffab2715d9332d2e52f80fc0f198" name="a23f6ffab2715d9332d2e52f80fc0f198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f6ffab2715d9332d2e52f80fc0f198">&#9670;&#160;</a></span>fNumStripHitsCutForTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TTHTTrackingTask::fNumStripHitsCutForTransform = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of strip hits should be larger than this cut to be reconstructed </p>
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00100">100</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
 
 </div>
 </div>
@@ -694,7 +724,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00054">54</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00101">MakeTrack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -720,7 +750,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00056">56</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -744,9 +774,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00059">59</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00060">60</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -770,9 +800,191 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00062">62</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00064">64</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="ac0117b05a63fdd5683507425900491dc" name="ac0117b05a63fdd5683507425900491dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0117b05a63fdd5683507425900491dc">&#9670;&#160;</a></span>fR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fR1 = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00069">69</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="a42aad313c8325202dfa38a9f3993d227" name="a42aad313c8325202dfa38a9f3993d227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42aad313c8325202dfa38a9f3993d227">&#9670;&#160;</a></span>fR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fR2 = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00070">70</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="aa47c97538d98af7d8437017732bc0fdd" name="aa47c97538d98af7d8437017732bc0fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa47c97538d98af7d8437017732bc0fdd">&#9670;&#160;</a></span>fT1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fT1 = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00073">73</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="a2928d87c78b44341b23929beb80f43e2" name="a2928d87c78b44341b23929beb80f43e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2928d87c78b44341b23929beb80f43e2">&#9670;&#160;</a></span>fT2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fT2 = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00074">74</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="ac0a9034c4731ae3429aa342367500a40" name="ac0a9034c4731ae3429aa342367500a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a9034c4731ae3429aa342367500a40">&#9670;&#160;</a></span>fTCX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fTCX = <a class="el" href="classTTHTTrackingTask.html#adce2f27118e14a80f81ead14ee238efb">fX1</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00076">76</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="a673d3aab1511720cf309eb3d220d3203" name="a673d3aab1511720cf309eb3d220d3203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673d3aab1511720cf309eb3d220d3203">&#9670;&#160;</a></span>fTCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fTCY = <a class="el" href="classTTHTTrackingTask.html#aa8d9606fdb451a3f8aeb62f892f5a55e">fY1</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00077">77</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
+
+</div>
+</div>
+<a id="a578a26c54eae9d51526990c7d58f8bc8" name="a578a26c54eae9d51526990c7d58f8bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578a26c54eae9d51526990c7d58f8bc8">&#9670;&#160;</a></span>fTCZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TTHTTrackingTask::fTCZ = <a class="el" href="classTTHTTrackingTask.html#abd179ff4d78336ecbd32a98e1203662e">fZ1</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00078">78</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -798,7 +1010,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00044">44</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00101">MakeTrack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -824,7 +1036,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00049">49</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00039">GetTracker()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, <a class="el" href="TTHTTrackingTask_8h_source.html#l00039">GetTracker()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -850,7 +1062,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00051">51</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">TransformAndSelectHits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
 
 </div>
 </div>
@@ -876,7 +1088,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00052">52</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">TransformAndSelectHits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
 
 </div>
 </div>
@@ -900,9 +1112,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00094">94</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00107">107</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00101">MakeTrack()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00055">TransformAndSelectHits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00067">TransformAndSelectHits()</a>.</p>
 
 </div>
 </div>
@@ -928,7 +1140,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00057">57</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1166,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00058">58</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -978,9 +1190,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00060">60</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00061">61</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1206,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double TTHTTrackingTask::fY2 = 330</td>
+          <td class="memname">double TTHTTrackingTask::fY2 = 350</td>
         </tr>
       </table>
   </td>
@@ -1004,9 +1216,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00061">61</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00062">62</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -1030,9 +1242,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00063">63</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00065">65</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -1056,9 +1268,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00064">64</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00066">66</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -1082,9 +1294,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00068">68</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00080">80</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1320,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00080">80</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00092">92</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
 </div>
 </div>
@@ -1132,9 +1344,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00070">70</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00082">82</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1158,9 +1370,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00083">83</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00095">95</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1184,9 +1396,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00069">69</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00081">81</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1210,9 +1422,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00073">73</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00085">85</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1236,9 +1448,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00072">72</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00084">84</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1262,9 +1474,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00084">84</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00096">96</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00113">MakeTrack()</a>.</p>
 
 </div>
 </div>
@@ -1288,9 +1500,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00071">71</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00083">83</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1526,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00079">79</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00091">91</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
 </div>
 </div>
@@ -1338,9 +1550,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00075">75</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00087">87</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1576,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00077">77</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00089">89</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
 </div>
 </div>
@@ -1388,9 +1600,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00076">76</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTHTTrackingTask_8h_source.html#l00088">88</a> of file <a class="el" href="TTHTTrackingTask_8h_source.html">TTHTTrackingTask.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00137">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00010">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00161">Exec()</a>, and <a class="el" href="TTHTTrackingTask_8cpp_source.html#l00011">Init()</a>.</p>
 
 </div>
 </div>

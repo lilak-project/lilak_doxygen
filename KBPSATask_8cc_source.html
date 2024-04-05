@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.139.138c03d</span>
+   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
    </div>
   </td>
  </tr>
@@ -72,9 +72,9 @@ $(function() {
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classKBPSATask.html#ae0fb370ae75b0d3defd8f2a25c26db36">   18</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classKBPSATask.html#ae0fb370ae75b0d3defd8f2a25c26db36">KBPSATask::Init</a>()</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  KBRun *<a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = KBRun::GetRun();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  KBRun *<a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = KBRun::GetRun();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_variable" href="classKBPSATask.html#a0875a9816c1add4f006469f20ab7479d">fTpc</a> = <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetDetectorSystem() -&gt; GetTpc();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_variable" href="classKBPSATask.html#a0875a9816c1add4f006469f20ab7479d">fTpc</a> = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetDetectorSystem() -&gt; GetTpc();</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_variable" href="classKBPSATask.html#a835bcd290c46dba6b8502952ac9d6ea1">fNPlanes</a> = <a class="code hl_variable" href="classKBPSATask.html#a0875a9816c1add4f006469f20ab7479d">fTpc</a> -&gt; GetNumPlanes();</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <a class="code hl_variable" href="classKBPSATask.html#ad85ac2bdde0544bffdbfacd2e22e9555">fDriftVelocity</a> = fPar -&gt; GetParDouble(<span class="stringliteral">&quot;gasDriftVelocity&quot;</span>);</div>
@@ -82,13 +82,13 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">if</span> (fPar -&gt; CheckPar(<span class="stringliteral">&quot;tbLengthOffset&quot;</span>))</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_variable" href="classKBPSATask.html#a2a145eb5949e8b8728d38a91272574c9">fTbLengthOffset</a> = fPar -&gt; GetParDouble(<span class="stringliteral">&quot;tbLengthOffset&quot;</span>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_variable" href="classKBPSATask.html#a58e2c9d4995c165bc3fea96f297f9ee7">fPadArray</a> = (TClonesArray *) <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranch(<span class="stringliteral">&quot;Pad&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_variable" href="classKBPSATask.html#a58e2c9d4995c165bc3fea96f297f9ee7">fPadArray</a> = (TClonesArray *) <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetBranch(<span class="stringliteral">&quot;Pad&quot;</span>);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> iPlane = 0; iPlane &lt; <a class="code hl_variable" href="classKBPSATask.html#a835bcd290c46dba6b8502952ac9d6ea1">fNPlanes</a>; iPlane++)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_variable" href="classKBPSATask.html#a363d08ae90895834a3d9c21ae3a5740a">fPadPlane</a>[iPlane] = <a class="code hl_variable" href="classKBPSATask.html#a0875a9816c1add4f006469f20ab7479d">fTpc</a> -&gt; GetPadPlane(iPlane);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_variable" href="classKBPSATask.html#a896f9b73de1cb1ea6a0127ae8e0c8341">fHitArray</a> = <span class="keyword">new</span> TClonesArray(<span class="stringliteral">&quot;KBTpcHit&quot;</span>, 5000);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_variable" href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; RegisterBranch(<span class="stringliteral">&quot;Hit&quot;</span>, <a class="code hl_variable" href="classKBPSATask.html#a896f9b73de1cb1ea6a0127ae8e0c8341">fHitArray</a>, <a class="code hl_variable" href="classKBPSATask.html#a032694d7b67a7d697d064bd0120db092">fPersistency</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; RegisterBranch(<span class="stringliteral">&quot;Hit&quot;</span>, <a class="code hl_variable" href="classKBPSATask.html#a896f9b73de1cb1ea6a0127ae8e0c8341">fHitArray</a>, <a class="code hl_variable" href="classKBPSATask.html#a032694d7b67a7d697d064bd0120db092">fPersistency</a>);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="classKBPSATask.html#ad5e3614fdc56d660fe425ab8c2523d84">fPSA</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="classKBPSATask.html#ad5e3614fdc56d660fe425ab8c2523d84">fPSA</a> = <span class="keyword">new</span> <a class="code hl_class" href="classKBPSA.html">KBPSA</a>();</div>
@@ -184,7 +184,7 @@ $(function() {
 <div class="ttc" id="aclassKBPSATask_html_ae0fb370ae75b0d3defd8f2a25c26db36"><div class="ttname"><a href="classKBPSATask.html#ae0fb370ae75b0d3defd8f2a25c26db36">KBPSATask::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition</b> <a href="KBPSATask_8cc_source.html#l00018">KBPSATask.cc:18</a></div></div>
 <div class="ttc" id="aclassKBPSATask_html_afee3fe270dcd06125cfd73d6f0f396c5"><div class="ttname"><a href="classKBPSATask.html#afee3fe270dcd06125cfd73d6f0f396c5">KBPSATask::KBPSATask</a></div><div class="ttdeci">KBPSATask()</div></div>
 <div class="ttc" id="aclassKBPSA_html"><div class="ttname"><a href="classKBPSA.html">KBPSA</a></div><div class="ttdef"><b>Definition</b> <a href="KBPSA_8hh_source.html#l00012">KBPSA.hh:13</a></div></div>
-<div class="ttc" id="adebug_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug_8C_source.html#l00003">debug.C:3</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00003">debug_ht.C:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
