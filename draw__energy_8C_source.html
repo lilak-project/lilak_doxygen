@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: draw_energy.C Source File</title>
+<title>lilak: draw_energy.C Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//double energies[] = {14,13.5};</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">auto</span> energy_index = [](<span class="keywordtype">double</span> energy) { <span class="keywordflow">return</span> int(energy*2-16)-1; };</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> make_hist = [](TH1* hist, <span class="keywordtype">int</span> option=0) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> <a class="code hl_function" href="make__hist_8C.html#ade67cc310cce6bc9846d22d282f714ad">make_hist</a> = [](TH1* hist, <span class="keywordtype">int</span> option=0) {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        hist -&gt; SetStats(0);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">//hist -&gt; GetXaxis() -&gt; CenterTitle();</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="comment">//hist -&gt; GetYaxis() -&gt; CenterTitle();</span></div>
@@ -148,8 +148,8 @@ $(function() {
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">auto</span> histFull  = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;histFull&quot;</span>, <span class="stringliteral">&quot;;Proton energy at reaction (MeV);d#sigma/dE (mb/MeV)&quot;</span>,1000,eMin,eMax,100,0,6*scaleXN/binSize);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">auto</span> histGraph = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;histGraph&quot;</span>,<span class="stringliteral">&quot;;Proton energy at reaction (MeV);Total cross-section (mb)&quot;</span>,1000,eMin,eMax,100,0,100);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    make_hist(histFull);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    make_hist(histGraph,1);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="make__hist_8C.html#ade67cc310cce6bc9846d22d282f714ad">make_hist</a>(histFull);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="make__hist_8C.html#ade67cc310cce6bc9846d22d282f714ad">make_hist</a>(histGraph,1);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">auto</span> cvsGraph = win -&gt; Canvas(<span class="stringliteral">&quot;cvs_graph&quot;</span>);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    histGraph -&gt; Draw();</div>
@@ -284,16 +284,16 @@ $(function() {
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                fit_vz_e = <span class="keyword">new</span> TF1(Form(<span class="stringliteral">&quot;fit_%d_%d&quot;</span>,iBeam,countOption),<span class="stringliteral">&quot;pol1&quot;</span>,-50,400);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                hist_vz_e -&gt; Fit(fit_vz_e,<span class="stringliteral">&quot;N0Q&quot;</span>);</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">if</span> (draw_fit) {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    <span class="keyword">auto</span> cvs2 = cvsFit -&gt; cd(countOption+1);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    <span class="keyword">auto</span> <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> = cvsFit -&gt; cd(countOption+1);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    <span class="keywordtype">double</span> mgxy = 0.18;</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                    <span class="keywordtype">double</span> mgrt = 0.02;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                    <span class="comment">//double mgrt = 0.18;</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                    <span class="keywordflow">if</span> (countOption==0) cvs2 -&gt; SetMargin(mgxy,   0,   0,   mgrt);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    <span class="keywordflow">if</span> (countOption==1) cvs2 -&gt; SetMargin(0,   mgrt,   0,   mgrt);</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    <span class="keywordflow">if</span> (countOption==2) cvs2 -&gt; SetMargin(mgxy,   0,   mgxy,   0);</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                    <span class="keywordflow">if</span> (countOption==3) cvs2 -&gt; SetMargin(0,   mgrt,   mgxy,   0);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                    <span class="keywordflow">if</span> (countOption==0) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(mgxy,   0,   0,   mgrt);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    <span class="keywordflow">if</span> (countOption==1) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(0,   mgrt,   0,   mgrt);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    <span class="keywordflow">if</span> (countOption==2) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(mgxy,   0,   mgxy,   0);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                    <span class="keywordflow">if</span> (countOption==3) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(0,   mgrt,   mgxy,   0);</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                    hist_vz_e -&gt; Draw(<span class="stringliteral">&quot;col&quot;</span>);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                    make_hist(hist_vz_e,2);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                    <a class="code hl_function" href="make__hist_8C.html#ade67cc310cce6bc9846d22d282f714ad">make_hist</a>(hist_vz_e,2);</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                    fit_vz_e -&gt; SetLineColor(kBlack);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                    fit_vz_e -&gt; Draw(<span class="stringliteral">&quot;samel&quot;</span>);</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    fileOut -&gt; cd();</div>
@@ -308,7 +308,7 @@ $(function() {
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                        fit_e = <span class="keyword">new</span> TF1(Form(<span class="stringliteral">&quot;fit_e_%d_%d&quot;</span>,iBeam,countOption),<span class="stringliteral">&quot;gaus&quot;</span>,-0.05,0.05);</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                    hist_e -&gt; Fit(fit_e,<span class="stringliteral">&quot;N0Q&quot;</span>);</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                    <span class="keyword">auto</span> cvs2 = cvsFit -&gt; cd(countOption+1);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                    <span class="keyword">auto</span> <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> = cvsFit -&gt; cd(countOption+1);</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                    <span class="keywordtype">double</span> mgxy = 0.18;</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                    <span class="keywordtype">double</span> mgrt = 0.02;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                    <span class="comment">//double mgrt = 0.18;</span></div>
@@ -316,19 +316,19 @@ $(function() {
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                    <span class="keywordtype">double</span> mgrr = 0.02;</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                    <span class="keywordtype">double</span> mgbb = 0.18;</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                    <span class="keywordtype">double</span> mgtt = 0.02;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                    <span class="keywordflow">if</span> (countOption==0) cvs2 -&gt; SetMargin(mgxy,mgrr,   mgbb,mgrt);</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                    <span class="keywordflow">if</span> (countOption==1) cvs2 -&gt; SetMargin(mgll,mgrt,   mgbb,mgrt);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                    <span class="keywordflow">if</span> (countOption==2) cvs2 -&gt; SetMargin(mgxy,mgrr,   mgxy,mgtt);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                    <span class="keywordflow">if</span> (countOption==3) cvs2 -&gt; SetMargin(mgll,mgrt,   mgxy,mgtt);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                    <span class="keywordflow">if</span> (countOption==0) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(mgxy,mgrr,   mgbb,mgrt);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                    <span class="keywordflow">if</span> (countOption==1) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(mgll,mgrt,   mgbb,mgrt);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                    <span class="keywordflow">if</span> (countOption==2) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(mgxy,mgrr,   mgxy,mgtt);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                    <span class="keywordflow">if</span> (countOption==3) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; SetMargin(mgll,mgrt,   mgxy,mgtt);</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                    hist_e -&gt; Draw();</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                    make_hist(hist_e,2);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                    <a class="code hl_function" href="make__hist_8C.html#ade67cc310cce6bc9846d22d282f714ad">make_hist</a>(hist_e,2);</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                    fit_e -&gt; Draw(<span class="stringliteral">&quot;samel&quot;</span>);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                    <span class="keyword">auto</span> lgEFit = <span class="keyword">new</span> TLegend();</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                    lgEFit -&gt; AddEntry((TObject*)<span class="keyword">nullptr</span>,Form(<span class="stringliteral">&quot;%.3f&quot;</span>,fit_e-&gt;GetParameter(2)/beamEnergy*100),<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                    <span class="keyword">auto</span> xIF1 = cvs2-&gt;GetUxmin() + cvs2-&gt;GetLeftMargin();</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                    <span class="keyword">auto</span> xIF2 = cvs2-&gt;GetUxmax() - cvs2-&gt;GetRightMargin();</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                    <span class="keyword">auto</span> yIF1 = cvs2-&gt;GetUymin() + cvs2-&gt;GetBottomMargin();</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                    <span class="keyword">auto</span> yIF2 = cvs2-&gt;GetUymax() - cvs2-&gt;GetTopMargin();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                    <span class="keyword">auto</span> xIF1 = <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetUxmin() + <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetLeftMargin();</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                    <span class="keyword">auto</span> xIF2 = <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetUxmax() - <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetRightMargin();</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                    <span class="keyword">auto</span> yIF1 = <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetUymin() + <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetBottomMargin();</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                    <span class="keyword">auto</span> yIF2 = <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetUymax() - <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a>-&gt;GetTopMargin();</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                    <span class="keyword">auto</span> dx = xIF2 - xIF1;</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                    <span class="keyword">auto</span> dy = yIF2 - yIF1;</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                    <span class="keyword">auto</span> x1 = xIF1 + 0.65*dx;</div>
@@ -495,6 +495,8 @@ $(function() {
 <div class="ttc" id="aclassLKMCTrack_html"><div class="ttname"><a href="classLKMCTrack.html">LKMCTrack</a></div><div class="ttdef"><b>Definition</b> <a href="LKMCTrack_8h_source.html#l00027">LKMCTrack.h:28</a></div></div>
 <div class="ttc" id="aclassLKWindowManager_html_a328b53542a62bcc14108770001fb9840"><div class="ttname"><a href="classLKWindowManager.html#a328b53542a62bcc14108770001fb9840">LKWindowManager::GetWindowManager</a></div><div class="ttdeci">static LKWindowManager * GetWindowManager()</div><div class="ttdef"><b>Definition</b> <a href="LKWindowManager_8cpp_source.html#l00012">LKWindowManager.cpp:12</a></div></div>
 <div class="ttc" id="adraw__energy_8C_html_aa8525da949c6d039f707e4596081bb01"><div class="ttname"><a href="draw__energy_8C.html#aa8525da949c6d039f707e4596081bb01">draw_energy</a></div><div class="ttdeci">void draw_energy()</div><div class="ttdef"><b>Definition</b> <a href="draw__energy_8C_source.html#l00001">draw_energy.C:1</a></div></div>
+<div class="ttc" id="amake__hist_8C_html_ade67cc310cce6bc9846d22d282f714ad"><div class="ttname"><a href="make__hist_8C.html#ade67cc310cce6bc9846d22d282f714ad">make_hist</a></div><div class="ttdeci">void make_hist()</div><div class="ttdef"><b>Definition</b> <a href="make__hist_8C_source.html#l00001">make_hist.C:1</a></div></div>
+<div class="ttc" id="arun__pulse__shape__analysis_8C_html_af108c747a91dfec97adfde0edd8997c0"><div class="ttname"><a href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a></div><div class="ttdeci">TCanvas * cvs2</div><div class="ttdef"><b>Definition</b> <a href="run__pulse__shape__analysis_8C_source.html#l00009">run_pulse_shape_analysis.C:9</a></div></div>
 <div class="ttc" id="atexat__reco_2macros_2run__eve_8C_html_af829f49e47e3734a6e105562cded339b"><div class="ttname"><a href="texat__reco_2macros_2run__eve_8C.html#af829f49e47e3734a6e105562cded339b">trackArray</a></div><div class="ttdeci">TClonesArray * trackArray</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros_2run__eve_8C_source.html#l00001">texat_reco/macros/run_eve.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

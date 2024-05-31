@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: run_sim.cc Source File</title>
+<title>lilak: run_sim.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -56,39 +56,36 @@ $(function() {
 <a href="run__sim_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKLogger_8h.html">LKLogger.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef LILAK_GEANT4</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="LKG4RunManager_8h.html">LKG4RunManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="ATG4RunManager_8h.html">ATG4RunManager.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;FTFP_BERT_HP.hh&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;G4StepLimiterPhysics.hh&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="ATDetectorConstruction_8h.html">ATDetectorConstruction.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="run__sim_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">   10</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="run__sim_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv)</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_define" href="LKLogger_8h.html#a7577b65a19df400c9091cee0258c4257">lk_logger</a>(<span class="stringliteral">&quot;data/log&quot;</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef LILAK_GEANT4</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> runManager = <span class="keyword">new</span> <a class="code hl_class" href="classLKG4RunManager.html">LKG4RunManager</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">auto</span> physicsList = <span class="keyword">new</span> FTFP_BERT_HP;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    physicsList -&gt; RegisterPhysics(<span class="keyword">new</span> G4StepLimiterPhysics());</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    runManager -&gt; SetUserInitialization(physicsList);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    runManager -&gt; AddParameterContainer(argv[1]);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    runManager -&gt; SetUserInitialization(<span class="keyword">new</span> <a class="code hl_class" href="classATDetectorConstruction.html">ATDetectorConstruction</a>());</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    runManager -&gt; Initialize();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    runManager -&gt; GetPar() -&gt; Print();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    runManager -&gt; Run(argc, argv);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">delete</span> runManager;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="ttc" id="aATDetectorConstruction_8h_html"><div class="ttname"><a href="ATDetectorConstruction_8h.html">ATDetectorConstruction.h</a></div></div>
-<div class="ttc" id="aLKG4RunManager_8h_html"><div class="ttname"><a href="LKG4RunManager_8h.html">LKG4RunManager.h</a></div></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="run__sim_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">    9</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="run__sim_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_define" href="LKLogger_8h.html#a7577b65a19df400c9091cee0258c4257">lk_logger</a>(<span class="stringliteral">&quot;data/log&quot;</span>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef LILAK_GEANT4</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <span class="keyword">new</span> <a class="code hl_class" href="classATG4RunManager.html">ATG4RunManager</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> physicsList = <span class="keyword">new</span> FTFP_BERT_HP;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    physicsList -&gt; RegisterPhysics(<span class="keyword">new</span> G4StepLimiterPhysics());</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; SetUserInitialization(physicsList);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddParameterContainer(argv[1]);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Initialize();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetPar() -&gt; Print();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Run(argc, argv);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="ttc" id="aATG4RunManager_8h_html"><div class="ttname"><a href="ATG4RunManager_8h.html">ATG4RunManager.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_a7577b65a19df400c9091cee0258c4257"><div class="ttname"><a href="LKLogger_8h.html#a7577b65a19df400c9091cee0258c4257">lk_logger</a></div><div class="ttdeci">#define lk_logger(logFileName)</div><div class="ttdoc">lilak logger shortcut macros</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00011">LKLogger.h:11</a></div></div>
-<div class="ttc" id="aclassATDetectorConstruction_html"><div class="ttname"><a href="classATDetectorConstruction.html">ATDetectorConstruction</a></div><div class="ttdef"><b>Definition</b> <a href="ATDetectorConstruction_8h_source.html#l00038">ATDetectorConstruction.h:39</a></div></div>
-<div class="ttc" id="aclassLKG4RunManager_html"><div class="ttname"><a href="classLKG4RunManager.html">LKG4RunManager</a></div><div class="ttdef"><b>Definition</b> <a href="LKG4RunManager_8h_source.html#l00028">LKG4RunManager.h:29</a></div></div>
-<div class="ttc" id="arun__sim_8cc_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="run__sim_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition</b> <a href="run__sim_8cc_source.html#l00010">run_sim.cc:10</a></div></div>
+<div class="ttc" id="aclassATG4RunManager_html"><div class="ttname"><a href="classATG4RunManager.html">ATG4RunManager</a></div><div class="ttdef"><b>Definition</b> <a href="ATG4RunManager_8h_source.html#l00007">ATG4RunManager.h:8</a></div></div>
+<div class="ttc" id="adebug__ht_8C_html_a419d07c580c3c8e6ef07cc2023ea382a"><div class="ttname"><a href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a></div><div class="ttdeci">LKRun * run</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00003">debug_ht.C:3</a></div></div>
+<div class="ttc" id="arun__sim_8cc_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="run__sim_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition</b> <a href="run__sim_8cc_source.html#l00009">run_sim.cc:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

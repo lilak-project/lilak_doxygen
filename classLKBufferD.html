@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: LKBufferD Class Reference</title>
+<title>lilak: LKBufferD Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -78,8 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afbac22005f83ed803d27f29363f9c69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45dc087f73140baea8ab08e2b65d472a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a45dc087f73140baea8ab08e2b65d472a">FillGraph</a> (TGraph *graph)</td></tr>
 <tr class="separator:a45dc087f73140baea8ab08e2b65d472a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f59b0428f0abcc5ee4926fd15a003d6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a3f59b0428f0abcc5ee4926fd15a003d6">FillHist</a> (TH1D *hist)</td></tr>
-<tr class="separator:a3f59b0428f0abcc5ee4926fd15a003d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac197874259584eeab6ee48581ebdce87"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#ac197874259584eeab6ee48581ebdce87">FillHist</a> (TH1 *hist)</td></tr>
+<tr class="separator:ac197874259584eeab6ee48581ebdce87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc12fc493fe38c40018630382497d5f5"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#adc12fc493fe38c40018630382497d5f5">GetArray</a> ()</td></tr>
 <tr class="separator:adc12fc493fe38c40018630382497d5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8c78caaa784d20b638d7229546bed9"><td class="memItemLeft" align="right" valign="top">virtual TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a3a8c78caaa784d20b638d7229546bed9">GetGraph</a> ()</td></tr>
@@ -133,15 +133,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aaf9777ac1be9aae7255f69d93e277296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cdf6bb61130f26fc158d9b52dc2c87a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a6cdf6bb61130f26fc158d9b52dc2c87a">fEmpty</a> = true</td></tr>
 <tr class="separator:a6cdf6bb61130f26fc158d9b52dc2c87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4032e88302ce23f6b205ed04e71ad3c2"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a4032e88302ce23f6b205ed04e71ad3c2">fGraph</a></td></tr>
+<tr class="memitem:a4032e88302ce23f6b205ed04e71ad3c2"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a4032e88302ce23f6b205ed04e71ad3c2">fGraph</a> = nullptr</td></tr>
 <tr class="separator:a4032e88302ce23f6b205ed04e71ad3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095f118a4a90313e855310d8de5ddeba"><td class="memItemLeft" align="right" valign="top">TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a095f118a4a90313e855310d8de5ddeba">fHist</a></td></tr>
+<tr class="memitem:a095f118a4a90313e855310d8de5ddeba"><td class="memItemLeft" align="right" valign="top">TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKBufferD.html#a095f118a4a90313e855310d8de5ddeba">fHist</a> = nullptr</td></tr>
 <tr class="separator:a095f118a4a90313e855310d8de5ddeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classLKBufferD.html">LKBufferD</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00012">12</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00008">8</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a10c8c4f5c37c40c42232ed94a138e0ba" name="a10c8c4f5c37c40c42232ed94a138e0ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10c8c4f5c37c40c42232ed94a138e0ba">&#9670;&#160;</a></span>LKBufferD()</h2>
@@ -187,7 +186,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00016">16</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00012">12</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +279,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00011">11</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPad_8cpp_source.html#l00012">ClassImp()</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00006">LKBufferD()</a>.</p>
 
@@ -304,7 +303,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00017">17</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -366,9 +365,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00036">36</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00032">32</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -398,14 +397,14 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00065">65</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00056">GetGraph()</a>.</p>
 
 </div>
 </div>
-<a id="a3f59b0428f0abcc5ee4926fd15a003d6" name="a3f59b0428f0abcc5ee4926fd15a003d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f59b0428f0abcc5ee4926fd15a003d6">&#9670;&#160;</a></span>FillHist()</h2>
+<a id="ac197874259584eeab6ee48581ebdce87" name="ac197874259584eeab6ee48581ebdce87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac197874259584eeab6ee48581ebdce87">&#9670;&#160;</a></span>FillHist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +415,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void LKBufferD::FillHist </td>
           <td>(</td>
-          <td class="paramtype">TH1D *&#160;</td>
+          <td class="paramtype">TH1 *&#160;</td>
           <td class="paramname"><em>hist</em></td><td>)</td>
           <td></td>
         </tr>
@@ -430,7 +429,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00050">50</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00040">GetHist()</a>, and <a class="el" href="LKPad_8cpp_source.html#l00062">LKPad::SetHist()</a>.</p>
 
@@ -459,9 +458,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00038">38</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00034">34</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPad_8h_source.html#l00038">LKPad::GetArrayShaped()</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00072">SetBuffer()</a>.</p>
 
@@ -492,7 +491,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00056">56</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00055">fGraph</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00065">FillGraph()</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00051">fGraph</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00065">FillGraph()</a>.</p>
 
 </div>
 </div>
@@ -538,7 +537,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00125">125</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00106">CalculateGroupFluctuation()</a>.</p>
 
@@ -570,7 +569,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00040">40</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00054">fHist</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00050">FillHist()</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00050">fHist</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00050">FillHist()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00035">Draw()</a>.</p>
 
@@ -596,7 +595,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00092">92</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -620,7 +619,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00078">78</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -647,9 +646,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00027">27</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00023">23</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00072">SetBuffer()</a>.</p>
 
@@ -673,7 +672,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00023">23</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00039">e_cout</a>, <a class="el" href="LKLogger_8h_source.html#l00040">e_info</a>, <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00039">e_cout</a>, <a class="el" href="LKLogger_8h_source.html#l00040">e_info</a>, <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPad_8cpp_source.html#l00035">LKPad::Print()</a>.</p>
 
@@ -703,9 +702,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00032">32</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00028">28</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 </div>
 </div>
@@ -733,9 +732,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00031">31</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00027">27</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPad_8h_source.html#l00033">LKPad::SetBufferShaped()</a>.</p>
 
@@ -765,9 +764,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00033">33</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00029">29</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 </div>
 </div>
@@ -795,9 +794,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00034">34</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00030">30</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, and <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>.</p>
 
 </div>
 </div>
@@ -819,7 +818,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKBufferD_8cpp_source.html#l00072">72</a> of file <a class="el" href="LKBufferD_8cpp_source.html">LKBufferD.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>, <a class="el" href="LKBufferD_8h_source.html#l00051">fEmpty</a>, <a class="el" href="LKBufferD_8h_source.html#l00038">GetArray()</a>, and <a class="el" href="LKBufferD_8h_source.html#l00027">IsEmpty()</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>, <a class="el" href="LKBufferD_8h_source.html#l00047">fEmpty</a>, <a class="el" href="LKBufferD_8h_source.html#l00034">GetArray()</a>, and <a class="el" href="LKBufferD_8h_source.html#l00023">IsEmpty()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPad_8h_source.html#l00035">LKPad::SetBufferShaped()</a>.</p>
 
@@ -849,9 +848,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00041">41</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00037">37</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -889,9 +888,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00043">43</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00039">39</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -919,9 +918,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00040">40</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00036">36</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -959,9 +958,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00042">42</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00038">38</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00052">fArray</a>.</p>
+<p class="reference">References <a class="el" href="LKBufferD_8h_source.html#l00048">fArray</a>.</p>
 
 </div>
 </div>
@@ -986,9 +985,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00052">52</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00048">48</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00011">Clear()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00017">Copy()</a>, <a class="el" href="LKBufferD_8h_source.html#l00036">Fill()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00065">FillGraph()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00050">FillHist()</a>, <a class="el" href="LKBufferD_8h_source.html#l00038">GetArray()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00125">GetGroupMeanStdDev()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00092">GetScale()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00078">GetScale()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00023">Print()</a>, <a class="el" href="LKBufferD_8h_source.html#l00032">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00031">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00033">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00034">SetArray()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00072">SetBuffer()</a>, <a class="el" href="LKBufferD_8h_source.html#l00041">SubtractArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00043">SubtractArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00040">SubtractArray()</a>, and <a class="el" href="LKBufferD_8h_source.html#l00042">SubtractArray()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00011">Clear()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00017">Copy()</a>, <a class="el" href="LKBufferD_8h_source.html#l00032">Fill()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00065">FillGraph()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00050">FillHist()</a>, <a class="el" href="LKBufferD_8h_source.html#l00034">GetArray()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00125">GetGroupMeanStdDev()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00092">GetScale()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00078">GetScale()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00023">Print()</a>, <a class="el" href="LKBufferD_8h_source.html#l00028">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00027">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00029">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00030">SetArray()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00072">SetBuffer()</a>, <a class="el" href="LKBufferD_8h_source.html#l00037">SubtractArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00039">SubtractArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00036">SubtractArray()</a>, and <a class="el" href="LKBufferD_8h_source.html#l00038">SubtractArray()</a>.</p>
 
 </div>
 </div>
@@ -1012,9 +1011,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00051">51</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00047">47</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00011">Clear()</a>, <a class="el" href="LKBufferD_8h_source.html#l00027">IsEmpty()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00023">Print()</a>, <a class="el" href="LKBufferD_8h_source.html#l00032">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00031">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00033">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00034">SetArray()</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00072">SetBuffer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00011">Clear()</a>, <a class="el" href="LKBufferD_8h_source.html#l00023">IsEmpty()</a>, <a class="el" href="LKBufferD_8cpp_source.html#l00023">Print()</a>, <a class="el" href="LKBufferD_8h_source.html#l00028">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00027">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00029">SetArray()</a>, <a class="el" href="LKBufferD_8h_source.html#l00030">SetArray()</a>, and <a class="el" href="LKBufferD_8cpp_source.html#l00072">SetBuffer()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1027,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TGraph* LKBufferD::fGraph</td>
+          <td class="memname">TGraph* LKBufferD::fGraph = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1038,7 +1037,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00055">55</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00051">51</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00056">GetGraph()</a>.</p>
 
@@ -1054,7 +1053,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TH1D* LKBufferD::fHist</td>
+          <td class="memname">TH1D* LKBufferD::fHist = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1064,7 +1063,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00054">54</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKBufferD_8h_source.html#l00050">50</a> of file <a class="el" href="LKBufferD_8h_source.html">LKBufferD.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKBufferD_8cpp_source.html#l00040">GetHist()</a>.</p>
 

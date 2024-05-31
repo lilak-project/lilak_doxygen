@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: testIterate.C Source File</title>
+<title>lilak: testIterate.C Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -259,7 +259,7 @@ $(function() {
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">if</span> (tk1 -&gt; IsCorrelateBoxBand()) graph -&gt; Draw(<span class="stringliteral">&quot;samepz&quot;</span>);</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">auto</span> cvs2 = <a class="code hl_function" href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a>(<span class="stringliteral">&quot;cvs_method2&quot;</span>,80,70,2,1);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> = <a class="code hl_function" href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a>(<span class="stringliteral">&quot;cvs_method2&quot;</span>,80,70,2,1);</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    {</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        tk2 -&gt; Transform();</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
@@ -267,7 +267,7 @@ $(function() {
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keyword">auto</span> graphHoughAtMax = paramPointAtMax -&gt; GetRangeGraphInParamSpace(1);</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keyword">auto</span> graphImageAtMax = paramPointAtMax -&gt; GetBandInImageSpace(x1,x2,y1,<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>);</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        cvs2 -&gt; cd(1);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; cd(1);</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keyword">auto</span> histParam = tk2 -&gt; GetHistParamSpace(Form(<span class="stringliteral">&quot;paramSpace%d&quot;</span>,1));</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        histParam -&gt; Draw(<span class="stringliteral">&quot;colz&quot;</span>);</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
@@ -285,11 +285,11 @@ $(function() {
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        graphImageReinit -&gt; SetFillColor(kGray);</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        graphImageReinit -&gt; SetFillStyle(3245);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        cvs2 -&gt; cd(1);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; cd(1);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        graphHoughAtMax -&gt; Draw(<span class="stringliteral">&quot;samel&quot;</span>);</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        graphHoughReinit -&gt; Draw(<span class="stringliteral">&quot;samel&quot;</span>);</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        cvs2 -&gt; cd(2);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a> -&gt; cd(2);</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keyword">auto</span> histImage = <span class="keyword">new</span> TH2D(Form(<span class="stringliteral">&quot;frame%d&quot;</span>,1), <span class="stringliteral">&quot;&quot;</span>, nx, x1, x2, ny, y1, <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        histImage -&gt; SetTitle(Form(<span class="stringliteral">&quot;%s (%dx%d), TC (x,y) = (%.2f, %.2f);x;y&quot;</span>, tk2-&gt;GetCorrelatorName().Data(), nx, ny, xt, yt));</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keyword">auto</span> marker = <span class="keyword">new</span> TMarker(xt,yt,20);</div>
@@ -321,13 +321,14 @@ $(function() {
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a04f1f9d6cec312c3dc3559e1a3e066c1"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a04f1f9d6cec312c3dc3559e1a3e066c1">SetImageSpaceRange</a></div><div class="ttdeci">void SetImageSpaceRange(int nx, double x1, double x2, int ny, double y1, double y2, int nz, double z1, double z2)</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00071">LKHTLineTracker3D.cpp:71</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a5347e514ebe985fb371754ffd2b5ff83"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a></div><div class="ttdeci">double y2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00104">LKHTLineTracker3D.cpp:104</a></div></div>
 <div class="ttc" id="aLKHTLineTracker_8cpp_html"><div class="ttname"><a href="LKHTLineTracker_8cpp.html">LKHTLineTracker.cpp</a></div></div>
-<div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00178">LKHTLineTracker.h:179</a></div></div>
+<div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00202">LKHTLineTracker.h:203</a></div></div>
 <div class="ttc" id="aclassLKVector3_html_a6dae0d8d544b114a629b6abe758c604aaa02239e38a56f2ce963c08538a105282"><div class="ttname"><a href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604aaa02239e38a56f2ce963c08538a105282">LKVector3::kX</a></div><div class="ttdeci">@ kX</div><div class="ttdef"><b>Definition</b> <a href="LKVector3_8h_source.html#l00019">LKVector3.h:19</a></div></div>
 <div class="ttc" id="aclassLKVector3_html_a6dae0d8d544b114a629b6abe758c604aace6b947b32fecf34328d94d35e06377c"><div class="ttname"><a href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604aace6b947b32fecf34328d94d35e06377c">LKVector3::kY</a></div><div class="ttdeci">@ kY</div><div class="ttdef"><b>Definition</b> <a href="LKVector3_8h_source.html#l00020">LKVector3.h:20</a></div></div>
 <div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_afa4296341a325cd65783394a68db10e8"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#afa4296341a325cd65783394a68db10e8">e_save_all</a></div><div class="ttdeci">#define e_save_all()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00269">macros_detectorplane/ejungwooA.h:269</a></div></div>
 <div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
 <div class="ttc" id="anamespaceejungwoo_html_a078ea57cd7c40b2d1a48a6635e904682"><div class="ttname"><a href="namespaceejungwoo.html#a078ea57cd7c40b2d1a48a6635e904682">ejungwoo::Canvas</a></div><div class="ttdeci">TCanvas * Canvas(const char *name=&quot;&quot;, int wx=800, int wy=680, int dx=1, int dy=1)</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00500">macros_detectorplane/ejungwooA.h:500</a></div></div>
+<div class="ttc" id="arun__pulse__shape__analysis_8C_html_af108c747a91dfec97adfde0edd8997c0"><div class="ttname"><a href="run__pulse__shape__analysis_8C.html#af108c747a91dfec97adfde0edd8997c0">cvs2</a></div><div class="ttdeci">TCanvas * cvs2</div><div class="ttdef"><b>Definition</b> <a href="run__pulse__shape__analysis_8C_source.html#l00009">run_pulse_shape_analysis.C:9</a></div></div>
 <div class="ttc" id="atestIterate_8C_html_ae067e8bfa224afe2714fea889132e0eb"><div class="ttname"><a href="testIterate_8C.html#ae067e8bfa224afe2714fea889132e0eb">testIterate</a></div><div class="ttdeci">void testIterate()</div><div class="ttdef"><b>Definition</b> <a href="testIterate_8C_source.html#l00005">testIterate.C:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

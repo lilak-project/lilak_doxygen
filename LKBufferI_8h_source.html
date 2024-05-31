@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: LKBufferI.h Source File</title>
+<title>lilak: LKBufferI.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLKBufferI.html#a6d0b8d8d4b3cc8aec3892b15ca712619">Draw</a>(Option_t *option=<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classLKBufferI.html#aed50e7b1948488c5a7f2ddf847711ecf">FillGraph</a>(TGraph* graph);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classLKBufferI.html#ac09d10eca0a8e0d091806f24aced6ef8">FillHist</a>(TH1D* hist);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classLKBufferI.html#af26a6b20fb21d388cf9995f088e4d8a6">FillHist</a>(TH1* hist);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">virtual</span> TGraph* <a class="code hl_function" href="classLKBufferI.html#a26c11739ef1abbe1218d13278792b38c">GetGraph</a>();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">virtual</span> TH1D *<a class="code hl_function" href="classLKBufferI.html#ad633f6233c255d373cc26bffa1840e9e">GetHist</a>(TString name=<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
@@ -102,8 +102,8 @@ $(function() {
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a731cb674bc6134e69f92a1ac945a7eb0">   47</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classLKBufferI.html#a731cb674bc6134e69f92a1ac945a7eb0">fEmpty</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a80150e8b779b3b4bcd16b79713d1dc2e">   48</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classLKBufferI.html#a80150e8b779b3b4bcd16b79713d1dc2e">fArray</a>[512];</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a3a7c3625c5c5c975b46f6fdfb04f1b08">   50</a></span>        TH1D *<a class="code hl_variable" href="classLKBufferI.html#a3a7c3625c5c5c975b46f6fdfb04f1b08">fHist</a>; </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a64c03f614aa8f52829e22a69c9eb69fb">   51</a></span>        TGraph *<a class="code hl_variable" href="classLKBufferI.html#a64c03f614aa8f52829e22a69c9eb69fb">fGraph</a>; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a3a7c3625c5c5c975b46f6fdfb04f1b08">   50</a></span>        TH1D *<a class="code hl_variable" href="classLKBufferI.html#a3a7c3625c5c5c975b46f6fdfb04f1b08">fHist</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a64c03f614aa8f52829e22a69c9eb69fb">   51</a></span>        TGraph *<a class="code hl_variable" href="classLKBufferI.html#a64c03f614aa8f52829e22a69c9eb69fb">fGraph</a> = <span class="keyword">nullptr</span>; </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classLKBufferI.html#a53889f620be0e0ce720239a65b943b9a">   53</a></span>    <a class="code hl_function" href="classLKBufferI.html#a53889f620be0e0ce720239a65b943b9a">ClassDef</a>(<a class="code hl_class" href="classLKBufferI.html">LKBufferI</a>,1);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
@@ -131,7 +131,6 @@ $(function() {
 <div class="ttc" id="aclassLKBufferI_html_aa427937a4b1247c482b12de39a834f44"><div class="ttname"><a href="classLKBufferI.html#aa427937a4b1247c482b12de39a834f44">LKBufferI::SubtractArray</a></div><div class="ttdeci">void SubtractArray(double *buffer, double scale)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8h_source.html#l00039">LKBufferI.h:39</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_aa440bdf709163917dde222d84a2e8c93"><div class="ttname"><a href="classLKBufferI.html#aa440bdf709163917dde222d84a2e8c93">LKBufferI::~LKBufferI</a></div><div class="ttdeci">virtual ~LKBufferI()</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8h_source.html#l00012">LKBufferI.h:12</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_aaa190a80c37a32d20d4d29dec306458e"><div class="ttname"><a href="classLKBufferI.html#aaa190a80c37a32d20d4d29dec306458e">LKBufferI::Copy</a></div><div class="ttdeci">void Copy(TObject &amp;object) const</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00017">LKBufferI.cpp:17</a></div></div>
-<div class="ttc" id="aclassLKBufferI_html_ac09d10eca0a8e0d091806f24aced6ef8"><div class="ttname"><a href="classLKBufferI.html#ac09d10eca0a8e0d091806f24aced6ef8">LKBufferI::FillHist</a></div><div class="ttdeci">virtual void FillHist(TH1D *hist)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00050">LKBufferI.cpp:50</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_ac656671bf07b4b3b3806c9da3232f148"><div class="ttname"><a href="classLKBufferI.html#ac656671bf07b4b3b3806c9da3232f148">LKBufferI::GetGroupMeanStdDev</a></div><div class="ttdeci">void GetGroupMeanStdDev(int numGroups, int tb2, double *pedestalGroup, double *stddevGroup)</div><div class="ttdoc">Divide 0-tb2 into numGroups. Evaluate pedestal(mean) and std-dev of each group.</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00125">LKBufferI.cpp:125</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_acbbcc99487e001f4e3d24868a56ec883"><div class="ttname"><a href="classLKBufferI.html#acbbcc99487e001f4e3d24868a56ec883">LKBufferI::SubtractArray</a></div><div class="ttdeci">void SubtractArray(int *buffer, double scale)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8h_source.html#l00038">LKBufferI.h:38</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_ad633f6233c255d373cc26bffa1840e9e"><div class="ttname"><a href="classLKBufferI.html#ad633f6233c255d373cc26bffa1840e9e">LKBufferI::GetHist</a></div><div class="ttdeci">virtual TH1D * GetHist(TString name=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00040">LKBufferI.cpp:40</a></div></div>
@@ -139,6 +138,7 @@ $(function() {
 <div class="ttc" id="aclassLKBufferI_html_aeccab22b3e8eec7bcf4dc717d534999b"><div class="ttname"><a href="classLKBufferI.html#aeccab22b3e8eec7bcf4dc717d534999b">LKBufferI::SetArray</a></div><div class="ttdeci">void SetArray(const unsigned int *buffer)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8h_source.html#l00029">LKBufferI.h:29</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_aed50e7b1948488c5a7f2ddf847711ecf"><div class="ttname"><a href="classLKBufferI.html#aed50e7b1948488c5a7f2ddf847711ecf">LKBufferI::FillGraph</a></div><div class="ttdeci">virtual void FillGraph(TGraph *graph)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00065">LKBufferI.cpp:65</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_af0fc7545710484ab8556b3d0e0cff623"><div class="ttname"><a href="classLKBufferI.html#af0fc7545710484ab8556b3d0e0cff623">LKBufferI::Fill</a></div><div class="ttdeci">void Fill(int tb, int value)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8h_source.html#l00032">LKBufferI.h:32</a></div></div>
+<div class="ttc" id="aclassLKBufferI_html_af26a6b20fb21d388cf9995f088e4d8a6"><div class="ttname"><a href="classLKBufferI.html#af26a6b20fb21d388cf9995f088e4d8a6">LKBufferI::FillHist</a></div><div class="ttdeci">virtual void FillHist(TH1 *hist)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00050">LKBufferI.cpp:50</a></div></div>
 <div class="ttc" id="aclassLKBufferI_html_afee8f477791f595f10105e609a343cba"><div class="ttname"><a href="classLKBufferI.html#afee8f477791f595f10105e609a343cba">LKBufferI::SetBuffer</a></div><div class="ttdeci">void SetBuffer(LKBufferI buffer)</div><div class="ttdef"><b>Definition</b> <a href="LKBufferI_8cpp_source.html#l00072">LKBufferI.cpp:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

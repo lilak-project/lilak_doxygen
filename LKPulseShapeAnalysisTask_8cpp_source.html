@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: LKPulseShapeAnalysisTask.cpp Source File</title>
+<title>lilak: LKPulseShapeAnalysisTask.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -139,22 +139,25 @@ $(function() {
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classLKPulseShapeAnalysisTask.html#aebb398111c4fb2b41c45a710baa2bee1">fUsingDetectorPlane</a>&amp;&amp;padID&gt;=0) {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                TVector3 posReco;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <span class="keywordtype">double</span> driftLengthDummy;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_variable" href="classLKPulseShapeAnalysisTask.html#a0c0ddb3dd5fbc76eeeb5dc89058b2f76">fDetectorPlane</a> -&gt; DriftElectronBack(padID, tb, posReco, driftLengthDummy);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                hit -&gt; SetPosition(posReco);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            countHits++;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;Found &quot;</span> &lt;&lt; countHits &lt;&lt; <span class="stringliteral">&quot; hits&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                TVector3 posError;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordtype">double</span> driftLengthDummy;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_variable" href="classLKPulseShapeAnalysisTask.html#a0c0ddb3dd5fbc76eeeb5dc89058b2f76">fDetectorPlane</a> -&gt; DriftElectronBack(padID, tb, posReco, driftLengthDummy);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                posError = <a class="code hl_variable" href="classLKPulseShapeAnalysisTask.html#a0c0ddb3dd5fbc76eeeb5dc89058b2f76">fDetectorPlane</a> -&gt; GetPositionError(padID);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                hit -&gt; SetPosition(posReco);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                hit -&gt; SetPositionError(posError);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            countHits++;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classLKPulseShapeAnalysisTask.html#a2eaa93031877a5cac902e4bd65699775">   99</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLKPulseShapeAnalysisTask.html#a2eaa93031877a5cac902e4bd65699775">LKPulseShapeAnalysisTask::EndOfRun</a>()</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;Found &quot;</span> &lt;&lt; countHits &lt;&lt; <span class="stringliteral">&quot; hits&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classLKPulseShapeAnalysisTask.html#a2eaa93031877a5cac902e4bd65699775">  102</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLKPulseShapeAnalysisTask.html#a2eaa93031877a5cac902e4bd65699775">LKPulseShapeAnalysisTask::EndOfRun</a>()</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 <div class="ttc" id="aGETChannel_8h_html"><div class="ttname"><a href="GETChannel_8h.html">GETChannel.h</a></div></div>
 <div class="ttc" id="aLKHit_8h_html"><div class="ttname"><a href="LKHit_8h.html">LKHit.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_a83edfb2cbd2a84371c22784d81c7d4b1"><div class="ttname"><a href="LKLogger_8h.html#a83edfb2cbd2a84371c22784d81c7d4b1">lk_warning</a></div><div class="ttdeci">#define lk_warning</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00031">LKLogger.h:31</a></div></div>
@@ -163,7 +166,7 @@ $(function() {
 <div class="ttc" id="aLKPulseShapeAnalysisTask_8h_html"><div class="ttname"><a href="LKPulseShapeAnalysisTask_8h.html">LKPulseShapeAnalysisTask.h</a></div></div>
 <div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00022">GETChannel.h:23</a></div></div>
 <div class="ttc" id="aclassLKChannelAnalyzer_html"><div class="ttname"><a href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a></div><div class="ttdoc">LKChannelAnalyzer find and fit pulse signal from the given channel buffer using input pulse data....</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKChannelAnalyzer_8h_source.html#l00007">macros/dummy_class_writter/output/LKChannelAnalyzer.h:8</a></div></div>
-<div class="ttc" id="aclassLKDetectorSystem_html_a2e72e4e6da3a86868a04055b6bdb9f8e"><div class="ttname"><a href="classLKDetectorSystem.html#a2e72e4e6da3a86868a04055b6bdb9f8e">LKDetectorSystem::GetNumPlanes</a></div><div class="ttdeci">Int_t GetNumPlanes() const</div><div class="ttdef"><b>Definition</b> <a href="LKDetectorSystem_8cpp_source.html#l00105">LKDetectorSystem.cpp:105</a></div></div>
+<div class="ttc" id="aclassLKDetectorSystem_html_a2e72e4e6da3a86868a04055b6bdb9f8e"><div class="ttname"><a href="classLKDetectorSystem.html#a2e72e4e6da3a86868a04055b6bdb9f8e">LKDetectorSystem::GetNumPlanes</a></div><div class="ttdeci">Int_t GetNumPlanes() const</div><div class="ttdef"><b>Definition</b> <a href="LKDetectorSystem_8cpp_source.html#l00107">LKDetectorSystem.cpp:107</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
 <div class="ttc" id="aclassLKHit_html"><div class="ttname"><a href="classLKHit.html">LKHit</a></div><div class="ttdef"><b>Definition</b> <a href="LKHit_8h_source.html#l00021">LKHit.h:22</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html">LKPulseShapeAnalysisTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8h_source.html#l00024">LKPulseShapeAnalysisTask.h:25</a></div></div>
@@ -171,13 +174,13 @@ $(function() {
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_a0c0ddb3dd5fbc76eeeb5dc89058b2f76"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#a0c0ddb3dd5fbc76eeeb5dc89058b2f76">LKPulseShapeAnalysisTask::fDetectorPlane</a></div><div class="ttdeci">LKDetectorPlane * fDetectorPlane</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8h_source.html#l00042">LKPulseShapeAnalysisTask.h:42</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_a1f3c671c2afcad15e5863205a8e643e4"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#a1f3c671c2afcad15e5863205a8e643e4">LKPulseShapeAnalysisTask::fHitArray</a></div><div class="ttdeci">TClonesArray * fHitArray</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8h_source.html#l00039">LKPulseShapeAnalysisTask.h:39</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_a241d108c1ce8dbb11034e25799b94b31"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#a241d108c1ce8dbb11034e25799b94b31">LKPulseShapeAnalysisTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8cpp_source.html#l00042">LKPulseShapeAnalysisTask.cpp:42</a></div></div>
-<div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_a2eaa93031877a5cac902e4bd65699775"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#a2eaa93031877a5cac902e4bd65699775">LKPulseShapeAnalysisTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8cpp_source.html#l00099">LKPulseShapeAnalysisTask.cpp:99</a></div></div>
+<div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_a2eaa93031877a5cac902e4bd65699775"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#a2eaa93031877a5cac902e4bd65699775">LKPulseShapeAnalysisTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8cpp_source.html#l00102">LKPulseShapeAnalysisTask.cpp:102</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_a95ba0c24fc39f32b4807d4a8ddaf71bc"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#a95ba0c24fc39f32b4807d4a8ddaf71bc">LKPulseShapeAnalysisTask::fChannelArray</a></div><div class="ttdeci">TClonesArray * fChannelArray</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8h_source.html#l00038">LKPulseShapeAnalysisTask.h:38</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_ae5213111acecd9a93cdd7839bd638bd5"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#ae5213111acecd9a93cdd7839bd638bd5">LKPulseShapeAnalysisTask::LKPulseShapeAnalysisTask</a></div><div class="ttdeci">LKPulseShapeAnalysisTask()</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8cpp_source.html#l00008">LKPulseShapeAnalysisTask.cpp:8</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_ae82565a97fbdc0f3ab2f545534baee88"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#ae82565a97fbdc0f3ab2f545534baee88">LKPulseShapeAnalysisTask::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8cpp_source.html#l00013">LKPulseShapeAnalysisTask.cpp:13</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_aebb398111c4fb2b41c45a710baa2bee1"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#aebb398111c4fb2b41c45a710baa2bee1">LKPulseShapeAnalysisTask::fUsingDetectorPlane</a></div><div class="ttdeci">bool fUsingDetectorPlane</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8h_source.html#l00041">LKPulseShapeAnalysisTask.h:41</a></div></div>
 <div class="ttc" id="aclassLKPulseShapeAnalysisTask_html_afd28ae2df4fbd328a17eabadcb191b56"><div class="ttname"><a href="classLKPulseShapeAnalysisTask.html#afd28ae2df4fbd328a17eabadcb191b56">LKPulseShapeAnalysisTask::fChannelAnalyzer</a></div><div class="ttdeci">LKChannelAnalyzer * fChannelAnalyzer</div><div class="ttdef"><b>Definition</b> <a href="LKPulseShapeAnalysisTask_8h_source.html#l00043">LKPulseShapeAnalysisTask.h:43</a></div></div>
-<div class="ttc" id="aclassLKRun_html_a1a075b0883cfdf38f7153aca698a17fa"><div class="ttname"><a href="classLKRun.html#a1a075b0883cfdf38f7153aca698a17fa">LKRun::GetDetectorSystem</a></div><div class="ttdeci">LKDetectorSystem * GetDetectorSystem() const</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8cpp_source.html#l01433">LKRun.cpp:1433</a></div></div>
+<div class="ttc" id="aclassLKRun_html_a1a075b0883cfdf38f7153aca698a17fa"><div class="ttname"><a href="classLKRun.html#a1a075b0883cfdf38f7153aca698a17fa">LKRun::GetDetectorSystem</a></div><div class="ttdeci">LKDetectorSystem * GetDetectorSystem() const</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8cpp_source.html#l01466">LKRun.cpp:1466</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

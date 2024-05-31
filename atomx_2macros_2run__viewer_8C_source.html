@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: run_viewer.C Source File</title>
+<title>lilak: run_viewer.C Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -57,12 +57,13 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> = <span class="keyword">new</span> <a class="code hl_class" href="classLKRun.html">LKRun</a>();</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddPar(<span class="stringliteral">&quot;config_viewer.mac&quot;</span>);</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddInputFile(<span class="stringliteral">&quot;/home/ejungwoo/data/atomx/atomx_0058.D0.conv.root&quot;</span>);</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Add(<span class="keyword">new</span> <a class="code hl_class" href="classLKGETChannelViewer.html">LKGETChannelViewer</a>);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Init();</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; ExecuteNextEvent();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="comment">//run -&gt; AddInputFile(&quot;/home/ejungwoo/data/atomx/atomx_0058.d0.conv.root&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; AddInputFile(<span class="stringliteral">&quot;/home/ejungwoo/data/atomx/atomx_0141.conv.root&quot;</span>);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Add(<span class="keyword">new</span> <a class="code hl_class" href="classLKGETChannelViewer.html">LKGETChannelViewer</a>);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; Init();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; ExecuteNextEvent();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="ttc" id="aatomx_2macros_2run__viewer_8C_html_a602dccd769163541de0dac1afc572c0e"><div class="ttname"><a href="atomx_2macros_2run__viewer_8C.html#a602dccd769163541de0dac1afc572c0e">run_viewer</a></div><div class="ttdeci">void run_viewer()</div><div class="ttdef"><b>Definition</b> <a href="atomx_2macros_2run__viewer_8C_source.html#l00001">atomx/macros/run_viewer.C:1</a></div></div>
 <div class="ttc" id="aclassLKGETChannelViewer_html"><div class="ttname"><a href="classLKGETChannelViewer.html">LKGETChannelViewer</a></div><div class="ttdef"><b>Definition</b> <a href="LKGETChannelViewer_8h_source.html#l00013">LKGETChannelViewer.h:14</a></div></div>
 <div class="ttc" id="aclassLKRun_html"><div class="ttname"><a href="classLKRun.html">LKRun</a></div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00035">LKRun.h:36</a></div></div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: LKChannelSimulator.cpp Source File</title>
+<title>lilak: LKChannelSimulator.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -131,8 +131,8 @@ $(function() {
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">double</span> value = <a class="code hl_variable" href="classLKChannelSimulator.html#adba1ae2aff0fd5d7d49983ad99112784">fPulse</a> -&gt; EvalTb(tb, tb0, amplitude);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span> (value&gt;amplitude*<a class="code hl_variable" href="classLKChannelSimulator.html#a638bc0af44d585b91dbcdb1ce5944447">fFloorRatio</a> &amp;&amp; <a class="code hl_variable" href="classLKChannelSimulator.html#a2cf8010b5768a1aa08560078d6039168">fPulseErrorScale</a>&gt;0)</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordtype">double</span> error = gRandom -&gt; Gaus(0, <a class="code hl_variable" href="classLKChannelSimulator.html#adba1ae2aff0fd5d7d49983ad99112784">fPulse</a>-&gt;<a class="code hl_function" href="classLKPulse.html#a3da54db016176a496ed00d359aa45702">Error0Tb</a>(tb,tb0,<a class="code hl_variable" href="classLKChannelSimulator.html#a2cf8010b5768a1aa08560078d6039168">fPulseErrorScale</a>*amplitude));</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            value = value + error;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordtype">double</span> <a class="code hl_function" href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a> = gRandom -&gt; Gaus(0, <a class="code hl_variable" href="classLKChannelSimulator.html#adba1ae2aff0fd5d7d49983ad99112784">fPulse</a>-&gt;<a class="code hl_function" href="classLKPulse.html#a3da54db016176a496ed00d359aa45702">Error0Tb</a>(tb,tb0,<a class="code hl_variable" href="classLKChannelSimulator.html#a2cf8010b5768a1aa08560078d6039168">fPulseErrorScale</a>*amplitude));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            value = value + <a class="code hl_function" href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        buffer[tb] = buffer[tb] + value;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
@@ -187,7 +187,8 @@ $(function() {
 <div class="ttc" id="aclassLKChannelSimulator_html_aed7b4eac2d28c6964b206b93287b88a2"><div class="ttname"><a href="classLKChannelSimulator.html#aed7b4eac2d28c6964b206b93287b88a2">LKChannelSimulator::SetPulse</a></div><div class="ttdeci">void SetPulse(LKPulse *pulse)</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKChannelSimulator_8h_source.html#l00024">macros/dummy_class_writter/output/LKChannelSimulator.h:24</a></div></div>
 <div class="ttc" id="aclassLKChannelSimulator_html_af628b697a0d3a2185096ebcf77aa6216"><div class="ttname"><a href="classLKChannelSimulator.html#af628b697a0d3a2185096ebcf77aa6216">LKChannelSimulator::fBackGroundLevel</a></div><div class="ttdeci">double fBackGroundLevel</div><div class="ttdoc">Pedestal. Will be set from pulse data file. Can be set with SetBackGroundLevel().</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKChannelSimulator_8h_source.html#l00079">source/tool/pulse_analysis/LKChannelSimulator.h:79</a></div></div>
 <div class="ttc" id="aclassLKPulse_html"><div class="ttname"><a href="classLKPulse.html">LKPulse</a></div><div class="ttdoc">LKPulse is pulse data class that draw waveform in channel buffer. The class should be initialized wit...</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKPulse_8h_source.html#l00008">macros/dummy_class_writter/output/LKPulse.h:9</a></div></div>
-<div class="ttc" id="aclassLKPulse_html_a3da54db016176a496ed00d359aa45702"><div class="ttname"><a href="classLKPulse.html#a3da54db016176a496ed00d359aa45702">LKPulse::Error0Tb</a></div><div class="ttdeci">double Error0Tb(double tb, double tb0=0, double amplitude=1)</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulse_8cpp_source.html#l00082">source/tool/pulse_analysis/LKPulse.cpp:82</a></div></div>
+<div class="ttc" id="aclassLKPulse_html_a3da54db016176a496ed00d359aa45702"><div class="ttname"><a href="classLKPulse.html#a3da54db016176a496ed00d359aa45702">LKPulse::Error0Tb</a></div><div class="ttdeci">double Error0Tb(double tb, double tb0=0, double amplitude=1)</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulse_8cpp_source.html#l00083">source/tool/pulse_analysis/LKPulse.cpp:83</a></div></div>
+<div class="ttc" id="aserver_8cc_html_a4866b2d37ffc80c5ba705d3fcd1e0ecf"><div class="ttname"><a href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a></div><div class="ttdeci">void error(const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="server_8cc_source.html#l00017">server.cc:17</a></div></div>
 <div class="ttc" id="asource_2tool_2pulse__analysis_2LKChannelSimulator_8cpp_html_af5887af9d58a12f3119f347c25c5c54c"><div class="ttname"><a href="source_2tool_2pulse__analysis_2LKChannelSimulator_8cpp.html#af5887af9d58a12f3119f347c25c5c54c">ClassImp</a></div><div class="ttdeci">ClassImp(LKChannelSimulator)</div></div>
 <div class="ttc" id="asource_2tool_2pulse__analysis_2LKChannelSimulator_8h_html"><div class="ttname"><a href="source_2tool_2pulse__analysis_2LKChannelSimulator_8h.html">LKChannelSimulator.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

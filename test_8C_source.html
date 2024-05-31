@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: test.C Source File</title>
+<title>lilak: test.C Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_33d1a70a2ef97dba7e9eced0aac0e4f1.html">tool</a></li><li class="navelem"><a class="el" href="dir_47455f9f30f820bb283b2d50bc35c2cb.html">hough_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_2bace466e5097f67949efab806b04feb.html">pulse_shape_analysis</a></li><li class="navelem"><a class="el" href="dir_352eca00c08d064a52181a30eb5ccef9.html">temp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -55,37 +55,42 @@ $(function() {
 <div class="contents">
 <a href="test_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">    1</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">test</a>()</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> n = 50;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">auto</span> hist = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;hist&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,n,0,100,n,0,100);</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">auto</span> f1 = <span class="keyword">new</span> TF1(<span class="stringliteral">&quot;f1&quot;</span>,<span class="stringliteral">&quot;-x+100-10&quot;</span>,0,100);</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">auto</span> f2 = <span class="keyword">new</span> TF1(<span class="stringliteral">&quot;f2&quot;</span>,<span class="stringliteral">&quot;-x+100-38&quot;</span>,0,100);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">double</span> x, y, s;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;500; ++i)</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        x = gRandom -&gt; Uniform(0,100);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        s = gRandom -&gt; Uniform(-2,2);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        y = f1 -&gt; Eval(x) + s;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        hist -&gt; Fill(x,y);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        x = gRandom -&gt; Uniform(0,100);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        s = gRandom -&gt; Uniform(-2,2);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        y = f2 -&gt; Eval(x) + s;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        hist -&gt; Fill(x,y);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_function" href="classLKWindowManager.html#a328b53542a62bcc14108770001fb9840">LKWindowManager::GetWindowManager</a>() -&gt; CanvasResize(<span class="stringliteral">&quot;cvs&quot;</span>,100,50,0.6);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; Divide(2,1);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> tracker = <span class="keyword">new</span> <a class="code hl_class" href="classLKHTLineTracker.html">LKHTLineTracker</a>();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    tracker -&gt; SetTransformCenter(0,0);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    tracker -&gt; AddHistogram(hist);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    tracker -&gt; SetParamSpaceBins(60,60);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    tracker -&gt; Transform();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    tracker -&gt; Draw(<a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a>-&gt;cd(1),<a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a>-&gt;cd(2),<span class="stringliteral">&quot;colz::colz&quot;</span>);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00178">LKHTLineTracker.h:179</a></div></div>
-<div class="ttc" id="aclassLKWindowManager_html_a328b53542a62bcc14108770001fb9840"><div class="ttname"><a href="classLKWindowManager.html#a328b53542a62bcc14108770001fb9840">LKWindowManager::GetWindowManager</a></div><div class="ttdeci">static LKWindowManager * GetWindowManager()</div><div class="ttdef"><b>Definition</b> <a href="LKWindowManager_8cpp_source.html#l00012">LKWindowManager.cpp:12</a></div></div>
-<div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> file = <span class="keyword">new</span> TFile(<span class="stringliteral">&quot;/home/ejungwoo/data/atomx/atomx_0113.conv.root&quot;</span>);</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="comment">//auto file = new TFile(&quot;/home/ejungwoo/data/atomx/atomx_0141.conv.root&quot;);</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">auto</span> tree = (TTree*) file -&gt; Get(<span class="stringliteral">&quot;event&quot;</span>);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    TClonesArray *<a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    tree -&gt; SetBranchAddress(<span class="stringliteral">&quot;RawData&quot;</span>,&amp;<a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a>);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">auto</span> pana = <span class="keyword">new</span> <a class="code hl_class" href="classLKPulseAnalyzer.html">LKPulseAnalyzer</a>(<span class="stringliteral">&quot;test_all&quot;</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    pana -&gt; SetTbRange(0,500);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    pana -&gt; SetThreshold(600); <span class="comment">// threshold should be larger than estimated pedestal value</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    pana -&gt; SetPulseHeightCuts(600,4000);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    pana -&gt; SetPulseWidthCuts(4,20);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    pana -&gt; SetPulseTbCuts(10,200);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    pana -&gt; SetPedestalTBRange(0,0,200,500);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> histArray = <span class="keyword">new</span> TObjArray();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    cout &lt;&lt; tree -&gt; GetEntries() &lt;&lt; endl;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iEvent=0; iEvent&lt;tree-&gt;GetEntries(); ++iEvent)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        tree -&gt; GetEntry(iEvent);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;<a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a>-&gt;GetEntries(); ++<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a>*) <a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            pana -&gt; AddChannel(channel-&gt;GetBufferArray());</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    pana -&gt; WriteReferencePulse(); <span class="comment">// this will create pulseReference_MyExperiment.root</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    pana -&gt; WriteTree(); <span class="comment">// this will create summary_MyExperiment.root</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00022">GETChannel.h:23</a></div></div>
+<div class="ttc" id="aclassLKPulseAnalyzer_html"><div class="ttname"><a href="classLKPulseAnalyzer.html">LKPulseAnalyzer</a></div><div class="ttdoc">LKPulseAnalyzer find channels containing single pulse and create reference pulse from their average....</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulseAnalyzer_8h_source.html#l00120">source/tool/pulse_analysis/LKPulseAnalyzer.h:121</a></div></div>
 <div class="ttc" id="atest_8C_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="test_8C_source.html#l00001">test.C:1</a></div></div>
+<div class="ttc" id="atest__psa_8C_html_a8ff78d3a0269ecee63d26fbbe4f209f2"><div class="ttname"><a href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a></div><div class="ttdeci">TClonesArray * channelArray</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00002">test_psa.C:2</a></div></div>
+<div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: LKDriftElectronTask.cpp Source File</title>
+<title>lilak: LKDriftElectronTask.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_434d78435b0e7c728cecbd5305cec790.html">task</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_434d78435b0e7c728cecbd5305cec790.html">task</a></li><li class="navelem"><a class="el" href="dir_6eed92e2ba38cbf54f02c31586d7de0a.html">temp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,178 +68,179 @@ $(function() {
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;Initializing LKDriftElectronTask&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="classLKDriftElectronTask.html#a4e59961cbb72b268ebc7f0d116dce03c">fNumTPCs</a> = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParInt(<span class="stringliteral">&quot;LKDriftElectronTask/numTPCs&quot;</span>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iTPC=0; iTPC&lt;<a class="code hl_variable" href="classLKDriftElectronTask.html#a4e59961cbb72b268ebc7f0d116dce03c">fNumTPCs</a>; ++iTPC)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#af2d5c4d448a032790126b16d9c19018e">fMCStepArray</a>[iTPC] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#ad3256aa943ba85913c67ddaa3f4312c0">fPadArray</a>[iTPC] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#aff262b0f0fed7e0f6479e804bbccb0e4">fDetectorPlane</a>[iTPC] = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#ad2eff9f5476ee0e3d7c5075f52b789c9">fDriftElectronSim</a>[iTPC] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    TString tpcName;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">double</span> driftVelocity;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">double</span> ionizationEnergy;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">int</span> numElectronsInCluster;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> offTimeBucket;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">int</span> numTimeBuckets;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">double</span> timeBucketTime;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        TString tpcName = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/tpcNames&quot;</span>,iTPC);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        TString g4DetName = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/G4DetectorName&quot;</span>);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        TString padPlaneName = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/padPlaneName&quot;</span>);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        TString outputBranchName = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/outputBranchName&quot;</span>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;Initializing LKDriftElectronTask &gt;&gt; &quot;</span> &lt;&lt; tpcName &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; g4DetName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; padPlaneName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; outputBranchName &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">double</span> driftVelocity = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/driftVelocity&quot;</span>);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">double</span> ionizationEnergy = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/ionizationEnergy&quot;</span>);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">int</span> numElectronsInCluster = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParInt(tpcName+<span class="stringliteral">&quot;/numElectronsInCluster&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; UpdatePar(tpcName ,<span class="stringliteral">&quot;LKDriftElectronTask/G4DetectorName atomx&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; UpdatePar(driftVelocity ,<span class="stringliteral">&quot;LKDriftElectronTask/driftVelocity 1 # [cm/us]&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; UpdatePar(ionizationEnergy ,<span class="stringliteral">&quot;LKDriftElectronTask/ionizationEnergy 1 # [eV]&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; UpdatePar(numElectronsInCluster ,<span class="stringliteral">&quot;LKDriftElectronTask/numElectronsInCluster 50 # number of electrons in cluster where cluster is drifted as a bunch&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; UpdatePar(numTimeBuckets ,<span class="stringliteral">&quot;LKDriftElectronTask/numTimeBuckets 512&quot;</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; UpdatePar(timeBucketTime ,<span class="stringliteral">&quot;LKDriftElectronTask/timeBucketTime 2 # [ns]&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//fPar -&gt; UpdatePar(offTimeBucket ,&quot;LKDriftElectronTask/offTimeBucket&quot;);</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_variable" href="classLKDriftElectronTask.html#ae2a742e70c4ba0ec5e1f1eb722c1dcc1">fMCStepArray</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; GetBranchA(Form(<span class="stringliteral">&quot;MCStep_%s&quot;</span>,tpcName.Data()));</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_variable" href="classLKDriftElectronTask.html#abeedde78364558cac0c1228da06ae76b">fDetectorPlane</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; FindDetectorPlane(padPlaneName);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">int</span> offTimeBucket = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParInt(tpcName+<span class="stringliteral">&quot;/offTimeBucket&quot;</span>);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">int</span> numTimeBuckets = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParInt(tpcName+<span class="stringliteral">&quot;/numTimeBuckets&quot;</span>);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">double</span> timeBucketTime = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParInt(tpcName+<span class="stringliteral">&quot;/timeBucketTime&quot;</span>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">//fMCStepArray[iTPC] = (TClonesArray *) fRun -&gt; GetBranch(Form(&quot;MCStep_%s&quot;,g4DetName.Data()));</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#af2d5c4d448a032790126b16d9c19018e">fMCStepArray</a>[iTPC] = (TClonesArray *) <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; GetBranchA(Form(<span class="stringliteral">&quot;MCStep_%s&quot;</span>,g4DetName.Data()));</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#aff262b0f0fed7e0f6479e804bbccb0e4">fDetectorPlane</a>[iTPC] = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; FindDetectorPlane(padPlaneName);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#ad2eff9f5476ee0e3d7c5075f52b789c9">fDriftElectronSim</a>[iTPC] = <span class="keyword">new</span> <a class="code hl_class" href="classLKDriftElectronSim.html">LKDriftElectronSim</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">auto</span> sim = <a class="code hl_variable" href="classLKDriftElectronTask.html#ad2eff9f5476ee0e3d7c5075f52b789c9">fDriftElectronSim</a>[iTPC];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        sim -&gt; SetDriftVelocity(driftVelocity);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        sim -&gt; SetIonizationEnergy(ionizationEnergy);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        sim -&gt; SetNumElectronsInCluster(numElectronsInCluster);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        sim -&gt; SetOffTimeBucket(offTimeBucket);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        sim -&gt; SetNumTimeBuckets(numTimeBuckets);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        sim -&gt; SetTimeBucketTime(timeBucketTime);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        TString gasDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,0);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span> (gasDiffusion==<span class="stringliteral">&quot;value&quot;</span>) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">double</span> valueLD = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordtype">double</span> valueTD = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,2);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            sim -&gt; SetGasDiffusion(valueLD,valueTD);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span> (gasDiffusion.Index(<span class="stringliteral">&quot;hist&quot;</span>)==0) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            TString diffValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            TFile* file = <span class="keyword">new</span> TFile(diffValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">auto</span> funcLD = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;longDiff&quot;</span>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">auto</span> funcTD = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;tranDiff&quot;</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            sim -&gt; SetGasDiffusionFunc(funcLD, funcTD);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">if</span> (gasDiffusion.Index(<span class="stringliteral">&quot;func&quot;</span>)==0) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            TString diffValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/gasDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            TFile* file = <span class="keyword">new</span> TFile(diffValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keyword">auto</span> funcLD = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;longDiff&quot;</span>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keyword">auto</span> funcTD = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;tranDiff&quot;</span>);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            sim -&gt; SetGasDiffusionFunc(funcLD, funcTD);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        TString carDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/CARDiffusion&quot;</span>,0);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span> (carDiffusion==<span class="stringliteral">&quot;value&quot;</span>) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordtype">double</span> diffValue = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/CARDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            sim -&gt; SetCARDiffusion(diffValue);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> (carDiffusion.Index(<span class="stringliteral">&quot;hist&quot;</span>)==0) {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/CARDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keyword">auto</span> diffHist = (TH2D*) file -&gt; Get(<span class="stringliteral">&quot;diffusion&quot;</span>);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            sim -&gt; SetCARDiffusionHist(diffHist);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> (carDiffusion.Index(<span class="stringliteral">&quot;func&quot;</span>)==0) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/CARDiffusion&quot;</span>,1);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keyword">auto</span> diffFunc = (TF2*) file -&gt; Get(<span class="stringliteral">&quot;diffusion&quot;</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            sim -&gt; SetCARDiffusionFunc(diffFunc);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        TString carGain = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/CARGain&quot;</span>,0);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">if</span> (carGain==<span class="stringliteral">&quot;value&quot;</span>) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">double</span> gainValue = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(tpcName+<span class="stringliteral">&quot;/CARGain&quot;</span>,1);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            sim -&gt; SetCARGain(gainValue);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span> (carGain.Index(<span class="stringliteral">&quot;hist&quot;</span>)==0) {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/CARGain&quot;</span>,1);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keyword">auto</span> gainHist = (TH1D*) file -&gt; Get(<span class="stringliteral">&quot;gain&quot;</span>);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            sim -&gt; SetCARGainHist(gainHist);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (carGain.Index(<span class="stringliteral">&quot;func&quot;</span>)==0) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(tpcName+<span class="stringliteral">&quot;/CARGain&quot;</span>,1);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keyword">auto</span> gainFunction = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;gain&quot;</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            sim -&gt; SetCARGainFunc(gainFunction);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="comment">//fPadArray[iTPC] = new TClonesArray(&quot;LKPad&quot;);</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">//fRun -&gt; RegisterBranch(outputBranchName, fPadArray[iTPC]);</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keyword">auto</span> array = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; RegisterBranchA(outputBranchName, <span class="stringliteral">&quot;LKPad&quot;</span>, 500);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <a class="code hl_variable" href="classLKDriftElectronTask.html#ad3256aa943ba85913c67ddaa3f4312c0">fPadArray</a>[iTPC] = array;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classLKDriftElectronTask.html#af47e88e35819365756acf4675c047951">  119</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKDriftElectronTask.html#af47e88e35819365756acf4675c047951">LKDriftElectronTask::Exec</a>(Option_t *option)</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iTPC=0; iTPC&lt;<a class="code hl_variable" href="classLKDriftElectronTask.html#a4e59961cbb72b268ebc7f0d116dce03c">fNumTPCs</a>; ++iTPC)</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keyword">auto</span> mcArray = <a class="code hl_variable" href="classLKDriftElectronTask.html#af2d5c4d448a032790126b16d9c19018e">fMCStepArray</a>[iTPC];</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keyword">auto</span> padArray = <a class="code hl_variable" href="classLKDriftElectronTask.html#ad3256aa943ba85913c67ddaa3f4312c0">fPadArray</a>[iTPC];</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keyword">auto</span> padPlane = <a class="code hl_variable" href="classLKDriftElectronTask.html#aff262b0f0fed7e0f6479e804bbccb0e4">fDetectorPlane</a>[iTPC];</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keyword">auto</span> sim = <a class="code hl_variable" href="classLKDriftElectronTask.html#ad2eff9f5476ee0e3d7c5075f52b789c9">fDriftElectronSim</a>[iTPC];</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        padArray -&gt; Clear(<span class="stringliteral">&quot;C&quot;</span>);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        padPlane -&gt; Clear();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="comment">// Fill electrons into pad plane</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"></span>        Long64_t numMCSteps = mcArray -&gt; GetEntries();</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">for</span> (Long64_t iStep = 0; iStep &lt; numMCSteps; ++iStep)</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <a class="code hl_class" href="classLKMCStep.html">LKMCStep</a>* step = (<a class="code hl_class" href="classLKMCStep.html">LKMCStep</a>*) mcArray -&gt; At(iStep);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            Int_t trackID = step -&gt; GetTrackID();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            Double_t edep = step -&gt; GetEdep();</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            TVector3 posMC(step -&gt; GetX(), step -&gt; GetY(), step -&gt; GetZ());</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            TVector3 posFinal;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordtype">double</span> driftLength;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            padPlane -&gt; DriftElectron(posMC, posFinal, driftLength);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            TVector3 xyl(posFinal.X(),posFinal.Y(),driftLength);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keyword">auto</span> xylDiff = sim -&gt; CalculateGasDiffusion(driftLength);</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keyword">auto</span> xylGas = xyl + xylDiff;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            sim -&gt; SetNumElectrons(edep);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">while</span>(<span class="keywordtype">int</span> numElectrons = sim -&gt; GetNextElectronBunch())</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                <span class="keywordflow">if</span> (numElectrons==0)</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keyword">auto</span> xPlane = xylGas.X();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                <span class="keyword">auto</span> yPlane = xylGas.Y();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                <span class="keyword">auto</span> tb = sim -&gt; GetTimeBucket(xylGas.Z());</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keyword">auto</span> xyc = sim -&gt; CalculateCARDiffusion(xPlane, yPlane, numElectrons);</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                xPlane = xPlane + xyc.X();</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                yPlane = yPlane + xyc.Y();</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <span class="keyword">auto</span> charge = xyc.Z();</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                padPlane -&gt; FillPlane(xPlane, yPlane, tb, charge, trackID);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="comment">// Write active pad to output file</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"></span>        Int_t idx = 0;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <a class="code hl_class" href="classLKPad.html">LKPad</a> *pad;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        TIter itChannel(padPlane -&gt; GetChannelArray());</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">while</span> ((pad = (<a class="code hl_class" href="classLKPad.html">LKPad</a> *) itChannel.Next())) {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <span class="keywordflow">if</span> (pad -&gt; IsActive() == <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <span class="keyword">auto</span> padSave = (<a class="code hl_class" href="classLKPad.html">LKPad</a>*) padArray -&gt; ConstructedAt(idx);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            padSave -&gt; SetPad(pad);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            padSave -&gt; CopyPadData(pad);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            idx++;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;Number of fired pads in plane-&quot;</span> &lt;&lt; iTPC &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; padArray -&gt; GetEntries() &lt;&lt; endl;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    }</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="classLKDriftElectronTask.html#af5be9c26c614f8357c59458e316d2eb0">  190</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLKDriftElectronTask.html#af5be9c26c614f8357c59458e316d2eb0">LKDriftElectronTask::EndOfRun</a>()</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>{</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="classLKDriftElectronTask.html#a5600f465bba1f93c7faa71b595cd6a5c">fDriftElectronSim</a> = <span class="keyword">new</span> <a class="code hl_class" href="classLKDriftElectronSim.html">LKDriftElectronSim</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">auto</span> sim = <a class="code hl_variable" href="classLKDriftElectronTask.html#a5600f465bba1f93c7faa71b595cd6a5c">fDriftElectronSim</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    sim -&gt; SetDriftVelocity(driftVelocity);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    sim -&gt; SetIonizationEnergy(ionizationEnergy);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    sim -&gt; SetNumElectronsInCluster(numElectronsInCluster);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    sim -&gt; SetOffTimeBucket(offTimeBucket);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    sim -&gt; SetNumTimeBuckets(numTimeBuckets);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    sim -&gt; SetTimeBucketTime(timeBucketTime);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    sim -&gt; Print();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">bool</span> initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;# LKDriftElectronTask/gasDiffusion [type] [long] [tran] : diffusion parameter in drift voluem&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;# LKDriftElectronTask/GEMDiffusion [type] [long] [tran] : diffusion parameter in GEM region (or any other charge amplification region)&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;#     [type] should be one of value, hist, func.&quot;</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;#     if [type] is \&quot;value\&quot;, [long] and [trans] are longitudinal and transversal diffusion coefficient&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;#     if [type] is \&quot;hist\&quot;, [long] is root file that contain TH1D objects with name of \&quot;longDiff\&quot; and \&quot;transDiff\&quot; as a function of drift length&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;#     if [type] is \&quot;func\&quot;, [long] is root file that contain TF1  objects with name of \&quot;longDiff\&quot; and \&quot;transDiff\&quot; as a function of drift length&quot;</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;# LKDriftElectronTask/GEMGain [type] [gain] : charge gain paramter in GEM region (or any other charge amplification region)&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> initDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion  value  1  1&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">bool</span> initDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion  hist   hist_long.root  hist_tran.root&quot;</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> initDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; CheckPar(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion  func   func_long.root  func_tran.root&quot;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    TString gasDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,0);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (gasDiffusion==<span class="stringliteral">&quot;value&quot;</span>) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">double</span> valueLD = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">double</span> valueTD = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,2);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        sim -&gt; SetGasDiffusion(valueLD,valueTD);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (gasDiffusion.Index(<span class="stringliteral">&quot;hist&quot;</span>)==0) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        TString diffValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        TFile* file = <span class="keyword">new</span> TFile(diffValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">auto</span> histLD = (TH1*) file -&gt; Get(<span class="stringliteral">&quot;longDiff&quot;</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keyword">auto</span> histTD = (TH1*) file -&gt; Get(<span class="stringliteral">&quot;tranDiff&quot;</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        sim -&gt; SetGasDiffusionHist(histLD, histTD);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (gasDiffusion.Index(<span class="stringliteral">&quot;func&quot;</span>)==0) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        TString diffValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/gasDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        TFile* file = <span class="keyword">new</span> TFile(diffValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">auto</span> funcLD = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;longDiff&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keyword">auto</span> funcTD = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;tranDiff&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        sim -&gt; SetGasDiffusionFunc(funcLD, funcTD);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    TString gemDiffusion = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/GEMDiffusion&quot;</span>,0);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">if</span> (gemDiffusion==<span class="stringliteral">&quot;value&quot;</span>) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">double</span> diffValue = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(<span class="stringliteral">&quot;LKDriftElectronTask/GEMDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        sim -&gt; SetGEMDiffusion(diffValue);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (gemDiffusion.Index(<span class="stringliteral">&quot;hist&quot;</span>)==0) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/GEMDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keyword">auto</span> diffHist = (TH2D*) file -&gt; Get(<span class="stringliteral">&quot;diffusion&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        sim -&gt; SetGEMDiffusionHist(diffHist);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span> (gemDiffusion.Index(<span class="stringliteral">&quot;func&quot;</span>)==0) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/GEMDiffusion&quot;</span>,1);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keyword">auto</span> diffFunc = (TF2*) file -&gt; Get(<span class="stringliteral">&quot;diffusion&quot;</span>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        sim -&gt; SetGEMDiffusionFunc(diffFunc);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    TString gemGain = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/GEMGain&quot;</span>,0);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span> (gemGain==<span class="stringliteral">&quot;value&quot;</span>) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordtype">double</span> gainValue = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParDouble(<span class="stringliteral">&quot;LKDriftElectronTask/GEMGain&quot;</span>,1);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        sim -&gt; SetGEMGain(gainValue);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">if</span> (gemGain.Index(<span class="stringliteral">&quot;hist&quot;</span>)==0) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/GEMGain&quot;</span>,1);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keyword">auto</span> gainHist = (TH1D*) file -&gt; Get(<span class="stringliteral">&quot;gain&quot;</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        sim -&gt; SetGEMGainHist(gainHist);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span> (gemGain.Index(<span class="stringliteral">&quot;func&quot;</span>)==0) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        TString gainValueFile = <a class="code hl_variable" href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">fPar</a> -&gt; GetParString(<span class="stringliteral">&quot;LKDriftElectronTask/GEMGain&quot;</span>,1);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        TFile* file = <span class="keyword">new</span> TFile(gainValueFile,<span class="stringliteral">&quot;read&quot;</span>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keyword">auto</span> gainFunction = (TF1*) file -&gt; Get(<span class="stringliteral">&quot;gain&quot;</span>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        sim -&gt; SetGEMGainFunc(gainFunction);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">auto</span> array = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; RegisterBranchA(<span class="stringliteral">&quot;RawData&quot;</span>, <span class="stringliteral">&quot;LKPad&quot;</span>, 500);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_variable" href="classLKDriftElectronTask.html#ac2a93665ad04309791dc171013073d9d">fPadArray</a> = array;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classLKDriftElectronTask.html#af47e88e35819365756acf4675c047951">  123</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKDriftElectronTask.html#af47e88e35819365756acf4675c047951">LKDriftElectronTask::Exec</a>(Option_t *option)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">auto</span> mcArray = <a class="code hl_variable" href="classLKDriftElectronTask.html#ae2a742e70c4ba0ec5e1f1eb722c1dcc1">fMCStepArray</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">auto</span> padArray = <a class="code hl_variable" href="classLKDriftElectronTask.html#ac2a93665ad04309791dc171013073d9d">fPadArray</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">auto</span> padPlane = <a class="code hl_variable" href="classLKDriftElectronTask.html#abeedde78364558cac0c1228da06ae76b">fDetectorPlane</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">auto</span> sim = <a class="code hl_variable" href="classLKDriftElectronTask.html#a5600f465bba1f93c7faa71b595cd6a5c">fDriftElectronSim</a>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    padArray -&gt; Clear(<span class="stringliteral">&quot;C&quot;</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    padPlane -&gt; Clear();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">// Fill electrons into pad plane</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"></span>    Long64_t numMCSteps = mcArray -&gt; GetEntries();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">for</span> (Long64_t iStep = 0; iStep &lt; numMCSteps; ++iStep)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <a class="code hl_class" href="classLKMCStep.html">LKMCStep</a>* step = (<a class="code hl_class" href="classLKMCStep.html">LKMCStep</a>*) mcArray -&gt; At(iStep);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        Int_t trackID = step -&gt; GetTrackID();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        Double_t edep = step -&gt; GetEdep();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        TVector3 posMC(step -&gt; GetX(), step -&gt; GetY(), step -&gt; GetZ());</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        TVector3 posFinal;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordtype">double</span> driftLength;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        padPlane -&gt; DriftElectron(posMC, posFinal, driftLength);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        TVector3 xyl(posFinal.X(),posFinal.Y(),driftLength);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keyword">auto</span> xylDiff = sim -&gt; CalculateGasDiffusion(driftLength);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keyword">auto</span> xylGas = xyl + xylDiff;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        sim -&gt; SetNumElectrons(edep);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">while</span>(<span class="keywordtype">int</span> numElectrons = sim -&gt; GetNextElectronBunch())</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordflow">if</span> (numElectrons==0)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keyword">auto</span> xPlane = xylGas.X();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keyword">auto</span> yPlane = xylGas.Y();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keyword">auto</span> tb = sim -&gt; GetTimeBucket(xylGas.Z());</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keyword">auto</span> xyc = sim -&gt; CalculateGEMDiffusion(xPlane, yPlane, numElectrons);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            xPlane = xPlane + xyc.X();</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            yPlane = yPlane + xyc.Y();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keyword">auto</span> charge = xyc.Z();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            padPlane -&gt; FillPlane(xPlane, yPlane, tb, charge, trackID);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="comment">// Write active pad to output file</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment"></span>    Int_t idx = 0;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_class" href="classLKPad.html">LKPad</a> *pad;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    TIter itChannel(padPlane -&gt; GetChannelArray());</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">while</span> ((pad = (<a class="code hl_class" href="classLKPad.html">LKPad</a> *) itChannel.Next())) {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">if</span> (pad -&gt; IsActive() == <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="keyword">auto</span> padSave = (<a class="code hl_class" href="classLKPad.html">LKPad</a>*) padArray -&gt; ConstructedAt(idx);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        padSave -&gt; SetPad(pad);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        padSave -&gt; CopyPadData(pad);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        idx++;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; <span class="stringliteral">&quot;Number of fired pads = &quot;</span> &lt;&lt; padArray -&gt; GetEntries() &lt;&lt; endl;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classLKDriftElectronTask.html#af5be9c26c614f8357c59458e316d2eb0">  191</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLKDriftElectronTask.html#af5be9c26c614f8357c59458e316d2eb0">LKDriftElectronTask::EndOfRun</a>()</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
 <div class="ttc" id="aLKDriftElectronTask_8cpp_html_a2fcf8ca0f92da0190db5aa587b7dd09d"><div class="ttname"><a href="LKDriftElectronTask_8cpp.html#a2fcf8ca0f92da0190db5aa587b7dd09d">ClassImp</a></div><div class="ttdeci">ClassImp(LKDriftElectronTask)</div></div>
 <div class="ttc" id="aLKDriftElectronTask_8h_html"><div class="ttname"><a href="LKDriftElectronTask_8h.html">LKDriftElectronTask.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00030">LKLogger.h:30</a></div></div>
@@ -247,14 +248,13 @@ $(function() {
 <div class="ttc" id="aclassLKDriftElectronSim_html"><div class="ttname"><a href="classLKDriftElectronSim.html">LKDriftElectronSim</a></div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronSim_8h_source.html#l00012">LKDriftElectronSim.h:13</a></div></div>
 <div class="ttc" id="aclassLKDriftElectronTask_html"><div class="ttname"><a href="classLKDriftElectronTask.html">LKDriftElectronTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00028">LKDriftElectronTask.h:29</a></div></div>
 <div class="ttc" id="aclassLKDriftElectronTask_html_a34fe948a5d231d869c9da34c417f474c"><div class="ttname"><a href="classLKDriftElectronTask.html#a34fe948a5d231d869c9da34c417f474c">LKDriftElectronTask::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8cpp_source.html#l00012">LKDriftElectronTask.cpp:12</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_a4e59961cbb72b268ebc7f0d116dce03c"><div class="ttname"><a href="classLKDriftElectronTask.html#a4e59961cbb72b268ebc7f0d116dce03c">LKDriftElectronTask::fNumTPCs</a></div><div class="ttdeci">int fNumTPCs</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00038">LKDriftElectronTask.h:38</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_ad2eff9f5476ee0e3d7c5075f52b789c9"><div class="ttname"><a href="classLKDriftElectronTask.html#ad2eff9f5476ee0e3d7c5075f52b789c9">LKDriftElectronTask::fDriftElectronSim</a></div><div class="ttdeci">LKDriftElectronSim * fDriftElectronSim[4]</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00042">LKDriftElectronTask.h:42</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_ad3256aa943ba85913c67ddaa3f4312c0"><div class="ttname"><a href="classLKDriftElectronTask.html#ad3256aa943ba85913c67ddaa3f4312c0">LKDriftElectronTask::fPadArray</a></div><div class="ttdeci">TClonesArray * fPadArray[4]</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00040">LKDriftElectronTask.h:40</a></div></div>
+<div class="ttc" id="aclassLKDriftElectronTask_html_a5600f465bba1f93c7faa71b595cd6a5c"><div class="ttname"><a href="classLKDriftElectronTask.html#a5600f465bba1f93c7faa71b595cd6a5c">LKDriftElectronTask::fDriftElectronSim</a></div><div class="ttdeci">LKDriftElectronSim * fDriftElectronSim</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00043">LKDriftElectronTask.h:43</a></div></div>
+<div class="ttc" id="aclassLKDriftElectronTask_html_abeedde78364558cac0c1228da06ae76b"><div class="ttname"><a href="classLKDriftElectronTask.html#abeedde78364558cac0c1228da06ae76b">LKDriftElectronTask::fDetectorPlane</a></div><div class="ttdeci">LKDetectorPlane * fDetectorPlane</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00042">LKDriftElectronTask.h:42</a></div></div>
+<div class="ttc" id="aclassLKDriftElectronTask_html_ac2a93665ad04309791dc171013073d9d"><div class="ttname"><a href="classLKDriftElectronTask.html#ac2a93665ad04309791dc171013073d9d">LKDriftElectronTask::fPadArray</a></div><div class="ttdeci">TClonesArray * fPadArray</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00040">LKDriftElectronTask.h:40</a></div></div>
 <div class="ttc" id="aclassLKDriftElectronTask_html_ae2801b92a0688ebfaf7af17c10bfa6a2"><div class="ttname"><a href="classLKDriftElectronTask.html#ae2801b92a0688ebfaf7af17c10bfa6a2">LKDriftElectronTask::LKDriftElectronTask</a></div><div class="ttdeci">LKDriftElectronTask()</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8cpp_source.html#l00007">LKDriftElectronTask.cpp:7</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_af2d5c4d448a032790126b16d9c19018e"><div class="ttname"><a href="classLKDriftElectronTask.html#af2d5c4d448a032790126b16d9c19018e">LKDriftElectronTask::fMCStepArray</a></div><div class="ttdeci">TClonesArray * fMCStepArray[4]</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00039">LKDriftElectronTask.h:39</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_af47e88e35819365756acf4675c047951"><div class="ttname"><a href="classLKDriftElectronTask.html#af47e88e35819365756acf4675c047951">LKDriftElectronTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8cpp_source.html#l00119">LKDriftElectronTask.cpp:119</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_af5be9c26c614f8357c59458e316d2eb0"><div class="ttname"><a href="classLKDriftElectronTask.html#af5be9c26c614f8357c59458e316d2eb0">LKDriftElectronTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8cpp_source.html#l00190">LKDriftElectronTask.cpp:190</a></div></div>
-<div class="ttc" id="aclassLKDriftElectronTask_html_aff262b0f0fed7e0f6479e804bbccb0e4"><div class="ttname"><a href="classLKDriftElectronTask.html#aff262b0f0fed7e0f6479e804bbccb0e4">LKDriftElectronTask::fDetectorPlane</a></div><div class="ttdeci">LKDetectorPlane * fDetectorPlane[4]</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00041">LKDriftElectronTask.h:41</a></div></div>
+<div class="ttc" id="aclassLKDriftElectronTask_html_ae2a742e70c4ba0ec5e1f1eb722c1dcc1"><div class="ttname"><a href="classLKDriftElectronTask.html#ae2a742e70c4ba0ec5e1f1eb722c1dcc1">LKDriftElectronTask::fMCStepArray</a></div><div class="ttdeci">TClonesArray * fMCStepArray</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8h_source.html#l00039">LKDriftElectronTask.h:39</a></div></div>
+<div class="ttc" id="aclassLKDriftElectronTask_html_af47e88e35819365756acf4675c047951"><div class="ttname"><a href="classLKDriftElectronTask.html#af47e88e35819365756acf4675c047951">LKDriftElectronTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8cpp_source.html#l00123">LKDriftElectronTask.cpp:123</a></div></div>
+<div class="ttc" id="aclassLKDriftElectronTask_html_af5be9c26c614f8357c59458e316d2eb0"><div class="ttname"><a href="classLKDriftElectronTask.html#af5be9c26c614f8357c59458e316d2eb0">LKDriftElectronTask::EndOfRun</a></div><div class="ttdeci">bool EndOfRun()</div><div class="ttdef"><b>Definition</b> <a href="LKDriftElectronTask_8cpp_source.html#l00191">LKDriftElectronTask.cpp:191</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a1298df2f206df44122ccdf4d685adf08"><div class="ttname"><a href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">LKGear::fPar</a></div><div class="ttdeci">LKParameterContainer * fPar</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00039">LKGear.h:39</a></div></div>
 <div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
 <div class="ttc" id="aclassLKMCStep_html"><div class="ttname"><a href="classLKMCStep.html">LKMCStep</a></div><div class="ttdef"><b>Definition</b> <a href="LKMCStep_8h_source.html#l00011">LKMCStep.h:12</a></div></div>

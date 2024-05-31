@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: LKPulseFitParameter Class Reference</title>
+<title>lilak: LKPulseFitParameter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -70,21 +70,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a1081ba6fc05c3b6de6f66d363e7b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecdeec0633697fdda2ecc5cddaedd3f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#aecdeec0633697fdda2ecc5cddaedd3f9">LKPulseFitParameter</a> ()</td></tr>
 <tr class="separator:aecdeec0633697fdda2ecc5cddaedd3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c11b8e3c9710ad067dc227b2dbe3b76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a7c11b8e3c9710ad067dc227b2dbe3b76">LKPulseFitParameter</a> (double tbHit, double amplitude, double chi2NDF, int ndf)</td></tr>
-<tr class="separator:a7c11b8e3c9710ad067dc227b2dbe3b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796633f873fd5672fa1c7d75affd9de5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a796633f873fd5672fa1c7d75affd9de5">LKPulseFitParameter</a> (double tbHit, double width, double integral, double amplitude, int ndf, double chi2NDF)</td></tr>
+<tr class="separator:a796633f873fd5672fa1c7d75affd9de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df63aee43380add8da93f95ff88cb31"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a0df63aee43380add8da93f95ff88cb31">~LKPulseFitParameter</a> ()</td></tr>
 <tr class="separator:a0df63aee43380add8da93f95ff88cb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acaf528d4f29266614f0c46f236ef4038"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#acaf528d4f29266614f0c46f236ef4038">fAmplitude</a> = 0</td></tr>
+<tr class="memitem:acaf528d4f29266614f0c46f236ef4038"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#acaf528d4f29266614f0c46f236ef4038">fAmplitude</a> = -1</td></tr>
 <tr class="separator:acaf528d4f29266614f0c46f236ef4038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac368d0db854893a111b89a145274a365"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#ac368d0db854893a111b89a145274a365">fChi2NDF</a> = 0</td></tr>
+<tr class="memitem:ac368d0db854893a111b89a145274a365"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#ac368d0db854893a111b89a145274a365">fChi2NDF</a> = -1</td></tr>
 <tr class="separator:ac368d0db854893a111b89a145274a365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e6725e115bd53e0aeb7ca41eabd0d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a15e6725e115bd53e0aeb7ca41eabd0d7">fNDF</a> = 0</td></tr>
+<tr class="memitem:aac6688d46aff0c271135d66555a584e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#aac6688d46aff0c271135d66555a584e9">fIntegral</a> = -1</td></tr>
+<tr class="separator:aac6688d46aff0c271135d66555a584e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e6725e115bd53e0aeb7ca41eabd0d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a15e6725e115bd53e0aeb7ca41eabd0d7">fNDF</a> = -1</td></tr>
 <tr class="separator:a15e6725e115bd53e0aeb7ca41eabd0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7179f9d17715d2871fac5f0b55211706"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a7179f9d17715d2871fac5f0b55211706">fTbHit</a> = -1</td></tr>
 <tr class="separator:a7179f9d17715d2871fac5f0b55211706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04611efc7aefa95b37f69181aef6222e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLKPulseFitParameter.html#a04611efc7aefa95b37f69181aef6222e">fWidth</a> = -1</td></tr>
+<tr class="separator:a04611efc7aefa95b37f69181aef6222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -119,8 +123,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c11b8e3c9710ad067dc227b2dbe3b76" name="a7c11b8e3c9710ad067dc227b2dbe3b76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c11b8e3c9710ad067dc227b2dbe3b76">&#9670;&#160;</a></span>LKPulseFitParameter() <span class="overload">[2/2]</span></h2>
+<a id="a796633f873fd5672fa1c7d75affd9de5" name="a796633f873fd5672fa1c7d75affd9de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796633f873fd5672fa1c7d75affd9de5">&#9670;&#160;</a></span>LKPulseFitParameter() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,19 +142,31 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>amplitude</em>, </td>
+          <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>chi2NDF</em>, </td>
+          <td class="paramname"><em>integral</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>amplitude</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ndf</em>&#160;</td>
+          <td class="paramname"><em>ndf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>chi2NDF</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -251,7 +267,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">15</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="LKPulseFitParameter_8h_source.html#l00023">fAmplitude</a>, <a class="el" href="LKPulseFitParameter_8h_source.html#l00024">fChi2NDF</a>, <a class="el" href="LKPulseFitParameter_8h_source.html#l00025">fNDF</a>, and <a class="el" href="LKPulseFitParameter_8h_source.html#l00022">fTbHit</a>.</p>
+<p class="reference">References <a class="el" href="LKPulseFitParameter_8h_source.html#l00027">fAmplitude</a>, <a class="el" href="LKPulseFitParameter_8h_source.html#l00029">fChi2NDF</a>, <a class="el" href="LKPulseFitParameter_8h_source.html#l00026">fIntegral</a>, <a class="el" href="LKPulseFitParameter_8h_source.html#l00028">fNDF</a>, <a class="el" href="LKPulseFitParameter_8h_source.html#l00024">fTbHit</a>, and <a class="el" href="LKPulseFitParameter_8h_source.html#l00025">fWidth</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00009">LKPulseFitParameter()</a>.</p>
 
@@ -265,12 +281,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double LKPulseFitParameter::fAmplitude = 0</td>
+          <td class="memname">double LKPulseFitParameter::fAmplitude = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00023">23</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00027">27</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">Clear()</a>.</p>
 
@@ -283,12 +299,30 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double LKPulseFitParameter::fChi2NDF = 0</td>
+          <td class="memname">double LKPulseFitParameter::fChi2NDF = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00024">24</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00029">29</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">Clear()</a>.</p>
+
+</div>
+</div>
+<a id="aac6688d46aff0c271135d66555a584e9" name="aac6688d46aff0c271135d66555a584e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6688d46aff0c271135d66555a584e9">&#9670;&#160;</a></span>fIntegral</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LKPulseFitParameter::fIntegral = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00026">26</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">Clear()</a>.</p>
 
@@ -301,12 +335,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int LKPulseFitParameter::fNDF = 0</td>
+          <td class="memname">int LKPulseFitParameter::fNDF = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00025">25</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00028">28</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">Clear()</a>.</p>
 
@@ -324,7 +358,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00022">22</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00024">24</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">Clear()</a>.</p>
+
+</div>
+</div>
+<a id="a04611efc7aefa95b37f69181aef6222e" name="a04611efc7aefa95b37f69181aef6222e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04611efc7aefa95b37f69181aef6222e">&#9670;&#160;</a></span>fWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LKPulseFitParameter::fWidth = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LKPulseFitParameter_8h_source.html#l00025">25</a> of file <a class="el" href="LKPulseFitParameter_8h_source.html">LKPulseFitParameter.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LKPulseFitParameter_8h_source.html#l00015">Clear()</a>.</p>
 

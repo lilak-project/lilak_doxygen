@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LILAK: anaExtractPulse.C Source File</title>
+<title>lilak: anaExtractPulse.C Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LILAK<span id="projectnumber">&#160;master.224.4da6a83</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
    </div>
   </td>
  </tr>
@@ -241,8 +241,8 @@ $(function() {
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            }</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> ratio : {0.05, 0.25, 0.50, 0.75})</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            {</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                <span class="keywordtype">double</span> <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>,x1,error;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <span class="keyword">auto</span> width = <a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a>[type]-&gt;FullWidthRatioMaximum(<a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a>[type]-&gt;GetHistAverage(),ratio,4,<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>,x1,error);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                <span class="keywordtype">double</span> <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>,x1,<a class="code hl_function" href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <span class="keyword">auto</span> width = <a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a>[type]-&gt;FullWidthRatioMaximum(<a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a>[type]-&gt;GetHistAverage(),ratio,4,<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>,x1,<a class="code hl_function" href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a>);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                graph -&gt; <a class="code hl_function" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a>(graph-&gt;GetN(),ratio*100,width);</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            graph -&gt; Draw(<span class="stringliteral">&quot;samelp&quot;</span>);</div>
@@ -508,6 +508,7 @@ $(function() {
 <div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_ac21ba5541d0ae1de9796abe671a60223"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#ac21ba5541d0ae1de9796abe671a60223">e_batch</a></div><div class="ttdeci">#define e_batch()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00264">macros_detectorplane/ejungwooA.h:264</a></div></div>
 <div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_afa4296341a325cd65783394a68db10e8"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#afa4296341a325cd65783394a68db10e8">e_save_all</a></div><div class="ttdeci">#define e_save_all()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00269">macros_detectorplane/ejungwooA.h:269</a></div></div>
 <div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
+<div class="ttc" id="aserver_8cc_html_a4866b2d37ffc80c5ba705d3fcd1e0ecf"><div class="ttname"><a href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a></div><div class="ttdeci">void error(const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="server_8cc_source.html#l00017">server.cc:17</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_a6a8b0f8c6300c058d85eb1478b9902a3"><div class="ttname"><a href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a></div><div class="ttdeci">LKChannelAnalyzer * ana</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00003">test_psa.C:3</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_a8ff78d3a0269ecee63d26fbbe4f209f2"><div class="ttname"><a href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a></div><div class="ttdeci">TClonesArray * channelArray</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00002">test_psa.C:2</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>
