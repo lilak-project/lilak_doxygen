@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
    </div>
   </td>
  </tr>
@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">auto</span> file = <span class="keyword">new</span> TFile(Form(<span class="stringliteral">&quot;data100/summary_%s.root&quot;</span>,<a class="code hl_variable" href="texat__reco_2macros__psa_2setChannels_8h.html#a566710ab4f5bf8c757817134701c70b7">fTypeNames</a>[iType]));</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">auto</span> tree = (TTree *) file -&gt; Get(<span class="stringliteral">&quot;pulse&quot;</span>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">auto</span> cvsSummary = <a class="code hl_define" href="macros__detectorplane_2ejungwooA_8h.html#aa59166eca35ff1991ded705f0735203c">e_cvs_full</a>(Form(<span class="stringliteral">&quot;cvsSummary_%s&quot;</span>,<a class="code hl_variable" href="texat__reco_2macros__psa_2setChannels_8h.html#a566710ab4f5bf8c757817134701c70b7">fTypeNames</a>[iType]));</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">auto</span> cvsSummary = <a class="code hl_define" href="LKPainter_8h.html#a917a3fb0372e77249a173ca750a395d6">e_cvs_full</a>(Form(<span class="stringliteral">&quot;cvsSummary_%s&quot;</span>,<a class="code hl_variable" href="texat__reco_2macros__psa_2setChannels_8h.html#a566710ab4f5bf8c757817134701c70b7">fTypeNames</a>[iType]));</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        cvsSummary -&gt; Divide(3,2);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">int</span> iPad = 1;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -124,8 +124,8 @@ $(function() {
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_define" href="macros__detectorplane_2ejungwooA_8h.html#afa4296341a325cd65783394a68db10e8">e_save_all</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+<div class="ttc" id="aLKPainter_8h_html_a917a3fb0372e77249a173ca750a395d6"><div class="ttname"><a href="LKPainter_8h.html#a917a3fb0372e77249a173ca750a395d6">e_cvs_full</a></div><div class="ttdeci">#define e_cvs_full(name, ratio)</div><div class="ttdef"><b>Definition</b> <a href="LKPainter_8h_source.html#l00010">LKPainter.h:10</a></div></div>
 <div class="ttc" id="adrawExtractSummary_8C_html_a03e1fbb8d38c952c951813e18aeda13b"><div class="ttname"><a href="drawExtractSummary_8C.html#a03e1fbb8d38c952c951813e18aeda13b">drawExtractSummary</a></div><div class="ttdeci">void drawExtractSummary()</div><div class="ttdef"><b>Definition</b> <a href="drawExtractSummary_8C_source.html#l00004">drawExtractSummary.C:4</a></div></div>
-<div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_aa59166eca35ff1991ded705f0735203c"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#aa59166eca35ff1991ded705f0735203c">e_cvs_full</a></div><div class="ttdeci">#define e_cvs_full(name)</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00267">macros_detectorplane/ejungwooA.h:267</a></div></div>
 <div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_afa4296341a325cd65783394a68db10e8"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#afa4296341a325cd65783394a68db10e8">e_save_all</a></div><div class="ttdeci">#define e_save_all()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00269">macros_detectorplane/ejungwooA.h:269</a></div></div>
 <div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
 <div class="ttc" id="atexat__reco_2macros__psa_2setChannels_8h_html_a2ace84dd780a03a0526649461f922433"><div class="ttname"><a href="texat__reco_2macros__psa_2setChannels_8h.html#a2ace84dd780a03a0526649461f922433">SetType</a></div><div class="ttdeci">void SetType(int i=-1)</div><div class="ttdef"><b>Definition</b> <a href="texat__reco_2macros__psa_2setChannels_8h_source.html#l00085">texat_reco/macros_psa/setChannels.h:85</a></div></div>

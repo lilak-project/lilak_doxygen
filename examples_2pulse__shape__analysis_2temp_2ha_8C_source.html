@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
    </div>
   </td>
  </tr>
@@ -55,14 +55,14 @@ $(function() {
 <div class="contents">
 <a href="examples_2pulse__shape__analysis_2temp_2ha_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="examples_2pulse__shape__analysis_2temp_2ha_8C.html#ab0791c9fd5dafe7f60dc17b3bc32218a">    1</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="examples_2pulse__shape__analysis_2temp_2ha_8C.html#ab0791c9fd5dafe7f60dc17b3bc32218a">ha</a>()</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#afa576bf7e3ee7421c65bcd0d040ac1ed">file_histogram</a> = <span class="keyword">new</span> TFile(<span class="stringliteral">&quot;histograms.root&quot;</span>);</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    TIter <a class="code hl_function" href="run__pulse__shape__analysis_8C.html#a235cd5250335ee151d6a1188f0739794">next_key</a>(<a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#afa576bf7e3ee7421c65bcd0d040ac1ed">file_histogram</a> -&gt; GetListOfKeys());</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">auto</span> file_histogram = <span class="keyword">new</span> TFile(<span class="stringliteral">&quot;histograms.root&quot;</span>);</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    TIter <a class="code hl_function" href="run__pulse__shape__analysis_8C.html#a235cd5250335ee151d6a1188f0739794">next_key</a>(file_histogram -&gt; GetListOfKeys());</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordtype">int</span> xRange = 512;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keywordtype">double</span> buffer2[512] = {0};</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">while</span> (<span class="keyword">auto</span> key = <a class="code hl_function" href="run__pulse__shape__analysis_8C.html#a235cd5250335ee151d6a1188f0739794">next_key</a>())</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">auto</span> name = key -&gt; GetName();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">auto</span> hist = (TH1D*) <a class="code hl_variable" href="run__pulse__shape__analysis_8C.html#afa576bf7e3ee7421c65bcd0d040ac1ed">file_histogram</a> -&gt; Get(name);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">auto</span> hist = (TH1D*) file_histogram -&gt; Get(name);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        hist -&gt; Draw();</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">auto</span> buffer1 = hist -&gt; GetArray();</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;512; ++i) buffer2[i] = buffer1[i+1];</div>
@@ -87,7 +87,6 @@ $(function() {
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 <div class="ttc" id="aexamples_2pulse__shape__analysis_2temp_2ha_8C_html_ab0791c9fd5dafe7f60dc17b3bc32218a"><div class="ttname"><a href="examples_2pulse__shape__analysis_2temp_2ha_8C.html#ab0791c9fd5dafe7f60dc17b3bc32218a">ha</a></div><div class="ttdeci">void ha()</div><div class="ttdef"><b>Definition</b> <a href="examples_2pulse__shape__analysis_2temp_2ha_8C_source.html#l00001">examples/pulse_shape_analysis/temp/ha.C:1</a></div></div>
 <div class="ttc" id="arun__pulse__shape__analysis_8C_html_a235cd5250335ee151d6a1188f0739794"><div class="ttname"><a href="run__pulse__shape__analysis_8C.html#a235cd5250335ee151d6a1188f0739794">next_key</a></div><div class="ttdeci">TIter next_key((TCollection *) nullptr)</div></div>
-<div class="ttc" id="arun__pulse__shape__analysis_8C_html_afa576bf7e3ee7421c65bcd0d040ac1ed"><div class="ttname"><a href="run__pulse__shape__analysis_8C.html#afa576bf7e3ee7421c65bcd0d040ac1ed">file_histogram</a></div><div class="ttdeci">TFile * file_histogram</div><div class="ttdef"><b>Definition</b> <a href="run__pulse__shape__analysis_8C_source.html#l00006">run_pulse_shape_analysis.C:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

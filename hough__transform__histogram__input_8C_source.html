@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
   <div class="headertitle"><div class="title">hough_transform_histogram_input.C</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="hough__transform__histogram__input_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="LKWindowManager_8h.html">LKWindowManager.h</a>&quot;</span> <span class="comment">// for lk_win</span></div>
+<a href="hough__transform__histogram__input_8C.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;LKWindowManager.h&quot;</span> <span class="comment">// for lk_win</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="hough__transform__histogram__input_8C.html#a40c8485276ae6b3fbb37f3d5850a4582">    3</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="hough__transform__histogram__input_8C.html#a40c8485276ae6b3fbb37f3d5850a4582">hough_transform_histogram_input</a>()</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
@@ -83,7 +83,7 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        hist -&gt; Fill(x,y);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_define" href="LKWindowManager_8h.html#aa3ac3cc308c89ee3e80d0dd705fa197c">lk_win</a>() -&gt; CanvasResize(<span class="stringliteral">&quot;cvs&quot;</span>,100,50,0.6);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_define" href="macros__detectorplane_2ejungwooA_8h.html#aaff117bb316ce94cd794eab01d245bbb">lk_win</a>() -&gt; CanvasResize(<span class="stringliteral">&quot;cvs&quot;</span>,100,50,0.6);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; Divide(2,1);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> tracker = <span class="keyword">new</span> <a class="code hl_class" href="classLKHTLineTracker.html">LKHTLineTracker</a>();</div>
@@ -99,11 +99,10 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aLKLogger_8h_html_abdf08b50834a103803bcbdff6e038c58"><div class="ttname"><a href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a></div><div class="ttdeci">#define e_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00039">LKLogger.h:39</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00040">LKLogger.h:40</a></div></div>
-<div class="ttc" id="aLKWindowManager_8h_html"><div class="ttname"><a href="LKWindowManager_8h.html">LKWindowManager.h</a></div></div>
-<div class="ttc" id="aLKWindowManager_8h_html_aa3ac3cc308c89ee3e80d0dd705fa197c"><div class="ttname"><a href="LKWindowManager_8h.html#aa3ac3cc308c89ee3e80d0dd705fa197c">lk_win</a></div><div class="ttdeci">#define lk_win()</div><div class="ttdef"><b>Definition</b> <a href="LKWindowManager_8h_source.html#l00008">LKWindowManager.h:8</a></div></div>
 <div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00202">LKHTLineTracker.h:203</a></div></div>
 <div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="ahough__transform__histogram__input_8C_html_a40c8485276ae6b3fbb37f3d5850a4582"><div class="ttname"><a href="hough__transform__histogram__input_8C.html#a40c8485276ae6b3fbb37f3d5850a4582">hough_transform_histogram_input</a></div><div class="ttdeci">void hough_transform_histogram_input()</div><div class="ttdef"><b>Definition</b> <a href="hough__transform__histogram__input_8C_source.html#l00003">hough_transform_histogram_input.C:3</a></div></div>
+<div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_aaff117bb316ce94cd794eab01d245bbb"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#aaff117bb316ce94cd794eab01d245bbb">lk_win</a></div><div class="ttdeci">#define lk_win</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00015">macros_detectorplane/ejungwooA.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

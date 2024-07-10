@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.246.febdb42</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ $(function() {
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="LKFrameBuilder_8h.html">LKFrameBuilder.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="LKEventHeader_8h.html">LKEventHeader.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="GETChannel_8h.html">GETChannel.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="LKMFMConversionTask_8h.html">LKMFMConversionTask.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="stark_2temp_2zzz_2LKMFMConversionTask_8h.html">LKMFMConversionTask.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//#define DEBUG_LKFRAMEBUILDER</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//#define DEBUG_UNPACKFRAME_CUT 459961344</span></div>
@@ -259,7 +259,7 @@ $(function() {
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="comment">// frameAt ///////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <span class="keywordflow">try</span> { subFrame = frame.frameAt(i); }</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <a class="code hl_define" href="LKLogger_8h.html#a36dfffc5139de67b277a1c654add9647">e_debug</a> &lt;&lt; <span class="stringliteral">&quot;Error at frameAt(&quot;</span>&lt;&lt;i&lt;&lt;<span class="stringliteral">&quot;)&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <a class="code hl_define" href="LKLogger_8h.html#acc94f99798b0bc089b8901ce55339419">e_error</a> &lt;&lt; <span class="stringliteral">&quot;Error at frameAt(&quot;</span>&lt;&lt;i&lt;&lt;<span class="stringliteral">&quot;)&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                <a class="code hl_define" href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a> &lt;&lt; e.what() &lt;&lt; endl;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            }</div>
@@ -268,7 +268,7 @@ $(function() {
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            Int_t numItems;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keywordflow">try</span> { numItems = (*subFrame.get()).itemCount(); <span class="comment">/*Make sure we have data*/</span> }</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e){</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                <a class="code hl_define" href="LKLogger_8h.html#a36dfffc5139de67b277a1c654add9647">e_debug</a> &lt;&lt; <span class="stringliteral">&quot;Error at (*subFrame.get()).itemCount()&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                <a class="code hl_define" href="LKLogger_8h.html#acc94f99798b0bc089b8901ce55339419">e_error</a> &lt;&lt; <span class="stringliteral">&quot;Error at (*subFrame.get()).itemCount()&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                <a class="code hl_define" href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a> &lt;&lt; e.what() &lt;&lt; endl;</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            }</div>
@@ -280,7 +280,7 @@ $(function() {
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                }</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            }</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <a class="code hl_define" href="LKLogger_8h.html#a36dfffc5139de67b277a1c654add9647">e_debug</a> &lt;&lt; <span class="stringliteral">&quot;Error at ValidateFrame&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <a class="code hl_define" href="LKLogger_8h.html#acc94f99798b0bc089b8901ce55339419">e_error</a> &lt;&lt; <span class="stringliteral">&quot;Error at ValidateFrame&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <a class="code hl_define" href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a> &lt;&lt; e.what() &lt;&lt; endl;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            }</div>
@@ -777,8 +777,8 @@ $(function() {
 <div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>                {</div>
 <div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>                    <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a> *) <a class="code hl_variable" href="classLKFrameBuilder.html#a4c3dabbc902ce3b26f844d479cbd6eb1">fChannelArray</a> -&gt; ConstructedAt(<a class="code hl_variable" href="classLKFrameBuilder.html#a13a9f27e15112610b0634dc8653770d3">fCountChannels</a>);</div>
 <div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>                    channel -&gt; SetChannelID(<a class="code hl_variable" href="classLKFrameBuilder.html#a13a9f27e15112610b0634dc8653770d3">fCountChannels</a>);</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                    channel -&gt; SetFrameNo(frameIdx);</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>                    channel -&gt; SetDecayNo(decayIdx);</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                    <span class="comment">//channel -&gt; SetFrameNo(frameIdx);</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>                    <span class="comment">//channel -&gt; SetDecayNo(decayIdx);</span></div>
 <div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>                    channel -&gt; SetCobo(coboIdx);</div>
 <div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                    channel -&gt; SetAsad(asad);</div>
 <div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>                    channel -&gt; SetAget(aget);</div>
@@ -812,11 +812,10 @@ $(function() {
 <div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_a10cdd0b12a6a1056a779b6b1f9b33297"><div class="ttname"><a href="LKLogger_8h.html#a10cdd0b12a6a1056a779b6b1f9b33297">lk_error</a></div><div class="ttdeci">#define lk_error</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00033">LKLogger.h:33</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_a205131baf02ac0044e9bf0462253dcc7"><div class="ttname"><a href="LKLogger_8h.html#a205131baf02ac0044e9bf0462253dcc7">lk_debug</a></div><div class="ttdeci">#define lk_debug</div><div class="ttdoc">lilak debug logger</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00028">LKLogger.h:28</a></div></div>
-<div class="ttc" id="aLKLogger_8h_html_a36dfffc5139de67b277a1c654add9647"><div class="ttname"><a href="LKLogger_8h.html#a36dfffc5139de67b277a1c654add9647">e_debug</a></div><div class="ttdeci">#define e_debug</div><div class="ttdoc">lilak logger for non-LKGear classes and macros. These will not create line-header</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00038">LKLogger.h:38</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_a83edfb2cbd2a84371c22784d81c7d4b1"><div class="ttname"><a href="LKLogger_8h.html#a83edfb2cbd2a84371c22784d81c7d4b1">lk_warning</a></div><div class="ttdeci">#define lk_warning</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00031">LKLogger.h:31</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00030">LKLogger.h:30</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_abdf08b50834a103803bcbdff6e038c58"><div class="ttname"><a href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a></div><div class="ttdeci">#define e_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00039">LKLogger.h:39</a></div></div>
-<div class="ttc" id="aLKMFMConversionTask_8h_html"><div class="ttname"><a href="LKMFMConversionTask_8h.html">LKMFMConversionTask.h</a></div></div>
+<div class="ttc" id="aLKLogger_8h_html_acc94f99798b0bc089b8901ce55339419"><div class="ttname"><a href="LKLogger_8h.html#acc94f99798b0bc089b8901ce55339419">e_error</a></div><div class="ttdeci">#define e_error</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00043">LKLogger.h:43</a></div></div>
 <div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00022">GETChannel.h:23</a></div></div>
 <div class="ttc" id="aclassLKChannelAnalyzer_html"><div class="ttname"><a href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a></div><div class="ttdoc">LKChannelAnalyzer find and fit pulse signal from the given channel buffer using input pulse data....</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKChannelAnalyzer_8h_source.html#l00007">macros/dummy_class_writter/output/LKChannelAnalyzer.h:8</a></div></div>
 <div class="ttc" id="aclassLKChannelAnalyzer_html_a64e07266fdc050cdf6e0d9f213bf52aa"><div class="ttname"><a href="classLKChannelAnalyzer.html#a64e07266fdc050cdf6e0d9f213bf52aa">LKChannelAnalyzer::GetNumHits</a></div><div class="ttdeci">int GetNumHits() const</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKChannelAnalyzer_8h_source.html#l00018">macros/dummy_class_writter/output/LKChannelAnalyzer.h:18</a></div></div>
@@ -868,8 +867,8 @@ $(function() {
 <div class="ttc" id="aclassLKFrameBuilder_html_af7b2513889903759f33756d4e1314505"><div class="ttname"><a href="classLKFrameBuilder.html#af7b2513889903759f33756d4e1314505">LKFrameBuilder::fPrevEventIdx</a></div><div class="ttdeci">Int_t fPrevEventIdx</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00121">LKFrameBuilder.h:121</a></div></div>
 <div class="ttc" id="aclassLKFrameBuilder_html_afa07d1b88a88d8aeea219fe832a03c9a"><div class="ttname"><a href="classLKFrameBuilder.html#afa07d1b88a88d8aeea219fe832a03c9a">LKFrameBuilder::WriteChannels</a></div><div class="ttdeci">void WriteChannels()</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8cpp_source.html#l00697">LKFrameBuilder.cpp:697</a></div></div>
 <div class="ttc" id="aclassLKFrameBuilder_html_afaf99c6a3d26171ee2c7d41e364be6a1"><div class="ttname"><a href="classLKFrameBuilder.html#afaf99c6a3d26171ee2c7d41e364be6a1">LKFrameBuilder::UnpackFrame</a></div><div class="ttdeci">void UnpackFrame(mfm::Frame &amp;frame)</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8cpp_source.html#l00369">LKFrameBuilder.cpp:369</a></div></div>
-<div class="ttc" id="aclassLKMFMConversionTask_html"><div class="ttname"><a href="classLKMFMConversionTask.html">LKMFMConversionTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKMFMConversionTask_8h_source.html#l00008">LKMFMConversionTask.h:9</a></div></div>
-<div class="ttc" id="aclassLKParameterContainer_html"><div class="ttname"><a href="classLKParameterContainer.html">LKParameterContainer</a></div><div class="ttdef"><b>Definition</b> <a href="LKParameterContainer_8h_source.html#l00125">LKParameterContainer.h:126</a></div></div>
+<div class="ttc" id="aclassLKMFMConversionTask_html"><div class="ttname"><a href="classLKMFMConversionTask.html">LKMFMConversionTask</a></div><div class="ttdef"><b>Definition</b> <a href="source_2mfm_2LKMFMConversionTask_8h_source.html#l00008">source/mfm/LKMFMConversionTask.h:9</a></div></div>
+<div class="ttc" id="aclassLKParameterContainer_html"><div class="ttname"><a href="classLKParameterContainer.html">LKParameterContainer</a></div><div class="ttdef"><b>Definition</b> <a href="LKParameterContainer_8h_source.html#l00116">LKParameterContainer.h:117</a></div></div>
 <div class="ttc" id="aclassWaveForms_html"><div class="ttname"><a href="classWaveForms.html">WaveForms</a></div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00035">LKFrameBuilder.h:35</a></div></div>
 <div class="ttc" id="aclassWaveForms_html_a046a71c23039c8872547a3ba50abcaf8"><div class="ttname"><a href="classWaveForms.html#a046a71c23039c8872547a3ba50abcaf8">WaveForms::doneFPN</a></div><div class="ttdeci">vector&lt; Bool_t &gt; doneFPN</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00043">LKFrameBuilder.h:43</a></div></div>
 <div class="ttc" id="aclassWaveForms_html_a27f95f879182a5f4f7a3eeb2edc687d5"><div class="ttname"><a href="classWaveForms.html#a27f95f879182a5f4f7a3eeb2edc687d5">WaveForms::SiY</a></div><div class="ttdeci">Double_t SiY</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00049">LKFrameBuilder.h:49</a></div></div>
@@ -886,6 +885,7 @@ $(function() {
 <div class="ttc" id="aclassWaveForms_html_ad77923a056e44abaeb24325980b8824d"><div class="ttname"><a href="classWaveForms.html#ad77923a056e44abaeb24325980b8824d">WaveForms::hasFPN</a></div><div class="ttdeci">vector&lt; Bool_t &gt; hasFPN</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00042">LKFrameBuilder.h:42</a></div></div>
 <div class="ttc" id="aclassWaveForms_html_ad863549ecf4669a56b9101138306c31d"><div class="ttname"><a href="classWaveForms.html#ad863549ecf4669a56b9101138306c31d">WaveForms::coboIdx</a></div><div class="ttdeci">UInt_t coboIdx</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00051">LKFrameBuilder.h:51</a></div></div>
 <div class="ttc" id="aclassWaveForms_html_aef0884ef8fe1e435ecf30358b5ff5c17"><div class="ttname"><a href="classWaveForms.html#aef0884ef8fe1e435ecf30358b5ff5c17">WaveForms::hasSignal</a></div><div class="ttdeci">vector&lt; vector&lt; Bool_t &gt; &gt; hasSignal</div><div class="ttdef"><b>Definition</b> <a href="LKFrameBuilder_8h_source.html#l00040">LKFrameBuilder.h:40</a></div></div>
+<div class="ttc" id="astark_2temp_2zzz_2LKMFMConversionTask_8h_html"><div class="ttname"><a href="stark_2temp_2zzz_2LKMFMConversionTask_8h.html">LKMFMConversionTask.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
