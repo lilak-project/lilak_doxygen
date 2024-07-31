@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -62,9 +62,9 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  cout &lt;&lt; Form(<span class="stringliteral">&quot;Analysis : run%04d&quot;</span>,rn) &lt;&lt; endl;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  TCanvas *c1 = <span class="keyword">new</span> TCanvas(<span class="stringliteral">&quot;c1&quot;</span>, <span class="stringliteral">&quot;signal&quot;</span>, 800, 800);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  c1-&gt;Divide(2,2);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  c1-&gt;Draw();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  TCanvas *<a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a> = <span class="keyword">new</span> TCanvas(<span class="stringliteral">&quot;c1&quot;</span>, <span class="stringliteral">&quot;signal&quot;</span>, 800, 800);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;Divide(2,2);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;Draw();</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="comment">//histogram</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="comment">//  TFile *hist=new TFile(Form(&quot;./hbook/run%d.hbook&quot;,rn),&quot;recreate&quot;);</span></div>
@@ -103,7 +103,7 @@ $(function() {
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  ifstream dfile;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  dfile.open(<span class="stringliteral">&quot;LAMPS_TPC_PAD_info_11&quot;</span>);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">int</span> icobo, iasad, iaget, ich;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">double</span> x[22][4][4][68], y[22][4][4][68];</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>[22][4][4][68], <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>[22][4][4][68];</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">int</span> section[22][4][4][68], npad[22][4][4][68], nlayer[22][4][4][68], nasad[22][4][4][68];</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;22; i++){</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;4; j++){</div>
@@ -119,8 +119,8 @@ $(function() {
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    dfile &gt;&gt; iasad;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    dfile &gt;&gt; iaget;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    dfile &gt;&gt; ich;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    dfile &gt;&gt; x[icobo][iasad][iaget][ich];</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    dfile &gt;&gt; y[icobo][iasad][iaget][ich];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    dfile &gt;&gt; <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>[icobo][iasad][iaget][ich];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    dfile &gt;&gt; <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>[icobo][iasad][iaget][ich];</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    dfile &gt;&gt; section[icobo][iasad][iaget][ich];</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    dfile &gt;&gt; npad[icobo][iasad][iaget][ich];</div>
@@ -482,13 +482,13 @@ $(function() {
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>  zpos = ppos*40.*61./1000.;</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>  cout &lt;&lt; Form(<span class="stringliteral">&quot;CoBo%d-AsAd%d-AGET%d,ch%d : ADC-%f, hpos-%d : &quot;</span>,</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>         cobo, asad, aget, ch, ADC, ppos);</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  padxy-&gt;Fill(x[cobo][asad][aget][ch],y[cobo][asad][aget][ch],ADC);</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  padxy-&gt;Fill(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>[cobo][asad][aget][ch],<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>[cobo][asad][aget][ch],ADC);</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  <span class="comment">//padzy-&gt;Fill(ppos,y[cobo][asad][aget][ch],ADC);</span></div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  padzy-&gt;Fill(zpos,y[cobo][asad][aget][ch],ADC);</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>  padzx-&gt;Fill(ppos,x[cobo][asad][aget][ch],ADC);</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>  cout &lt;&lt; x[cobo][asad][aget][ch] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y[cobo][asad][aget][ch] &lt;&lt; endl;</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>  xx[nnch] = x[cobo][asad][aget][ch];</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>  yy[nnch] = y[cobo][asad][aget][ch];</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  padzy-&gt;Fill(zpos,<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>[cobo][asad][aget][ch],ADC);</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>  padzx-&gt;Fill(ppos,<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>[cobo][asad][aget][ch],ADC);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>  cout &lt;&lt; <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>[cobo][asad][aget][ch] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>[cobo][asad][aget][ch] &lt;&lt; endl;</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>  xx[nnch] = <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>[cobo][asad][aget][ch];</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>  yy[nnch] = <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>[cobo][asad][aget][ch];</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>  zz[nnch] = ppos;</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>  aa[nnch] = ADC;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  ss[nnch] = section[cobo][asad][aget][ch];</div>
@@ -506,11 +506,11 @@ $(function() {
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>  drawing:</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <span class="comment">//if(nnch&gt;0){</span></div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    <span class="keywordflow">if</span>(nBToF&gt;=2){</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    c1-&gt;cd(1);</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;cd(1);</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    signal0-&gt;SetStats(0);</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    signal0-&gt;Draw(<span class="stringliteral">&quot;colz&quot;</span>);</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    </div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    c1-&gt;cd(2);</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;cd(2);</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    padxy-&gt;SetStats(0);</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    padxy-&gt;Draw(<span class="stringliteral">&quot;colz&quot;</span>);</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    padxy-&gt;GetXaxis()-&gt;SetTitle(<span class="stringliteral">&quot;X (mm)&quot;</span>);</div>
@@ -541,7 +541,7 @@ $(function() {
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>      arc-&gt;DrawArc(xBToF[i],yBToF[i],10.);</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    }</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    </div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    c1-&gt;cd(3);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;cd(3);</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    padzx-&gt;SetStats(0);</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    padzx-&gt;Draw(<span class="stringliteral">&quot;colz&quot;</span>);</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    padzx-&gt;GetXaxis()-&gt;SetTitle(<span class="stringliteral">&quot;Z (TB)&quot;</span>);</div>
@@ -553,7 +553,7 @@ $(function() {
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    line-&gt;DrawLine(0.,105., 512.,105.);</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    line-&gt;DrawLine(0.,-105., 512.,-105.);</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    </div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    c1-&gt;cd(4);</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;cd(4);</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    padzy-&gt;SetStats(0);</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    padzy-&gt;Draw(<span class="stringliteral">&quot;colz&quot;</span>);</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    padzy-&gt;GetXaxis()-&gt;SetTitle(<span class="stringliteral">&quot;Z (TB)&quot;</span>);</div>
@@ -576,8 +576,8 @@ $(function() {
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="comment">    line-&gt;DrawLine(0.,-105., 512.,-105.);</span></div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="comment">    */</span>    </div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    c1-&gt;Modified();</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    c1-&gt;Update();</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;Modified();</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    <a class="code hl_variable" href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a>-&gt;Update();</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    </div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    <span class="comment">//sleep(1);</span></div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    </div>
@@ -600,6 +600,9 @@ $(function() {
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>}</div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
 <div class="ttc" id="aTPCToF_8C_html_a85909a4d9bcee5dfb40d0ea1038bd42e"><div class="ttname"><a href="TPCToF_8C.html#a85909a4d9bcee5dfb40d0ea1038bd42e">TPCToF</a></div><div class="ttdeci">void TPCToF(int rn=90)</div><div class="ttdef"><b>Definition</b> <a href="TPCToF_8C_source.html#l00004">TPCToF.C:4</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_a47ef1dcd76787ecde3d7fe7d8038597a"><div class="ttname"><a href="X6__Eflat_8C.html#a47ef1dcd76787ecde3d7fe7d8038597a">c1</a></div><div class="ttdeci">TCanvas * c1</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00024">X6_Eflat.C:24</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

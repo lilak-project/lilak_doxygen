@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -171,9 +171,9 @@ $(function() {
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <a class="code hl_function" href="classLKPadInteractive.html#a2021c78a2a2186c1c7825c5e216030b6">AddInteractivePad</a>(<a class="code hl_variable" href="classLKDataViewer.html#aafe42dfeedff5c1f07ef048d3d5c4eb3">fTPadOptControl</a>);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> imenu=0; imenu&lt;4; ++imenu)</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <a class="code hl_variable" href="classLKDataViewer.html#ae5b7ddd26e83783f0265ba4af5cfa200">fSelectMenu</a>[imenu] = 0;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> det=0; det&lt;6; ++det)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>=0; <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;6; ++<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>)</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> opt=0; opt&lt;6; ++opt)</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_variable" href="classLKDataViewer.html#a441b448794fe39c590cd504fcde2be1f">fOptTitle</a>[det][opt] = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_variable" href="classLKDataViewer.html#a441b448794fe39c590cd504fcde2be1f">fOptTitle</a>[<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>][opt] = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_variable" href="classLKDataViewer.html#a441b448794fe39c590cd504fcde2be1f">fOptTitle</a>[0][0] = <span class="stringliteral">&quot;Ohm.&quot;</span>;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_variable" href="classLKDataViewer.html#a441b448794fe39c590cd504fcde2be1f">fOptTitle</a>[0][1] = <span class="stringliteral">&quot;Jun.&quot;</span>;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_variable" href="classLKDataViewer.html#a441b448794fe39c590cd504fcde2be1f">fOptTitle</a>[1][0] = <span class="stringliteral">&quot;Ohm.&quot;</span>;</div>
@@ -201,9 +201,9 @@ $(function() {
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iShow=0; iShow&lt;<a class="code hl_define" href="LKDataViewer_8h.html#a265dd63f284ac2a4e9693c1939024fee">fNP</a>; ++iShow)</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <a class="code hl_variable" href="classLKDataViewer.html#a95bf815ddb959562e78aa428dc125ca4">fHistShow</a>[iShow] = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">int</span> det, dch, dop;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    det = <a class="code hl_variable" href="classLKDataViewer.html#ae5b7ddd26e83783f0265ba4af5cfa200">fSelectMenu</a>[1];</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    dch = <a class="code hl_variable" href="classLKDataViewer.html#ae5b7ddd26e83783f0265ba4af5cfa200">fSelectMenu</a>[2] + (det&gt;0)*12*(det-1);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>, dch, dop;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a> = <a class="code hl_variable" href="classLKDataViewer.html#ae5b7ddd26e83783f0265ba4af5cfa200">fSelectMenu</a>[1];</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    dch = <a class="code hl_variable" href="classLKDataViewer.html#ae5b7ddd26e83783f0265ba4af5cfa200">fSelectMenu</a>[2] + (<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&gt;0)*12*(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>-1);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    dop = <a class="code hl_variable" href="classLKDataViewer.html#ae5b7ddd26e83783f0265ba4af5cfa200">fSelectMenu</a>[3];</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="comment">/*</span></div>
@@ -295,6 +295,7 @@ $(function() {
 <div class="ttc" id="aclassLKDataViewer_html_af7394309c50418888006e525aaa91a58"><div class="ttname"><a href="classLKDataViewer.html#af7394309c50418888006e525aaa91a58">LKDataViewer::fHttxDChControl</a></div><div class="ttdeci">TH2D * fHttxDChControl</div><div class="ttdef"><b>Definition</b> <a href="LKDataViewer_8h_source.html#l00060">LKDataViewer.h:60</a></div></div>
 <div class="ttc" id="aclassLKPadInteractive_html_a2021c78a2a2186c1c7825c5e216030b6"><div class="ttname"><a href="classLKPadInteractive.html#a2021c78a2a2186c1c7825c5e216030b6">LKPadInteractive::AddInteractivePad</a></div><div class="ttdeci">void AddInteractivePad(TVirtualPad *pad, TString option=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="LKPadInteractive_8cpp_source.html#l00006">LKPadInteractive.cpp:6</a></div></div>
 <div class="ttc" id="aclassLKPainter_html_acb6c25802cd1e370239bf4132f44af8b"><div class="ttname"><a href="classLKPainter.html#acb6c25802cd1e370239bf4132f44af8b">LKPainter::GetPainter</a></div><div class="ttdeci">static LKPainter * GetPainter()</div><div class="ttdef"><b>Definition</b> <a href="LKPainter_8cpp_source.html#l00012">LKPainter.cpp:12</a></div></div>
+<div class="ttc" id="aread__conv_8h_html_a47f54f94abffa3117fba01be510f8816"><div class="ttname"><a href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a></div><div class="ttdeci">int det</div><div class="ttdef"><b>Definition</b> <a href="read__conv_8h_source.html#l00002">read_conv.h:2</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

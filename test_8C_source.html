@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -73,9 +73,9 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> histArray = <span class="keyword">new</span> TObjArray();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    cout &lt;&lt; tree -&gt; GetEntries() &lt;&lt; endl;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iEvent=0; iEvent&lt;tree-&gt;GetEntries(); ++iEvent)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>=0; <a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>&lt;tree-&gt;GetEntries(); ++<a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        tree -&gt; GetEntry(iEvent);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        tree -&gt; GetEntry(<a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;<a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a>-&gt;GetEntries(); ++<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a>*) <a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
@@ -88,6 +88,7 @@ $(function() {
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 <div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00022">GETChannel.h:23</a></div></div>
 <div class="ttc" id="aclassLKPulseAnalyzer_html"><div class="ttname"><a href="classLKPulseAnalyzer.html">LKPulseAnalyzer</a></div><div class="ttdoc">LKPulseAnalyzer find channels containing single pulse and create reference pulse from their average....</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulseAnalyzer_8h_source.html#l00120">source/tool/pulse_analysis/LKPulseAnalyzer.h:121</a></div></div>
+<div class="ttc" id="aread__conv_8h_html_a37ad9e220625563b3f69f1651135a9ac"><div class="ttname"><a href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a></div><div class="ttdeci">int iEvent</div><div class="ttdef"><b>Definition</b> <a href="read__conv_8h_source.html#l00008">read_conv.h:8</a></div></div>
 <div class="ttc" id="atest_8C_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="test_8C.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="test_8C_source.html#l00001">test.C:1</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_a8ff78d3a0269ecee63d26fbbe4f209f2"><div class="ttname"><a href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a></div><div class="ttdeci">TClonesArray * channelArray</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00002">test_psa.C:2</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_add7ae95d43f6da1fa29af38bf6e78bfb"><div class="ttname"><a href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a></div><div class="ttdeci">int iChannel</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00001">test_psa.C:1</a></div></div>

@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -520,11 +520,11 @@ $(function() {
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>            <span class="keyword">auto</span> y1 = yAverage - rMax;</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a> = yAverage + rMax;</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>            <span class="keyword">auto</span> dy = (<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>-y1) / numBinsY;</div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> y=y1; y&lt;=<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>; y+=dy)</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>=y1; <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>&lt;=<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>; <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>+=dy)</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>            {</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>                <span class="keyword">auto</span> ybin = <a class="code hl_variable" href="classLKPulseAnalyzer.html#ae80f9bccfddd365458bfc5c21a557351">fHistAccumulate</a> -&gt; GetYaxis() -&gt; FindBin(y);</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>                <span class="keyword">auto</span> ybin = <a class="code hl_variable" href="classLKPulseAnalyzer.html#ae80f9bccfddd365458bfc5c21a557351">fHistAccumulate</a> -&gt; GetYaxis() -&gt; FindBin(<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>                <span class="keyword">auto</span> zValue = <a class="code hl_variable" href="classLKPulseAnalyzer.html#ae80f9bccfddd365458bfc5c21a557351">fHistAccumulate</a> -&gt; GetBinContent(tBin,ybin);</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>                <span class="keywordtype">double</span> residual = yAverage - y;</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>                <span class="keywordtype">double</span> residual = yAverage - <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>;</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>                <a class="code hl_variable" href="classLKPulseAnalyzer.html#a30c89f36aaf20e90adcf018a0c8d7d47">fHistResidual</a> -&gt; Fill(tBin-100-0.5,residual,zValue);</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>            }</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>        }</div>
@@ -967,30 +967,30 @@ $(function() {
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    <span class="keywordtype">double</span> yError1 = DBL_MAX;</div>
 <div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <span class="keywordtype">double</span> yError0 = DBL_MAX;</div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="keywordtype">double</span> x;</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>;</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    <span class="keywordtype">double</span> xLow;</div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    <span class="keywordtype">double</span> xHigh;</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    <span class="keywordtype">double</span> yValue;</div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    <span class="keywordtype">double</span> yError;</div>
 <div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span> </div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    <span class="keywordflow">for</span> (x=xAtMax; x&gt;=xMin; x-=dx)</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    <span class="keywordflow">for</span> (<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>=xAtMax; <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>&gt;=xMin; <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>-=dx)</div>
 <div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    {</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        yValue = hist -&gt; Interpolate(x);</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        yValue = hist -&gt; Interpolate(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>);</div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        yError = TMath::Abs(yValue - yAtRatio);</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>        <span class="keywordflow">if</span> (yError &gt; yError0) { xLow = x + dx; <span class="keywordflow">break</span>; }</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>        <span class="keywordflow">if</span> (yError &gt; yError0) { xLow = <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> + dx; <span class="keywordflow">break</span>; }</div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>        yError0 = yError;</div>
 <div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    }</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    <span class="keywordflow">if</span> (x==xMin)</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>==xMin)</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    <span class="keywordflow">for</span> (x=xAtMax; x&lt;=xMax; x+=dx)</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    <span class="keywordflow">for</span> (<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>=xAtMax; <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>&lt;=xMax; <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>+=dx)</div>
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    {</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>        yValue = hist -&gt; Interpolate(x);</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>        yValue = hist -&gt; Interpolate(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>);</div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>        yError = TMath::Abs(yValue - yAtRatio);</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        <span class="keywordflow">if</span> (yError &gt; yError1) { xHigh = x - dx; <span class="keywordflow">break</span>; }</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        <span class="keywordflow">if</span> (yError &gt; yError1) { xHigh = <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> - dx; <span class="keywordflow">break</span>; }</div>
 <div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        yError1 = yError;</div>
 <div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    }</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <span class="keywordflow">if</span> (x==xMax)</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>==xMax)</div>
 <div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span> </div>
 <div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    tbLeading = xLow;</div>
@@ -1016,6 +1016,8 @@ $(function() {
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_abc88e651d827d77b6db5f12e23f9d154"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a></div><div class="ttdeci">fParamPoint SetPoint(fTransformCenter, y1, z1, t1, p1, y2, z2, t2, p2, fParamData[iy][iz][it][ip])</div></div>
 <div class="ttc" id="aLKLogger_8h_html_a205131baf02ac0044e9bf0462253dcc7"><div class="ttname"><a href="LKLogger_8h.html#a205131baf02ac0044e9bf0462253dcc7">lk_debug</a></div><div class="ttdeci">#define lk_debug</div><div class="ttdoc">lilak debug logger</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00028">LKLogger.h:28</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00040">LKLogger.h:40</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassLKPulseAnalyzer_html"><div class="ttname"><a href="classLKPulseAnalyzer.html">LKPulseAnalyzer</a></div><div class="ttdoc">LKPulseAnalyzer find channels containing single pulse and create reference pulse from their average....</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulseAnalyzer_8h_source.html#l00120">source/tool/pulse_analysis/LKPulseAnalyzer.h:121</a></div></div>
 <div class="ttc" id="aclassLKPulseAnalyzer_html_a00cf3646b0fedcdf4c8623bab252b666"><div class="ttname"><a href="classLKPulseAnalyzer.html#a00cf3646b0fedcdf4c8623bab252b666">LKPulseAnalyzer::DrawReference</a></div><div class="ttdeci">TCanvas * DrawReference(TVirtualPad *pad=(TVirtualPad *) nullptr)</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulseAnalyzer_8cpp_source.html#l00498">source/tool/pulse_analysis/LKPulseAnalyzer.cpp:498</a></div></div>
 <div class="ttc" id="aclassLKPulseAnalyzer_html_a017005a8c1924fbc8902b98eaf78e383"><div class="ttname"><a href="classLKPulseAnalyzer.html#a017005a8c1924fbc8902b98eaf78e383">LKPulseAnalyzer::fCobo</a></div><div class="ttdeci">short fCobo</div><div class="ttdef"><b>Definition</b> <a href="source_2tool_2pulse__analysis_2LKPulseAnalyzer_8h_source.html#l00286">source/tool/pulse_analysis/LKPulseAnalyzer.h:286</a></div></div>

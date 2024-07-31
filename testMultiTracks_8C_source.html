@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -104,14 +104,14 @@ $(function() {
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">auto</span> interception = 0;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        func -&gt; SetParameters(slope,interception);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> ix=0; ix&lt;numRandom; ++ix) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">auto</span> x = gRandom -&gt; Uniform(x1,x2);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">auto</span> y = func -&gt; Eval(x) + gRandom -&gt; Gaus(0,yErrMax);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">if</span> (y&gt;<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>||y&lt;y1) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = gRandom -&gt; Uniform(x1,x2);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a> = func -&gt; Eval(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>) + gRandom -&gt; Gaus(0,yErrMax);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>&gt;<a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a>||<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>&lt;y1) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                --ix;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">auto</span> w = gRandom -&gt; Uniform(wMin,wMax);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            hist -&gt; Fill(x,y,w);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            hist -&gt; Fill(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>,<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>,w);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
@@ -205,6 +205,8 @@ $(function() {
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a04f1f9d6cec312c3dc3559e1a3e066c1"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a04f1f9d6cec312c3dc3559e1a3e066c1">SetImageSpaceRange</a></div><div class="ttdeci">void SetImageSpaceRange(int nx, double x1, double x2, int ny, double y1, double y2, int nz, double z1, double z2)</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00071">LKHTLineTracker3D.cpp:71</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a5347e514ebe985fb371754ffd2b5ff83"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a5347e514ebe985fb371754ffd2b5ff83">y2</a></div><div class="ttdeci">double y2</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00104">LKHTLineTracker3D.cpp:104</a></div></div>
 <div class="ttc" id="aLKHTLineTracker_8cpp_html"><div class="ttname"><a href="LKHTLineTracker_8cpp.html">LKHTLineTracker.cpp</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00202">LKHTLineTracker.h:203</a></div></div>
 <div class="ttc" id="aclassLKVector3_html_a6dae0d8d544b114a629b6abe758c604aaa02239e38a56f2ce963c08538a105282"><div class="ttname"><a href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604aaa02239e38a56f2ce963c08538a105282">LKVector3::kX</a></div><div class="ttdeci">@ kX</div><div class="ttdef"><b>Definition</b> <a href="LKVector3_8h_source.html#l00019">LKVector3.h:19</a></div></div>
 <div class="ttc" id="aclassLKVector3_html_a6dae0d8d544b114a629b6abe758c604aace6b947b32fecf34328d94d35e06377c"><div class="ttname"><a href="classLKVector3.html#a6dae0d8d544b114a629b6abe758c604aace6b947b32fecf34328d94d35e06377c">LKVector3::kY</a></div><div class="ttdeci">@ kY</div><div class="ttdef"><b>Definition</b> <a href="LKVector3_8h_source.html#l00020">LKVector3.h:20</a></div></div>

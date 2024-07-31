@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -64,7 +64,7 @@ $(function() {
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">int</span> ny = 25;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">double</span> x1 = 0;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">double</span> x2 = 100;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">double</span> x, y, d;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>, d;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">auto</span> hist = <span class="keyword">new</span> TH2D(<span class="stringliteral">&quot;hist&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,nx,x1,x2,ny,0,100);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> f1 = <span class="keyword">new</span> TF1(<span class="stringliteral">&quot;f1&quot;</span>,<span class="stringliteral">&quot;0.5*x+50&quot;</span>,x1,x2);</div>
@@ -72,15 +72,15 @@ $(function() {
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;n_samples; ++i)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        x = gRandom -&gt; Uniform(x1,x2);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = gRandom -&gt; Uniform(x1,x2);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        d = gRandom -&gt; Uniform(-2,2);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        y = f1 -&gt; Eval(x) + d;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        hist -&gt; Fill(x,y);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a> = f1 -&gt; Eval(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>) + d;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        hist -&gt; Fill(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>,<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        x = gRandom -&gt; Uniform(x1,x2);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = gRandom -&gt; Uniform(x1,x2);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        d = gRandom -&gt; Uniform(-2,2);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        y = f2 -&gt; Eval(x) + d;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        hist -&gt; Fill(x,y);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a> = f2 -&gt; Eval(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>) + d;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        hist -&gt; Fill(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>,<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> = <a class="code hl_define" href="macros__detectorplane_2ejungwooA_8h.html#aaff117bb316ce94cd794eab01d245bbb">lk_win</a>() -&gt; CanvasResize(<span class="stringliteral">&quot;cvs&quot;</span>,100,50,0.6);</div>
@@ -99,6 +99,8 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aLKLogger_8h_html_abdf08b50834a103803bcbdff6e038c58"><div class="ttname"><a href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a></div><div class="ttdeci">#define e_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00039">LKLogger.h:39</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00040">LKLogger.h:40</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00202">LKHTLineTracker.h:203</a></div></div>
 <div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="ahough__transform__histogram__input_8C_html_a40c8485276ae6b3fbb37f3d5850a4582"><div class="ttname"><a href="hough__transform__histogram__input_8C.html#a40c8485276ae6b3fbb37f3d5850a4582">hough_transform_histogram_input</a></div><div class="ttdeci">void hough_transform_histogram_input()</div><div class="ttdef"><b>Definition</b> <a href="hough__transform__histogram__input_8C_source.html#l00003">hough_transform_histogram_input.C:3</a></div></div>

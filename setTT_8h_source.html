@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -217,24 +217,24 @@ $(function() {
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type==<a class="code hl_enumvalue" href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35a36911a7a74a6932c6b28aa97aeaa6cc2">TexAT2::eType::kCENSX6</a>) <span class="comment">//X6</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        Int_t det = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6det(Asad,Aget,Chan);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        Int_t strip = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6strip(Asad,Aget,Chan);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        Int_t <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a> = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6det(Asad,Aget,Chan);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        Int_t <a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a> = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6strip(Asad,Aget,Chan);</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span>(Aget==1 || Aget==2) <span class="comment">//Junction</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            Double_t posx = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6posx(det,strip-1);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            Double_t posy = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6posy(det,strip-1);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            Double_t posz = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6posz(det,strip-1);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">if</span>(det&lt;100) <span class="comment">//Side</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            Double_t posx = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6posx(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>,<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-1);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            Double_t posy = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6posy(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>,<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-1);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            Double_t posz = <a class="code hl_variable" href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a> -&gt; GetX6posz(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>,<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-1);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;100) <span class="comment">//Side</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="keywordflow">if</span>(det&lt;19) posz += 2.5;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(det&lt;29) posz -= 2.5;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;19) posz += 2.5;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;29) posz -= 2.5;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                errx = -1; <span class="comment">//Detector on yz-plane</span></div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                erry = 1;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                errz = 2.5;</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">else</span> <span class="comment">//Bottom</span></div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">if</span>(det==101 || det==204)</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>==101 || <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>==204)</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                {</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    posx += 2.5;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                    errx = 2.5;</div>
@@ -243,8 +243,8 @@ $(function() {
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                }</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                    <span class="keywordflow">if</span>(det&lt;109) posz -= 2.5;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(det&lt;209) posz += 2.5;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                    <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;109) posz -= 2.5;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;209) posz += 2.5;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                    errx = 1;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                    erry = -1; <span class="comment">//Detector on xz-plane</span></div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                    errz = 2.5;</div>
@@ -253,16 +253,16 @@ $(function() {
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        }</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(Aget==0) <span class="comment">//Ohmic</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordflow">if</span>(det&lt;100)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;100)</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            {</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                Int_t map;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                <span class="keywordflow">if</span>(det&lt;15) map = det-8;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(det&lt;19) map = det-15;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <span class="keywordflow">else</span> map = 27-det;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;15) map = <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>-8;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;19) map = <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>-15;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <span class="keywordflow">else</span> map = 27-<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                <span class="keywordflow">if</span>(det&lt;19) posx = -maxSideX6X;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(det&lt;29) posx = maxSideX6X;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                posy = (strip-2.5)*X6ActLong/4;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;19) posx = -maxSideX6X;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;29) posx = maxSideX6X;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                posy = (<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-2.5)*X6ActLong/4;</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                posz = minX6Z + (map+0.5)*X6AllShort;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                errx = -1; <span class="comment">//Detector on yz-plane</span></div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                erry = X6ActLong/8;</div>
@@ -270,12 +270,12 @@ $(function() {
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            }</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <span class="keywordflow">if</span>(det==101 || det==204)</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>==101 || <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>==204)</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                {</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    <span class="keywordflow">if</span>(det==101) posx = -X6AllShort/2;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>==101) posx = -X6AllShort/2;</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                    <span class="keywordflow">else</span> posx = X6AllShort/2;</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    posy = minBottomX6Y;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    posz = minX6Z + 7*X6AllShort - X6AllLong/2 + (strip-2.5)*X6ActLong/4;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    posz = minX6Z + 7*X6AllShort - X6AllLong/2 + (<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-2.5)*X6ActLong/4;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                    errx = X6ActShort/2;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                    erry = -1; <span class="comment">//Detector on xz-plane</span></div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                    errz = X6ActLong/8;</div>
@@ -283,13 +283,13 @@ $(function() {
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                {</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                    Int_t map;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    <span class="keywordflow">if</span>(det&lt;105) map = det-98;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(det&lt;109) map = det-105;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(det&lt;204) map = 207-det;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                    <span class="keywordflow">else</span> map = 208-det;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;105) map = <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>-98;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;109) map = <a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>-105;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;204) map = 207-<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                    <span class="keywordflow">else</span> map = 208-<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                    <span class="keywordflow">if</span>(det&lt;109) posx = - (X6AllShort + X6AllLong/2 + (strip-2.5)*X6ActLong/4);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    <span class="keywordflow">else</span> posx = X6AllShort + X6AllLong/2 + (strip-2.5)*X6ActLong/4;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                    <span class="keywordflow">if</span>(<a class="code hl_variable" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>&lt;109) posx = - (X6AllShort + X6AllLong/2 + (<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-2.5)*X6ActLong/4);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    <span class="keywordflow">else</span> posx = X6AllShort + X6AllLong/2 + (<a class="code hl_variable" href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a>-2.5)*X6ActLong/4;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    posy = minBottomX6Y;</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                    posz = minX6Z + (map+0.5)*X6AllShort;</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                    errx = X6ActLong/8;</div>
@@ -324,6 +324,8 @@ $(function() {
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35ae507bb1509acba0f075670b2affbcbd4"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35ae507bb1509acba0f075670b2affbcbd4">TexAT2::eType::kForwardSi</a></div><div class="ttdeci">@ kForwardSi</div></div>
 <div class="ttc" id="aclassTexAT2_html_a55ae855b84a57ab66c673f796e412b35aed69ba8242ea7d9eab99a099540515c5"><div class="ttname"><a href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35aed69ba8242ea7d9eab99a099540515c5">TexAT2::eType::kRightChain</a></div><div class="ttdeci">@ kRightChain</div></div>
 <div class="ttc" id="adraw__all_8C_html_ac3569c59593dfc4acf49e9917d86698f"><div class="ttname"><a href="draw__all_8C.html#ac3569c59593dfc4acf49e9917d86698f">fDetector</a></div><div class="ttdeci">TexAT2 * fDetector</div><div class="ttdef"><b>Definition</b> <a href="draw__all_8C_source.html#l00002">draw_all.C:2</a></div></div>
+<div class="ttc" id="aread__conv_8h_html_a47f54f94abffa3117fba01be510f8816"><div class="ttname"><a href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a></div><div class="ttdeci">int det</div><div class="ttdef"><b>Definition</b> <a href="read__conv_8h_source.html#l00002">read_conv.h:2</a></div></div>
+<div class="ttc" id="aread__conv_8h_html_a6e958fbc233c7ac8487110ad21718cf0"><div class="ttname"><a href="read__conv_8h.html#a6e958fbc233c7ac8487110ad21718cf0">strip</a></div><div class="ttdeci">int strip</div><div class="ttdef"><b>Definition</b> <a href="read__conv_8h_source.html#l00002">read_conv.h:2</a></div></div>
 <div class="ttc" id="asetTT_8h_html_aa9ebd6e24c0363816c249f8bb5c37134"><div class="ttname"><a href="setTT_8h.html#aa9ebd6e24c0363816c249f8bb5c37134">GetHistStrip</a></div><div class="ttdeci">TH2Poly * GetHistStrip()</div><div class="ttdef"><b>Definition</b> <a href="setTT_8h_source.html#l00001">setTT.h:1</a></div></div>
 <div class="ttc" id="asetTT_8h_html_ae15bb9ddf84b992f6f8ea742546a4197"><div class="ttname"><a href="setTT_8h.html#ae15bb9ddf84b992f6f8ea742546a4197">GetHistChain</a></div><div class="ttdeci">TH2Poly * GetHistChain()</div><div class="ttdef"><b>Definition</b> <a href="setTT_8h_source.html#l00014">setTT.h:14</a></div></div>
 <div class="ttc" id="asetTT_8h_html_afc2219bfb2d948825df0c9e7b61b0641"><div class="ttname"><a href="setTT_8h.html#afc2219bfb2d948825df0c9e7b61b0641">CAACtoRealDim</a></div><div class="ttdeci">void CAACtoRealDim(Int_t Cobo, Int_t Asad, Int_t Aget, Int_t Chan, Double_t &amp;posx, Double_t &amp;posy, Double_t &amp;posz, Double_t &amp;errx, Double_t &amp;erry, Double_t &amp;errz)</div><div class="ttdef"><b>Definition</b> <a href="setTT_8h_source.html#l00027">setTT.h:27</a></div></div>

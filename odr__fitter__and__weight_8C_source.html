@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -93,14 +93,14 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iHit=1; iHit&lt;numPoints; ++iHit)</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">double</span> x = <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> + (double(iHit)/numPoints)*x1;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">double</span> y = f1 -&gt; Eval(x) + gRandom -&gt; Uniform(-yResolution,yResolution);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> + (double(iHit)/numPoints)*x1;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a> = f1 -&gt; Eval(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>) + gRandom -&gt; Uniform(-yResolution,yResolution);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">auto</span> hit = (<a class="code hl_class" href="classLKHit.html">LKHit</a>*) array -&gt; ConstructedAt(iHit);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        hit -&gt; SetHitID(iHit);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        hit -&gt; SetW(1);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        hit -&gt; SetX(x);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        hit -&gt; SetY(y);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        hit -&gt; SetX(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        hit -&gt; SetY(<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        hit -&gt; SetXError(ex);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        hit -&gt; SetYError(ey);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
@@ -180,6 +180,8 @@ $(function() {
 <div class="ttc" id="aLKLogger_8h_html_abdf08b50834a103803bcbdff6e038c58"><div class="ttname"><a href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a></div><div class="ttdeci">#define e_cout</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00039">LKLogger.h:39</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_acc94f99798b0bc089b8901ce55339419"><div class="ttname"><a href="LKLogger_8h.html#acc94f99798b0bc089b8901ce55339419">e_error</a></div><div class="ttdeci">#define e_error</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00043">LKLogger.h:43</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_af499e80e700e5bcf9a8a125aecfb6c25"><div class="ttname"><a href="LKLogger_8h.html#af499e80e700e5bcf9a8a125aecfb6c25">e_info</a></div><div class="ttdeci">#define e_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00040">LKLogger.h:40</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassLKGeoBox_html"><div class="ttname"><a href="classLKGeoBox.html">LKGeoBox</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeoBox_8h_source.html#l00014">LKGeoBox.h:15</a></div></div>
 <div class="ttc" id="aclassLKGeoLine_html"><div class="ttname"><a href="classLKGeoLine.html">LKGeoLine</a></div><div class="ttdef"><b>Definition</b> <a href="LKGeoLine_8h_source.html#l00018">LKGeoLine.h:19</a></div></div>
 <div class="ttc" id="aclassLKGeoLine_html_a1dea430bc4e4386c7abbd7353a3152e4"><div class="ttname"><a href="classLKGeoLine.html#a1dea430bc4e4386c7abbd7353a3152e4">LKGeoLine::DrawArrowXY</a></div><div class="ttdeci">TArrow * DrawArrowXY(Double_t asize=0.02)</div><div class="ttdef"><b>Definition</b> <a href="LKGeoLine_8cpp_source.html#l00213">LKGeoLine.cpp:213</a></div></div>

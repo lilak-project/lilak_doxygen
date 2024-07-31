@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -93,10 +93,10 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iHit=1; iHit&lt;numPoints; ++iHit)</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">double</span> x = <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> + (double(iHit)/numPoints)*x1;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">double</span> y = f1 -&gt; Eval(x) + gRandom -&gt; Uniform(-yResolution,yResolution);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = <a class="code hl_variable" href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> + (double(iHit)/numPoints)*x1;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a> = f1 -&gt; Eval(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>) + gRandom -&gt; Uniform(-yResolution,yResolution);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        weight = 1./sqrt(ex*ex + ey*ey);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        tracker -&gt; AddImagePoint(x,ex,y,ey,weight);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        tracker -&gt; AddImagePoint(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>,ex,<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>,ey,weight);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    tracker -&gt; Transform();</div>
@@ -109,6 +109,8 @@ $(function() {
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_a04f1f9d6cec312c3dc3559e1a3e066c1"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#a04f1f9d6cec312c3dc3559e1a3e066c1">SetImageSpaceRange</a></div><div class="ttdeci">void SetImageSpaceRange(int nx, double x1, double x2, int ny, double y1, double y2, int nz, double z1, double z2)</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00071">LKHTLineTracker3D.cpp:71</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_ac38555452a014e6047413e7300a8deb5"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#ac38555452a014e6047413e7300a8deb5">y0</a></div><div class="ttdeci">double y0</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00111">LKHTLineTracker3D.cpp:111</a></div></div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_ae553c80321ef2d7c454cc4f62b42d0d1"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a></div><div class="ttdeci">double x0</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker3D_8cpp_source.html#l00111">LKHTLineTracker3D.cpp:111</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassLKHTLineTracker_html"><div class="ttname"><a href="classLKHTLineTracker.html">LKHTLineTracker</a></div><div class="ttdoc">LKHTLineTracker is tool for finding and fitting a straight line track from a provided list of hits.</div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00202">LKHTLineTracker.h:203</a></div></div>
 <div class="ttc" id="adebug__ht_8C_html_aba050565f1a90d631c0683463fa53e28"><div class="ttname"><a href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a></div><div class="ttdeci">TCanvas * cvs[2]</div><div class="ttdef"><b>Definition</b> <a href="debug__ht_8C_source.html#l00004">debug_ht.C:4</a></div></div>
 <div class="ttc" id="ahough__transform__point__input_8C_html_a6991130379732281f54ccc1e49918cad"><div class="ttname"><a href="hough__transform__point__input_8C.html#a6991130379732281f54ccc1e49918cad">hough_transform_point_input</a></div><div class="ttdeci">void hough_transform_point_input()</div><div class="ttdef"><b>Definition</b> <a href="hough__transform__point__input_8C_source.html#l00003">hough_transform_point_input.C:3</a></div></div>

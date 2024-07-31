@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -74,63 +74,86 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#adfa3b581a651f6ff3c27a7b0c73002c2">fStarkPlane</a> = (<a class="code hl_class" href="classSKSiArrayPlane.html">SKSiArrayPlane</a>*) <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; FindDetectorPlane(<span class="stringliteral">&quot;SKSiArrayPlane&quot;</span>);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#aaa25335566a71918c68e2bed619b8ddd">fRawDataArray</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; GetBranchA(<span class="stringliteral">&quot;RawData&quot;</span>);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; RegisterBranchA(<span class="stringliteral">&quot;SiChannel&quot;</span>,<span class="stringliteral">&quot;LKSiChannel&quot;</span>,20);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> = <span class="keyword">new</span> <a class="code hl_class" href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a>();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; Print();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classSKSetSiChannelTask.html#a1d51fdf9c41ffa72ce689bc731383648">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSKSetSiChannelTask.html#a1d51fdf9c41ffa72ce689bc731383648">SKSetSiChannelTask::Exec</a>(Option_t*)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; Clear(<span class="stringliteral">&quot;C&quot;</span>);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">int</span> channelCount = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> numChannels = <a class="code hl_variable" href="classSKSetSiChannelTask.html#aaa25335566a71918c68e2bed619b8ddd">fRawDataArray</a> -&gt; GetEntries();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;numChannels; ++<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a>*) <a class="code hl_variable" href="classSKSetSiChannelTask.html#aaa25335566a71918c68e2bed619b8ddd">fRawDataArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">auto</span> siChannel1 = (<a class="code hl_class" href="classLKSiChannel.html">LKSiChannel</a>*) <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; ConstructedAt(channelCount);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        siChannel1 -&gt; SetChannelID(channelCount);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">bool</span> good = <a class="code hl_variable" href="classSKSetSiChannelTask.html#adfa3b581a651f6ff3c27a7b0c73002c2">fStarkPlane</a> -&gt; SetSiChannelData(siChannel1, channel);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">if</span> (good) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> iSiChannel=0; iSiChannel&lt;numChannels; ++iSiChannel)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">if</span> (iSiChannel==channelCount)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keyword">auto</span> siChannel2 = (<a class="code hl_class" href="classLKSiChannel.html">LKSiChannel</a>*) <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; ConstructedAt(iSiChannel);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">if</span> (siChannel1 -&gt; IsPair(siChannel2)) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    siChannel1 -&gt; SetPairChannel(siChannel2);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    siChannel2 -&gt; SetPairChannel(siChannel1);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    siChannel1 -&gt; SetPairArrayIndex(siChannel2 -&gt; GetChannelID());</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    siChannel2 -&gt; SetPairArrayIndex(siChannel1 -&gt; GetChannelID());</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <span class="comment">// TODO</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="comment">//siChannel1 -&gt; Set</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            channelCount++;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; RemoveAt(channelCount);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span> (siChannel1-&gt;GetSide()==0)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; SetDataIsInverted(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; SetDataIsInverted(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">auto</span> data = channel -&gt; GetWaveformY();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; Analyze(data);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">auto</span> numRecoHits = <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; GetNumHits();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span> (numRecoHits&gt;=1) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keyword">auto</span> energy = <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; GetAmplitude(0);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            siChannel1 -&gt; SetEnergy(energy);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; channelCount &lt;&lt; <span class="stringliteral">&quot; si-channels found&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a9c5b7a170c6aa8b243cff289948b38ea">fData</a> = <a class="code hl_variable" href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">fRun</a> -&gt; RegisterBranchA(<span class="stringliteral">&quot;data&quot;</span>,<span class="stringliteral">&quot;SKData&quot;</span>,20);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> = <span class="keyword">new</span> <a class="code hl_class" href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; Print();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classSKSetSiChannelTask.html#a1d51fdf9c41ffa72ce689bc731383648">   30</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSKSetSiChannelTask.html#a1d51fdf9c41ffa72ce689bc731383648">SKSetSiChannelTask::Exec</a>(Option_t*)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; Clear(<span class="stringliteral">&quot;C&quot;</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_variable" href="classSKSetSiChannelTask.html#a9c5b7a170c6aa8b243cff289948b38ea">fData</a> -&gt; Clear(<span class="stringliteral">&quot;C&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">int</span> channelCount = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">auto</span> numChannels = <a class="code hl_variable" href="classSKSetSiChannelTask.html#aaa25335566a71918c68e2bed619b8ddd">fRawDataArray</a> -&gt; GetEntries();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;numChannels; ++<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">auto</span> channel = (<a class="code hl_class" href="classGETChannel.html">GETChannel</a>*) <a class="code hl_variable" href="classSKSetSiChannelTask.html#aaa25335566a71918c68e2bed619b8ddd">fRawDataArray</a> -&gt; At(<a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> siChannel1 = (<a class="code hl_class" href="classLKSiChannel.html">LKSiChannel</a>*) <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; ConstructedAt(channelCount);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        siChannel1 -&gt; SetChannelID(channelCount);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">bool</span> good = <a class="code hl_variable" href="classSKSetSiChannelTask.html#adfa3b581a651f6ff3c27a7b0c73002c2">fStarkPlane</a> -&gt; SetSiChannelData(siChannel1, channel);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">if</span> (!good) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; RemoveAt(channelCount);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (siChannel1-&gt;GetSide()==0)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; SetDataIsInverted(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; SetDataIsInverted(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">auto</span> data = channel -&gt; GetWaveformY();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; Analyze(data);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> numRecoHits = <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; GetNumHits();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span> (numRecoHits&gt;=1) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">auto</span> pedestal = <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; GetPedestal();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">auto</span> energy = <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; GetAmplitude(0);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">auto</span> time = <a class="code hl_variable" href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">fChannelAnalyzer</a> -&gt; GetTbHit(0);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            siChannel1 -&gt; SetPedestal(pedestal);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            siChannel1 -&gt; SetEnergy(energy);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            siChannel1 -&gt; SetTime(time);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            channel -&gt; SetPedestal(pedestal);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            channel -&gt; SetEnergy(energy);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            channel -&gt; SetTime(time);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        channelCount++;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span> (siChannel1 -&gt; IsPairedChannel())</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> iSiChannel2=0; iSiChannel2&lt;channelCount; ++iSiChannel2)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">if</span> (iSiChannel2==channelCount)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keyword">auto</span> siChannel2 = (<a class="code hl_class" href="classLKSiChannel.html">LKSiChannel</a>*) <a class="code hl_variable" href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">fSiChannelArray</a> -&gt; At(iSiChannel2);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">if</span> (siChannel1 -&gt; IsPair(siChannel2))</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <span class="keywordflow">if</span> (siChannel1-&gt;GetDirection()==0)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                        siChannel1 -&gt; SetPairChannel(siChannel2);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        siChannel1 -&gt; SetPairArrayIndex(siChannel2 -&gt; GetChannelID());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        siChannel1 -&gt; SetEnergy2(siChannel2-&gt;GetEnergy());</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        siChannel2 -&gt; SetPairChannel(siChannel1);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                        siChannel2 -&gt; SetPairArrayIndex(siChannel1 -&gt; GetChannelID());</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                        siChannel2 -&gt; SetEnergy2(siChannel1-&gt;GetEnergy());</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <span class="keywordflow">if</span> (siChannel1-&gt;GetEnergy()==siChannel2-&gt;GetEnergy())</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                        <a class="code hl_define" href="LKLogger_8h.html#a205131baf02ac0044e9bf0462253dcc7">lk_debug</a> &lt;&lt; <span class="stringliteral">&quot;1=(&quot;</span> &lt;&lt; siChannel1-&gt;GetLocalID() &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> &lt;&lt; siChannel1-&gt;GetEnergy() &lt;&lt; <span class="stringliteral">&quot; 2=(&quot;</span> &lt;&lt; siChannel2-&gt;GetLocalID() &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> &lt;&lt; siChannel2-&gt;GetEnergy() &lt;&lt; endl;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_define" href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a> &lt;&lt; channelCount &lt;&lt; <span class="stringliteral">&quot; si-channels found&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aGETChannel_8h_html"><div class="ttname"><a href="GETChannel_8h.html">GETChannel.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html"><div class="ttname"><a href="LKLogger_8h.html">LKLogger.h</a></div></div>
+<div class="ttc" id="aLKLogger_8h_html_a205131baf02ac0044e9bf0462253dcc7"><div class="ttname"><a href="LKLogger_8h.html#a205131baf02ac0044e9bf0462253dcc7">lk_debug</a></div><div class="ttdeci">#define lk_debug</div><div class="ttdoc">lilak debug logger</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00028">LKLogger.h:28</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00030">LKLogger.h:30</a></div></div>
 <div class="ttc" id="aLKRun_8h_html"><div class="ttname"><a href="LKRun_8h.html">LKRun.h</a></div></div>
 <div class="ttc" id="aLKSiChannel_8h_html"><div class="ttname"><a href="LKSiChannel_8h.html">LKSiChannel.h</a></div></div>
@@ -138,14 +161,15 @@ $(function() {
 <div class="ttc" id="aSKSetSiChannelTask_8h_html"><div class="ttname"><a href="SKSetSiChannelTask_8h.html">SKSetSiChannelTask.h</a></div></div>
 <div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00022">GETChannel.h:23</a></div></div>
 <div class="ttc" id="aclassLKChannelAnalyzer_html"><div class="ttname"><a href="classLKChannelAnalyzer.html">LKChannelAnalyzer</a></div><div class="ttdoc">LKChannelAnalyzer find and fit pulse signal from the given channel buffer using input pulse data....</div><div class="ttdef"><b>Definition</b> <a href="macros_2dummy__class__writter_2output_2LKChannelAnalyzer_8h_source.html#l00007">macros/dummy_class_writter/output/LKChannelAnalyzer.h:8</a></div></div>
-<div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
+<div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00042">LKGear.h:42</a></div></div>
 <div class="ttc" id="aclassLKSiChannel_html"><div class="ttname"><a href="classLKSiChannel.html">LKSiChannel</a></div><div class="ttdef"><b>Definition</b> <a href="LKSiChannel_8h_source.html#l00012">LKSiChannel.h:13</a></div></div>
 <div class="ttc" id="aclassLKTask_html"><div class="ttname"><a href="classLKTask.html">LKTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKTask_8h_source.html#l00013">LKTask.h:14</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html"><div class="ttname"><a href="classSKSetSiChannelTask.html">SKSetSiChannelTask</a></div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8h_source.html#l00021">SKSetSiChannelTask.h:22</a></div></div>
-<div class="ttc" id="aclassSKSetSiChannelTask_html_a1d51fdf9c41ffa72ce689bc731383648"><div class="ttname"><a href="classSKSetSiChannelTask.html#a1d51fdf9c41ffa72ce689bc731383648">SKSetSiChannelTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *)</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8cpp_source.html#l00029">SKSetSiChannelTask.cpp:29</a></div></div>
+<div class="ttc" id="aclassSKSetSiChannelTask_html_a1d51fdf9c41ffa72ce689bc731383648"><div class="ttname"><a href="classSKSetSiChannelTask.html#a1d51fdf9c41ffa72ce689bc731383648">SKSetSiChannelTask::Exec</a></div><div class="ttdeci">void Exec(Option_t *)</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8cpp_source.html#l00030">SKSetSiChannelTask.cpp:30</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html_a2b5d1f355a59be070cb7969f636993a3"><div class="ttname"><a href="classSKSetSiChannelTask.html#a2b5d1f355a59be070cb7969f636993a3">SKSetSiChannelTask::fChannelAnalyzer</a></div><div class="ttdeci">LKChannelAnalyzer * fChannelAnalyzer</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8h_source.html#l00032">SKSetSiChannelTask.h:32</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html_a4bf7dc3dd431a5415043b0f4334fc894"><div class="ttname"><a href="classSKSetSiChannelTask.html#a4bf7dc3dd431a5415043b0f4334fc894">SKSetSiChannelTask::fSiChannelArray</a></div><div class="ttdeci">TClonesArray * fSiChannelArray</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8h_source.html#l00036">SKSetSiChannelTask.h:36</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html_a86a15bf2b3581c3e02781ce78416493d"><div class="ttname"><a href="classSKSetSiChannelTask.html#a86a15bf2b3581c3e02781ce78416493d">SKSetSiChannelTask::SKSetSiChannelTask</a></div><div class="ttdeci">SKSetSiChannelTask()</div></div>
+<div class="ttc" id="aclassSKSetSiChannelTask_html_a9c5b7a170c6aa8b243cff289948b38ea"><div class="ttname"><a href="classSKSetSiChannelTask.html#a9c5b7a170c6aa8b243cff289948b38ea">SKSetSiChannelTask::fData</a></div><div class="ttdeci">TClonesArray * fData</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8h_source.html#l00037">SKSetSiChannelTask.h:37</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html_aaa25335566a71918c68e2bed619b8ddd"><div class="ttname"><a href="classSKSetSiChannelTask.html#aaa25335566a71918c68e2bed619b8ddd">SKSetSiChannelTask::fRawDataArray</a></div><div class="ttdeci">TClonesArray * fRawDataArray</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8h_source.html#l00035">SKSetSiChannelTask.h:35</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html_adfa3b581a651f6ff3c27a7b0c73002c2"><div class="ttname"><a href="classSKSetSiChannelTask.html#adfa3b581a651f6ff3c27a7b0c73002c2">SKSetSiChannelTask::fStarkPlane</a></div><div class="ttdeci">SKSiArrayPlane * fStarkPlane</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8h_source.html#l00031">SKSetSiChannelTask.h:31</a></div></div>
 <div class="ttc" id="aclassSKSetSiChannelTask_html_af01384d25ba21435c89b096e22003058"><div class="ttname"><a href="classSKSetSiChannelTask.html#af01384d25ba21435c89b096e22003058">SKSetSiChannelTask::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition</b> <a href="SKSetSiChannelTask_8cpp_source.html#l00017">SKSetSiChannelTask.cpp:17</a></div></div>

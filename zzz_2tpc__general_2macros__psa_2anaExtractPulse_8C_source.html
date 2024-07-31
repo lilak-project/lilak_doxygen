@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -140,9 +140,9 @@ $(function() {
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">auto</span> numEvents = <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetNumEvents();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iEvent=0; iEvent&lt;numEvents; ++iEvent)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>=0; <a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>&lt;numEvents; ++<a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetEntry(iEvent);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_variable" href="debug__ht_8C.html#a419d07c580c3c8e6ef07cc2023ea382a">run</a> -&gt; GetEntry(<a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">int</span> numChannels = <a class="code hl_variable" href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a> -&gt; GetEntries();</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>=0; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>&lt;numChannels; <a class="code hl_variable" href="test__psa_8C.html#add7ae95d43f6da1fa29af38bf6e78bfb">iChannel</a>++)</div>
@@ -154,7 +154,7 @@ $(function() {
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">auto</span> chan = channel -&gt; GetChan();</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keyword">auto</span> data = channel -&gt; GetWaveformY();</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keyword">auto</span> type = <a class="code hl_function" href="texat__reco_2macros__psa_2setChannels_8h.html#a55497130d8a022a532f33be1828dec01">GetType</a>(cobo,asad,aget,chan);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keyword">auto</span> caac = iEvent*1000000 + cobo*100000 + asad*10000 + aget*1000 + chan;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keyword">auto</span> caac = <a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>*1000000 + cobo*100000 + asad*10000 + aget*1000 + chan;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordtype">bool</span> selected = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> type0 : <a class="code hl_variable" href="texat__reco_2macros__psa_2setChannels_8h.html#aa3dfde800d003d65c27fb31bda29ebe3">fSelTypes</a>)</div>
@@ -163,7 +163,7 @@ $(function() {
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">if</span> (selected==<span class="keyword">false</span>)</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a>[type] -&gt; AddChannel(data, iEvent, cobo, asad, aget, chan);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a>[type] -&gt; AddChannel(data, <a class="code hl_variable" href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a>, cobo, asad, aget, chan);</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="zzz_2tpc__general_2macros__psa_2anaExtractPulse_8C.html#a26726de518fd3dff64f931f4ec0bd5e4">fDrawChannel</a>)</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
@@ -508,6 +508,7 @@ $(function() {
 <div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_ac21ba5541d0ae1de9796abe671a60223"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#ac21ba5541d0ae1de9796abe671a60223">e_batch</a></div><div class="ttdeci">#define e_batch()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00264">macros_detectorplane/ejungwooA.h:264</a></div></div>
 <div class="ttc" id="amacros__detectorplane_2ejungwooA_8h_html_afa4296341a325cd65783394a68db10e8"><div class="ttname"><a href="macros__detectorplane_2ejungwooA_8h.html#afa4296341a325cd65783394a68db10e8">e_save_all</a></div><div class="ttdeci">#define e_save_all()</div><div class="ttdef"><b>Definition</b> <a href="macros__detectorplane_2ejungwooA_8h_source.html#l00269">macros_detectorplane/ejungwooA.h:269</a></div></div>
 <div class="ttc" id="amacros__psa_2ejungwooA_8h_html"><div class="ttname"><a href="macros__psa_2ejungwooA_8h.html">ejungwooA.h</a></div></div>
+<div class="ttc" id="aread__conv_8h_html_a37ad9e220625563b3f69f1651135a9ac"><div class="ttname"><a href="read__conv_8h.html#a37ad9e220625563b3f69f1651135a9ac">iEvent</a></div><div class="ttdeci">int iEvent</div><div class="ttdef"><b>Definition</b> <a href="read__conv_8h_source.html#l00008">read_conv.h:8</a></div></div>
 <div class="ttc" id="aserver_8cc_html_a4866b2d37ffc80c5ba705d3fcd1e0ecf"><div class="ttname"><a href="server_8cc.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf">error</a></div><div class="ttdeci">void error(const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="server_8cc_source.html#l00017">server.cc:17</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_a6a8b0f8c6300c058d85eb1478b9902a3"><div class="ttname"><a href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a></div><div class="ttdeci">LKChannelAnalyzer * ana</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00003">test_psa.C:3</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_a8ff78d3a0269ecee63d26fbbe4f209f2"><div class="ttname"><a href="test__psa_8C.html#a8ff78d3a0269ecee63d26fbbe4f209f2">channelArray</a></div><div class="ttdeci">TClonesArray * channelArray</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00002">test_psa.C:2</a></div></div>

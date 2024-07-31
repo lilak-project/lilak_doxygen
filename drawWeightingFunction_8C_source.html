@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -82,9 +82,9 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">auto</span> graph = <span class="keyword">new</span> TGraph();</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nx; ++i)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordtype">double</span> x = xmin + dx*i;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keyword">auto</span> weight = wf -&gt; EvalFromDistance(x,1,1);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            graph -&gt; <a class="code hl_function" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a>(graph-&gt;GetN(),x,weight);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordtype">double</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = xmin + dx*i;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keyword">auto</span> weight = wf -&gt; EvalFromDistance(<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>,1,1);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            graph -&gt; <a class="code hl_function" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a>(graph-&gt;GetN(),<a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>,weight);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="debug__ht_8C.html#aba050565f1a90d631c0683463fa53e28">cvs</a> -&gt; cd(i+1) -&gt; SetGrid(1,1);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        hist -&gt; SetStats(0);</div>
@@ -95,6 +95,7 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="ttc" id="aLKHTLineTracker3D_8cpp_html_abc88e651d827d77b6db5f12e23f9d154"><div class="ttname"><a href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint</a></div><div class="ttdeci">fParamPoint SetPoint(fTransformCenter, y1, z1, t1, p1, y2, z2, t2, p2, fParamData[iy][iz][it][ip])</div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassLKHoughWFConst_html"><div class="ttname"><a href="classLKHoughWFConst.html">LKHoughWFConst</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00035">LKHTLineTracker.h:35</a></div></div>
 <div class="ttc" id="aclassLKHoughWFInverse_html"><div class="ttname"><a href="classLKHoughWFInverse.html">LKHoughWFInverse</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00059">LKHTLineTracker.h:59</a></div></div>
 <div class="ttc" id="aclassLKHoughWFLinear_html"><div class="ttname"><a href="classLKHoughWFLinear.html">LKHoughWFLinear</a></div><div class="ttdef"><b>Definition</b> <a href="LKHTLineTracker_8h_source.html#l00045">LKHTLineTracker.h:45</a></div></div>

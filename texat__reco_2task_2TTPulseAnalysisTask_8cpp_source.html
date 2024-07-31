@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.259.674a835</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
    </div>
   </td>
  </tr>
@@ -140,7 +140,7 @@ $(function() {
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keyword">auto</span> dchan = channel -&gt; GetPadID();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keyword">auto</span> data = channel -&gt; GetWaveformY();</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">auto</span> electronicsID = <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a40193a0d5cad0dcd6e11426306a7de5b">fDetector</a> -&gt; GetElectronicsID(cobo, asad, aget, chan);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">auto</span> x = <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a40193a0d5cad0dcd6e11426306a7de5b">fDetector</a> -&gt; Getmmpx(asad, aget, dchan);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">auto</span> <a class="code hl_variable" href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> = <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a40193a0d5cad0dcd6e11426306a7de5b">fDetector</a> -&gt; Getmmpx(asad, aget, dchan);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keyword">auto</span> z = <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a40193a0d5cad0dcd6e11426306a7de5b">fDetector</a> -&gt; Getmmpy(asad, aget, dchan);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">auto</span> caac = cobo*10000 + asad*1000 + aget*100 + chan;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
@@ -194,7 +194,7 @@ $(function() {
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keyword">auto</span> ndf       = <a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a> -&gt; GetNDF(iHit);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keyword">auto</span> pedestal  = <a class="code hl_variable" href="test__psa_8C.html#a6a8b0f8c6300c058d85eb1478b9902a3">ana</a> -&gt; GetPedestal();</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keyword">auto</span> y = <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a7fb54419d731f1e8169b9dca4ba5e4f4">fMMY</a> - <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a201ddba17066308b6dae800e1b9e1ae8">fTbToLength</a> * tb;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a> = <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a7fb54419d731f1e8169b9dca4ba5e4f4">fMMY</a> - <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a201ddba17066308b6dae800e1b9e1ae8">fTbToLength</a> * tb;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <a class="code hl_class" href="classLKHit.html">LKHit</a>* hit = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                 <span class="keywordflow">if</span> (detType==<a class="code hl_enumvalue" href="classTexAT2.html#a55ae855b84a57ab66c673f796e412b35a64b49055c671cb6a39c51199e818c011">TexAT2::eType::kLowCenter</a> ) hit = (<a class="code hl_class" href="classLKHit.html">LKHit</a>*) <a class="code hl_variable" href="classTTPulseAnalysisTask.html#aa6115c2fcb0384888b58c02d4861bd95">fHitArrayCenter</a> -&gt; ConstructedAt(countHitCenter++);</div>
@@ -206,7 +206,7 @@ $(function() {
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">else</span>                                          hit = (<a class="code hl_class" href="classLKHit.html">LKHit</a>*) <a class="code hl_variable" href="classTTPulseAnalysisTask.html#a7744b89053ac513813e43883b22b9fdf">fHitArrayOthers</a> -&gt; ConstructedAt(countHitOthers++);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            hit -&gt; SetHitID(countHits);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            hit -&gt; SetChannelID(caac);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordflow">if</span>(cobo==0) hit -&gt; SetPosition(xPos,y,zPos);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordflow">if</span>(cobo==0) hit -&gt; SetPosition(xPos,<a class="code hl_variable" href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a>,zPos);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">else</span>      hit -&gt; SetPosition(xPos,yPos,zPos);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            hit -&gt; SetPositionError(xErr,yErr,zErr);</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            hit -&gt; SetCharge(amplitude);</div>
@@ -242,9 +242,11 @@ $(function() {
 <div class="ttc" id="aLKHit_8h_html"><div class="ttname"><a href="LKHit_8h.html">LKHit.h</a></div></div>
 <div class="ttc" id="aLKLogger_8h_html_aa87c748c7c0b23ce846b8fe3088d6bb7"><div class="ttname"><a href="LKLogger_8h.html#aa87c748c7c0b23ce846b8fe3088d6bb7">lk_info</a></div><div class="ttdeci">#define lk_info</div><div class="ttdef"><b>Definition</b> <a href="LKLogger_8h_source.html#l00030">LKLogger.h:30</a></div></div>
 <div class="ttc" id="aTTEventHeader_8h_html"><div class="ttname"><a href="TTEventHeader_8h.html">TTEventHeader.h</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="X6__Eflat_8C.html#ab927965981178aa1fba979a37168db2a">y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
+<div class="ttc" id="aX6__Eflat_8C_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="X6__Eflat_8C.html#af88b946fb90d5f08b5fb740c70e98c10">x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition</b> <a href="X6__Eflat_8C_source.html#l00023">X6_Eflat.C:23</a></div></div>
 <div class="ttc" id="aclassGETChannel_html"><div class="ttname"><a href="classGETChannel.html">GETChannel</a></div><div class="ttdef"><b>Definition</b> <a href="GETChannel_8h_source.html#l00022">GETChannel.h:23</a></div></div>
-<div class="ttc" id="aclassLKGear_html_a1298df2f206df44122ccdf4d685adf08"><div class="ttname"><a href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">LKGear::fPar</a></div><div class="ttdeci">LKParameterContainer * fPar</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00039">LKGear.h:39</a></div></div>
-<div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00040">LKGear.h:40</a></div></div>
+<div class="ttc" id="aclassLKGear_html_a1298df2f206df44122ccdf4d685adf08"><div class="ttname"><a href="classLKGear.html#a1298df2f206df44122ccdf4d685adf08">LKGear::fPar</a></div><div class="ttdeci">LKParameterContainer * fPar</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00041">LKGear.h:41</a></div></div>
+<div class="ttc" id="aclassLKGear_html_a8cb1449099c2daafffa6b33438c18d0a"><div class="ttname"><a href="classLKGear.html#a8cb1449099c2daafffa6b33438c18d0a">LKGear::fRun</a></div><div class="ttdeci">LKRun * fRun</div><div class="ttdef"><b>Definition</b> <a href="LKGear_8h_source.html#l00042">LKGear.h:42</a></div></div>
 <div class="ttc" id="aclassLKHit_html"><div class="ttname"><a href="classLKHit.html">LKHit</a></div><div class="ttdef"><b>Definition</b> <a href="LKHit_8h_source.html#l00021">LKHit.h:22</a></div></div>
 <div class="ttc" id="aclassTTEventHeader_html"><div class="ttname"><a href="classTTEventHeader.html">TTEventHeader</a></div><div class="ttdoc">Event header for TexAT experiment.</div><div class="ttdef"><b>Definition</b> <a href="TTEventHeader_8h_source.html#l00010">TTEventHeader.h:11</a></div></div>
 <div class="ttc" id="aclassTTMicromegas_html"><div class="ttname"><a href="classTTMicromegas.html">TTMicromegas</a></div><div class="ttdef"><b>Definition</b> <a href="TTMicromegas_8h_source.html#l00061">TTMicromegas.h:62</a></div></div>
