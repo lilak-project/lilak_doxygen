@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.281.cfb7e43</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.284.aefe8d1</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3e578b6a4b4d476ffa4b88c9b8fe60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab039a7b4c6682ef10682d89230c4c89c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#ab039a7b4c6682ef10682d89230c4c89c">FillDataToHistEventDisplay1</a> (Option_t *option=&quot;&quot;)</td></tr>
 <tr class="separator:ab039a7b4c6682ef10682d89230c4c89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe513120cd9e3f729c5a5addc80a4c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#a6fe513120cd9e3f729c5a5addc80a4c1">FindEPairDetectorID</a> (int <a class="el" href="read__conv_8h.html#a47f54f94abffa3117fba01be510f8816">det</a>)</td></tr>
+<tr class="separator:a6fe513120cd9e3f729c5a5addc80a4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9526b4ad365bdf1d7f1d368e9cfb62"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#a3f9526b4ad365bdf1d7f1d368e9cfb62">FindPadID</a> (int cobo, int asad, int aget, int chan)</td></tr>
 <tr class="separator:a3f9526b4ad365bdf1d7f1d368e9cfb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad163ce697741233a5ce297e6fc0efcf4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#ad163ce697741233a5ce297e6fc0efcf4">FindPadIDFromHistEventDisplay1Bin</a> (int hbin)</td></tr>
@@ -1056,6 +1058,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac519c597ae95fef17a44309c1621c5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e5f31e0deb7119ce424db4577c97b3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#a1e5f31e0deb7119ce424db4577c97b3b">fCountHistArray2</a> = 0</td></tr>
 <tr class="separator:a1e5f31e0deb7119ce424db4577c97b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b00d5c51e94814d5443a626c82a529"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#a26b00d5c51e94814d5443a626c82a529">fdEEPairMapping</a> [40][2]</td></tr>
+<tr class="separator:a26b00d5c51e94814d5443a626c82a529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae007c160548f6f442c04379b75186930"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#ae007c160548f6f442c04379b75186930">fHistArray1</a> = nullptr</td></tr>
 <tr class="separator:ae007c160548f6f442c04379b75186930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c1d40322de4fa5b9f7949030365f9b1"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#a7c1d40322de4fa5b9f7949030365f9b1">fHistArray2</a> = nullptr</td></tr>
@@ -1068,6 +1072,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a9d7e166989a461d2e31099e0bbe03d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe44ec0653e809d26e85f544707e4839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#afe44ec0653e809d26e85f544707e4839">fNumArrayPairDrawing</a> = 0</td></tr>
 <tr class="separator:afe44ec0653e809d26e85f544707e4839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae210e501b313374ff93a5bb330d9ba3c"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#ae210e501b313374ff93a5bb330d9ba3c">fSiChannelArray</a> = nullptr</td></tr>
+<tr class="separator:ae210e501b313374ff93a5bb330d9ba3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0533530d00fc3287b013aeaad6db9812"><td class="memItemLeft" align="right" valign="top">TClonesArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#a0533530d00fc3287b013aeaad6db9812">fSiHitArray</a> = nullptr</td></tr>
+<tr class="separator:a0533530d00fc3287b013aeaad6db9812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9b6fdc293c32ba0cb3bd237568f85f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSKSiArrayPlane.html#acc9b6fdc293c32ba0cb3bd237568f85f">fUserPhiScale</a> = 1.</td></tr>
+<tr class="separator:acc9b6fdc293c32ba0cb3bd237568f85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -1116,9 +1126,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00019">19</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00020">20</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fChannelArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00182">LKEvePlane::fCtrlLabelSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00166">fGSelJOSideDisplay</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00165">LKEvePlane::fPaletteNumber</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00129">fUserDrawingArrayCollection</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00116">fChannelArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00182">LKEvePlane::fCtrlLabelSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00167">fGSelJOSideDisplay</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00165">LKEvePlane::fPaletteNumber</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayCollection</a>.</p>
 
 </div>
 </div>
@@ -1194,9 +1204,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">391</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">460</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00119">fMaxDetectors</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">fNumUDLabels</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">fSelUDBin</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00129">fUserDrawingArrayCollection</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">fUserDrawingLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingName</a>, and <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00120">fMaxDetectors</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00151">fNumUDLabels</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">fSelUDBin</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayCollection</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">fUserDrawingArrayIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00133">fUserDrawingName</a>, and <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>.</p>
 
 </div>
 </div>
@@ -1215,11 +1225,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01365">1365</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01580">1580</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01365">ClearFiredFlags()</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01580">ClearFiredFlags()</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01365">ClearFiredFlags()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01580">ClearFiredFlags()</a>.</p>
 
 </div>
 </div>
@@ -1257,11 +1267,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01191">1191</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01397">1397</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">fHistControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fHistCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSelControlDDPage</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00146">fHistControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00127">fHistCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00162">fSelControlDDPage</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>.</p>
 
 </div>
 </div>
@@ -1301,11 +1311,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a0bb9fe8b7ee5c720f6ff0e5b9c1d072b">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">755</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">827</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00629">FindPadIDFromHistEventDisplay1Bin()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00098">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDBinChange</a>, <a class="el" href="LKLogger_8h_source.html#l00033">lk_error</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00219">Print()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00701">FindPadIDFromHistEventDisplay1Bin()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSignalUDBinChange</a>, <a class="el" href="LKLogger_8h_source.html#l00033">lk_error</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00288">Print()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>.</p>
 
 </div>
 </div>
@@ -1345,7 +1355,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a7b798e7c4aa3af92c90d47a84207de71">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01098">1098</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01304">1304</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
 </div>
 </div>
@@ -1373,11 +1383,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">727</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">799</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00166">fGSelJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00107">fLayerYScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00098">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelJOID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDBinChange</a>, <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00651">UpdateEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00167">fGSelJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00109">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00100">fSelJOID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSignalUDBinChange</a>, <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00723">UpdateEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>.</p>
 
 </div>
 </div>
@@ -1415,11 +1425,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">1209</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">1415</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fHistCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">fNumUDLabels</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">fSelUDBin</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00148">fSelUDTab</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDBinChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00159">fSignalUDTabChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingName</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00127">fHistCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00151">fNumUDLabels</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">fSelUDBin</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">fSelUDTab</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSignalUDBinChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDTabChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00133">fUserDrawingName</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>.</p>
 
 </div>
 </div>
@@ -1465,9 +1475,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a33e01db599c643bf5284d492e57908a0">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">715</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">787</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01191">ClickedControlDDPage()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l01322">LKEvePlane::ClickedControlEvent1()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l01334">LKEvePlane::ClickedControlEvent2()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00159">LKEvePlane::fCountChangeOther</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00134">fPadControlDDPage</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00099">LKEvePlane::fPadControlEvent1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00100">LKEvePlane::fPadControlEvent2</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00125">fPadCtrlUserDrawing</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00121">fPadJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDBinChange</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01397">ClickedControlDDPage()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l01322">LKEvePlane::ClickedControlEvent1()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l01334">LKEvePlane::ClickedControlEvent2()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00159">LKEvePlane::fCountChangeOther</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00135">fPadControlDDPage</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00099">LKEvePlane::fPadControlEvent1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00100">LKEvePlane::fPadControlEvent2</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fPadCtrlUserDrawing</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00122">fPadJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSignalUDBinChange</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
 
 </div>
 </div>
@@ -1496,9 +1506,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a609e701d692c271215433f336c227748">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01322">1322</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01537">1537</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00040">e_info</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00129">fUserDrawingArrayCollection</a>.</p>
+<p class="reference">References <a class="el" href="LKLogger_8h_source.html#l00040">e_info</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayCollection</a>.</p>
 
 </div>
 </div>
@@ -1528,9 +1538,31 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#aa5b5b64783a0a857c7c8a87b80124e62">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">977</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">1054</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKDetectorPlane_8h_source.html#l00120">LKDetectorPlane::AddChannel()</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00172">LKEvePlane::fAccumulateEvents</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00095">fCurrentView</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00130">LKEvePlane::fFillOptionSelected</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00094">LKEvePlane::fHitArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00111">fPrevEventID</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00092">LKEvePlane::fRawDataArray</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00098">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDBinChange</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01247">GetSiChannel()</a>, <a class="el" href="LKLogger_8h_source.html#l00033">lk_error</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="LKLogger_8h_source.html#l00031">lk_warning</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
+<p class="reference">References <a class="el" href="LKDetectorPlane_8h_source.html#l00120">LKDetectorPlane::AddChannel()</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00172">LKEvePlane::fAccumulateEvents</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00096">fCurrentView</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00130">LKEvePlane::fFillOptionSelected</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00094">LKEvePlane::fHitArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00112">fPrevEventID</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00092">LKEvePlane::fRawDataArray</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00180">fSiChannelArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSignalUDBinChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00181">fSiHitArray</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01453">GetSiChannel()</a>, <a class="el" href="LKLogger_8h_source.html#l00033">lk_error</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="LKLogger_8h_source.html#l00031">lk_warning</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
+
+</div>
+</div>
+<a id="a6fe513120cd9e3f729c5a5addc80a4c1" name="a6fe513120cd9e3f729c5a5addc80a4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe513120cd9e3f729c5a5addc80a4c1">&#9670;&#160;</a></span>FindEPairDetectorID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SKSiArrayPlane::FindEPairDetectorID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>det</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01528">1528</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="read__conv_8h_source.html#l00002">det</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00194">fdEEPairMapping</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01513">GetSiDetector()</a>.</p>
 
 </div>
 </div>
@@ -1582,11 +1614,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a515e4ff3089e1c8f8ad42bff07b8f04b">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01242">1242</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01448">1448</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00091">fMapCAACToChannelIndex</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00092">fMapCAACToChannelIndex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8h_source.html#l00054">FindSiChannelID()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8h_source.html#l00055">FindSiChannelID()</a>.</p>
 
 </div>
 </div>
@@ -1616,11 +1648,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#aa8cde53301b9b6a46b8abf002c289f8b">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00629">629</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00701">701</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00093">fMapBinToDetector</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00094">fMapBinToDetector</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>.</p>
 
 </div>
 </div>
@@ -1670,11 +1702,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00054">54</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00055">55</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01242">FindPadID()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01448">FindPadID()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01256">GetSiChannel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01462">GetSiChannel()</a>.</p>
 
 </div>
 </div>
@@ -1716,11 +1748,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01302">1302</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01508">1508</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00092">fMapCAACToDetectorIndex</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00093">fMapCAACToDetectorIndex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01314">GetSiDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01520">GetSiDetector()</a>.</p>
 
 </div>
 </div>
@@ -1762,9 +1794,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01359">1359</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01574">1574</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="read__conv_8h_source.html#l00002">det</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
+<p class="reference">References <a class="el" href="read__conv_8h_source.html#l00002">det</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
 
 </div>
 </div>
@@ -1795,9 +1827,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#ab2401d42be3ee1216ec73825102c9f2b">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00642">642</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00714">714</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00095">fCurrentView</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00051">LKEvePlane::GetPadEventDisplay2()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00096">fCurrentView</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00051">LKEvePlane::GetPadEventDisplay2()</a>.</p>
 
 </div>
 </div>
@@ -1829,9 +1861,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#aff49b45a5d64eee7c1a8146cb7bb2409">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">231</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">300</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKPadInteractive_8cpp_source.html#l00006">LKPadInteractive::AddInteractivePad()</a>, <a class="el" href="X6__stark_8h_source.html#l00143">b1</a>, <a class="el" href="X6__stark_8h_source.html#l00143">b2</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00041">LKDetectorPlane::fCanvas</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00184">LKEvePlane::fDXCanvas</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00185">LKEvePlane::fDYCanvas</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00141">fNumDDX</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00142">fNumDDY</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00134">fPadControlDDPage</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00099">LKEvePlane::fPadControlEvent1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00100">LKEvePlane::fPadControlEvent2</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00125">fPadCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00138">fPadDataDisplayFull</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00144">fPadDataDisplaySmall</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00140">fPadDataDisplayThree</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00139">fPadDataDisplayTwo</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00121">fPadJOSideDisplay</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, <a class="el" href="LKRun_8h_source.html#l00099">LKRun::GetInputFile()</a>, <a class="el" href="LKPainter_8cpp_source.html#l00012">LKPainter::GetPainter()</a>, and <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00104">y2</a>.</p>
+<p class="reference">References <a class="el" href="LKPadInteractive_8cpp_source.html#l00006">LKPadInteractive::AddInteractivePad()</a>, <a class="el" href="X6__stark_8h_source.html#l00143">b1</a>, <a class="el" href="X6__stark_8h_source.html#l00143">b2</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00041">LKDetectorPlane::fCanvas</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00184">LKEvePlane::fDXCanvas</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00185">LKEvePlane::fDYCanvas</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00142">fNumDDX</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00143">fNumDDY</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00135">fPadControlDDPage</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00099">LKEvePlane::fPadControlEvent1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00100">LKEvePlane::fPadControlEvent2</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fPadCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00139">fPadDataDisplayFull</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">fPadDataDisplaySmall</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00141">fPadDataDisplayThree</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00140">fPadDataDisplayTwo</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00122">fPadJOSideDisplay</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, <a class="el" href="LKRun_8h_source.html#l00099">LKRun::GetInputFile()</a>, <a class="el" href="LKPainter_8cpp_source.html#l00012">LKPainter::GetPainter()</a>, and <a class="el" href="LKHTLineTracker3D_8cpp_source.html#l00104">y2</a>.</p>
 
 </div>
 </div>
@@ -1851,9 +1883,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01388">1388</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01603">1603</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>.</p>
 
 </div>
 </div>
@@ -1883,9 +1915,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a635733382333b2ac8b31a54d4642b497">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00327">327</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00396">396</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00589">LKEvePlane::GetHist()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00335">GetHistControlDDPage()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00366">GetHistUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00589">LKEvePlane::GetHist()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00404">GetHistControlDDPage()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00435">GetHistUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -1914,7 +1946,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a51d04210828d6d0c1c7bfa33dbc5765c">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00602">602</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00674">674</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00104">LKEvePlane::fHistChannelBuffer</a>.</p>
 
@@ -1944,11 +1976,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00335">335</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00404">404</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00182">LKEvePlane::fCtrlLabelSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">fHistControlDDPage</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00165">LKEvePlane::fPaletteNumber</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00182">LKEvePlane::fCtrlLabelSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00146">fHistControlDDPage</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00165">LKEvePlane::fPaletteNumber</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00327">GetHist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00396">GetHist()</a>.</p>
 
 </div>
 </div>
@@ -1978,9 +2010,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a70967485cf14229d0c7b2ae2b807a609">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">552</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">621</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00107">fLayerYScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00093">fMapBinToDetector</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00101">fMaxLayerIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00103">fMaxPhi</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00102">fMinPhi</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00109">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00094">fMapBinToDetector</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00102">fMaxLayerIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00104">fMaxPhi</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00103">fMinPhi</a>, and <a class="el" href="SKSiArrayPlane_8h_source.html#l00192">fUserPhiScale</a>.</p>
 
 </div>
 </div>
@@ -2010,7 +2042,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#abb3ce753de294f986084cf3f12461aef">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00597">597</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00669">669</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00103">LKEvePlane::fHistEventDisplay2</a>.</p>
 
@@ -2040,11 +2072,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00366">366</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00435">435</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00182">LKEvePlane::fCtrlLabelSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fHistCtrlUserDrawing</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00165">LKEvePlane::fPaletteNumber</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00182">LKEvePlane::fCtrlLabelSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00127">fHistCtrlUserDrawing</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00165">LKEvePlane::fPaletteNumber</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00327">GetHist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00396">GetHist()</a>.</p>
 
 </div>
 </div>
@@ -2063,9 +2095,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01375">1375</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01590">1590</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>.</p>
 
 </div>
 </div>
@@ -2094,7 +2126,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00045">45</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>.</p>
 
 </div>
 </div>
@@ -2136,9 +2168,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01256">1256</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01462">1462</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00054">FindSiChannelID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01247">GetSiChannel()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00055">FindSiChannelID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01453">GetSiChannel()</a>.</p>
 
 </div>
 </div>
@@ -2158,11 +2190,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01247">1247</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01453">1453</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fChannelArray</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00116">fChannelArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">FillDataToHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01256">GetSiChannel()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01266">SetSiChannelData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01462">GetSiChannel()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01472">SetSiChannelData()</a>.</p>
 
 </div>
 </div>
@@ -2204,9 +2236,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01314">1314</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01520">1520</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01302">FindSiDetectorID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01307">GetSiDetector()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01508">FindSiDetectorID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01513">GetSiDetector()</a>.</p>
 
 </div>
 </div>
@@ -2226,11 +2258,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01307">1307</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01513">1513</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01314">GetSiDetector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01528">FindEPairDetectorID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01520">GetSiDetector()</a>.</p>
 
 </div>
 </div>
@@ -2278,9 +2310,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a135374251215833f066b5f5af720e5ac">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">33</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">34</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LKParameterContainer_8cpp_source.html#l00879">LKParameterContainer::AddPar()</a>, <a class="el" href="LKParameterContainer_8cpp_source.html#l01087">LKParameterContainer::CheckPar()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fChannelArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00085">fDetectorParName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00116">fDetectorTypeArray</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00030">LKDetectorPlane::fDetName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00107">fLayerYScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00091">fMapCAACToChannelIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00092">fMapCAACToDetectorIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00084">fMappingFileName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00119">fMaxDetectors</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00101">fMaxLayerIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00103">fMaxPhi</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00102">fMinPhi</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00088">fNumAget</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00087">fNumAsad</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00089">fNumChan</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00086">fNumCobo</a>, <a class="el" href="LKGear_8h_source.html#l00041">LKGear::fPar</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">fUserDrawingLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingName</a>, <a class="el" href="LKParameterContainer_8cpp_source.html#l01071">LKParameterContainer::GetParIndex()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00061">LKEvePlane::Init()</a>, <a class="el" href="LKLogger_8h_source.html#l00033">lk_error</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
+<p class="reference">References <a class="el" href="LKParameterContainer_8cpp_source.html#l00879">LKParameterContainer::AddPar()</a>, <a class="el" href="LKParameterContainer_8cpp_source.html#l01101">LKParameterContainer::CheckPar()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00116">fChannelArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00181">LKEvePlane::fCtrlBinTextSize</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00194">fdEEPairMapping</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00086">fDetectorParName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00117">fDetectorTypeArray</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00030">LKDetectorPlane::fDetName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00109">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00092">fMapCAACToChannelIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00093">fMapCAACToDetectorIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00085">fMappingFileName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00120">fMaxDetectors</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00102">fMaxLayerIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00104">fMaxPhi</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00103">fMinPhi</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00089">fNumAget</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00088">fNumAsad</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00090">fNumChan</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00087">fNumCobo</a>, <a class="el" href="LKGear_8h_source.html#l00041">LKGear::fPar</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">fUserDrawingArrayIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00133">fUserDrawingName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00192">fUserPhiScale</a>, <a class="el" href="LKParameterContainer_8cpp_source.html#l01085">LKParameterContainer::GetParIndex()</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00068">LKDetectorPlane::GetPosition()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00061">LKEvePlane::Init()</a>, <a class="el" href="LKLogger_8h_source.html#l00033">lk_error</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
 
 </div>
 </div>
@@ -2310,11 +2342,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a6dc5e611579f6a4592d09850171b34ff">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00219">219</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00288">288</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00219">Print()</a>.</p>
+<p class="reference">References <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00288">Print()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00219">Print()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00288">Print()</a>.</p>
 
 </div>
 </div>
@@ -2345,9 +2377,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a2ba4eb2556111ab2dded8326f7aaaaf6">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00931">931</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01006">1006</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00191">LKEvePlane::fBranchIsSet</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00094">LKEvePlane::fHitArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00092">LKEvePlane::fRawDataArray</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00093">LKEvePlane::fTrackArray</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00191">LKEvePlane::fBranchIsSet</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00094">LKEvePlane::fHitArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00092">LKEvePlane::fRawDataArray</a>, <a class="el" href="LKGear_8h_source.html#l00042">LKGear::fRun</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00180">fSiChannelArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00181">fSiHitArray</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00093">LKEvePlane::fTrackArray</a>.</p>
 
 </div>
 </div>
@@ -2377,9 +2409,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01266">1266</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01472">1472</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00050">GETChannel::GetBuffer()</a>, <a class="el" href="LKChannel_8h_source.html#l00039">LKChannel::GetEnergy()</a>, <a class="el" href="LKChannel_8h_source.html#l00041">LKChannel::GetNoiseScale()</a>, <a class="el" href="LKChannel_8h_source.html#l00040">LKChannel::GetPedestal()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01247">GetSiChannel()</a>, <a class="el" href="LKChannel_8h_source.html#l00038">LKChannel::GetTime()</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
+<p class="reference">References <a class="el" href="GETChannel_8h_source.html#l00050">GETChannel::GetBuffer()</a>, <a class="el" href="LKChannel_8h_source.html#l00039">LKChannel::GetEnergy()</a>, <a class="el" href="LKChannel_8h_source.html#l00041">LKChannel::GetNoiseScale()</a>, <a class="el" href="LKChannel_8h_source.html#l00040">LKChannel::GetPedestal()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01453">GetSiChannel()</a>, <a class="el" href="LKChannel_8h_source.html#l00038">LKChannel::GetTime()</a>, and <a class="el" href="read__conv_8h_source.html#l00002">strip</a>.</p>
 
 </div>
 </div>
@@ -2408,9 +2440,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#aa3d2636600c14a2366d7f3fbd5889e2c">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">787</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00859">859</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00367">LKEvePlane::UpdateControlEvent1()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00390">LKEvePlane::UpdateControlEvent2()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00651">UpdateEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00367">LKEvePlane::UpdateControlEvent1()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00390">LKEvePlane::UpdateControlEvent2()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00723">UpdateEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -2437,11 +2469,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">797</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">869</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00051">LKEvePlane::Clear()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00041">LKDetectorPlane::fCanvas</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">fHistControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00143">fNumDataDisplays</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00141">fNumDDX</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00142">fNumDDY</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00153">fNumGoodDrawings</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00134">fPadControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00138">fPadDataDisplayFull</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00144">fPadDataDisplaySmall</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00140">fPadDataDisplayThree</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00139">fPadDataDisplayTwo</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSelControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00158">fSelUDArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00155">fSelUDLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00151">fUDGoodIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00170">kUpdateDataDisplays</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00051">LKEvePlane::Clear()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="LKDetectorPlane_8h_source.html#l00041">LKDetectorPlane::fCanvas</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00146">fHistControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00144">fNumDataDisplays</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00142">fNumDDX</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00143">fNumDDY</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00154">fNumGoodDrawings</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00135">fPadControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00139">fPadDataDisplayFull</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">fPadDataDisplaySmall</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00141">fPadDataDisplayThree</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00140">fPadDataDisplayTwo</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00162">fSelControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00159">fSelUDArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00156">fSelUDLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00152">fUDGoodIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00171">kUpdateDataDisplays</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01191">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">UpdateAll()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01397">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00859">UpdateAll()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -2470,11 +2502,11 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#aec500f2a8c3a01ca2a79b34b0c271e42">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00651">651</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00723">723</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00051">LKEvePlane::Clear()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00188">LKEvePlane::fEventDisplayDrawOption</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00108">LKEvePlane::fGSelEventDisplay1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelJOID</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00202">LKEvePlane::kUpdateEventDisplay1</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00051">LKEvePlane::Clear()</a>, <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00188">LKEvePlane::fEventDisplayDrawOption</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00108">LKEvePlane::fGSelEventDisplay1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00102">LKEvePlane::fHistEventDisplay1</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00100">fSelJOID</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00202">LKEvePlane::kUpdateEventDisplay1</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">UpdateAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00859">UpdateAll()</a>.</p>
 
 </div>
 </div>
@@ -2503,7 +2535,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classLKEvePlane.html#a6cbadc02ba71958d16dbf6b8c8039698">LKEvePlane</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00927">927</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01002">1002</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
 </div>
 </div>
@@ -2530,11 +2562,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">861</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">933</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00172">LKEvePlane::fAccumulateEvents</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00108">LKEvePlane::fGSelEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00166">fGSelJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00107">fLayerYScale</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00121">fPadJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00098">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelJOID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00171">kUpdateJunctionOhmic</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00172">LKEvePlane::fAccumulateEvents</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">fDetectorArray</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00108">LKEvePlane::fGSelEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00167">fGSelJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00109">fLayerYOffset</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">fLayerYScale</a>, <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00096">LKEvePlane::fPadEventDisplay1</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00122">fPadJOSideDisplay</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00100">fSelJOID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00192">fUserPhiScale</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00172">kUpdateJunctionOhmic</a>, <a class="el" href="LKLogger_8h_source.html#l00030">lk_info</a>, <a class="el" href="LKHTLineTracker3D_8cpp.html#abc88e651d827d77b6db5f12e23f9d154">SetPoint()</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">UpdateAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00859">UpdateAll()</a>.</p>
 
 </div>
 </div>
@@ -2561,11 +2593,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">470</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">539</a> of file <a class="el" href="SKSiArrayPlane_8cpp_source.html">SKSiArrayPlane.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fHistCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00143">fNumDataDisplays</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00152">fNumDrawingsInArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00153">fNumGoodDrawings</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00157">fNumSelUDGroup</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00146">fNumUDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00125">fPadCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSelControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00098">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelJOID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00158">fSelUDArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00154">fSelUDArrayID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">fSelUDBin</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00155">fSelUDLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00148">fSelUDTab</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDBinChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00159">fSignalUDTabChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00151">fUDGoodIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00129">fUserDrawingArrayCollection</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">fUserDrawingLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00169">kUpdateUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
+<p class="reference">References <a class="el" href="source_2detector_2LKEvePlane_8cpp_source.html#l00097">LKEvePlane::Draw()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00127">fHistCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00144">fNumDataDisplays</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00153">fNumDrawingsInArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00154">fNumGoodDrawings</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00158">fNumSelUDGroup</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00147">fNumUDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">fPadCtrlUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00162">fSelControlDDPage</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">fSelDetID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00100">fSelJOID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00159">fSelUDArray</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00155">fSelUDArrayID</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">fSelUDBin</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00156">fSelUDLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">fSelUDTab</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">fSignalUDBinChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">fSignalUDTabChange</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00152">fUDGoodIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">fUserDrawingArrayCollection</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">fUserDrawingArrayIndex</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">fUserDrawingLeastNDraw</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00133">fUserDrawingName</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00170">kUpdateUserDrawing</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="source_2detector_2LKEvePlane_8h_source.html#l00201">LKEvePlane::UpdateFlag</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00366">GetHistUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">UpdateAll()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00651">UpdateEventDisplay1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00435">GetHistUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00859">UpdateAll()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00723">UpdateEventDisplay1()</a>.</p>
 
 </div>
 </div>
@@ -2590,7 +2622,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00183">183</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00187">187</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2614,7 +2646,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00185">185</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00189">189</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2638,7 +2670,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00186">186</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00190">190</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2662,7 +2694,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00184">184</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00188">188</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2686,7 +2718,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00136">136</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00137">137</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2710,7 +2742,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00137">137</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00138">138</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2766,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00135">135</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00136">136</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2758,9 +2790,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">115</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00116">116</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01247">GetSiChannel()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00019">SKSiArrayPlane()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01453">GetSiChannel()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00020">SKSiArrayPlane()</a>.</p>
 
 </div>
 </div>
@@ -2784,7 +2816,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00174">174</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00175">175</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2808,7 +2840,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00175">175</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00176">176</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2832,7 +2864,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00164">164</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00165">165</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2856,9 +2888,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00095">95</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00096">96</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">FillDataToHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00642">Get3DEventPad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00714">Get3DEventPad()</a>.</p>
+
+</div>
+</div>
+<a id="a26b00d5c51e94814d5443a626c82a529" name="a26b00d5c51e94814d5443a626c82a529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b00d5c51e94814d5443a626c82a529">&#9670;&#160;</a></span>fdEEPairMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SKSiArrayPlane::fdEEPairMapping[40][2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00194">194</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01528">FindEPairDetectorID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -2882,9 +2940,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00114">114</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00115">115</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01365">ClearFiredFlags()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">FillDataToHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01359">FireStrip()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01388">GetFiredDetector()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01375">GetNumFiredDetectors()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00045">GetNumSiDetectors()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01307">GetSiDetector()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00219">Print()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00019">SKSiArrayPlane()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00651">UpdateEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01580">ClearFiredFlags()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01574">FireStrip()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01603">GetFiredDetector()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01590">GetNumFiredDetectors()</a>, <a class="el" href="SKSiArrayPlane_8h_source.html#l00045">GetNumSiDetectors()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01513">GetSiDetector()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00288">Print()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00020">SKSiArrayPlane()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00723">UpdateEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -2908,9 +2966,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00085">85</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00086">86</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -2934,9 +2992,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00116">116</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00117">117</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -2960,7 +3018,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00118">118</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00119">119</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -2984,9 +3042,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00166">166</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00167">167</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00019">SKSiArrayPlane()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00020">SKSiArrayPlane()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -3010,7 +3068,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00176">176</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00177">177</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3034,7 +3092,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00177">177</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00178">178</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3058,9 +3116,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">145</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00146">146</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01191">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00335">GetHistControlDDPage()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01397">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00404">GetHistControlDDPage()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3084,9 +3142,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">126</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00127">127</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01191">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00366">GetHistUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01397">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00435">GetHistUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3110,9 +3168,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">108</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00109">109</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -3137,9 +3195,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If histogram bin size is smaller than 1, mouse click position might not be pointing inside the bin since position is returned as integer. This parameter will increase resolution of histogram bin. </p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00107">107</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00108">108</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -3165,9 +3223,9 @@ Private Attributes</h2></td></tr>
 
 <p>histogram bin to pad-id mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00093">93</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00094">94</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00629">FindPadIDFromHistEventDisplay1Bin()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00701">FindPadIDFromHistEventDisplay1Bin()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>.</p>
 
 </div>
 </div>
@@ -3193,9 +3251,9 @@ Private Attributes</h2></td></tr>
 
 <p>[cobo][asad][aget][chan] to channel-index mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00091">91</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00092">92</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01242">FindPadID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01448">FindPadID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3221,9 +3279,9 @@ Private Attributes</h2></td></tr>
 
 <p>[cobo][asad][aget][chan] to detector-index mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00092">92</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00093">93</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01302">FindSiDetectorID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01508">FindSiDetectorID()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3247,9 +3305,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00084">84</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00085">85</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3273,9 +3331,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00119">119</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00120">120</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3299,9 +3357,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00101">101</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00102">102</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3325,9 +3383,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00103">103</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00104">104</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3351,9 +3409,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00102">102</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00103">103</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00552">GetHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3377,9 +3435,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00088">88</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00089">89</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3403,7 +3461,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00179">179</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00183">183</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3427,7 +3485,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00180">180</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00184">184</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3451,7 +3509,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00182">182</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00186">186</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3475,7 +3533,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00181">181</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00185">185</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3499,9 +3557,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00087">87</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00088">88</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3525,9 +3583,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00089">89</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00090">90</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3551,9 +3609,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00086">86</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00087">87</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>.</p>
 
 </div>
 </div>
@@ -3577,9 +3635,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00143">143</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00144">144</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3603,9 +3661,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00141">141</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00142">142</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3629,9 +3687,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00142">142</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00143">143</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3655,9 +3713,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00152">152</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00153">153</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3681,9 +3739,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00153">153</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00154">154</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3707,9 +3765,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00157">157</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00158">158</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3733,9 +3791,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">150</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00151">151</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3759,9 +3817,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00146">146</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00147">147</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3785,7 +3843,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00127">127</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00128">128</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -3809,9 +3867,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00134">134</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00135">135</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3835,9 +3893,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00125">125</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00126">126</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -3861,9 +3919,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00138">138</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00139">139</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3887,9 +3945,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00144">144</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00145">145</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3913,9 +3971,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00140">140</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00141">141</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3939,9 +3997,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00139">139</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00140">140</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -3965,9 +4023,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00121">121</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00122">122</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00231">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00300">GetCanvas()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -3991,7 +4049,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00128">128</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00129">129</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -4015,9 +4073,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00111">111</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00112">112</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">FillDataToHistEventDisplay1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>.</p>
 
 </div>
 </div>
@@ -4041,7 +4099,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00112">112</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00113">113</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -4065,9 +4123,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">161</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00162">162</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01191">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01397">ClickedControlDDPage()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4091,9 +4149,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00098">98</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">99</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">FillDataToHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4117,9 +4175,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00099">99</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00100">100</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00651">UpdateEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00723">UpdateEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4143,9 +4201,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00158">158</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00159">159</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4169,9 +4227,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00154">154</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00155">155</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4195,9 +4253,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">149</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00150">150</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4221,9 +4279,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00155">155</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00156">156</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4247,9 +4305,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00148">148</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00149">149</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
+
+</div>
+</div>
+<a id="ae210e501b313374ff93a5bb330d9ba3c" name="ae210e501b313374ff93a5bb330d9ba3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae210e501b313374ff93a5bb330d9ba3c">&#9670;&#160;</a></span>fSiChannelArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TClonesArray* SKSiArrayPlane::fSiChannelArray = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00180">180</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01006">SetDataFromBranch()</a>.</p>
 
 </div>
 </div>
@@ -4273,9 +4357,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">160</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00161">161</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00755">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00727">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00715">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00977">FillDataToHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00827">ClickedEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00799">ClickedJOSideDisplay()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00787">ExecMouseClickEventOnPad()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4299,9 +4383,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00159">159</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00160">160</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
+
+</div>
+</div>
+<a id="a0533530d00fc3287b013aeaad6db9812" name="a0533530d00fc3287b013aeaad6db9812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0533530d00fc3287b013aeaad6db9812">&#9670;&#160;</a></span>fSiHitArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TClonesArray* SKSiArrayPlane::fSiHitArray = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00181">181</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01054">FillDataToHistEventDisplay1()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01006">SetDataFromBranch()</a>.</p>
 
 </div>
 </div>
@@ -4325,7 +4435,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00096">96</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00097">97</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
 </div>
 </div>
@@ -4349,9 +4459,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00151">151</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00152">152</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4375,9 +4485,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00129">129</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">130</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01322">ExitEve()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00019">SKSiArrayPlane()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01537">ExitEve()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00020">SKSiArrayPlane()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4401,9 +4511,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00130">130</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">131</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4427,9 +4537,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00131">131</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">132</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
@@ -4453,9 +4563,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00132">132</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00133">133</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00391">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01209">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00033">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00460">AddUserDrawings()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l01415">ClickedUserDrawing()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
+
+</div>
+</div>
+<a id="acc9b6fdc293c32ba0cb3bd237568f85f" name="acc9b6fdc293c32ba0cb3bd237568f85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9b6fdc293c32ba0cb3bd237568f85f">&#9670;&#160;</a></span>fUserPhiScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SKSiArrayPlane::fUserPhiScale = 1.</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00192">192</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00621">GetHistEventDisplay1()</a>, <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00034">Init()</a>, and <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -4479,9 +4615,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00170">170</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00171">171</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00797">UpdateDataDisplays()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00869">UpdateDataDisplays()</a>.</p>
 
 </div>
 </div>
@@ -4505,9 +4641,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00171">171</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00172">172</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00861">UpdateJunctionOhmic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00933">UpdateJunctionOhmic()</a>.</p>
 
 </div>
 </div>
@@ -4531,9 +4667,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00169">169</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SKSiArrayPlane_8h_source.html#l00170">170</a> of file <a class="el" href="SKSiArrayPlane_8h_source.html">SKSiArrayPlane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00470">UpdateUserDrawing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SKSiArrayPlane_8cpp_source.html#l00539">UpdateUserDrawing()</a>.</p>
 
 </div>
 </div>
