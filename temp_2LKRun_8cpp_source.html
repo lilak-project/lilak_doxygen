@@ -25,7 +25,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lilak<span id="projectnumber">&#160;master.284.aefe8d1</span>
+   <div id="projectname">lilak<span id="projectnumber">&#160;master.288.1b77112</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    fRunName = runName;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    fRunID = id;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    fDivision = division;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_variable" href="si__calibration_8h.html#a621f691b1ed4b8ad177ca4ef1374c317">fTag</a> = tag;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    fTag = tag;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    fFriendTrees = <span class="keyword">new</span> TObjArray();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    fPersistentBranchArray = <span class="keyword">new</span> TObjArray();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    fTemporaryBranchArray = <span class="keyword">new</span> TObjArray();</div>
@@ -1229,7 +1229,7 @@ $(function() {
 <div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    }</div>
 <div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>}</div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span> </div>
-<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKRun.html#afcbca74309d5d0b3a908ece0054b976b">LKRun::RunOnline</a>()</div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span><span class="keywordtype">void</span> <a class="code hl_function" href="classLKTask.html#ad6491cf5f209912c73de60416e68617c">LKRun::RunOnline</a>()</div>
 <div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>{</div>
 <div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>    <a class="code hl_define" href="LKLogger_8h.html#abdf08b50834a103803bcbdff6e038c58">e_cout</a> &lt;&lt; endl;</div>
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span> </div>
@@ -1238,7 +1238,7 @@ $(function() {
 <div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span> </div>
 <div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classLKRun.html#aa62feb171f472a1fc36c8352a0816c7c">fUsingEventTrigger</a>) {</div>
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        <a class="code hl_variable" href="classLKRun.html#aae15a881c4ab219355e0330823a71e4b">fCurrentEventID</a> = -1;</div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        <a class="code hl_variable" href="classLKRun.html#a0e7cfa05a1111cab48c8c98f304b52cc">fEventTrigger</a> -&gt; <a class="code hl_function" href="classLKRun.html#afcbca74309d5d0b3a908ece0054b976b">RunOnline</a>();</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        <a class="code hl_variable" href="classLKRun.html#a0e7cfa05a1111cab48c8c98f304b52cc">fEventTrigger</a> -&gt; <a class="code hl_function" href="classLKTask.html#ad6491cf5f209912c73de60416e68617c">RunOnline</a>();</div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        <a class="code hl_function" href="classLKRun.html#aae69e3292fa5b1f71d551f6de90ccf4e">LKRun::EndOfRun</a>();</div>
 <div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>    }</div>
 <div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>    <span class="keywordflow">else</span> {</div>
@@ -1788,7 +1788,6 @@ $(function() {
 <div class="ttc" id="aclassLKRun_html_af2b83a4129c893509d43a3820d6d8c15"><div class="ttname"><a href="classLKRun.html#af2b83a4129c893509d43a3820d6d8c15">LKRun::fInputFileNameArray</a></div><div class="ttdeci">std::vector&lt; TString &gt; fInputFileNameArray</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00276">LKRun.h:276</a></div></div>
 <div class="ttc" id="aclassLKRun_html_af624f2e5281d87881c38f96e44f0af1e"><div class="ttname"><a href="classLKRun.html#af624f2e5281d87881c38f96e44f0af1e">LKRun::GetEntries</a></div><div class="ttdeci">Long64_t GetEntries() const</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00186">LKRun.h:186</a></div></div>
 <div class="ttc" id="aclassLKRun_html_afbc5f7411fb77161af95d6d3f4cddb7e"><div class="ttname"><a href="classLKRun.html#afbc5f7411fb77161af95d6d3f4cddb7e">LKRun::fPrevSelEventID</a></div><div class="ttdeci">Long64_t fPrevSelEventID</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8h_source.html#l00317">LKRun.h:317</a></div></div>
-<div class="ttc" id="aclassLKRun_html_afcbca74309d5d0b3a908ece0054b976b"><div class="ttname"><a href="classLKRun.html#afcbca74309d5d0b3a908ece0054b976b">LKRun::RunOnline</a></div><div class="ttdeci">void RunOnline()</div><div class="ttdef"><b>Definition</b> <a href="LKRun_8cpp_source.html#l01176">LKRun.cpp:1176</a></div></div>
 <div class="ttc" id="aclassLKTask_html"><div class="ttname"><a href="classLKTask.html">LKTask</a></div><div class="ttdef"><b>Definition</b> <a href="LKTask_8h_source.html#l00013">LKTask.h:14</a></div></div>
 <div class="ttc" id="aclassLKTask_html_a070763791865c8a674e40aa494c2f201"><div class="ttname"><a href="classLKTask.html#a070763791865c8a674e40aa494c2f201">LKTask::Add</a></div><div class="ttdeci">virtual void Add(TTask *task)</div><div class="ttdef"><b>Definition</b> <a href="LKTask_8cpp_source.html#l00016">LKTask.cpp:16</a></div></div>
 <div class="ttc" id="aclassLKTask_html_a20127bb296c907c85369b8fd7621addf"><div class="ttname"><a href="classLKTask.html#a20127bb296c907c85369b8fd7621addf">LKTask::InitTasks</a></div><div class="ttdeci">bool InitTasks()</div><div class="ttdef"><b>Definition</b> <a href="LKTask_8cpp_source.html#l00042">LKTask.cpp:42</a></div></div>
@@ -1796,7 +1795,7 @@ $(function() {
 <div class="ttc" id="aclassLKTask_html_a5d735b07ef40c318eb1cd0098469facb"><div class="ttname"><a href="classLKTask.html#a5d735b07ef40c318eb1cd0098469facb">LKTask::EndOfRunTasks</a></div><div class="ttdeci">bool EndOfRunTasks()</div><div class="ttdef"><b>Definition</b> <a href="LKTask_8cpp_source.html#l00075">LKTask.cpp:75</a></div></div>
 <div class="ttc" id="aclassLKTask_html_a725d79934f9abde02a7fa24250d1ebd5"><div class="ttname"><a href="classLKTask.html#a725d79934f9abde02a7fa24250d1ebd5">LKTask::AddTriggerInputFile</a></div><div class="ttdeci">virtual void AddTriggerInputFile(TString fileName, TString opt)</div><div class="ttdef"><b>Definition</b> <a href="LKTask_8h_source.html#l00037">LKTask.h:37</a></div></div>
 <div class="ttc" id="aclassLKTask_html_aa86652ee2bc0b6cdb90d16d520093a76"><div class="ttname"><a href="classLKTask.html#aa86652ee2bc0b6cdb90d16d520093a76">LKTask::IsEventTrigger</a></div><div class="ttdeci">virtual bool IsEventTrigger()</div><div class="ttdef"><b>Definition</b> <a href="LKTask_8h_source.html#l00032">LKTask.h:32</a></div></div>
-<div class="ttc" id="asi__calibration_8h_html_a621f691b1ed4b8ad177ca4ef1374c317"><div class="ttname"><a href="si__calibration_8h.html#a621f691b1ed4b8ad177ca4ef1374c317">fTag</a></div><div class="ttdeci">TString fTag</div><div class="ttdef"><b>Definition</b> <a href="si__calibration_8h_source.html#l00009">si_calibration.h:9</a></div></div>
+<div class="ttc" id="aclassLKTask_html_ad6491cf5f209912c73de60416e68617c"><div class="ttname"><a href="classLKTask.html#ad6491cf5f209912c73de60416e68617c">LKTask::RunOnline</a></div><div class="ttdeci">virtual void RunOnline()</div><div class="ttdef"><b>Definition</b> <a href="temp_2LKTask_8h_source.html#l00038">temp/LKTask.h:38</a></div></div>
 <div class="ttc" id="atest__psa_8C_html_a041249f802c5bf4c2deae666610e03c4"><div class="ttname"><a href="test__psa_8C.html#a041249f802c5bf4c2deae666610e03c4">next</a></div><div class="ttdeci">void next()</div><div class="ttdef"><b>Definition</b> <a href="test__psa_8C_source.html#l00005">test_psa.C:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
